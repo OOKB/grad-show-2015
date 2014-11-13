@@ -12,14 +12,19 @@ phone: 410-225-5274
 nav:
   -
     title: Welcome
+    link: intro
   -
     title: Schedule
+    link: schedule
   -
     title: Galleries
+    link: galleries
   -
     title: Programs
+    link: programs
   -
     title: Students
+    link: students
 
 built_designed:
   -

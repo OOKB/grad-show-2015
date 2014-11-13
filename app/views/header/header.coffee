@@ -2,6 +2,7 @@ React = require 'react'
 {header, h1, div, img} = require 'reactionary'
 
 Logo = require './logo'
+Nav = require './nav'
 
 module.exports = React.createClass
   # getInitialState: ->
@@ -19,3 +20,4 @@ module.exports = React.createClass
       div
         className: 'down-arrow',
           "\\/"
+      Nav @props

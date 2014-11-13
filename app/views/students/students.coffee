@@ -13,7 +13,8 @@ module.exports = React.createClass
   # getInitialState: ->
 
   render: ->
-    activeStudents = props.students.where program: 'graphic-design-mfa'
+    #activeStudents = props.students.where program: 'graphic-design-mfa'
+    activeStudents = props.students
     #console.log activeStudents[0].toJSON()
     studentList = activeStudents.map (model) ->
       Student model: model, key: model.uid
