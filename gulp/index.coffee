@@ -29,7 +29,7 @@ gulp.task "default", ['browser-sync'], ->
   gulp.watch "styles/*.less", ["styles"]
   gulp.watch 'static/**', ['static']
   gulp.watch './content/**/*.md', ['content']
-  gulp.watch './content/**/*.yaml', ['projects']
+  gulp.watch './content/**/*.yaml', ['data']
   return
 
 gulp.task "browser-sync", ['compile', 'styles', 'templates', 'copy', 'static', 'data'], ->

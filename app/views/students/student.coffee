@@ -6,22 +6,22 @@ module.exports = React.createClass
 
   render: ->
     li
-      id: @props.uid
+      id: @props.model.uid
       className: 'student',
         img
-          src: @props.pic
+          src: @props.model.pic
         ul
           className: 'info',
             li
               className: 'name',
                 h4
-                  @props.fullName
+                  @props.model.fullName
             li
               className: 'program',
-                @props.programName
+                @props.model.programName
             li
               className: 'location',
-                @props.locationName
+                @props.model.locationName
             li
               className: 'show-date',
-                @props.showDate
+                @props.model.showDate

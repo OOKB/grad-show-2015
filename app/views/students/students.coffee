@@ -7,11 +7,16 @@ StudentCollection = require '../../models/students'
 props =
   students: new StudentCollection data, parse: true
 
+Student = require './student'
+
 module.exports = React.createClass
   # getInitialState: ->
 
   render: ->
-    console.log props.students.models[0].toJSON()
+    activeStudents = props.students.where program: 'graphic-design-mfa'
+    #console.log activeStudents[0].toJSON()
+    studentList = activeStudents.map (model) ->
+      Student model: model, key: model.uid
     article
       id: 'students',
         h2 'Students'
@@ -21,4 +26,4 @@ module.exports = React.createClass
         ul
           id: 'projects'
           className: 'list',
-            li 'students li'
+            studentList

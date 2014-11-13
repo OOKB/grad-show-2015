@@ -32,12 +32,17 @@ module.exports = Model.extend
     programName:
       deps: ['program']
       fn: ->
-        _.find(props.program.options, value: @program).name
+        if @program
+          _.find(props.program.options, value: @program).name
+        else
+          null
     locationName:
       deps: ['location']
       fn: ->
-        _.find(props.location.options, value: @location).name
-
+        if @location
+          _.find(props.location.options, value: @location).name
+        else
+          null
   emailFromUid: (uid) ->
     if uid == 'kai'
       'kai@ezle.io'
