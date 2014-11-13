@@ -7,42 +7,18 @@ Router = require 'react-router'
 # Data
 userData = require './data/users'
 
-# Models
-Images = require './models/images'
-Me = require './models/student'
-
 # Views
 App = require './views/app'
 
-Login = require './views/login'
-LoginForm = require './views/login/login'
-LoginOk = require './views/login/success'
-LoginPending = require './views/login/pending'
-LoginFail = require './views/login/fail'
-LoginToken = require './views/login/token'
-
 UsrImgs = require './views/usrImgs'
-
-Mixer = require './views/mixer'
-EditProfile = require './views/mixer/profile'
-EditImgs = require './views/mixer/image'
-EditImg = require './views/mixer/imageEdit'
-EditEmbed = require './views/mixer/embed'
-EditEssay = require './views/mixer/essay'
+Logo = require './views/public/logo'
 
 #Imgs = require './views/img_form'
 
 module.exports =
   blastoff: ->
     self = window.app = @
-    if process.env.USER == 'kai'
-      @api = 'http://mica.ezle.io.ld:8000/'
-    else
-      @api = 'https://mica.ezle.io/'
     # Route stuff attach
-    @me = new Me()
-    # Attach images collection to app global.
-    @images = new Images()
     @users = userData
     # Init the React application router.
     routes =
@@ -51,60 +27,14 @@ module.exports =
           Route
             name: 'app'
             path: '/'
-            kai: true
             handler: App,
               Route
                 name: 'usrImgs'
                 handler: UsrImgs
               Route
-                name: 'mixer'
-                handler: Mixer,
-                  Redirect
-                    path: '/mixer'
-                    to: 'editProfile'
-                  Route
-                    name: 'editProfile'
-                    path: '/mixer/profile/?:uid?'
-                    handler: EditProfile
-                  Route
-                    name: 'editImgs'
-                    path: '/mixer/images'
-                    handler: EditImgs,
-                      Route
-                        name: 'editImg'
-                        path: '/mixer/images/*'
-                        handler: EditImg
-                  Route
-                    name: 'editEmbed'
-                    path: '/mixer/embed'
-                    handler: EditEmbed
-                  Route
-                    name: 'editEssay'
-                    path: '/mixer/essay'
-                    handler: EditEssay
-              Route
-                handler: Login
-                name: 'login',
-                  DefaultRoute handler: LoginForm
-                  Route
-                    name: 'checkEmail'
-                    path: '/login/ok'
-                    handler: LoginOk
-                  Route
-                    name: 'emailPending'
-                    path: '/login/pending'
-                    handler: LoginPending
-                  Route
-                    name: 'loginFail'
-                    path: '/login/fail'
-                    handler: LoginFail
-                  Route
-                    name: 'loginToken'
-                    path: '/login/:uid/:tempToken'
-                    handler: LoginToken
-              Redirect
-                path: '/'
-                to: 'login'
+                name: 'logo'
+                handler: Logo
+
 
     domReady =>
       @.container = React.renderComponent routes, document.body
