@@ -1,6 +1,6 @@
 fs = require 'fs'
 react = require 'react'
-PublicIndex = require '../app/views/public/index'
+PublicIndex = require '../app/views/index'
 
 html = react.renderComponentToStaticMarkup PublicIndex(null)
-fs.writeFile('public/index.html', html)
+fs.writeFile('dev/index.html', html)

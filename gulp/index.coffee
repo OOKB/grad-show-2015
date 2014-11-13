@@ -4,7 +4,6 @@ exec = require('child_process').exec
 
 gulp = require 'gulp'
 r = require 'request'
-yaml = require 'js-yaml'
 
 browserSync = require 'browser-sync'
 
@@ -14,26 +13,26 @@ coffeeify = require 'coffeeify'
 bd = require 'browserify-data'
 source = require('vinyl-source-stream')
 
-jade = require 'gulp-jade'
 less = require 'gulp-less'
 clean = require 'gulp-clean'
 zopfli = require 'gulp-zopfli'
 rename = require 'gulp-rename'
 runSequence = require 'run-sequence'
+markdown = require 'gulp-markdown-to-json'
+yaml = require 'gulp-yaml'
 
 API = 'http://mica.ezle.io.ld:8000/'
 #API = 'https://mica.ezle.io/'
 
-data = yaml.safeLoad fs.readFileSync('data.yaml', 'utf8')
-
 gulp.task "default", ['browser-sync'], ->
-  gulp.watch "templates/*.jade", ["templates"]
+  gulp.watch './app/**/*.*', ['templates']
   gulp.watch "styles/*.less", ["styles"]
-  gulp.watch 'images/**', ['copy']
   gulp.watch 'static/**', ['static']
+  gulp.watch './content/**/*.md', ['content']
+  gulp.watch './content/**/*.yaml', ['projects']
   return
 
-gulp.task "browser-sync", ['compile', 'styles', 'templates', 'copy', 'static'], ->
+gulp.task "browser-sync", ['compile', 'styles', 'templates', 'copy', 'static', 'data'], ->
   browserSync.init "dev/**",
     server:
       baseDir: "dev" # Change this to your web root dir
@@ -101,7 +100,7 @@ gulp.task 'studentSchema', ->
     .pipe source('studentSchema.json')
     .pipe gulp.dest('./app/data/')
 
-gulp.task 'data', ['uids', 'studentSchema'], ->
+gulp.task 'serverData', ['uids', 'studentSchema'], ->
   r(API+'users.json')
     .pipe source('users.json')
     .pipe gulp.dest('./app/data/')

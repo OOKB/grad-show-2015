@@ -11,7 +11,6 @@ userData = require './data/users'
 App = require './views/app'
 
 UsrImgs = require './views/usrImgs'
-Logo = require './views/public/logo'
 
 #Imgs = require './views/img_form'
 
@@ -31,13 +30,9 @@ module.exports =
               Route
                 name: 'usrImgs'
                 handler: UsrImgs
-              Route
-                name: 'logo'
-                handler: Logo
 
-
-    domReady =>
-      @.container = React.renderComponent routes, document.body
+    # domReady =>
+    #   @.container = React.renderComponent routes, document.body
 
 # run it
 module.exports.blastoff()
