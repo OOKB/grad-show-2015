@@ -15,8 +15,8 @@ module.exports = React.createClass
             alt: 'MICA Logo'
           Credits @props
           ul
-            className: 'author',
+            className: 'author address',
               li @props.author
-              li @props.address
+              li @props.street
               li @props.city, ', ', @props.state, @props.zip
               li @props.phone
