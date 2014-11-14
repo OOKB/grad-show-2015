@@ -1,5 +1,5 @@
 path = require 'path'
-fs = require 'fs'
+fs = require 'fs-extra'
 exec = require('child_process').exec
 
 gulp = require 'gulp'
@@ -107,15 +107,26 @@ gulp.task 'serverData', ['uids', 'studentSchema'], ->
 
 # - - - - prod - - - -
 
+gulp.task 'prod', (cb) ->
+  runSequence ['prod_clean', 'set_sha'],
+    ['templatesProd', 'prod_static', 'copy_css', 'prod_compile'],
+    'compress',
+    cb
+  return
+
+gulp.task 'templatesProd', ->
+  exec('coffee gulp/compileProd.coffee')
+
 gulp.task 'set_sha', (cb) ->
   r_ops =
-    uri: 'https://api.github.com/repos/OOKB/grad-show-2015/branches/master'
+    uri: 'https://api.github.com/repos/cape-io/mica.ezle.io/branches/master'
     json: true
     headers:
       'user-agent': 'request.js'
   r r_ops, (err, response, body) ->
     if err then throw err
     global.sha = body.commit.sha
+    fs.outputJsonSync 'app/data/commit.json', body.commit
     cb()
   return
 
@@ -150,28 +161,10 @@ gulp.task 'copy_css', ['styles'], ->
   gulp.src('./dev/app.css')
     .pipe(rename(global.sha+'.css'))
     .pipe(gulp.dest('./prod'))
-  gulp.src('./dev/print.css', './dev/iefix.css')
+  gulp.src('./dev/print.css')
     .pipe(gulp.dest('./prod'))
-  gulp.src('./images/**')
-    .pipe gulp.dest('./prod/images/')
-
-gulp.task 'prod_template', ->
-  # Templates
-  data.sha = global.sha
-
-  gulp.src("templates/*.jade")
-    .pipe jade(locals: data)
-    .pipe gulp.dest("./prod/")
-
 
 gulp.task 'compress', ->
   gulp.src("./prod/*.{js,css,html,json}")
     .pipe(zopfli())
     .pipe(gulp.dest("./prod"))
-
-gulp.task 'prod', (cb) ->
-  runSequence ['prod_clean', 'set_sha'],
-    ['prod_static', 'prod_template', 'copy_css', 'prod_compile'],
-    'compress',
-    cb
-  return

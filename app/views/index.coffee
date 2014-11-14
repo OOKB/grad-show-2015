@@ -12,6 +12,7 @@ Footer = require './footer/footer'
 
 module.exports = React.createClass
   render: ->
+    appFileName = @props.sha or 'app'
     html null,
       head null,
         title data.title
@@ -25,7 +26,7 @@ module.exports = React.createClass
         link
           rel: 'stylesheet'
           type: 'text/css'
-          href: '/app.css'
+          href: "/#{appFileName}.css"
       body null,
         Header data
         Intro null
@@ -38,7 +39,7 @@ module.exports = React.createClass
           src: '//cdnjs.cloudflare.com/ajax/libs/paper.js/0.9.18/paper-full.min.js'
         script
           type: 'text/javascript'
-          src: 'app.js'
+          src: "/#{appFileName}.js"
         div # canvas attribute is not supported by React...
           dangerouslySetInnerHTML:
             __html: '<script type="text/paperscript" canvas="canvas" src="mgslogo.js"></script>'
