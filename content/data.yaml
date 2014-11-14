@@ -21,7 +21,7 @@ nav:
     link: galleries
   -
     title: Programs
-    link: programs
+    link: false
   -
     title: Students
     link: students
