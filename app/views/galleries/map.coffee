@@ -57,6 +57,8 @@ module.exports = React.createClass
         zoom: @props.zoom
         center: new google.maps.LatLng(@props.latitude, @props.longitude)
         mapTypeId: google.maps.MapTypeId.ROADMAP
+        scrollwheel: false
+        zoomControl: true
 
       map = new google.maps.Map(@getDOMNode(), mapOptions)
       @setState map: map
