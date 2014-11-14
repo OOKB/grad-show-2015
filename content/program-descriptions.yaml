@@ -1,6 +1,19 @@
 # from here: https://docs.google.com/a/mica.edu/document/d/1TDfpXIl5e_iN_FSOuJ14vWz6eHbi-iMGFF2cXUNho1c/
 
 ---
+dates:
+-
+  &m27a12
+  start: March 27
+  end: April 12
+  notes: After Party Info
+-
+  &a17m3
+  start: April 17
+  end: May 3
+  notes: After Party Info
+
+programs:
 -
   program: Art Education
   type: Online/Low-Residency MA
@@ -8,6 +21,11 @@
   alias: ['Art Education', 'Art Education (Online/Low-Residency MA)']
   value: 'art-education-ma'
   blurb: 'MICA’s Master of Arts in Art Education (MAAE) prepares experienced K-12 artist-educators to pursue advancement in their field through the development of their practice as both artists and art educators. Designed for the working professional, the curriculum allows students to continue teaching while they complete their graduate degree.'
+  shows:
+    -
+      start: July 26
+      end: 31
+      notes: Ongoung, throughout the city
 -
   program: Community Arts
   type: MFA
@@ -15,18 +33,26 @@
   alias: ['Community Arts', 'Community Arts (MFA)']
   value: 'community-arts-mfa'
   blurb: 'The MFA in Community Arts (MFACA) prepares artists to use their artmaking as a means of civic, youth, and community development, or to teach at the post-secondary level. Discover firsthand how artists and their work help communities articulate their own  history, culture, and needs—and how that community in turn inspires the artists’ own creative expression.'
+  shows: [*a17m3]
+
 -
   program: Critical Studies
   type: MA
   alias: ['Critical Studies', 'Critical Studies (MA)']
   value: 'critical-studies-mfa'
   blurb: 'Become a significant voice in critical discourse on art and culture. The critical analysis, evaluation, and discussion of art and culture is often how most people become aware of important innovation and development in the field. The MA in Critical Studies degree provides a pathway to professional practice or further study at the doctoral level through an in-depth grounding in critical theory and analysis.'
+  shows:
+    -
+      start: May 2
 -
   program: Curatorial Practice
   type: MFA
   alias: ['Curatorial Practice ', 'Curatorial Practice', 'Curatorial Practice (MFA)']
   value: 'curatorial-practice-mfa'
   blurb: 'The first MFA of its kind in the country, MICA’s MFA in Curatorial Practice prepares students to expand the role of curators in connecting art, artists, and communities—engaging audiences more effectively by developing relevant, timely, and accessible exhibitions in both traditional and non-traditional venues.'
+  shows:
+    -
+      start: TBD
 -
   program: Graphic Design
   type: MFA
@@ -34,6 +60,7 @@
   alias: ['Graphic Design', 'Graphic Design (MFA)']
   value: 'graphic-design-mfa'
   blurb: 'MFA graphic students at MICA are encouraged to view themselves as cultural producers, "practical visionaries," and "utopian entrepreneurs" who actively initiate projects. Whether the work takes the form of publications, Web sites, products, or exhibitions, students focus on advancing a personal vision and public message.'
+  shows: [*m27a12]
 -
   program: LeRoy E. Hoffberger School of Painting
   type: MFA
@@ -41,12 +68,14 @@
   alias: ['Hoffberger', 'Leroy E. Hoffberger School of Painting (MFA)']
   value: 'leroy-e-hoffberfer-school-of-painting-mfa'
   blurb: 'One of the nation’s most selective graduate programs, LeRoy E. Hoffberger School of Painting is one of the only graduate programs in the country to focus solely on painting, allowing a select group of highly talented painters to find their individual voices and develop the discourse to position their work in the contemporary arts world.'
+  shows: [*a17m3]
 -
   program: Illustration Practice
   type: MFA
   alias: ['Illustration Practice', 'Illustration Practice (MFA)']
   value: 'illustration-practice-mfa'
   blurb: 'The MFA in Illustration Practice prepares artists to elevate their artistic and business abilities, blend media within new cultural contexts, and integrate research and critical analysis into their work. Students find new directions for the practice in the 21st century, actively initiate projects, and revisit their creative process while awakening their abilities to chart their own course as entrepreneurs.'
+  shows: [*m27a12]
 -
   program: Mount Royal School of Art
   type: MFA
@@ -54,6 +83,7 @@
   alias: ['Mount Royal', 'Mount Royal School of Art (MFA)']
   value: 'mount-royal-school-of-art-mfa'
   blurb: 'Mount Royal School of Art is a multi-disciplinary program that allows students to work in ways most appropriate to their individual research—focusing their exploration within a specific medium or crossing into a wide array of disciplines and media as they engage in intensive studio practice.'
+  shows: [*a17m3]
 -
   program: Photographic and Electronic Media
   type: MFA
@@ -61,6 +91,7 @@
   alias: ['Photo & Electronic Media', 'Photographic & Electronic Media (MFA)']
   value: 'photographic-and-electronic-media-mfa'
   blurb: 'This MFA program gives students a platform to explore the reverberating social and artistic uses of optical and electronic media, and grounds artistic practice in a rigorous investigation of historical and critical contexts. In developing their own work, students follow two tracks: practical research directed on production and implementation of a body of artwork, and conceptual research which builds a solid critical and historical foundation for artistic practice.'
+  shows: [*a17m3]
 -
   program: Post-Baccalaureate Certificate in Fine Art
   type: Post-Baccalaureate Certificate
@@ -68,6 +99,7 @@
   alias: ['Post Bac FA', 'Post-Baccalaureate Fine Art']
   value: 'post-baccalaureate-fine-art'
   blurb: 'The Post-Baccalaureate Certificate in Fine Arts program offers an intensive, fine arts studio experience that allows students to achieve a new level of mastery in artmaking and the preparation for professional practice or to apply to competitive MFA programs, including those at MICA.'
+  shows: [*m27a12]
 -
   program: Post-Baccalaureate Certificate in Graphic Design
   type: Post-Baccalaureate Certificate
@@ -75,6 +107,7 @@
   alias: ['Post Bac GD', 'Post-Baccalaureate Graphic Design']
   value: 'post-baccalaureate-graphic-design'
   blurb: 'MICA’s Post-Baccalaureate Certificate in Graphic Design program offers students from diverse backgrounds an intensive immersion in graphic design. Created for design professionals and recent design graduates, as well as professionals with non-design backgrounds, this programs prepares participants to advance their careers and apply to competitive MFA programs, including those at MICA.'
+  shows: [*m27a12]
 -
   program: Rinehart School of Sculpture
   type: MFA
@@ -82,6 +115,7 @@
   alias: ['Rinehart', 'Rinehart School of Sculpture (MFA)']
   value: 'rinehart-school-of-sculpture-mfa'
   blurb: 'Rinehart School of Sculpture trains artists for the 21st century, including the art of the moment, and allows students to work in a range of media and a rich variety of materials, from performance and video to metals and stone. The oldest program of its kind in the country, Rinehart prepares students to proceed independently and with authority as they approach professional status. Graduates emerge prepared to add to the discourse surrounding contemporary art as exhibiting artists, faculty, and critics.'
+  shows: [*a17m3]
 -
   program: Social Design
   type: MA
@@ -89,6 +123,9 @@
   alias: ['Social Design', 'Social Design (MA)']
   value: 'social-design-ma'
   blurb: 'Complex social problems require creative problem solvers. Now entering its fourth year, the Master of Arts in Social Design (MASD) is an intensive one-year, interdisciplinary, practice-based graduate program that prepares aspiring social designers to understand and address the challenges facing society.'
+  shows:
+    -
+      start: TBD
 -
   program: Studio Art
   type:  Low-Residency MFA
