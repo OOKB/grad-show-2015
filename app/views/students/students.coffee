@@ -20,11 +20,13 @@ module.exports = React.createClass
       Student model: model, key: model.uid
     article
       id: 'students',
-        h2 'Students'
         div
-          className: 'student-filters',
-            'Filters...'
-        ul
-          id: 'projects'
-          className: 'list',
-            studentList
+          className: 'container',
+            h2 'Students'
+            div
+              className: 'student-filters',
+                'Filters...'
+            ul
+              id: 'projects'
+              className: 'list',
+                studentList
