@@ -12,16 +12,20 @@ locations:
   name: 'Fox 3'
   alias: ['Fox 3']
   value: 'fox-3'
-  street: 131 W. North Ave.
-  zip: 21201
+  street: 1303 W. Mt. Royal Ave.
+  zip: 21217
 -
   name: 'Leidy'
   alias: ['Leidy', 'Leidy Gallery']
   value: 'leidy'
+  street: 131 W. North Ave.
+  zip: 21201
 -
   name: 'Meyerhoff'
   alias: ['Meyerhoff', 'Meyerhoff Gallery']
   value: 'meyerhoff'
+  street: 1303 W. Mt. Royal Ave.
+  zip: 21217
 -
   name: 'North Avenue Market'
   alias: ['D Center', 'North Avenue Market']
@@ -44,7 +48,11 @@ locations:
   name: 'Riggs'
   alias: ['Riggs', 'Riggs Gallery', 'Riggs Gallery (Hallway)', 'Riggs/Leidy Gallery']
   value: 'riggs'
+  street: 131 W. North Ave.
+  zip: 21201
 -
   name: 'Walters Art Museum'
   alias: ['Walters', 'Walters Art Gallery', 'The Walters']
   value: 'walters-art-museum'
+  street: 600 N Charles St
+  zip: 2120
