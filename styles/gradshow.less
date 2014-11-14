@@ -1,5 +1,7 @@
 /* NEED TO FIX THIS BETTER, BUT FOR NOW THIS'LL DO IT **/
-body { padding-top: 0 !important; }
+body {
+  padding-top: 0 !important;
+}
 
 .container {
   margin: 0 auto;
@@ -10,6 +12,10 @@ body { padding-top: 0 !important; }
   content: '';
   display: table;
   clear: both;
+}
+
+article {
+  padding-top: 100px;
 }
 
 /** FOR THE STUDENT PROFILE IMAGES **/
@@ -31,10 +37,17 @@ li.student:hover img {
   opacity: .66;
 }
 
+li.name {
+  color: @pink;
+  font-weight: bold;
+  font-size: 125%;
+}
+
 /** working on some title-y things **/
 
 h2 {
   text-align: center;
-  margin: 100px 0;
+  margin: 0 0 100px 0;
   color: @pink;
+  font-size: 200%;
 }
