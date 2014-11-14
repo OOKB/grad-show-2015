@@ -1,5 +1,5 @@
 React = require 'react'
-{article, h2, ul, li, div} = require 'reactionary'
+{article, h2, h3, ul, li, div} = require 'reactionary'
 
 data = require '../../data/schedule.json'
 
@@ -12,5 +12,8 @@ module.exports = React.createClass
         div
           className: 'container',
             h2 'Schedule of Events'
-            ul null,
-              li 'schedule'
+            div
+              className: 'scheduleGroup',
+                h3 'DATE TK'
+                ul null,
+                  li 'schedule'
