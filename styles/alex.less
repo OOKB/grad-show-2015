@@ -11,6 +11,9 @@ header .down-arrow {
 	background-image: url(down-arrow.svg);
 	background-repeat: none;
 	opacity: .5;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
 	-webkit-animation: moveDownArrow 1s; /* Chrome, Safari, Opera */
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-direction: alternate;
@@ -21,6 +24,7 @@ header .down-arrow {
 }
 
 header .down-arrow:hover {
+	opacity: 1;
 	-webkit-animation-play-state: paused;
 	animation-play-state: paused;
 }
