@@ -1,0 +1,50 @@
+# from here: https://docs.google.com/a/mica.edu/document/d/1TDfpXIl5e_iN_FSOuJ14vWz6eHbi-iMGFF2cXUNho1c/
+
+---
+locations:
+-
+  name: 'Decker'
+  alias: ['Decker', 'Decker Gallery']
+  value: 'decker'
+  street: 1303 W. Mt. Royal Ave.
+  zip: 21217
+-
+  name: 'Fox 3'
+  alias: ['Fox 3']
+  value: 'fox-3'
+  street: 131 W. North Ave.
+  zip: 21201
+-
+  name: 'Leidy'
+  alias: ['Leidy', 'Leidy Gallery']
+  value: 'leidy'
+-
+  name: 'Meyerhoff'
+  alias: ['Meyerhoff', 'Meyerhoff Gallery']
+  value: 'meyerhoff'
+-
+  name: 'North Avenue Market'
+  alias: ['D Center', 'North Avenue Market']
+  value: 'north-avenue-market'
+  street: 18 W. North Ave.
+  zip: 21218
+-
+  name: 'Off Campus'
+  alias: ['Off Campus']
+  value: 'off-campus'
+-
+  name: 'Pinkard'
+  alias: ['Pinkard', 'Pinkard Gallery']
+  value: 'pinkard'
+  street: 1305 W. Mt. Royal Ave.
+  city: Baltimore
+  state: MD
+  zip: 21217
+-
+  name: 'Riggs'
+  alias: ['Riggs', 'Riggs Gallery', 'Riggs Gallery (Hallway)', 'Riggs/Leidy Gallery']
+  value: 'riggs'
+-
+  name: 'Walters Art Museum'
+  alias: ['Walters', 'Walters Art Gallery', 'The Walters']
+  value: 'walters-art-museum'

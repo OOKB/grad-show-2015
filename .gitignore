@@ -6,8 +6,4 @@
 /app/*/*/*.js
 /dev/
 /npm-debug.log
-/app/data/commit.json
-
-/app/data/data.json
-
-/app/data/program-descriptions.json
+/app/data/
