@@ -5,12 +5,17 @@ Router = require 'react-router'
 # _ = require 'lodash'
 
 # Data
-userData = require './data/users'
+StudentCollection = require './models/students'
+
+students = require './data/users'
 data = require './data/data'
+data.students = new StudentCollection students, parse: true
+
 # Views
 App = require './views/app'
 
 UsrImgs = require './views/usrImgs'
+
 
 #Imgs = require './views/img_form'
 
@@ -18,7 +23,7 @@ module.exports =
   blastoff: ->
     self = window.app = @
     # Route stuff attach
-    @users = userData
+    @students = data.students
     # Init the React application router.
     console.log 'ready'
     # routes =
