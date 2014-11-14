@@ -96,9 +96,26 @@
   alias: ['Studio Art', 'Studio Art (Low-Residency MFA)']
   value: 'studio-art-mfa'
   blurb: 'This low-residency, 60-credit interdisciplinary MFA program is designed for experienced artists who want to pursue graduate study without disrupting their ongoing careers. The emphasis of the program is in integrating practice with theory, where students are encouraged to be independent thinkers and researchers who may focus within one specific medium or work across various media.'
+  shows:
+    -
+      start: June 20
+      end: July 27
 -
   program: Teaching
   type: MAT
   alias: ['MA Teaching', 'Teaching', 'Teaching (MAT)']
   value: 'teaching-ma'
   blurb: 'MICA’s MAT program is nationally recognized for its success preparing art education professionals who successfully integrate personal artistry with the skill and understanding to direct the art making of others.Experience hands-on experience in teaching along with coursework in practice, current theory, and research—all within a supportive community of students and faculty who are internationally recognized leaders in the field.'
+  shows:
+    -
+      sart: January 23
+      end: February 8
+      title: Show I
+    -
+      start: February 12
+      end: March 1
+      title: Show II
+    -
+      start: March 6
+      end: March 22
+      title: Show III
