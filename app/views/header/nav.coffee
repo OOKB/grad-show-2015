@@ -12,7 +12,7 @@ module.exports = React.createClass
       key: props.link
       className: cx(classNames),
         a
-          href: '#/'+props.link
+          href: '#'+props.link
           title: props.title,
             props.title
 
