@@ -36,9 +36,10 @@ module.exports =
     #           Route
     #             name: 'usrImgs'
     #             handler: UsrImgs
-
+    el = document.getElementById('react')
+    #el = document.body
     domReady =>
-      @container = React.renderComponent App(data), document.body
+      @container = React.renderComponent App(data), el
 
 # run it
 module.exports.blastoff()

@@ -23,7 +23,9 @@ module.exports = React.createClass
           type: 'text/css'
           href: "/#{appFileName}.css"
       body null,
-        App data
+        div
+          id: 'react',
+            App data
         script
           type: 'text/javascript'
           src: '//cdnjs.cloudflare.com/ajax/libs/paper.js/0.9.18/paper-full.min.js'

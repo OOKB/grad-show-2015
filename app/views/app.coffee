@@ -16,7 +16,7 @@ module.exports = React.createClass
     #console.log RouteContext
     data = @props
     div
-      id: 'react',
+      id: 'react-app',
         Header data
         Intro null
         Schedule null
