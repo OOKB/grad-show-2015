@@ -73,12 +73,15 @@ module.exports = React.createClass
         link.last = true
       @linkEl link
 
-    ulClasses =
-      nav: true
+    navClasses =
+      'main-nav': true
       fixed: @state.snap
-    if @state.activeSection then ulClasses[@state.activeSection] = true
+    if @state.activeSection then navClasses[@state.activeSection] = true
+
     nav
-      className: 'main-nav',
+      className: cx(navClasses),
+        div
+          className: 'nav-logo'
         ul
-          className: cx(ulClasses),
+          className: 'nav',
             links
