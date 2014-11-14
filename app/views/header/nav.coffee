@@ -11,7 +11,7 @@ module.exports = React.createClass
     y = window.pageYOffset
     unless y % 5 == 0
       return
-    h = window.innerHeight + 40
+    h = window.innerHeight
     activeSection = null
     @sectionCoords.forEach (section) ->
       if y > section.offset
@@ -35,7 +35,7 @@ module.exports = React.createClass
       unless item.link
         return false
       link: item.link
-      offset: document.getElementById(item.link).getBoundingClientRect().top + window.pageYOffset - 100
+      offset: document.getElementById(item.link).getBoundingClientRect().top + window.pageYOffset - 200
 
   sectionCoords: []
 
