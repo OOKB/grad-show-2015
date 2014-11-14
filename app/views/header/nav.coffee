@@ -1,6 +1,6 @@
 React = require 'react/addons'
 cx = React.addons.classSet
-{nav, ul, li, a} = require 'reactionary'
+{nav, ul, li, a, div} = require 'reactionary'
 
 module.exports = React.createClass
   getInitialState: ->
