@@ -8,12 +8,13 @@ module.exports = React.createClass
   # getInitialState: ->
 
   render: ->
-    header null,
-      Logo null
-      h1
-        style: {display: 'none'},
-          @props.title
-      div
-        className: 'down-arrow',
-          "\\/"
-      Nav @props
+    header
+      className: 'header-art-1',
+        Logo null
+        h1
+          style: {display: 'none'},
+            @props.title
+        div
+          className: 'down-arrow',
+            "\\/"
+        Nav @props
