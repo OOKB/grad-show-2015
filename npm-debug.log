@@ -17,26 +17,43 @@
 6 verbose parsed url   path: 'coffee-script',
 6 verbose parsed url   href: 'coffee-script' }
 7 silly lockFile ab358269-coffee-script coffee-script
+<<<<<<< HEAD
 8 verbose lock coffee-script /Users/jacque/.npm/ab358269-coffee-script.lock
+=======
+8 verbose lock coffee-script /Users/amandabuck/.npm/ab358269-coffee-script.lock
+>>>>>>> FETCH_HEAD
 9 silly lockFile ab358269-coffee-script coffee-script
 10 silly lockFile ab358269-coffee-script coffee-script
 11 verbose addNamed [ 'coffee-script', '' ]
 12 verbose addNamed [ null, '*' ]
 13 silly lockFile 53951495-coffee-script coffee-script@
+<<<<<<< HEAD
 14 verbose lock coffee-script@ /Users/jacque/.npm/53951495-coffee-script.lock
 15 silly addNameRange { name: 'coffee-script', range: '*', hasData: false }
 16 verbose request where is /coffee-script
 17 verbose request registry https://registry.npmjs.org/
 18 verbose request id b13eb187df2c11cc
+=======
+14 verbose lock coffee-script@ /Users/amandabuck/.npm/53951495-coffee-script.lock
+15 silly addNameRange { name: 'coffee-script', range: '*', hasData: false }
+16 verbose request where is /coffee-script
+17 verbose request registry https://registry.npmjs.org/
+18 verbose request id 1c20be3af5a09a66
+>>>>>>> FETCH_HEAD
 19 verbose url raw /coffee-script
 20 verbose url resolving [ 'https://registry.npmjs.org/', './coffee-script' ]
 21 verbose url resolved https://registry.npmjs.org/coffee-script
 22 verbose request where is https://registry.npmjs.org/coffee-script
+<<<<<<< HEAD
 23 info trying registry request attempt 1 at 11:47:33
+=======
+23 info trying registry request attempt 1 at 11:44:13
+>>>>>>> FETCH_HEAD
 24 verbose etag "7QY2ZRANIYMU3ZLB222PJU7MY"
 25 http GET https://registry.npmjs.org/coffee-script
 26 http 304 https://registry.npmjs.org/coffee-script
 27 silly registry.get cb [ 304,
+<<<<<<< HEAD
 27 silly registry.get   { date: 'Fri, 14 Nov 2014 16:47:33 GMT',
 27 silly registry.get     server: 'Apache',
 27 silly registry.get     via: '1.1 varnish',
@@ -48,6 +65,19 @@
 27 silly registry.get     'x-cache': 'HIT',
 27 silly registry.get     'x-cache-hits': '1',
 27 silly registry.get     'x-timer': 'S1415983653.550259,VS0,VE0',
+=======
+27 silly registry.get   { date: 'Fri, 14 Nov 2014 16:44:14 GMT',
+27 silly registry.get     server: 'Apache',
+27 silly registry.get     via: '1.1 varnish',
+27 silly registry.get     'last-modified': 'Fri, 14 Nov 2014 16:44:14 GMT',
+27 silly registry.get     'cache-control': 'max-age=60',
+27 silly registry.get     etag: '"7QY2ZRANIYMU3ZLB222PJU7MY"',
+27 silly registry.get     age: '14',
+27 silly registry.get     'x-served-by': 'cache-iad2127-IAD',
+27 silly registry.get     'x-cache': 'HIT',
+27 silly registry.get     'x-cache-hits': '1',
+27 silly registry.get     'x-timer': 'S1415983454.029926,VS0,VE0',
+>>>>>>> FETCH_HEAD
 27 silly registry.get     vary: 'Accept',
 27 silly registry.get     'content-length': '0',
 27 silly registry.get     'keep-alive': 'timeout=10, max=50',
@@ -88,7 +118,11 @@
 31 verbose addNamed [ 'coffee-script', '1.8.0' ]
 32 verbose addNamed [ '1.8.0', '1.8.0' ]
 33 silly lockFile d0d79082-coffee-script-1-8-0 coffee-script@1.8.0
+<<<<<<< HEAD
 34 verbose lock coffee-script@1.8.0 /Users/jacque/.npm/d0d79082-coffee-script-1-8-0.lock
+=======
+34 verbose lock coffee-script@1.8.0 /Users/amandabuck/.npm/d0d79082-coffee-script-1-8-0.lock
+>>>>>>> FETCH_HEAD
 35 silly lockFile d0d79082-coffee-script-1-8-0 coffee-script@1.8.0
 36 silly lockFile d0d79082-coffee-script-1-8-0 coffee-script@1.8.0
 37 silly lockFile 53951495-coffee-script coffee-script@
@@ -131,11 +165,19 @@
 40 info install coffee-script@1.8.0 into /usr/local/lib
 41 info installOne coffee-script@1.8.0
 42 verbose lib/node_modules/coffee-script unbuild
+<<<<<<< HEAD
 43 verbose tar unpack /Users/jacque/.npm/coffee-script/1.8.0/package.tgz
 44 silly lockFile 865d9b08-l-lib-node-modules-coffee-script tar:///usr/local/lib/node_modules/coffee-script
 45 verbose lock tar:///usr/local/lib/node_modules/coffee-script /Users/jacque/.npm/865d9b08-l-lib-node-modules-coffee-script.lock
 46 silly lockFile a2f3e9dd--coffee-script-1-8-0-package-tgz tar:///Users/jacque/.npm/coffee-script/1.8.0/package.tgz
 47 verbose lock tar:///Users/jacque/.npm/coffee-script/1.8.0/package.tgz /Users/jacque/.npm/a2f3e9dd--coffee-script-1-8-0-package-tgz.lock
+=======
+43 verbose tar unpack /Users/amandabuck/.npm/coffee-script/1.8.0/package.tgz
+44 silly lockFile 865d9b08-l-lib-node-modules-coffee-script tar:///usr/local/lib/node_modules/coffee-script
+45 verbose lock tar:///usr/local/lib/node_modules/coffee-script /Users/amandabuck/.npm/865d9b08-l-lib-node-modules-coffee-script.lock
+46 silly lockFile 958a5308--coffee-script-1-8-0-package-tgz tar:///Users/amandabuck/.npm/coffee-script/1.8.0/package.tgz
+47 verbose lock tar:///Users/amandabuck/.npm/coffee-script/1.8.0/package.tgz /Users/amandabuck/.npm/958a5308--coffee-script-1-8-0-package-tgz.lock
+>>>>>>> FETCH_HEAD
 48 silly gunzTarPerm modes [ '755', '644' ]
 49 error Error: EACCES, mkdir '/usr/local/lib/node_modules/coffee-script'
 49 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/coffee-script']
@@ -150,9 +192,15 @@
 49 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
 49 error      'Object.oncomplete (fs.js:107:15)' ] }
 50 error Please try running this command again as root/Administrator.
+<<<<<<< HEAD
 51 error System Darwin 14.0.0
 52 error command "node" "/usr/local/bin/npm" "i" "-g" "coffee-script"
 53 error cwd /Users/jacque/Documents/git/grad-show-2015
+=======
+51 error System Darwin 13.4.0
+52 error command "node" "/usr/local/bin/npm" "i" "-g" "coffee-script"
+53 error cwd /Users/amandabuck/Desktop/2015-Thesis_Branding/Website/grad-show-2015
+>>>>>>> FETCH_HEAD
 54 error node -v v0.10.33
 55 error npm -v 1.4.28
 56 error path /usr/local/lib/node_modules/coffee-script
