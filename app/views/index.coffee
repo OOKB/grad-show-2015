@@ -3,12 +3,7 @@ React = require 'react'
 
 data = require '../data/data.json'
 
-Header = require './header/header'
-Intro = require './intro/intro'
-Schedule = require './schedule/schedule'
-Galleries = require './galleries/galleries'
-Students = require './students/students'
-Footer = require './footer/footer'
+App = require './app'
 
 module.exports = React.createClass
   render: ->
@@ -28,12 +23,7 @@ module.exports = React.createClass
           type: 'text/css'
           href: "/#{appFileName}.css"
       body null,
-        Header data
-        Intro null
-        Schedule null
-        Galleries data
-        Students null
-        Footer data
+        App data
         script
           type: 'text/javascript'
           src: '//cdnjs.cloudflare.com/ajax/libs/paper.js/0.9.18/paper-full.min.js'

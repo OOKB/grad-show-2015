@@ -51,22 +51,21 @@ module.exports = React.createClass
     return
 
   componentDidMount: ->
-    console.log 'mounted'
 
-    # window.mapLoaded = =>
-    #   mapOptions =
-    #     zoom: @props.zoom
-    #     center: new google.maps.LatLng(@props.latitude, @props.longitude)
-    #     mapTypeId: google.maps.MapTypeId.ROADMAP
-    #
-    #   map = new google.maps.Map(@getDOMNode(), mapOptions)
-    #   @setState map: map
-    #   @updateMarkers @props.points
-    #   return
-    #
-    # s = document.createElement("script")
-    # s.src = "https://maps.googleapis.com/maps/api/js?sensor=true&callback=mapLoaded"
-    # document.head.appendChild s
+    window.mapLoaded = =>
+      mapOptions =
+        zoom: @props.zoom
+        center: new google.maps.LatLng(@props.latitude, @props.longitude)
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+
+      map = new google.maps.Map(@getDOMNode(), mapOptions)
+      @setState map: map
+      @updateMarkers @props.points
+      return
+
+    s = document.createElement("script")
+    s.src = "https://maps.googleapis.com/maps/api/js?sensor=true&callback=mapLoaded"
+    document.head.appendChild s
     return
 
 

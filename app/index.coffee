@@ -6,7 +6,7 @@ Router = require 'react-router'
 
 # Data
 userData = require './data/users'
-
+data = require './data/data'
 # Views
 App = require './views/app'
 
@@ -20,19 +20,20 @@ module.exports =
     # Route stuff attach
     @users = userData
     # Init the React application router.
-    routes =
-      Routes
-        location: 'hash',
-          Route
-            name: 'app'
-            path: '/'
-            handler: App,
-              Route
-                name: 'usrImgs'
-                handler: UsrImgs
+    console.log 'ready'
+    # routes =
+    #   Routes
+    #     location: 'hash',
+    #       Route
+    #         name: 'app'
+    #         path: '/'
+    #         handler: App,
+    #           Route
+    #             name: 'usrImgs'
+    #             handler: UsrImgs
 
-    # domReady =>
-    #   @.container = React.renderComponent routes, document.body
+    domReady =>
+      @container = React.renderComponent App(data), document.body
 
 # run it
 module.exports.blastoff()

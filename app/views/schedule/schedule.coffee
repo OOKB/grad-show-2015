@@ -10,7 +10,7 @@ module.exports = React.createClass
     article
       id: 'schedule',
         div
-          classname: 'container',
+          className: 'container',
             h2 'Schedule of Events'
             ul null,
               li 'schedule'
