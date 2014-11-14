@@ -5,3 +5,5 @@
 /app/*/*.js
 /app/*/*/*.js
 /dev/
+/npm-debug.log
+/app/data/commit.json
