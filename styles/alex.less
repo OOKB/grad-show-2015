@@ -1,0 +1,71 @@
+#schedule .container {
+	width: 900px;
+	margin: 0 auto;
+}
+
+.scheduleGroup {
+	margin: 0;
+	padding: 0;
+	clear: both;
+	line-height: 26px;
+}
+
+.scheduleGroup h3 {
+	margin: 0 20px 0 0;
+	padding: 20px 0;
+	
+	float: left;
+	width: 400px;
+	text-align: right;
+	
+}
+
+.scheduleGroup h3 span.meta {
+	display: block;
+	font-weight: normal;
+	color: #999;
+}
+
+.scheduleGroup ul {
+	margin: 0;
+	padding: 20px 0 20px 20px;
+	
+	float: left;
+	width: 400px;
+	list-style-type: none;
+	border-left: 1px solid #e783b5; /* replace with @pink var */
+}
+.scheduleGroup.first ul, .scheduleGroup.first h3 { padding-top: 0; }
+.scheduleGroup.last ul, .scheduleGroup.last h3 { padding-bottom: 0; }
+
+.scheduleGroup ul li {
+	list-style-type: none;
+}
+
+.scheduleGroup ul li::before {
+	display: inline-block;
+	vertical-align: top;
+	content: "";
+	background-image: url(bullet.svg);
+	width: 21px;
+	height: 21px;
+	margin: 2px 15px 0 -31px;
+}
+
+/* links */
+a:link, a:visited {
+	-webkit-transition: all .2s ease-in-out;
+	   -moz-transition: all .2s ease-in-out;
+	    -ms-transition: all .2s ease-in-out;
+		 	transition: all .2s ease-in-out;
+}
+a:hover, a:active {
+	
+}
+
+.scheduleGroup .meta a:link, .scheduleGroup .meta a:visited {
+	color: #999;
+}
+.scheduleGroup .meta a:hover, .scheduleGroup .meta a:active {
+	color: #444;
+}
