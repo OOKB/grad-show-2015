@@ -157,6 +157,10 @@ gulp.task 'prod_compile', (cb) ->
     .on('end', cb)
   return
 
+gulp.task 'cssProd', ->
+  runSequence 'set_sha', ['copy_css', 'templatesProd']
+  return
+
 gulp.task 'copy_css', ['styles'], ->
   gulp.src('./dev/app.css')
     .pipe(rename(global.sha+'.css'))
