@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+<style>
+html,body {
+	font-family: 'Balto', 'Helvetica Neue', Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+#schedule .container {
+	width: 900px;
+	margin: 0 auto;
+}
+
+.scheduleGroup {
+	margin: 0;
+	padding: 0;
+	clear: both;
+	line-height: 26px;
+}
+
+.scheduleGroup h3 {
+	margin: 0 20px 0 0;
+	padding: 20px 0;
+	
+	float: left;
+	width: 400px;
+	text-align: right;
+	
+}
+
+.scheduleGroup h3 span.meta {
+	display: block;
+	font-weight: normal;
+	color: #999;
+}
+
+.scheduleGroup ul {
+	margin: 0;
+	padding: 20px 0 20px 20px;
+	
+	float: left;
+	width: 400px;
+	list-style-type: none;
+	border-left: 1px solid #e783b5; /* replace with @pink var */
+}
+.scheduleGroup.first ul, .scheduleGroup.first h3 { padding-top: 0; }
+.scheduleGroup.last ul, .scheduleGroup.last h3 { padding-bottom: 0; }
+
+.scheduleGroup ul li {
+	list-style-type: none;
+}
+
+.scheduleGroup ul li::before {
+	display: inline-block;
+	vertical-align: top;
+	content: "";
+	background-image: url(bullet.svg);
+	width: 21px;
+	height: 21px;
+	margin: 2px 15px 0 -31px;
+}
+
+/* links */
+a:link, a:visited {
+	-webkit-transition: all .2s ease-in-out;
+	   -moz-transition: all .2s ease-in-out;
+	    -ms-transition: all .2s ease-in-out;
+		 	transition: all .2s ease-in-out;
+}
+a:hover, a:active {
+	
+}
+
+.scheduleGroup .meta a:link, .scheduleGroup .meta a:visited {
+	color: #999;
+}
+.scheduleGroup .meta a:hover, .scheduleGroup .meta a:active {
+	color: #444;
+}
+
+</style>
+
+</head>
+<body>
+	<article id="schedule">
+		<div class="container">
+			<!-- group 1 -->
+			<div class="scheduleGroup first">
+				<h3>January 23&ndash;February 8<br />
+					February 12&ndash;March 1<br />
+					March 6&ndash;March 22</h3>
+				<ul>
+					<li>Teaching, MA: Show I</li>
+					<li>Teaching, MA: Show II</li>
+					<li>Teaching, MA: Show III</li>
+				</ul>
+			</div>
+	
+			<!-- group 2 -->
+			<div class="scheduleGroup">
+				<h3>March 27&ndash;April 12 <span class="meta"><a href="#">After Party Info</a></span></h3>
+				<ul>
+					<li>Illustration Practice, MFA</li>
+					<li>Graphic Design, MFA</li>
+					<li>Post Baccalaureate Certificate in Graphic Design</li>
+					<li>Post Baccalaureate Certificate in Fine Art</li>
+				</ul>
+			</div>
+	
+			<!-- group 3 -->
+			<div class="scheduleGroup">
+				<h3>April 17&ndash;May 3 <span class="meta"><a href="#">After Party Info</a></span></h3>
+				<ul>
+					<li>Rinehart School of Sculpture</li>
+					<li>Mount Royal School of Art</li>
+					<li>Leroy E. Hoffberger School of Painting</li>
+					<li>Photographic and Electronic Media, MFA</li>
+					<li>Community Arts, MFA</li>
+				</ul>
+			</div>
+	
+			<!-- group 4 -->
+			<div class="scheduleGroup">
+				<h3>TBD</h3>
+				<ul>
+					<li>Social Design, MA</li>
+				</ul>
+			</div>
+	
+			<!-- group 5 -->
+			<div class="scheduleGroup">
+				<h3>May 2</h3>
+				<ul>
+					<li>Critical Studies, MA, Symposium @ Walters</li>
+				</ul>
+			</div>
+	
+			<!-- group 6 -->
+			<div class="scheduleGroup">
+				<h3>June 20&ndash;July 27</h3>
+				<ul>
+					<li>Studio Art, MFA</li>
+				</ul>
+			</div>
+	
+			<!-- group 7 -->
+			<div class="scheduleGroup last">
+				<h3>July 26&ndash;31 <span class="meta">Ongoing, throughout the city</span></h3>
+				<ul>
+					<li>Art Education, MA</li>
+				</ul>
+			</div>
+		</div><!-- /.container -->
+	</article>
+</body>
+</html>
