@@ -38,3 +38,5 @@ map:
   latitude: 39.29
   longitude: -76.61
   zoom: 16
+  width: 1400
+  height: 800

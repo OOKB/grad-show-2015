@@ -31,7 +31,7 @@ module.exports = React.createClass
         Header data
         Intro null
         Schedule null
-        Galleries null
+        Galleries data
         Students null
         Footer data
         script
