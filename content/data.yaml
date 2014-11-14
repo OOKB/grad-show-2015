@@ -33,3 +33,8 @@ built_designed:
   -
     name: EZLE
     link: http://www.ezle.io
+
+map:
+  latitude: 39.29
+  longitude: -76.61
+  zoom: 16
