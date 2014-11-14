@@ -9,6 +9,8 @@ module.exports = React.createClass
 
   handleScroll: ->
     y = window.pageYOffset
+    unless y % 5 == 0
+      return
     h = window.innerHeight + 40
     activeSection = null
     @sectionCoords.forEach (section) ->
