@@ -1,5 +1,5 @@
 React = require 'react'
-{article} = require 'reactionary'
+{article, div} = require 'reactionary'
 
 data = require '../../data/intro.json'
 
@@ -9,5 +9,7 @@ module.exports = React.createClass
   render: ->
     article
       id: 'intro'
-      dangerouslySetInnerHTML:
-        __html: data.body
+      div
+        className: 'container'
+        dangerouslySetInnerHTML:
+          __html: data.body
