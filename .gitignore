@@ -7,3 +7,5 @@
 /dev/
 /npm-debug.log
 /app/data/
+
+/app/data/users.json
