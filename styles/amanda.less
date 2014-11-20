@@ -1,25 +1,58 @@
 header {
-    background-image: url("id0513690.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 100vh;
-    width: 100vw;
+  background-image: url("id0513690.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100vw;
 }
 
 body {
     padding: 0 0 0 0;
 }
 
-ul#projects.list li{
-    margin: 20 10 0 10;
-    float: left;
-    width: 300px;
-    max-height: 400px;
-    overflow: hidden;
+#projects {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#projects.list > li {
+  margin: 0;
+  padding: 20px 10px 0 10px;
+  float: left;
+  width: calc(100%/2);
+  height: 100px; /* some way to dynamically set them all the same based on the tallest one ? */
+  overflow: hidden;
+}
+
+@media (min-width: @small) {
+  #projects.list > li {
+    width: calc(100%/3);
+    height: 200px; /* some way to dynamically set them all the same based on the tallest one ? */
+  }
+}
+
+@media (min-width: @medium) {
+  #projects.list > li {
+    height: 300px; /* some way to dynamically set them all the same based on the tallest one ? */
+  }
+}
+
+@media (min-width: @large) {
+  #projects.list > li {
+    width: calc(100%/4);
+    height: 400px; /* some way to dynamically set them all the same based on the tallest one ? */
+  }
+}
+
+#projects.list > li img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 #projects.list ul.info li {
-    margin-left: 0px;
+  margin: 10px 0;
 }
