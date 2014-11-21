@@ -3,12 +3,14 @@ React = require 'react'
 
 ProgramList = require './programList'
 Slideshow = require './slideshow'
+NoImages = require './noImages'
 
 module.exports = React.createClass
   # getInitialState: ->
 
   render: ->
+    usr = @props.usr
     div
       className: 'student-main',
-        Slideshow @props
+        if usr.files.length then Slideshow @props else NoImages(null)
         ProgramList @props
