@@ -13,11 +13,10 @@ module.exports = React.createClass
   #getInitialState: ->
   #mixins: [Navigation, CurrentPath]
   render: ->
-    #console.log RouteContext
-    data = @props
+    data = @props.data
     div
       id: 'react-app',
-        Header data
+        Header @props
         Intro null
         Schedule null
         Galleries data

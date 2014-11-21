@@ -11,3 +11,9 @@ module.exports = React.createClass
           className: 'active-image',
             img
               src: 'http://mfa.cape.io/img/slides/385503/02.jpg'
+        ul
+          className: 'thumbs',
+            li
+              className: 'first',
+                img
+                  src: 'http://mfa.cape.io/img/slides/385503/01.jpg'

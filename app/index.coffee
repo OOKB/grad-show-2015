@@ -26,20 +26,23 @@ module.exports =
     @students = data.students
     # Init the React application router.
     console.log 'ready'
-    # routes =
-    #   Routes
-    #     location: 'hash',
-    #       Route
-    #         name: 'app'
-    #         path: '/'
-    #         handler: App,
-    #           Route
-    #             name: 'usrImgs'
-    #             handler: UsrImgs
+    routes =
+      Routes
+        scrollBehavior: 'none'
+        location: 'hash',
+          Route
+            name: 'app'
+            path: '/*'
+            data: data
+            handler: App,
+              Route
+                name: 'usrImgs'
+                handler: UsrImgs
+
     el = document.getElementById('react')
     #el = document.body
     domReady =>
-      @container = React.renderComponent App(data), el
+      @container = React.renderComponent routes, el
 
 # run it
 module.exports.blastoff()

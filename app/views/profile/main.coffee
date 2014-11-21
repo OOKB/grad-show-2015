@@ -1,10 +1,14 @@
 React = require 'react'
 {div} = require 'reactionary'
 
+ProgramList = require './programList'
+Slideshow = require './slideshow'
+
 module.exports = React.createClass
   # getInitialState: ->
 
   render: ->
     div
       className: 'student-main',
-        'photos and stuff'
+        Slideshow @props
+        ProgramList @props

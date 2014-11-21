@@ -2,6 +2,8 @@ React = require 'react/addons'
 cx = React.addons.classSet
 {nav, ul, li, a, div} = require 'reactionary'
 
+Search = require './search'
+
 module.exports = React.createClass
   getInitialState: ->
     snap: false
@@ -9,29 +11,35 @@ module.exports = React.createClass
 
   handleScroll: ->
     y = window.pageYOffset
+    # Only worry about changing things every 5 px.
     unless y % 5 == 0
       return
     h = window.innerHeight
     activeSection = null
+    # What section are we in?
     @sectionCoords.forEach (section) ->
       if y > section.offset
         activeSection = section.link
-    if y > h and not @state.snap
+    # Change the active section.
+    if activeSection != @state.activeSection
+      @setState
+        activeSection: activeSection
+    # When to show the menu.
+    # Window height -200 px.
+    if y > (h-120) and not @state.snap
       @setState
         snap: true
         activeSection: activeSection
       return
-    if y < h+1 and @state.snap
+    # When to hide menu after it's been shown.
+    if y < (h-120) and @state.snap
       @setState
         snap: false
         activeSection: activeSection
       return
-    if activeSection != @state.activeSection
-      @setState
-        activeSection: activeSection
 
   handleResize: ->
-    @sectionCoords = @props.nav.map (item) ->
+    @sectionCoords = @props.data.nav.map (item) ->
       unless item.link
         return false
       link: item.link
@@ -65,18 +73,26 @@ module.exports = React.createClass
             props.title
 
   render: ->
-    last_i = @props.nav.length - 1
-    links = @props.nav.map (link, i) =>
+    navInfo = @props.data.nav
+    last_i = navInfo.length - 1
+    links = navInfo.map (link, i) =>
       if i == 0
         link.first = true
       else if i == last_i
         link.last = true
       @linkEl link
+    links.push li
+      key: 'search'
+      className: 'student-search',
+        Search null
+
 
     navClasses =
       'main-nav': true
       fixed: @state.snap
-    if @state.activeSection then navClasses[@state.activeSection] = true
+
+    if @state.activeSection
+      navClasses[@state.activeSection] = true
 
     nav
       className: cx(navClasses),
