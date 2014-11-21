@@ -18,6 +18,7 @@ nav:
   -
     title: Schedule
     link: schedule
+    offset: 200
   -
     title: Galleries
     link: galleries

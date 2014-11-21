@@ -1,6 +1,8 @@
 React = require 'react'
 {div, h2, h3, ul, li, a} = require 'reactionary'
 
+Contact = require './contact'
+
 module.exports = React.createClass
   # getInitialState: ->
 
@@ -20,13 +22,4 @@ module.exports = React.createClass
             li
               className: 'show-dates',
                 usr.showDates
-        ul
-          className: 'contact-info',
-            li
-              className: 'website',
-                a
-                  href: usr.website
-            li
-              className: 'email',
-                a
-                  href: usr.email
+        Contact @props
