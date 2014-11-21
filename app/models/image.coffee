@@ -64,6 +64,11 @@ module.exports = Model.extend
       fn: ->
         CDN+@fileName+'?w=200&h=200&fit=crop'
 
+    largeSrc:
+      deps: ['fileName']
+      fn: ->
+        CDN+@fileName+'?w=800&h=600'
+
     editUrl:
       deps: ['fileName']
       fn: ->
