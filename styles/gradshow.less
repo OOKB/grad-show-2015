@@ -9,13 +9,28 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 1000px;
+  padding: 0 15px 0 15px;
 }
 
 .container::after {
   content: '';
   display: table;
   clear: both;
+}
+
+/* Small – Tablet(ish) */
+@media only screen and (min-width: @small) {
+	.container { width: 500px; }
+}
+
+/* Medium – Laptop(ish)/Small Desktop */
+@media only screen and (min-width: @medium) {
+	.container { width: 750px; }
+}
+
+/* Large – Desktop */
+@media only screen and (min-width : @large) {
+	.container { width: 1000px; }
 }
 
 article {
