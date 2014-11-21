@@ -1,8 +1,12 @@
 React = require 'react'
 {li, img} = require 'reactionary'
+{Navigation} = require 'react-router'
 
 module.exports = React.createClass
+  mixins: [Navigation]
   # getInitialState: ->
+  handleClick: ->
+    @transitionTo 'usrProfile', {uid: @props.uid, img: @props.i}
 
   render: ->
     if @props.first
@@ -15,5 +19,6 @@ module.exports = React.createClass
     li
       className: thumbClassName,
         img
+          onClick: @handleClick
           src: @props.src
           alt: @props.title

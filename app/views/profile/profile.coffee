@@ -25,5 +25,9 @@ module.exports = React.createClass
             'x'
         div
           className: 'container row',
-            Info usr: user
-            Main usr: user
+            Info
+              usr: user
+              img: @props.params.img
+            Main
+              usr: user
+              img: @props.params.img

@@ -41,7 +41,7 @@ module.exports =
                 handler: UsrImgs
               Route
                 name: 'usrProfile'
-                path: '/students/:uid'
+                path: '/students/:uid/?:img?'
                 handler: Profile
           NotFoundRoute
             handler: App

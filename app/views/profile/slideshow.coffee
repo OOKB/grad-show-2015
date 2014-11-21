@@ -8,7 +8,8 @@ module.exports = React.createClass
 
   render: ->
     usr = @props.usr
-    activeFile = @props.usr.files.models[0]
+    img_i = @props.img
+    activeFile = @props.usr.files.models[img_i]
     activeImage =
       img
         src: activeFile.largeSrc
@@ -28,4 +29,7 @@ module.exports = React.createClass
                 first: i == 0
                 last: i == last_i
                 title: img.metadata.title
+                i: i
+                uid: usr.uid
+                active: i == img_i
               SlideThumb file
