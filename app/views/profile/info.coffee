@@ -15,4 +15,4 @@ module.exports = React.createClass
       className: 'student-info',
         Details @props
         StudentNav @props
-        ImageCaption @props
+        if @props.img then ImageCaption @props else false

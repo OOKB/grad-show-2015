@@ -17,7 +17,6 @@ Profile = require './views/profile/profile'
 
 UsrImgs = require './views/usrImgs'
 
-
 #Imgs = require './views/img_form'
 
 module.exports =
@@ -53,4 +52,6 @@ module.exports =
       @container = React.renderComponent routes, el
 
 # run it
+#console.profile()
 module.exports.blastoff()
+#console.profileEnd()
