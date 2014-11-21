@@ -5,27 +5,28 @@ module.exports = React.createClass
   # getInitialState: ->
 
   render: ->
+    usr = @props.usr
     div
       className: 'student-details',
-        h2 @props.firstName, ' ', @props.lastName
+        h2 usr.firstName, ' ', usr.lastName
         ul
           className: 'show-details',
             li
               className: 'program',
-                h3 @props.program
+                h3 usr.program
             li
               className: 'location',
-                @props.location
+                usr.location
             li
               className: 'show-dates',
-                @props.showDates
+                usr.showDates
         ul
           className: 'contact-info',
             li
               className: 'website',
                 a
-                  href: @props.website
+                  href: usr.website
             li
               className: 'email',
                 a
-                  href: @props.email
+                  href: usr.email
