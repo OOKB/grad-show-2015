@@ -43,7 +43,6 @@ nav.main-nav.fixed.galleries {
 }
 
 nav.main-nav ul {
-  width: 800px;
   margin: 0 auto;
   padding: 0;
 }
@@ -66,6 +65,21 @@ nav.main-nav a, nav.main-nav a:visited{
 nav.main-nav a:hover, nav.main-nav a:active{
   color: @black;
   text-decoration: italic;
+}
+
+nav.main-nav li.student-search {
+  float: right;
+  opacity: 0;
+  transition: all 300ms;
+}
+
+nav.main-nav.students li.student-search {
+  display: block;
+  opacity: 1;
+}
+
+li.student-search #search {
+  padding: 20px
 }
 
 /**** / END NAV.LESS ****/
