@@ -6,24 +6,28 @@ locations:
   name: 'Decker'
   alias: ['Decker', 'Decker Gallery']
   value: 'decker'
+  building: 'Fox Building'
   street: 1303 W. Mt. Royal Ave.
   zip: 21217
 -
   name: 'Fox 3'
   alias: ['Fox 3']
   value: 'fox-3'
+  building: 'Fox Building'
   street: 1303 W. Mt. Royal Ave.
   zip: 21217
 -
   name: 'Leidy'
   alias: ['Leidy', 'Leidy Gallery']
   value: 'leidy'
+  building: 'Fred Lazarus IV Center'
   street: 131 W. North Ave.
   zip: 21201
 -
   name: 'Meyerhoff'
   alias: ['Meyerhoff', 'Meyerhoff Gallery']
   value: 'meyerhoff'
+  building: 'Fox Building'
   street: 1303 W. Mt. Royal Ave.
   zip: 21217
 -
@@ -33,21 +37,17 @@ locations:
   street: 18 W. North Ave.
   zip: 21218
 -
-  name: 'Off Campus'
-  alias: ['Off Campus']
-  value: 'off-campus'
--
   name: 'Pinkard'
   alias: ['Pinkard', 'Pinkard Gallery']
   value: 'pinkard'
+  building: 'Bunting Center'
   street: 1305 W. Mt. Royal Ave.
-  city: Baltimore
-  state: MD
   zip: 21217
 -
   name: 'Riggs'
   alias: ['Riggs', 'Riggs Gallery', 'Riggs Gallery (Hallway)', 'Riggs/Leidy Gallery']
   value: 'riggs'
+  building: 'Fred Lazarus IV Center'
   street: 131 W. North Ave.
   zip: 21201
 -
@@ -55,4 +55,80 @@ locations:
   alias: ['Walters', 'Walters Art Gallery', 'The Walters']
   value: 'walters-art-museum'
   street: 600 N Charles St
-  zip: 2120
+  zip: 21201
+-
+  name: 'Top of the World Observation Level'
+  alias: ['World Trade Center Baltimore', 'World Trade Baltimore']
+  value: 'world-trade-center-baltimore'
+  building: 'World Trade Center Baltimore'
+  street: 401 East Pratt Street
+  zip: 21202
+-
+  name: 'The Rawlings Conservatory & Botanic Gardens'
+  alias: ['Rawlings Conservatory', 'Conservatory', 'Rawlings']
+  value: 'rawlings-conservatory'
+  street: 3100 Swann Drive
+  zip: 21217
+-
+  name: 'Project PLASE'
+  alias: ['PLASE', 'Project Plase']
+  value: 'project-plase'
+  street: 3601 Old Frederick Avenue
+  zip: 21229
+-
+  name: 'Gallery Q'
+  alias: ['Gallery Q', 'Eisenhower Library']
+  value: 'gallery-q'
+  building: 'Eisenhower Library, Johns Hopkins University Homewood Campus'
+  street: 3200 North Charles Street
+  zip: 21218
+-
+  name: 'YNot Lot'
+  alias: ['YNot']
+  value: 'ynot-lot'
+  street: 4 West North Avenue
+  zip: 21201
+-
+  name: 'Sandbox'
+  alias: ['Sandbox']
+  value: 'sandbox'
+  street: 107 South Cross Street
+  zip: 21620
+-
+  name: 'Bennu Gallery'
+  alias: ['Bennus']
+  value: 'bennu-gallery'
+  street: 2334 Guilford Ave
+  zip: 21218
+-
+  name: 'Jubilee Arts Center'
+  alias: ['Jubilee Arts']
+  value: 'jubilee-arts-center'
+  street: 1947 Pennsylvania Ave
+  zip: 21217
+-
+  name: 'New Door Creative Gallery'
+  alias: ['New Door Creative', 'New Door Gallery']
+  value: 'new-door-creative-gallery'
+  street: 1601 Saint Paul Street
+  zip: 21201
+-
+  name: 'War Memorial Commission, City of Baltimore'
+  alias: ['War Memorial Baltimore', 'War Memorial']
+  value: 'war-memorial-commission'
+  street: 101 North Gay Street
+  zip: 21202
+-
+  name: 'The Baltimore Museum of Industry'
+  alias: ['Museum of Industry']
+  value: 'baltimore-museum-of-industry'
+  street: 1415 Key Highway
+  zip: 21230
+-
+  name: 'Baltimore Clayworks'
+  alias: ['Clayworks']
+  value: 'baltimore-clayworks'
+  street: 5707 Smith Avenue
+  zip: 21209
+-
+  
