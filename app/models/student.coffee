@@ -43,6 +43,11 @@ module.exports = Model.extend
           _.find(props.location.options, value: @location).name
         else
           null
+    searchStr:
+      deps: ['fullName']
+      fn: ->
+        @fullName
+
   emailFromUid: (uid) ->
     if uid == 'kai'
       'kai@ezle.io'
