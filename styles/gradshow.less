@@ -12,6 +12,7 @@ body {
   padding: 0 15px 0 15px;
 }
 
+.clearfix::after,
 .container::after {
   content: '';
   display: table;
@@ -29,12 +30,19 @@ body {
 }
 
 /* Large – Desktop */
-@media only screen and (min-width : @large) {
+@media only screen and (min-width: @large) {
 	.container { width: 1000px; }
 }
 
 article {
   padding: 100px 0;
+}
+
+article#student-overlay {
+  padding: 50px;
+}
+article#student-overlay .container {
+  width:100%;
 }
 
 #galleries {
