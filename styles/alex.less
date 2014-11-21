@@ -74,16 +74,19 @@ header .down-arrow:hover {
 
 .scheduleGroup ul {
 	list-style-type: none;
+	position: relative;
 }
 .scheduleGroup.first ul, .scheduleGroup.first h3 { padding-top: 0; }
 .scheduleGroup.last ul, .scheduleGroup.last h3 { padding-bottom: 0; }
 
 .scheduleGroup ul li {
+	position: relative;
 	list-style-type: none;
 }
 
 .scheduleGroup ul li::before {
-	display: inline-block;
+	display: absolute;
+	left: 0;
 	vertical-align: top;
 	content: "";
 	background-image: url(bullet.svg);
@@ -154,14 +157,15 @@ header .down-arrow:hover {
 		border-left: 1px solid @pink;
 	}
 	.scheduleGroup ul li::before {
-		display: inline-block;
+		position: absolute;
+		left: 0;
 		vertical-align: top;
 		content: "";
 		background-image: url(bullet.svg);
 		background-size: 21px 21px;
 		width: 21px;
 		height: 21px;
-		margin: 2px 15px 0 -31px;
+		margin: 2px 15px 0 -11px;
 	}
 }
 
