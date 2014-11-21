@@ -39,11 +39,13 @@ module.exports = React.createClass
       return
 
   handleResize: ->
+    defaultOffset = @props.data.navOffsetDefault
     @sectionCoords = @props.data.nav.map (item) ->
+      offset = parseInt(item.offset or defaultOffset)
       unless item.link
         return false
       link: item.link
-      offset: document.getElementById(item.link).getBoundingClientRect().top + window.pageYOffset - 200
+      offset: document.getElementById(item.link).getBoundingClientRect().top + window.pageYOffset + offset
 
   sectionCoords: []
 

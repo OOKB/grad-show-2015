@@ -9,10 +9,12 @@ state: MD
 zip: 21201
 phone: 410-225-5274
 
+navOffsetDefault: -100
 nav:
   -
     title: Welcome
     link: intro
+    offset: -200
   -
     title: Schedule
     link: schedule
