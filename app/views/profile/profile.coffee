@@ -30,7 +30,7 @@ module.exports = React.createClass
           className: 'close',
             'x'
         div
-          className: 'container row',
+          className: 'container',
             Info
               usr: user
               img: activeFile
