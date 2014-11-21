@@ -1,11 +1,16 @@
 React = require 'react'
 {article, div, button} = require 'reactionary'
+{Navigation} = require 'react-router'
 
 Info = require './info'
 Main = require './main'
 
 module.exports = React.createClass
+  mixins: [Navigation]
   # getInitialState: ->
+  #/students
+  handleClose: ->
+    @transitionTo '/students'
 
   render: ->
     article
@@ -13,6 +18,7 @@ module.exports = React.createClass
       className: 'student-',
         button
           role: 'button'
+          onClick: @handleClose
           className: 'close',
             'x'
         div

@@ -20,5 +20,6 @@ module.exports = React.createClass
         Intro null
         Schedule null
         Galleries data
+        @props.activeRouteHandler(null)
         Students data
         Footer data

@@ -1,7 +1,7 @@
 React = require 'react'
 domReady = require 'domready'
 Router = require 'react-router'
-{Routes, Route, DefaultRoute, Redirect} = Router
+{Routes, Route, DefaultRoute, Redirect, NotFoundRoute} = Router
 # _ = require 'lodash'
 
 # Data
@@ -13,6 +13,7 @@ data.students = new StudentCollection students, parse: true
 
 # Views
 App = require './views/app'
+Profile = require './views/profile/profile'
 
 UsrImgs = require './views/usrImgs'
 
@@ -32,12 +33,19 @@ module.exports =
         location: 'hash',
           Route
             name: 'app'
-            path: '/*'
+            path: '/'
             data: data
             handler: App,
               Route
                 name: 'usrImgs'
                 handler: UsrImgs
+              Route
+                name: 'usrProfile'
+                path: '/students/:uid'
+                handler: Profile
+          NotFoundRoute
+            handler: App
+            data: data
 
     el = document.getElementById('react')
     #el = document.body
