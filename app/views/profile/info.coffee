@@ -3,7 +3,6 @@ React = require 'react'
 
 Details = require './details'
 StudentNav = require './studentNav'
-ImageCaption = require './imageCaption'
 
 # We need file and user models.
 
@@ -15,4 +14,3 @@ module.exports = React.createClass
       className: 'student-info',
         Details @props
         StudentNav @props
-        ImageCaption @props

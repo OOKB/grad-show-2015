@@ -2,6 +2,7 @@ React = require 'react'
 {div, h2, ul, li, a, img} = require 'reactionary'
 
 SlideThumb = require './slideThumb'
+ImageCaption = require './imageCaption'
 
 module.exports = React.createClass
   # getInitialState: ->
@@ -17,6 +18,7 @@ module.exports = React.createClass
           className: 'active-image',
             img
               src: activeFile.largeSrc
+            ImageCaption @props
         ul
           className: 'thumbs',
             usr.files.map (img, i) ->

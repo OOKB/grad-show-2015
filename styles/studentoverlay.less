@@ -22,13 +22,12 @@
 #student-overlay #slideshow {
   position: relative;
   z-index: 1;
-  height: 70vh;
-  text-align: center;
 }
 
 #student-overlay #slideshow .active-image {
   width: 100%;
-  height: 100%;
+  height: 70vh;
+  position: relative;
 }
 
 /* http://css-tricks.com/centering-in-the-unknown/ - this is what I used for vertical centering... works like a charm! */
@@ -40,7 +39,7 @@
   height: 100%;
   vertical-align: middle;
   /* margin: -0.1em; */ /* Adjusts for spacing */
- }
+}
 
 #slideshow .active-image > img,
 #slideshow .active-image > a > img {
@@ -50,6 +49,15 @@
   max-width: 98%;
   height: auto;
   margin: 0;
+}
+
+#slideshow .active-image ul.image-caption {
+  position: absolute;
+  left: ~"calc(-25% - 20px)";
+  bottom:0;
+  text-align: right;
+  width: 25%;
+  font-size: 90%;
 }
 
 li.thumb {
