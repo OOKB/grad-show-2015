@@ -21,5 +21,5 @@ module.exports = React.createClass
                 usr.location
             li
               className: 'show-dates',
-                usr.showDates
+                usr.showDates or 'Mar 28-Apr 06, 2015'
         Contact @props
