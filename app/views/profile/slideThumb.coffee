@@ -1,6 +1,7 @@
 React = require 'react'
 {li, img} = require 'reactionary'
 {Navigation} = require 'react-router'
+cx = require '../cx'
 
 module.exports = React.createClass
   mixins: [Navigation]
@@ -9,15 +10,11 @@ module.exports = React.createClass
     @transitionTo 'usrProfile', {uid: @props.uid, img: @props.i}
 
   render: ->
-    if @props.first
-      thumbClassName = 'thumb first'
-    else if @props.last
-      thumbClassName = 'thumb last'
-    else
-      thumbClassName = 'thumb'
+    thumbClassName = @props.classNames or {}
+    thumbClassName.thumb = true
 
     li
-      className: thumbClassName,
+      className: cx(thumbClassName),
         img
           onClick: @handleClick
           src: @props.src

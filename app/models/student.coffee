@@ -52,6 +52,24 @@ module.exports = Model.extend
       deps: ['program']
       fn: ->
         @collection.where {program: @program}
+    myIndex:
+      deps: ['peers']
+      fn: ->
+        _.indexOf _.pluck(@peers, 'uid'), @uid
+    nextPeer:
+      deps: ['peers', 'myIndex']
+      fn: ->
+        if @myIndex == @peers.length-1
+          0
+        else
+          @peers[@myIndex+1]
+    prevPeer:
+      deps: ['peers', 'myIndex']
+      fn: ->
+        if @myIndex == 0
+          @peers[@peers.length-1]
+        else
+          @peers[@myIndex-1]
 
   emailFromUid: (uid) ->
     if uid == 'kai'
