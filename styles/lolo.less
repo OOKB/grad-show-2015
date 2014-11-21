@@ -50,3 +50,73 @@ footer a:hover, footer a:active {
   color: @blackText;
   text-decoration: none;
 }
+
+/*student page*/
+#student-overlay .close{
+float: none;
+position: fixed;
+top: 10px;
+right: 10px;
+font-size: 2em;
+height: 1em;
+width: 1em;
+z-index: 1000;
+color:@pink;
+padding: 0;
+border: none;
+background: none;
+
+}
+.student-info{
+  position:relative;
+  width:25%;
+  float:left;
+}
+
+.student-main{
+  width:75%;
+  float:left;
+}
+
+.student-details h2{
+margin:0;
+padding:0;
+clear:both;
+position: relative;
+text-align: left;
+
+}
+
+.student-details span{
+  top: 0;
+  left:0;
+  float:left;
+  margin-right:.2em;
+  margin-bottom:.5em;
+}
+
+.student-nav li{ margin-bottom: 30px;
+  list-style:none;
+  float:left;
+}
+
+.program-list{
+  float:right;
+  width: 25%;
+}
+
+.program-list h3{
+  color:@pink;
+}
+
+
+.program-list li a, .program-list li a:active {
+  border-bottom: 1px solid #bebebe;
+  color: @black;
+}
+
+.program-list li a:hover, .program-list li a.after {
+  color:inherit;
+  text-decoration: none;
+  border-bottom: 1px solid @pink;
+}
