@@ -10,15 +10,15 @@ module.exports = React.createClass
     usr = @props.usr
     div
       className: 'student-details',
-        h2 usr.firstName, ' ', usr.lastName
+        h2 usr.fullName
         ul
           className: 'show-details',
             li
               className: 'program',
-                h3 usr.program
+                h3 usr.programName
             li
               className: 'location',
-                usr.location
+                usr.locationName
             li
               className: 'show-dates',
                 usr.showDates or 'Mar 28-Apr 06, 2015'

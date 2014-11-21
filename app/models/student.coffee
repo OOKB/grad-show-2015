@@ -8,6 +8,7 @@ Images = require './images'
 Embeds = require './embeds'
 
 props = data.props
+#props.peers = 'array'
 
 module.exports = Model.extend
   idAttribute: 'uid'
@@ -47,6 +48,10 @@ module.exports = Model.extend
       deps: ['fullName']
       fn: ->
         @fullName
+    peers:
+      deps: ['program']
+      fn: ->
+        @collection.where {program: @program}
 
   emailFromUid: (uid) ->
     if uid == 'kai'
