@@ -5,17 +5,18 @@ module.exports = React.createClass
   # getInitialState: ->
 
   render: ->
+    img = @props.img.metadata
     ul
       className: 'image-caption',
         li
           className: 'title',
-            h3 @props.program
+            h3 img.title
         li
           className: 'medium',
-            @props.location
+            img.medium
         li
           className: 'year',
-            @props.showDates
+            img.year
         li
           className: 'size',
-            @props.showDates
+            img.size

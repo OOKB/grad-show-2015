@@ -10,9 +10,10 @@ module.exports = React.createClass
 
   render: ->
     usr = @props.usr
+    img = @props.img
     div
       className: 'student-main',
-        if usr.files.length then Slideshow @props else NoImages(null)
+        if img then Slideshow @props else NoImages(null)
         div
           className: 'statement',
             usr.statement

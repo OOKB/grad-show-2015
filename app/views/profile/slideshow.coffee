@@ -8,18 +8,15 @@ module.exports = React.createClass
 
   render: ->
     usr = @props.usr
-    img_i = @props.img
-    activeFile = @props.usr.files.models[img_i]
-    activeImage =
-      img
-        src: activeFile.largeSrc
+    activeFile = @props.img
     last_i = usr.files.length-1
-
+    img_i = @props.img_i
     div
       id: 'slideshow',
         div
           className: 'active-image',
-            activeImage
+            img
+              src: activeFile.largeSrc
         ul
           className: 'thumbs',
             usr.files.map (img, i) ->
