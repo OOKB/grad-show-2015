@@ -1,5 +1,5 @@
-React = require 'react/addons'
-cx = React.addons.classSet
+React = require 'react'
+cx = require '../cx'
 {nav, ul, li, a, div} = require 'reactionary'
 
 Search = require './search'
