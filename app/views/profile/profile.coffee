@@ -13,6 +13,9 @@ module.exports = React.createClass
     @transitionTo '/students'
 
   render: ->
+    uid = @props.params.uid
+    user = app.students.get(uid)
+
     article
       id: 'student-overlay'
       className: 'student-',
