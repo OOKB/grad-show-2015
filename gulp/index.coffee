@@ -21,8 +21,8 @@ runSequence = require 'run-sequence'
 markdown = require 'gulp-markdown-to-json'
 yaml = require 'gulp-yaml'
 
-API = 'http://mica.ezle.io.ld:8000/'
-#API = 'https://mica.ezle.io/'
+#API = 'http://mica.ezle.io.ld:8000/'
+API = 'https://mica.ezle.io/'
 
 gulp.task "default", ['browser-sync'], ->
   gulp.watch './app/**/*.*', ['templates']
@@ -32,7 +32,7 @@ gulp.task "default", ['browser-sync'], ->
   gulp.watch './content/**/*.yaml', ['data']
   return
 
-gulp.task "browser-sync", ['compile', 'styles', 'templates', 'copy', 'static', 'data'], ->
+gulp.task "browser-sync", ['compile', 'styles', 'templates', 'copy', 'static', 'data', 'content', 'serverData'], ->
   browserSync.init "dev/**",
     server:
       baseDir: "dev" # Change this to your web root dir
@@ -73,6 +73,7 @@ gulp.task 'static', ->
 gulp.task 'compile', ->
   opts = watchify.args
   opts.extensions = ['.coffee', '.json']
+  opts.debug = true
   w = watchify(browserify('./app/index.coffee', opts))
   w.transform coffeeify
   w.transform bd
@@ -100,7 +101,7 @@ gulp.task 'studentSchema', ->
     .pipe source('studentSchema.json')
     .pipe gulp.dest('./app/data/')
 
-gulp.task 'serverData', ['uids', 'studentSchema'], ->
+gulp.task 'serverData', ->
   r(API+'users.json')
     .pipe source('users.json')
     .pipe gulp.dest('./app/data/')
@@ -108,7 +109,7 @@ gulp.task 'serverData', ['uids', 'studentSchema'], ->
 # - - - - prod - - - -
 
 gulp.task 'prod', (cb) ->
-  runSequence ['prod_clean', 'set_sha'],
+  runSequence ['prod_clean', 'set_sha', 'serverData', 'data', 'content'],
     ['templatesProd', 'prod_static', 'copy_css', 'prod_compile'],
     'compress',
     cb
