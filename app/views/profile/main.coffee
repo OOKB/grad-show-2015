@@ -13,4 +13,7 @@ module.exports = React.createClass
     div
       className: 'student-main',
         if usr.files.length then Slideshow @props else NoImages(null)
+        div
+          className: 'statement',
+            usr.statement
         ProgramList @props
