@@ -23,10 +23,11 @@ module.exports = React.createClass
               file =
                 key: img.fileName
                 src: img.thumbSrc
-                first: i == 0
-                last: i == last_i
+                classNames:
+                  first: i == 0
+                  last: i == last_i
+                  active: i == img_i
                 title: img.metadata.title
                 i: i
                 uid: usr.uid
-                active: i == img_i
               SlideThumb file
