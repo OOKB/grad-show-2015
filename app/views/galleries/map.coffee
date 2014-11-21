@@ -1,6 +1,7 @@
 React = require 'react'
 {article, h2, div} = require 'reactionary'
 
+mapStyles = require './mapStyles'
 
 module.exports = React.createClass
   displayName: "Gmap"
@@ -59,6 +60,7 @@ module.exports = React.createClass
         mapTypeId: google.maps.MapTypeId.ROADMAP
         scrollwheel: false
         zoomControl: true
+        styles: mapStyles
 
       map = new google.maps.Map(@getDOMNode(), mapOptions)
       @setState map: map
