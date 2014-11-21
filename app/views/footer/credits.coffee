@@ -18,13 +18,16 @@ module.exports = React.createClass
 
   render: ->
     length = @props.built_designed.length
-    last = @props.built_designed.splice(-1, 1)[0]
+    last_i = length-1
+    last = @props.built_designed[last_i]
     last.last = true
     last = @linkEl last
     links = @props.built_designed.map (credit, i) =>
       if i == 0
         credit.first = true
-      @linkEl credit
+      unless i == last_i
+        return @linkEl credit
+      return
 
     p
       className: 'credits count-'+length,
