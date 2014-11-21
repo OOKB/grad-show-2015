@@ -15,7 +15,6 @@ module.exports = React.createClass
   render: ->
     uid = @props.params.uid
     user = app.students.get(uid)
-
     article
       id: 'student-overlay'
       className: 'student-',
@@ -26,5 +25,5 @@ module.exports = React.createClass
             'x'
         div
           className: 'container row',
-            Info @props
+            Info usr: user
             Main @props

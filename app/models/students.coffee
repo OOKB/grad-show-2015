@@ -4,6 +4,7 @@ _ = require 'lodash'
 
 module.exports = Collection.extend
   model: Model
+  mainIndex: 'uid'
   where: (attrs) ->
     if _.isEmpty attrs
       return []
