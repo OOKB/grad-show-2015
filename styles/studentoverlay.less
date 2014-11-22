@@ -1,3 +1,8 @@
+/**** STUDENTOVERLAY.LESS ****/
+/**** STUDENTOVERLAY.LESS ****/
+/**** STUDENTOVERLAY.LESS ****/
+/**** STUDENTOVERLAY.LESS ****/
+
 /****************************/
 /** STUDENT OVERLAY STYLES **/
 /****************************/
@@ -10,15 +15,81 @@
   right:0;
   bottom:0;
   left:0;
-  z-index: 9999;
+  z-index: 1000;
   overflow: scroll;
   border: 10px solid @pink;
 }
 
 #student-overlay .close {
-  position: absolute;
-  right: 20px;
-  top: 20px;
+  background: none;
+  border: none;
+  color:@pink;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  font-size: 2em;
+  z-index: 1100;
+}
+
+#student-overlay .close:hover {
+  color:#444;
+}
+
+/* Main left/right page layout CSS */
+
+.student-info {
+  position:relative;
+  width:30%;
+  float:left;
+  padding-right: 20px;
+}
+
+.student-main {
+  width:70%;
+  float:left;
+}
+
+
+/* Left sidebar - student info-y stuff */
+.student-details h2 {
+  margin:0;
+  padding:0;
+  clear:both;
+  position: relative;
+  text-align: left;
+}
+
+.student-details span {
+  top: 0;
+  left:0;
+  float:left;
+  margin-right:.2em;
+  margin-bottom:.5em;
+}
+
+.contact-info a, .contact-info a:hover {
+  border-bottom: 2px solid @pink;
+  text-decoration: none;
+  color: @blackText;
+}
+
+.contact-info a:hover, .contact-info a:after {
+  color: @pink;
+}
+
+.student-nav li {
+  margin-bottom: 30px;
+  list-style:none;
+  float:left;
+  font-size:36px;
+}
+
+.student-nav li:hover {
+  color:@pink;
+}
+
+.random {
+  margin: 0 50px;
 }
 
 #student-overlay ul.show-details,
@@ -26,9 +97,12 @@
   margin-bottom: 1em;
 }
 
+/*** Image Gallery / Slideshow ***/
 #student-overlay #slideshow {
   position: relative;
   z-index: 1;
+  width: 100%;
+  margin-bottom: 50px;
 }
 
 #student-overlay #slideshow .active-image {
@@ -67,7 +141,17 @@
   font-size: 90%;
 }
 
+.thumbs {
+  width: ~"calc(100% + 10px)";
+  margin-left: -5px;
+  margin-right: -5px;
+  margin-top: 5px;
+}
+
 li.thumb {
+  float: left;
+  width: ~"calc(100% / 13)";
+  padding: 5px;
   overflow: hidden;
 }
 
@@ -75,3 +159,37 @@ li.thumb img {
   max-width: 100%;
   height: auto;
 }
+
+.student-main .statement {
+  width:70%;
+  float:left;
+  padding: 10px;
+}
+
+/*** Program List ***/
+.program-list {
+  float:right;
+  width: 30%;
+  padding: 10px;
+}
+
+.program-list h3 {
+  color:@pink;
+}
+
+.program-list li a,
+.program-list li a:active {
+text-decoration: none;
+  color: @blackText;
+}
+
+.program-list li a:hover,
+.program-list li a.after {
+  color:inherit;
+  border-bottom: 2px solid @pink;
+}
+
+/**** / END STUDENTOVERLAY.LESS ****/
+/**** / END STUDENTOVERLAY.LESS ****/
+/**** / END STUDENTOVERLAY.LESS ****/
+/**** / END STUDENTOVERLAY.LESS ****/
