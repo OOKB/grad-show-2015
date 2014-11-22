@@ -57,6 +57,9 @@
   clear:both;
   position: relative;
   text-align: left;
+  line-height: 1.1;
+  margin-bottom: .2em;
+  font-style: italic;
 }
 
 .student-details span {
@@ -141,6 +144,12 @@
   font-size: 90%;
 }
 
+ul.image-caption h3 {
+  font-weight: normal;
+  font-style: italic;
+  font-size: 1em;
+}
+
 .thumbs {
   width: ~"calc(100% + 10px)";
   margin-left: -5px;
@@ -155,6 +164,21 @@ li.thumb {
   overflow: hidden;
 }
 
+/* Small – Tablet(ish) */
+@media only screen and (min-width: @small) {
+  li.thumb {
+}
+
+/* Medium – Laptop(ish)/Small Desktop */
+@media only screen and (min-width: @medium) {
+	.container { width: 750px; }
+}
+
+/* Large – Desktop */
+@media only screen and (min-width: @large) {
+	.container { width: 1000px; }
+}
+
 li.thumb img {
   max-width: 100%;
   height: auto;
@@ -163,14 +187,14 @@ li.thumb img {
 .student-main .statement {
   width:70%;
   float:left;
-  padding: 10px;
+  padding-right: 15px;
 }
 
 /*** Program List ***/
 .program-list {
   float:right;
   width: 30%;
-  padding: 10px;
+  padding-left: 15px;
 }
 
 .program-list h3 {
