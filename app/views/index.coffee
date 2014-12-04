@@ -13,6 +13,9 @@ module.exports = React.createClass
         title data.title
         meta
           charSet: 'utf-8'
+        meta
+          name: 'viewport'
+          content: 'width=device-width, initial-scale=1'
         link
           rel: 'stylesheet'
           type: 'text/css'
@@ -28,7 +31,7 @@ module.exports = React.createClass
             App data: data
         script
           type: 'text/javascript'
-          src: '//cdnjs.cloudflare.com/ajax/libs/paper.js/0.9.18/paper-full.min.js'
+          src: '/paper-full-v0.9.21.min.js'
         script
           type: 'text/javascript'
           src: "/#{appFileName}.js"

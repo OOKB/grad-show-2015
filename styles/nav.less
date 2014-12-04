@@ -17,55 +17,43 @@ nav.main-nav {
   transition: all 500ms;
 }
 
-
-/* Small */
-@media only screen and (min-width: @medium) {
-	nav.main-nav {
-	    left: 0;
-	    right:0;
-	    top:0;
-	}
-}
-
-
 nav.main-nav.fixed {
-  height: 61px;
+  height: 0;
   opacity: 1;
   background-color: white;
-}
-
-nav.main-nav.fixed.intro {
-  background-color: @pink;
-  color: white;
-  box-shadow: 0 0 30px 30px @pink;
-}
-
-nav.main-nav.fixed.schedule,
-nav.main-nav.fixed.students {
-  background-color: white;
   color: @black;
-  box-shadow: 0 0 30px 30px white;
 }
 
-nav.main-nav.fixed.galleries {
-  background-color: #f5f5f5;
-  color: @black;
-  box-shadow: 0 0 30px 30px #f5f5f5;
+nav.main-nav.show-menu.fixed {
+  height: 250px;
+}
+
+nav button.toggle {
+  display: block;
+  /**/
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+  height: 30px;
+  width: 60px;
 }
 
 nav.main-nav ul {
-  margin: 0 auto;
+  border-top: 1px solid @blackText;
+  margin: 0;
   padding: 0;
 }
 
 nav.main-nav ul li {
+  border-bottom: 1px solid @blackText;
+  float:none;
   list-style:none;
-  float:left;
-  margin-top: 4px;
+  margin: 0;
+  padding: 0;
 }
 
 nav.main-nav a {
-  padding: 20px;
+  padding: 5px 10px;
   display: block;
 }
 
@@ -80,32 +68,137 @@ nav.main-nav a:hover, nav.main-nav a:active{
 }
 
 nav.main-nav li.student-search {
-  float: right;
-  opacity: 0;
-  transition: all 300ms;
-}
-
-nav.main-nav.students li.student-search {
+  border: none;
   display: block;
   opacity: 1;
 }
 
 li.student-search #search {
-  padding: 20px;
+  padding: 10px;
 }
 
-nav .nav-logo {
-  background-image: url("/images/logo-PinkDots-01.svg");
-  width: 45px;
-  height: 50px;
-  background-size: contain;
-  background-repeat: none;
-  float: left;
-  margin: 10px 0 0 30px;
+li.student-search #search input {
+  height: 30px;
+  width: 100%;
 }
 
-nav.intro .nav-logo {
-  background-image: url("/images/logo-WhiteDots-01.svg");
+
+/* medium + */
+@media only screen and (min-width: @medium) {
+  nav button.toggle { display: none; }
+
+  nav.main-nav {
+    left: 0;
+    right:0;
+    top:0;
+    bottom: initial;
+  }
+
+  nav.main-nav.show-menu.fixed,
+  nav.main-nav.fixed {
+    height: 61px;
+  }
+
+  nav.main-nav.fixed {
+    opacity: 1;
+    background-color: white;
+  }
+
+  nav.main-nav.fixed.intro {
+    background-color: @pink;
+    color: white;
+    box-shadow: 0 0 30px 30px @pink;
+  }
+
+  nav.main-nav.fixed.schedule,
+  nav.main-nav.fixed.students {
+    background-color: white;
+    color: @black;
+    box-shadow: 0 0 30px 30px white;
+  }
+
+  nav.main-nav.fixed.galleries {
+    background-color: #f5f5f5;
+    color: @black;
+    box-shadow: 0 0 30px 30px #f5f5f5;
+  }
+
+  nav.main-nav ul,
+  nav.main-nav ul li {
+    border: none;
+  }
+
+  nav.main-nav ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  nav.main-nav ul li {
+    list-style:none;
+    float:left;
+    margin-top: 4px;
+  }
+
+  nav.main-nav a {
+    padding: 20px;
+    display: block;
+  }
+
+  nav.main-nav a, nav.main-nav a:visited{
+    color: @black;
+    text-decoration: none;
+  }
+
+  nav.main-nav a:hover, nav.main-nav a:active{
+    color: @black;
+    text-decoration: italic;
+  }
+
+  nav.main-nav li.student-search {
+    float: right;
+    opacity: 0;
+    transition: all 300ms;
+  }
+
+  nav.main-nav.students li.student-search {
+    display: block;
+    opacity: 1;
+  }
+
+  li.student-search #search {
+    padding: 13px 20px;
+  }
+
+  li.student-search #search input {
+    width: 125px;
+  }
+
+  nav .nav-logo {
+    background-image: url("/images/logo-PinkDots-01.svg");
+    width: 45px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: none;
+    float: left;
+    margin: 10px 0 0 30px;
+  }
+
+  nav.intro .nav-logo {
+    background-image: url("/images/logo-WhiteDots-01.svg");
+  }
+
+}
+
+@media only screen and (min-width: 992px) {
+  li.student-search #search input {
+    width: 200px;
+  }
+}
+
+@media only screen and (min-width: @large) {
+  li.student-search #search input {
+    width: 250px;
+  }
 }
 
 /**** / END NAV.LESS ****/
