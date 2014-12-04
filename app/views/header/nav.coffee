@@ -10,6 +10,7 @@ module.exports = React.createClass
     snap: false
     activeSection: null
     menuOpen: @props.data.windowInnerWidth > 767
+    innerWidth: @props.data.windowInnerWidth
 
   handleScroll: ->
     y = window.pageYOffset
@@ -48,9 +49,11 @@ module.exports = React.createClass
         return false
       link: item.link
       offset: document.getElementById(item.link).getBoundingClientRect().top + window.pageYOffset + offset
-    menuOpen = window.innerWidth
+    menuOpen = window.innerWidth > 767
     if @state.menuOpen != menuOpen
-      @setState menuOpen: menuOpen
+      @setState
+        innerWidth: window.innerWidth
+        menuOpen: menuOpen
   sectionCoords: []
 
   handleToggle: ->
@@ -111,7 +114,7 @@ module.exports = React.createClass
         Toggle
           handleToggle: @handleToggle
           menuOpen: @state.menuOpen
-          windowInnerWidth: @props.data.windowInnerWidth
+          windowInnerWidth: @state.innerWidth
         ul
           className: 'nav',
             links

@@ -3,6 +3,12 @@ React = require 'react'
 
 ReactMap = require './map'
 
+locationData = require '../../data/locations.json'
+locationData.settings.points = locationData.locations.map (loc) ->
+  latitude: loc.geoData.location.lat
+  longitude: loc.geoData.location.lng
+  label: loc.name
+
 module.exports = React.createClass
   # getInitialState: ->
 
@@ -10,9 +16,4 @@ module.exports = React.createClass
     article
       id: 'galleries',
         h2 'Participating Galleries'
-        ReactMap
-          latitude: @props.map.latitude
-          longitude: @props.map.longitude
-          zoom: @props.map.zoom
-          width: @props.map.width
-          height: @props.map.height
+        ReactMap locationData.settings
