@@ -45,13 +45,6 @@ built_designed:
     name: EZLE
     link: http://www.ezle.io
 
-map:
-  latitude: 39.30902
-  longitude: -76.62016
-  zoom: 16
-  width: 1400
-  height: 800
-
 # Please leave these. They are defaults for the static compile.
 windowInnerWidth: 900
 students: []
