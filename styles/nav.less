@@ -67,7 +67,7 @@ nav.main-nav a:hover, nav.main-nav a:active{
   text-decoration: italic;
 }
 
-nav.main-nav.students li.student-search {
+nav.main-nav li.student-search {
   border: none;
   display: block;
   opacity: 1;
@@ -94,8 +94,12 @@ li.student-search #search input {
     bottom: initial;
   }
 
+  nav.main-nav.show-menu.fixed,
   nav.main-nav.fixed {
     height: 61px;
+  }
+
+  nav.main-nav.fixed {
     opacity: 1;
     background-color: white;
   }
@@ -162,7 +166,11 @@ li.student-search #search input {
   }
 
   li.student-search #search {
-    padding: 20px;
+    padding: 13px 20px;
+  }
+
+  li.student-search #search input {
+    width: 125px;
   }
 
   nav .nav-logo {
@@ -179,6 +187,18 @@ li.student-search #search input {
     background-image: url("/images/logo-WhiteDots-01.svg");
   }
 
+}
+
+@media only screen and (min-width: 992px) {
+  li.student-search #search input {
+    width: 200px;
+  }
+}
+
+@media only screen and (min-width: @large) {
+  li.student-search #search input {
+    width: 250px;
+  }
 }
 
 /**** / END NAV.LESS ****/
