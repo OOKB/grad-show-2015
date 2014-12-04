@@ -31,7 +31,7 @@ module.exports = React.createClass
             App data: data
         script
           type: 'text/javascript'
-          src: '//cdnjs.cloudflare.com/ajax/libs/paper.js/0.9.18/paper-full.min.js'
+          src: '//cdnjs.cloudflare.com/ajax/libs/paper.js/0.9.21/paper-full.min.js'
         script
           type: 'text/javascript'
           src: "/#{appFileName}.js"
