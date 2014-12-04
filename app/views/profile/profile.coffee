@@ -12,6 +12,16 @@ module.exports = React.createClass
   handleClose: ->
     @transitionTo '/students'
 
+  componentDidMount: ->
+    document.body.style.overflow = 'hidden'
+
+  componentWillUnmount: ->
+    elem = document.body
+    if elem.style.removeProperty
+      elem.style.removeProperty 'overflow'
+    else
+      elem.style.removeAttribute 'overflow'
+
   render: ->
     uid = @props.params.uid
     user = app.students.get(uid)
