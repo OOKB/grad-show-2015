@@ -10,6 +10,7 @@ StudentCollection = require './models/students'
 students = require './data/users'
 data = require './data/data'
 data.students = new StudentCollection students, parse: true
+data.windowInnerWidth = window.innerWidth
 
 # Views
 App = require './views/app'

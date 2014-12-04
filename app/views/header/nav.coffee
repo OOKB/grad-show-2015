@@ -3,11 +3,13 @@ cx = require '../cx'
 {nav, ul, li, a, div} = require 'reactionary'
 
 Search = require './search'
+Toggle = require './toggle'
 
 module.exports = React.createClass
   getInitialState: ->
     snap: false
     activeSection: null
+    menuOpen: @props.data.windowInnerWidth > 767
 
   handleScroll: ->
     y = window.pageYOffset
@@ -46,8 +48,13 @@ module.exports = React.createClass
         return false
       link: item.link
       offset: document.getElementById(item.link).getBoundingClientRect().top + window.pageYOffset + offset
-
+    menuOpen = window.innerWidth
+    if @state.menuOpen != menuOpen
+      @setState menuOpen: menuOpen
   sectionCoords: []
+
+  handleToggle: ->
+    @setState menuOpen: !@state.menuOpen
 
   componentDidMount: ->
     window.onscroll = @handleScroll
@@ -92,6 +99,7 @@ module.exports = React.createClass
     navClasses =
       'main-nav': true
       fixed: @state.snap
+      'show-menu': @state.menuOpen
 
     if @state.activeSection
       navClasses[@state.activeSection] = true
@@ -100,6 +108,10 @@ module.exports = React.createClass
       className: cx(navClasses),
         div
           className: 'nav-logo'
+        Toggle
+          handleToggle: @handleToggle
+          menuOpen: @state.menuOpen
+          windowInnerWidth: @props.data.windowInnerWidth
         ul
           className: 'nav',
             links

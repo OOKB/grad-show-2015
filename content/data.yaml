@@ -52,4 +52,6 @@ map:
   width: 1400
   height: 800
 
+# Please leave these. They are defaults for the static compile.
+windowInnerWidth: 900
 students: []

@@ -25,7 +25,7 @@ module.exports = React.createClass
       body null,
         div
           id: 'react',
-            App data
+            App data: data
         script
           type: 'text/javascript'
           src: '//cdnjs.cloudflare.com/ajax/libs/paper.js/0.9.18/paper-full.min.js'

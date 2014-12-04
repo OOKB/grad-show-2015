@@ -38,10 +38,10 @@ gulp.task "browser-sync", ['compile', 'styles', 'templates', 'copy', 'static', '
       baseDir: "dev" # Change this to your web root dir
     injectChanges: false
     logConnections: true
-    ghostMode:
-      clicks: true
-      scroll: true
-      location: true
+    # ghostMode:
+    #   clicks: true
+    #   scroll: true
+    #   location: true
   return
 
 gulp.task 'data', ->

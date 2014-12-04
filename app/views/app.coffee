@@ -14,12 +14,16 @@ module.exports = React.createClass
   #mixins: [Navigation, CurrentPath]
   render: ->
     data = @props.data
+    if @props.activeRouteHandler
+      innerads = @props.activeRouteHandler(null)
+    else
+      innerads = false
     div
       id: 'react-app',
         Header @props
         Intro null
         Schedule null
         Galleries data
-        @props.activeRouteHandler(null)
+        innerads
         Students data
         Footer data
