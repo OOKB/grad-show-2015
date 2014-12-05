@@ -12,5 +12,5 @@ module.exports = React.createClass
   render: ->
     div
       className: 'student-info',
-        Details @props
         StudentNav @props
+        Details @props
