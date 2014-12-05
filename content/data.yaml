@@ -2,12 +2,12 @@
 title: MICA Grad Show 2015
 sha: app
 
-author: Office of Grad Studies
+author: Fred Lazarus IV Center for Graduate Studies
 street: 131 West North Avenue
 city: Baltimore
 state: MD
 zip: 21201
-phone: 410-225-5274
+phone: (410) 225-5274
 
 navOffsetDefault: -100
 nav:
@@ -23,7 +23,7 @@ nav:
     link: galleries
   -
     title: Programs
-    link: false
+    link: filter-programs
   -
     title: Students
     link: students
