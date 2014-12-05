@@ -26,7 +26,7 @@ nav.main-nav.fixed {
 }
 
 nav.main-nav.show-menu.fixed {
-  height: 250px;
+  height: 300px;
 }
 
 nav button.toggle {
@@ -41,14 +41,18 @@ nav button.toggle {
   border: 3px solid @lightGray;
 }
 
+nav button.toggle:hover {
+	border-color: @pink;
+}
+
 nav.main-nav ul {
-  border-top: 1px solid @blackText;
+  border-top: 1px solid @lightGray;
   margin: 0;
   padding: 0;
 }
 
 nav.main-nav ul li {
-  border-bottom: 1px solid @blackText;
+  border-bottom: 1px solid @lightGray;
   float:none;
   list-style:none;
   margin: 0;
@@ -91,8 +95,13 @@ li.student-search #search input {
 
 @media only screen and (max-width: @medium) {
 	nav.main-nav a {
-		height: 75px;
+		padding: 10px 0;
 	}
+	nav.main-nav a:hover, nav.main-nav a:active,
+	nav.main-nav a, nav.main-nav a:visited,
+	nav.main-nav li.active a { border: 0; }
+	
+	nav.main-nav li.active a { margin-left: 0; border-left: 3px solid @pink; }
 }
 
 
