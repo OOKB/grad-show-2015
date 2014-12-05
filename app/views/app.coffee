@@ -18,6 +18,11 @@ module.exports = React.createClass
       innerads = @props.activeRouteHandler(null)
     else
       innerads = false
+    # Filter Students
+    if @props.query and @props.query.program
+      studentData = data.students.where program: @props.query.program
+    else
+      studentData = data.students
     div
       id: 'react-app',
         Header @props
@@ -25,5 +30,6 @@ module.exports = React.createClass
         Schedule null
         Galleries data
         innerads
-        Students data
+        Students
+          students: studentData
         Footer data

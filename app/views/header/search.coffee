@@ -1,14 +1,17 @@
 React = require 'react'
 {div, input} = require 'reactionary'
-{Navigation} = require 'react-router'
+{Navigation, State} = require 'react-router'
 
 module.exports = React.createClass
   # getInitialState: ->
-  mixins: [Navigation]
+  mixins: [Navigation, State]
 
   handleChange: (e) ->
     searchTxt = @refs.searchTxt.getDOMNode().value
-    @replaceWith '/', {}, {search: searchTxt}
+    q = @getQuery()
+    q.search = searchTxt
+    console.log q
+    @replaceWith '/students', {}, q
 
   render: ->
     div
