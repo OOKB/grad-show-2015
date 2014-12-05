@@ -182,7 +182,13 @@ li.thumb {
 li.thumb img {
   max-width: 100%;
   height: auto;
+  border-radius: 2px;
+  cursor: pointer;
+  opacity: .5;
+  transition: all .5s;
 }
+
+li.thumb:hover img { opacity: 1; }
 
 .student-main .statement {
   width:70%;
