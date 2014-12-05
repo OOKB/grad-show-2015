@@ -26,7 +26,7 @@ nav.main-nav.fixed {
 }
 
 nav.main-nav.show-menu.fixed {
-  height: 300px;
+  height: 321px;
 }
 
 nav button.toggle {
@@ -60,7 +60,7 @@ nav.main-nav ul li {
 }
 
 nav.main-nav a {
-  padding: 5px 0;
+	padding: 10px 0;
   margin: 0 10px;
   display: block;
 }
@@ -68,15 +68,21 @@ nav.main-nav a {
 nav.main-nav a, nav.main-nav a:visited{
   color: @black;
   text-decoration: none;
-  border-top: 3px solid transparent;
 }
 
 nav.main-nav a:hover, nav.main-nav a:active{
   color: @black;
-  border-top: 3px solid @pink;
 }
 
-nav.main-nav li.active a { border-top: 3px solid @pink; }
+nav.main-nav a:hover, nav.main-nav a:active,
+nav.main-nav a, nav.main-nav a:visited,
+nav.main-nav li.active a { border: 0; }
+
+nav.main-nav li.active a {
+  margin-left: 0;
+  border-left: 3px solid @pink;
+  padding-left: 7px;
+}
 
 nav.main-nav li.student-search {
   border: none;
@@ -93,6 +99,7 @@ li.student-search #search input {
   width: 100%;
 }
 
+<<<<<<< HEAD
 @media only screen and (max-width: @medium) {
 	nav.main-nav a {
 		padding: 10px 0;
@@ -118,8 +125,20 @@ li.student-search #search input {
 	nav.main-nav li.filter-programs ul#program-filter {
 		width: 100%;
 	}
+=======
+/** Programs dropdown menu stuff */
+nav.main-nav li.filter-programs ul#program-filter {
+  background: @white;
+>>>>>>> FETCH_HEAD
 }
 
+nav.main-nav li.filter-programs ul#program-filter li.program {
+  float: none;
+}
+
+nav.main-nav li.filter-programs ul#program-filter li.program a {
+  padding: 5px 0;
+}
 
 /* medium + */
 @media only screen and (min-width: @medium) {
@@ -179,32 +198,48 @@ li.student-search #search input {
 
   nav.main-nav a {
     margin-left: 20px;
-	margin-right: 20px;
-	padding-top: 20px;
+  	margin-right: 20px;
+  	padding: 20px 0;
     display: block;
   }
 
   nav.main-nav a, nav.main-nav a:visited{
     color: @black;
     text-decoration: none;
+    border-top: 3px solid transparent;
+    border-left: none;
   }
 
   nav.main-nav a:hover, nav.main-nav a:active{
     color: @black;
+    border-top: 3px solid @pink;
+    border-left: none;
+  }
+
+  nav.main-nav li.active a {
+    border-top: 3px solid @pink;
+    border-left: none;
+    padding: 20px 0;
   }
 
   nav.main-nav.intro a, nav.main-nav.intro a:visited{
     color: @black;
     text-decoration: none;
     border-top: 3px solid transparent;
+    border-left: none;
   }
 
   nav.main-nav.intro a:hover, nav.main-nav.intro a:active{
     color: @black;
     border-top: 3px solid @black;
+    border-left: none;
   }
 
-  nav.main-nav.intro li.active a { border-top: 3px solid @black; }
+  nav.main-nav.intro li.active a {
+    border-top: 3px solid @black;
+    border-left: none;
+    padding: 20px 0;
+  }
 
   nav.main-nav li.student-search {
     float: right;
@@ -260,6 +295,15 @@ li.student-search #search input {
     padding: 5px 0;
   }
 
+  /** Programs dropdown menu stuff */
+  nav.main-nav li.filter-programs {
+    width: 120px;
+  }
+
+  nav.main-nav li.filter-programs ul#program-filter {
+    width: 400px;
+  }
+
 }
 
 @media only screen and (min-width: 992px) {
@@ -274,6 +318,7 @@ li.student-search #search input {
   }
 }
 
+<<<<<<< HEAD
 /** Programs dropdown menu stuff */
 
 nav.main-nav li.filter-programs ul#program-filter {
@@ -288,6 +333,8 @@ nav.main-nav li.filter-programs ul#program-filter li.program a {
 }
 
 
+=======
+>>>>>>> FETCH_HEAD
 /**** / END NAV.LESS ****/
 /**** / END NAV.LESS ****/
 /**** / END NAV.LESS ****/
