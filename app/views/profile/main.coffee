@@ -16,5 +16,6 @@ module.exports = React.createClass
         if img then Slideshow @props else NoImages(null)
         div
           className: 'statement',
-            usr.statement
+            dangerouslySetInnerHTML:
+              __html: usr.statement
         ProgramList @props
