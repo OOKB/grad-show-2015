@@ -26,4 +26,4 @@ module.exports = React.createClass
           onKeyDown: @keyDown
           className: 'form-control'
           name: 'item-search'
-          placeholder: 'Enter search text'#'Search...'
+          placeholder: 'Search by name'#'Search...'
