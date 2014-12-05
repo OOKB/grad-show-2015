@@ -220,12 +220,21 @@ text-decoration: none;
   border-bottom: 2px solid @pink;
 }
 
-ul.student-nav li.previous a{
-  font-weight: bold;
-  content: "u\2190";
+ul.student-nav li.previous a:link,ul.student-nav li.next a:link,
+ul.student-nav li.previous a:visited,ul.student-nav li.next a:visited, {
+  color: @pink;
+  text-decoration: none;
 }
 
+ul.student-nav li.previous a:hover,ul.student-nav li.next a:hover,
+ul.student-nav li.previous a:active,ul.student-nav li.next a:active, {
+  color: @black;
+  text-decoration: none;
+}
 
+.student-nav{
+  margin-top: 8%;
+}
 
 /**** / END STUDENTOVERLAY.LESS ****/
 /**** / END STUDENTOVERLAY.LESS ****/
