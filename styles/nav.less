@@ -35,8 +35,10 @@ nav button.toggle {
   position: fixed;
   left: 10px;
   bottom: 10px;
-  height: 30px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
+  background-color: #fff;
+  border: 3px solid @lightGray;
 }
 
 nav.main-nav ul {
@@ -85,6 +87,12 @@ li.student-search #search {
 li.student-search #search input {
   height: 30px;
   width: 100%;
+}
+
+@media only screen and (max-width: @medium) {
+	nav.main-nav a {
+		height: 75px;
+	}
 }
 
 
