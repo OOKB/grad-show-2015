@@ -1,6 +1,7 @@
 React = require 'react'
 cx = require '../cx'
 {nav, ul, li, a, div} = require 'reactionary'
+_ = require 'lodash'
 
 Search = require './search'
 Toggle = require './toggle'
@@ -17,8 +18,10 @@ module.exports = React.createClass
   handleScroll: ->
     y = window.pageYOffset
     # Only worry about changing things every 5 px.
-    unless y % 5 == 0
-      return
+    # unless y % 5 == 0
+    #   return
+    console.log y
+
     h = window.innerHeight
     activeSection = null
     # What section are we in?
@@ -62,7 +65,9 @@ module.exports = React.createClass
     @setState menuOpen: !@state.menuOpen
 
   componentDidMount: ->
-    window.onscroll = @handleScroll
+    handleScroll = _.throttle @handleScroll, 150
+    window.onscroll = handleScroll
+
     window.addEventListener 'resize', @handleResize
     @handleResize()
 
@@ -74,7 +79,7 @@ module.exports = React.createClass
     @setState programsActive: !@state.programsActive
 
   handleSectionClick: ->
-    @handleScroll()
+    _.delay @handleScroll, 200
 
   linkEl: (props) ->
     classNames =
@@ -88,7 +93,7 @@ module.exports = React.createClass
       className: cx(classNames),
         a
           href: '#'+props.link
-          onClick: if props.link == 'filter-programs' then @handleProgramsClick else @handleSectionClick
+          onClick: if props.link == 'filter-programs' then @handleProgramsClick# else @handleSectionClick
           title: props.title,
             props.title
         if @state.programsActive and props.link == 'filter-programs' then ProgramList()
