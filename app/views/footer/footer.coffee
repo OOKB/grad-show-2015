@@ -18,5 +18,5 @@ module.exports = React.createClass
             className: 'author address',
               li @props.author
               li @props.street
-              li @props.city, ', ', @props.state, @props.zip
+              li @props.city, ', ', @props.state, ' ', @props.zip
               li @props.phone
