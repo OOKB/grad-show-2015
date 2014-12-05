@@ -18,9 +18,6 @@ module.exports = React.createClass
               to: 'usrProfile',
                 "\u2190"
         li
-          className: 'random',
-            '~'
-        li
           className: 'next',
             Link
               params:
