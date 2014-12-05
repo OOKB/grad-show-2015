@@ -74,9 +74,13 @@ nav.main-nav a:hover, nav.main-nav a:active{
   color: @black;
 }
 
-nav.main-nav a:hover, nav.main-nav a:active,
-nav.main-nav a, nav.main-nav a:visited,
-nav.main-nav li.active a { border: 0; }
+nav.main-nav a:hover,
+nav.main-nav a:active,
+nav.main-nav a,
+nav.main-nav a:visited,
+nav.main-nav li.active a {
+  border: 0;
+}
 
 nav.main-nav li.active a {
   margin-left: 0;
@@ -99,44 +103,17 @@ li.student-search #search input {
   width: 100%;
 }
 
-@media only screen and (max-width: @medium) {
-	nav.main-nav a {
-		padding: 10px 0;
-	}
-	nav.main-nav a:hover, nav.main-nav a:active,
-	nav.main-nav a, nav.main-nav a:visited,
-	nav.main-nav li.active a { border: 0; }
-	nav.main-nav li.active a { margin-left: 0; border-left: 3px solid @pink; }
-	
-	nav.main-nav li a:link, nav.main-nav li a:visited {
-		margin-left: 0;
-		padding-left: 10px;
-		border-left: 3px solid transparent;
-	}
-	
-	nav.main-nav li.active a { border-left: 3px solid @pink; }
-	
-	/* dropdown */
-	nav.main-nav li.filter-programs {
-	  width: 100%;
-	}
+/** Programs dropdown menu stuff */
+nav.main-nav li.filter-programs ul#program-filter {
+  background: @white;
+}
 
-	nav.main-nav li.filter-programs ul#program-filter {
-		width: 100%;
-	}
+nav.main-nav li.filter-programs ul#program-filter li.program {
+  float: none;
+}
 
-	/** Programs dropdown menu stuff */
-	nav.main-nav li.filter-programs ul#program-filter {
-	  background: @white;
-	}
-
-	nav.main-nav li.filter-programs ul#program-filter li.program {
-	  float: none;
-	}
-
-	nav.main-nav li.filter-programs ul#program-filter li.program a {
-	  padding: 5px 0;
-	}
+nav.main-nav li.filter-programs ul#program-filter li.program a {
+  padding: 5px 0;
 }
 
 /* medium + */
@@ -274,7 +251,7 @@ li.student-search #search input {
   nav.intro .nav-logo {
     background-image: url("/images/logo-WhiteDots-01.svg");
   }
-  
+
   /** Programs dropdown menu stuff */
   nav.main-nav li.filter-programs {
     width: 120px;
@@ -318,18 +295,6 @@ li.student-search #search input {
     width: 250px;
   }
 }
-
-/** Programs dropdown menu stuff */
-
-nav.main-nav li.filter-programs ul#program-filter {
-	/* */
-}
-
-nav.main-nav li.filter-programs ul#program-filter li.program {
-  float: none;
-}
-
-nav.main-nav li.filter-programs ul#program-filter li.program a { padding: 5px 0; }
 
 /**** / END NAV.LESS ****/
 /**** / END NAV.LESS ****/
