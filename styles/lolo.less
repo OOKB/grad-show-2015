@@ -20,12 +20,12 @@ footer {
   padding-top: 100px;
 }
 
-footer img {
-
-  width: 17%;
+footer .micaLogo {
   margin: 0;
   float: left;
 }
+
+footer .micaLogo img { width: 170px; }
 
 footer p {
   width: 30%;
@@ -33,27 +33,31 @@ footer p {
   padding: 0;
 }
 
-footer .credits { color: #999; }
-
-footer ul {
-  width: 20%;
-  float: left;
-  margin: 0 4%;
-
-}
-
-footer .credits {
-	width: 240px;
-    float: right;
-    padding: 0;
-	color: #999;
+@media only screen and (max-width: @medium) {
+	footer .credits {
+		display: block;
+		margin: 50px auto 0 auto;
+	}
+	
+	footer ul.author {
+		float: right;
+	}
 }
 
 footer ul.author {
-	float: right;
+	display: inline-block;
 	width: 150px;
-	margin-right: 50px;
+	margin-left: 85px;
+}
 
+footer .credits { color: #999; }
+
+footer .credits {
+	float: right;
+	display: inline-block;
+	width: 240px;
+    padding: 0;
+	color: #999;
 }
 
 footer a, footer a:visited {
