@@ -4,6 +4,7 @@ cx = require '../cx'
 
 Search = require './search'
 Toggle = require './toggle'
+ProgramList = require '../filters/programs'
 
 module.exports = React.createClass
   getInitialState: ->
@@ -11,6 +12,7 @@ module.exports = React.createClass
     activeSection: null
     menuOpen: @props.data.windowInnerWidth > 767
     innerWidth: @props.data.windowInnerWidth
+    programsActive: false
 
   handleScroll: ->
     y = window.pageYOffset
@@ -45,7 +47,7 @@ module.exports = React.createClass
     defaultOffset = @props.data.navOffsetDefault
     @sectionCoords = @props.data.nav.map (item) ->
       offset = parseInt(item.offset or defaultOffset)
-      unless item.link
+      if item.link == false or item.link.substring(0, 6) == 'filter'
         return false
       link: item.link
       offset: document.getElementById(item.link).getBoundingClientRect().top + window.pageYOffset + offset
@@ -68,6 +70,8 @@ module.exports = React.createClass
     window.onscroll = undefined
     window.removeEventListener 'resize', @handleResize
 
+  handleProgramsClick: ->
+    @setState programsActive: !@state.programsActive
 
   linkEl: (props) ->
     classNames =
@@ -80,9 +84,11 @@ module.exports = React.createClass
       key: props.link
       className: cx(classNames),
         a
-          href: '#'+props.link
+          href: '#'+props.linka
+          onClick: if props.link then @handleProgramsClick
           title: props.title,
             props.title
+        if @state.programsActive and props.link == 'filter-programs' then ProgramList()
 
   render: ->
     navInfo = @props.data.nav
