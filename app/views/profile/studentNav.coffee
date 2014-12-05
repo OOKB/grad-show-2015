@@ -16,7 +16,7 @@ module.exports = React.createClass
                 uid: usr.prevPeer.uid
                 img: '0'
               to: 'usrProfile',
-                '<-'
+                "\u2190"
         li
           className: 'random',
             '~'
@@ -27,4 +27,4 @@ module.exports = React.createClass
                 uid: usr.nextPeer.uid
                 img: '0'
               to: 'usrProfile',
-                '->'
+                "\u2192"
