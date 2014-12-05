@@ -20,7 +20,7 @@ module.exports = React.createClass
     # Only worry about changing things every 5 px.
     # unless y % 5 == 0
     #   return
-    console.log y
+    #console.log y
 
     h = window.innerHeight
     activeSection = null
@@ -65,7 +65,7 @@ module.exports = React.createClass
     @setState menuOpen: !@state.menuOpen
 
   componentDidMount: ->
-    handleScroll = _.throttle @handleScroll, 150
+    handleScroll = _.throttle @handleScroll, 250
     window.onscroll = handleScroll
 
     window.addEventListener 'resize', @handleResize
@@ -75,7 +75,9 @@ module.exports = React.createClass
     window.onscroll = undefined
     window.removeEventListener 'resize', @handleResize
 
-  handleProgramsClick: ->
+  handleProgramsClick: (e) ->
+    if e and e.preventDefault
+      e.preventDefault()
     @setState programsActive: !@state.programsActive
 
   handleSectionClick: ->

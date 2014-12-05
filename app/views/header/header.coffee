@@ -13,7 +13,7 @@ module.exports = React.createClass
         Logo null
         h1
           style: {display: 'none'},
-            @props.title
+            @props.data.title
         div
           className: 'down-arrow',
             "\\/"
