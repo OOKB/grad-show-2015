@@ -73,6 +73,9 @@ module.exports = React.createClass
   handleProgramsClick: ->
     @setState programsActive: !@state.programsActive
 
+  handleSectionClick: ->
+    @handleScroll()
+
   linkEl: (props) ->
     classNames =
       'nav-item': true
@@ -84,8 +87,8 @@ module.exports = React.createClass
       key: props.link
       className: cx(classNames),
         a
-          href: '#'+props.linka
-          onClick: if props.link then @handleProgramsClick
+          href: '#'+props.link
+          onClick: if props.link == 'filter-programs' then @handleProgramsClick else @handleSectionClick
           title: props.title,
             props.title
         if @state.programsActive and props.link == 'filter-programs' then ProgramList()
