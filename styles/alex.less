@@ -66,7 +66,7 @@ header .down-arrow:hover {
 }
 
 .scheduleGroup h3 {
-	
+
 }
 
 .scheduleGroup h3 span.meta {
@@ -100,47 +100,45 @@ header .down-arrow:hover {
 }
 
 /* Small – Tablet(ish) */
-@media only screen and (min-width: @small) {
-	.scheduleGroup {
-		width: 75%;
-		margin: 0 auto;
-	}
-	.scheduleGroup h3 {
-		position: relative;
-		padding: 20px 0 0 20px;
-		margin-left: -21px;
-		border-left: 1px solid @pink;
-	}
-	.scheduleGroup h3::before {
-		position: absolute;
-		left: 0px;
-		display: block;
-		vertical-align: top;
-		content: "";
-		background-image: url(bullet.svg);
-		width: 21px;
-		height: 21px;
-		margin: 2px 15px 0 -11px;
-	}
-	.scheduleGroup ul li {
-		padding: 0 0 0 20px;
-		margin-left: -21px;
-		border-left: 1px solid @pink;
-	}
-	.scheduleGroup ul li::before {
-		display: inline-block;
-		vertical-align: top;
-		content: "";
-		background-image: url(bullet.svg);
-		background-size: 11px 11px;
-		width: 11px;
-		height: 11px;
-		margin: 8px 15px 0 -26px;
-	}
-	/* hack to hide border on top and bottom of dotted line */
-	.scheduleGroup.first h3::before { border-top: 3px solid #fff; top: -3px; }
-	.scheduleGroup.last ul li::before { border-bottom: 10px solid #fff; }
+.scheduleGroup {
+	width: 75%;
+	margin: 0 auto;
 }
+.scheduleGroup h3 {
+	position: relative;
+	padding: 20px 0 0 20px;
+	margin-left: -21px;
+	border-left: 1px solid @pink;
+}
+.scheduleGroup h3::before {
+	position: absolute;
+	left: 0px;
+	display: block;
+	vertical-align: top;
+	content: "";
+	background-image: url(bullet.svg);
+	width: 21px;
+	height: 21px;
+	margin: 2px 15px 0 -11px;
+}
+.scheduleGroup ul li {
+	padding: 0 0 0 20px;
+	margin-left: -21px;
+	border-left: 1px solid @pink;
+}
+.scheduleGroup ul li::before {
+	display: inline-block;
+	vertical-align: top;
+	content: "";
+	background-image: url(bullet.svg);
+	background-size: 11px 11px;
+	width: 11px;
+	height: 11px;
+	margin: 8px 15px 0 -26px;
+}
+/* hack to hide border on top and bottom of dotted line */
+.scheduleGroup.first h3::before { border-top: 3px solid #fff; top: -3px; }
+.scheduleGroup.last ul li::before { border-bottom: 10px solid #fff; }
 
 /* Medium – Laptop(ish)/Small Desktop */
 @media only screen and (min-width: @medium) {
@@ -208,7 +206,7 @@ a:link, a:visited {
 		 	transition: all .2s ease-in-out;
 }
 a:hover, a:active {
-	
+
 }
 
 .scheduleGroup .meta a:link, .scheduleGroup .meta a:visited {
