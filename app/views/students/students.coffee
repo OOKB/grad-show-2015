@@ -11,8 +11,7 @@ module.exports = React.createClass
     activeStudents = @props.students
     #console.log activeStudents[0].toJSON()
     studentList = activeStudents.map (model) ->
-      if model.files.length
-        Student model: model, key: model.uid
+      Student model: model, key: model.uid
     article
       id: 'students',
         div

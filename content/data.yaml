@@ -11,7 +11,7 @@ state: MD
 zip: 21201
 phone: (410) 225-5274
 
-navOffsetDefault: -100
+navOffsetDefault: -61
 nav:
   -
     title: Welcome
@@ -24,11 +24,11 @@ nav:
     title: Galleries
     link: galleries
   -
-    title: Programs
-    link: filter-programs
-  -
     title: Students
     link: students
+  -
+    title: Programs
+    link: filter-programs
 
 built_designed:
   -

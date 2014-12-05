@@ -3,11 +3,12 @@ crypto = require 'crypto'
 _ = require 'lodash'
 
 data = require '../data/studentSchema'
-
+programs = require('../data/programs').programs
 Images = require './images'
 Embeds = require './embeds'
 
 props = data.props
+props.showNum = required: true, default: 1, type: 'number'
 #props.peers = 'array'
 
 module.exports = Model.extend
@@ -70,6 +71,17 @@ module.exports = Model.extend
           @peers[@peers.length-1]
         else
           @peers[@myIndex-1]
+    showDate:
+      deps: ['program', 'showNum']
+      fn: ->
+        progInfo = _.find programs, {value: @program}
+        unless progInfo and progInfo.shows
+          console.log progInfo
+          return 'missing'
+        show = progInfo.shows[@showNum-1]
+        unless show and show.start and show.end
+          return 'TBD'
+        show.start + '-' + show.end + ', 2015'
 
   emailFromUid: (uid) ->
     if uid == 'kai'
