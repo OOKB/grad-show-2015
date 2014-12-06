@@ -16,6 +16,13 @@ module.exports = React.createClass
               dangerouslySetInnerHTML:
                 __html: '<!-- group 1 -->
                 <div class="scheduleGroup first">
+                  <h3>January&ndash;June</h3>
+                  <ul>
+                    <li>Curatorial Practice, MFA</li>
+                  </ul>
+                </div>
+
+                <div class="scheduleGroup">
                   <h3>January 23&ndash;February 8<br />
                     February 12&ndash;March 1<br />
                     March 6&ndash;March 22</h3>
@@ -28,7 +35,7 @@ module.exports = React.createClass
 
                 <!-- group 2 -->
                 <div class="scheduleGroup">
-                  <h3>March 27&ndash;April 12 <span class="meta"><a href="#">After Party Info</a></span></h3>
+                  <h3>March 27&ndash;April 12</h3>
                   <ul>
                     <li>Illustration Practice, MFA</li>
                     <li>Graphic Design, MFA</li>
@@ -39,7 +46,7 @@ module.exports = React.createClass
 
                 <!-- group 3 -->
                 <div class="scheduleGroup">
-                  <h3>April 17&ndash;May 3 <span class="meta"><a href="#">After Party Info</a></span></h3>
+                  <h3>April 17&ndash;May 3</h3>
                   <ul>
                     <li>Rinehart School of Sculpture</li>
                     <li>Mount Royal School of Art</li>
@@ -51,7 +58,7 @@ module.exports = React.createClass
 
                 <!-- group 4 -->
                 <div class="scheduleGroup">
-                  <h3>TBD</h3>
+                  <h3>May 1</h3>
                   <ul>
                     <li>Social Design, MA</li>
                   </ul>
@@ -67,7 +74,7 @@ module.exports = React.createClass
 
                 <!-- group 6 -->
                 <div class="scheduleGroup">
-                  <h3>June 20&ndash;July 27</h3>
+                  <h3>June 27&ndash;July 11</h3>
                   <ul>
                     <li>Studio Art, MFA</li>
                   </ul>
@@ -75,7 +82,7 @@ module.exports = React.createClass
 
                 <!-- group 7 -->
                 <div class="scheduleGroup last">
-                  <h3>July 26&ndash;31 <span class="meta">Ongoing, throughout the city</span></h3>
+                  <h3>July 26&ndash;31</h3>
                   <ul>
                     <li>Art Education, MA</li>
                   </ul>

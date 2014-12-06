@@ -16,8 +16,8 @@ module.exports = React.createClass
     latitude: 0
     longitude: 0
     zoom: 4
-    width: 500
-    height: 500
+    width: 320
+    height: 480
     points: []
     gmaps_api_key: ""
     gmaps_sensor: false
