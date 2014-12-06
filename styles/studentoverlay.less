@@ -36,7 +36,6 @@
   z-index: 1100;
 }
 
-
 #student-overlay .close:hover {
   background-position: -25px 0px;
 }
@@ -76,15 +75,18 @@
   margin-bottom:.5em;
 }
 
-.contact-info a, .contact-info a:hover {
-  border-bottom: 2px solid @pink;
+.contact-info a{
+  border-bottom: 2px solid @lightGray;
   text-decoration: none;
+  color: @blackText;
+  line-height: 1.8em;
+}
+
+.contact-info a:hover, .contact-info a:active {
+  border-bottom: 2px solid @pink;
   color: @blackText;
 }
 
-.contact-info a:hover, .contact-info a:after {
-  color: @pink;
-}
 
 .student-nav li {
   margin-bottom: 30px;
@@ -149,6 +151,7 @@
   text-align: right;
   width: 25%;
   font-size: 90%;
+  color: @mediumGray;
 }
 
 ul.image-caption h3 {
@@ -218,6 +221,8 @@ li.thumb:hover img { opacity: 1; }
 .program-list li a:active {
 text-decoration: none;
   color: @blackText;
+  line-height: 1.8em;
+  border-bottom: 2px solid @lightGray;
 }
 
 .program-list li a:hover,
