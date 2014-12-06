@@ -1,4 +1,4 @@
-view.viewSize = [300, 300];
+view.viewSize = [600, 600];
 
 // Array of object connections
 var connections = [
