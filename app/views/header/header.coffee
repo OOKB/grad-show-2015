@@ -1,5 +1,5 @@
 React = require 'react'
-{header, h1, div} = require 'reactionary'
+{header, h1, div, a} = require 'reactionary'
 _ = require 'lodash'
 
 Logo = require './logo'
@@ -16,7 +16,8 @@ module.exports = React.createClass
         h1
           style: {display: 'none'},
             @props.data.title
-        div
+        a
+          href: '#intro'
           className: 'down-arrow',
             "\\/"
         Nav @props
