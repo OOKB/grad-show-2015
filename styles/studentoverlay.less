@@ -21,18 +21,24 @@
 }
 
 #student-overlay .close {
-  background: none;
+  text-indent: 10000px;
+  background-image: url("X.svg");
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  background-size: 50px 25px;
+  background-position: 0;
   border: none;
-  color:@pink;
   position: fixed;
-  top: 10px;
-  right: 10px;
+  top: 30px;
+  right: 30px;
   font-size: 2em;
   z-index: 1100;
 }
 
+
 #student-overlay .close:hover {
-  color:#444;
+  background-position: -25px 0px;
 }
 
 /* Main left/right page layout CSS */
@@ -220,6 +226,14 @@ text-decoration: none;
   border-bottom: 2px solid @pink;
 }
 
+ul.student-nav li.previous {
+  margin-right: 20px;
+}
+
+ul.student-nav li.next {
+  margin-left: 20px;
+}
+
 ul.student-nav li.previous a:link,ul.student-nav li.next a:link,
 ul.student-nav li.previous a:visited,ul.student-nav li.next a:visited, {
   color: @pink;
@@ -232,9 +246,6 @@ ul.student-nav li.previous a:active,ul.student-nav li.next a:active, {
   text-decoration: none;
 }
 
-.student-nav{
-  margin-top: 8%;
-}
 
 /**** / END STUDENTOVERLAY.LESS ****/
 /**** / END STUDENTOVERLAY.LESS ****/
