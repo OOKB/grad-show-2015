@@ -43,9 +43,9 @@ var count = 15;
 // Create a symbol, which we will use to place instances of later:
 var path = new Path.Circle({
   center: new Point(0, 0),
-  radius: 5,
-  fillColor: 'magenta',
-  strokeColor: 'magenta',
+  radius: 10,
+  fillColor: 'white',
+  strokeColor: 'white',
   strokeWidth: 0
 });
 
@@ -87,8 +87,8 @@ for (var i = 0; i < connectionCount; i++) {
   var to = new Point(dPosition.x, dPosition.y);
 
   var path = new Path.Line(from, to);
-  path.strokeColor = 'magenta';
-  path.strokeWidth = .5;
+  path.strokeColor = 'white';
+  path.strokeWidth = 1;
 }
 
 var vector = new Point({
