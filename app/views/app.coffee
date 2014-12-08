@@ -20,8 +20,10 @@ module.exports = React.createClass
       innerads = false
     # Filter Students
     program = (@props.query and @props.query.program) or 'teaching-ma'
-    studentData = data.students.where program: program
-
+    if data.students and data.students.where
+      studentData = data.students.where program: program
+    else
+      studentData = data.students
     div
       id: 'react-app',
         Header @props
