@@ -20,20 +20,31 @@
   border: 10px solid @pink;
 }
 
+article#student-overlay {
+  padding: 15px;
+}
+
+article#student-overlay .container {
+  width:100%;
+}
+
 #student-overlay .close {
-  text-indent: 10000px;
-  background-image: url("X.svg");
-  background-repeat: no-repeat;
-  width: 25px;
-  height: 25px;
-  background-size: 50px 25px;
-  background-position: 0;
+  /** hides the text inside **/
+  text-indent: 500%; // this shouldn't have to be this big, but there is some mobile chrome bug that is demanding it.
+  white-space: nowrap;
+  overflow: hidden;
+  /**/
+  background: transparent url("X.svg") 0 0 no-repeat;
+  background-size: 50px 25px !important;
   border: none;
+  display: block;
+  height: 25px !important;
+  width: 25px !important;
+  /**/
   position: fixed;
-  top: 30px;
-  right: 30px;
-  font-size: 2em;
-  z-index: 1100;
+  top: 15px;
+  right: 15px;
+  z-index: 1111;
 }
 
 #student-overlay .close:hover {
@@ -41,19 +52,54 @@
 }
 
 /* Main left/right page layout CSS */
-
-.student-info {
-  position:relative;
-  width:30%;
-  float:left;
-  padding-right: 20px;
+.student-info,
+.student-main,
+.student-main .statement,
+.program-list {
+  position: relative;
+  width:100%;
+  padding: 0;
 }
 
-.student-main {
-  width:70%;
-  float:left;
+.student-main .statement {
+  margin-bottom: 30px;
 }
 
+@media (min-width: @medium) {
+  article#student-overlay {
+    padding: 50px;
+  }
+
+  #student-overlay .close {
+    top:30px;
+    right:30px;
+  }
+  /* Main left/right page layout CSS */
+  .student-info {
+    width:30%;
+    float:left;
+    padding-right: 20px;
+  }
+
+  .student-main {
+    width:70%;
+    float:left;
+  }
+
+  .student-main .statement {
+    width:70%;
+    float:left;
+    padding-right: 15px;
+  }
+
+  /*** Program List ***/
+  .program-list {
+    float:right;
+    width: 30%;
+    padding-left: 15px;
+  }
+
+}
 
 /* Left sidebar - student info-y stuff */
 .student-details h2 {
@@ -87,7 +133,6 @@
   color: @blackText;
 }
 
-
 .student-nav li {
   margin-bottom: 30px;
   list-style:none;
@@ -97,10 +142,6 @@
 
 .student-nav li:hover {
   color:@pink;
-}
-
-.random {
-  margin: 0 50px;
 }
 
 #student-overlay ul.show-details,
@@ -124,7 +165,6 @@
 
 /* http://css-tricks.com/centering-in-the-unknown/ - this is what I used for vertical centering... works like a charm! */
 /* here is some other info too: http://gtwebdev.com/workshop/vcenter/vcenter-inline-css.php */
-
 #slideshow .active-image::before {
   content: '';
   display: inline-block;
@@ -174,11 +214,6 @@ li.thumb {
   overflow: hidden;
 }
 
-/* Small – Tablet(ish) */
-@media only screen and (min-width: @small) {
-  li.thumb { }
-}
-
 /* Medium – Laptop(ish)/Small Desktop */
 @media only screen and (min-width: @medium) {
 	.container { width: 750px; }
@@ -200,19 +235,7 @@ li.thumb img {
 
 li.thumb:hover img { opacity: 1; }
 
-.student-main .statement {
-  width:70%;
-  float:left;
-  padding-right: 15px;
-}
-
-/*** Program List ***/
-.program-list {
-  float:right;
-  width: 30%;
-  padding-left: 15px;
-}
-
+/*** program list ***/
 .program-list h3 {
   color:@pink;
 }
