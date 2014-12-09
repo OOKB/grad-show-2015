@@ -182,6 +182,26 @@ locations:
         southwest:
           lat: 39.3091980197085
           lng: -76.6202899802915
+  - name: Main Court
+    alias:
+      - Main
+      - Main Court
+      - Main Courtyard
+    value: main-court
+    street: 1300 W. Mount Royal Ave.
+    zip: 21217
+#     geoData:
+#       location:
+#         lat:
+#         lng:
+#       location_type: ROOFTOP
+#       viewport:
+#         northeast:
+#           lat:
+#           lng:
+#         southwest:
+#           lat:
+#           lng:
   - name: Walters Art Museum
     alias:
       - Walters
@@ -441,3 +461,22 @@ locations:
         southwest:
           lat: 39.36627291970849
           lng: -76.6545436802915
+  - name: Kagro
+    alias:
+      - Kagro
+      - Kagro Building
+    value: kagro
+    street: 101 W. North Ave.
+    zip: 21201
+#     geoData:
+#       location:
+#         lat:
+#         lng:
+#       location_type: ROOFTOP
+#       viewport:
+#         northeast:
+#           lat:
+#           lng:
+#         southwest:
+#           lat:
+#           lng:
