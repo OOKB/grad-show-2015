@@ -188,13 +188,14 @@ locations:
       - Main Court
       - Main Courtyard
     value: main-court
+    building: Main Building
     street: 1300 W. Mount Royal Ave.
     zip: 21217
-#     geoData:
-#       location:
-#         lat:
-#         lng:
-#       location_type: ROOFTOP
+    geoData:
+      location:
+        lat: 39.3075550
+        lng: -76.6216340
+      location_type: ROOFTOP
 #       viewport:
 #         northeast:
 #           lat:
@@ -468,11 +469,11 @@ locations:
     value: kagro
     street: 101 W. North Ave.
     zip: 21201
-#     geoData:
-#       location:
-#         lat:
-#         lng:
-#       location_type: ROOFTOP
+    geoData:
+      location:
+        lat: 39.3105820
+        lng: -76.6180850
+      location_type: ROOFTOP
 #       viewport:
 #         northeast:
 #           lat:
