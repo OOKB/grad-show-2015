@@ -7,4 +7,4 @@ module.exports = React.createClass
   render: ->
     div
       className: 'no-images',
-        'Brown dirt is more fun than a user with no images!'
+        'Images Forthcoming.'
