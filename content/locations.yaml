@@ -334,6 +334,7 @@ locations:
         southwest:
           lat: 39.3100910197085
           lng: -76.61819198029151
+# This sandbox posting should be in Chestertown Maryland, not Baltimore,
   - name: Sandbox
     alias:
       - Sandbox
@@ -342,16 +343,16 @@ locations:
     zip: 21620
     geoData:
       location:
-        lat: 39.276876
-        lng: -76.61185100000002
+        lat: 39.2085740
+        lng: -76.0671120
       location_type: ROOFTOP
-      viewport:
-        northeast:
-          lat: 39.2782249802915
-          lng: -76.61050201970852
-        southwest:
-          lat: 39.2755270197085
-          lng: -76.61319998029153
+#       viewport:
+#         northeast:
+#           lat:
+#           lng:
+#         southwest:
+#           lat:
+#           lng:
   - name: Bennu Gallery
     alias:
       - Bennus
