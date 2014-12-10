@@ -196,13 +196,6 @@ locations:
         lat: 39.3075550
         lng: -76.6216340
       location_type: ROOFTOP
-#       viewport:
-#         northeast:
-#           lat:
-#           lng:
-#         southwest:
-#           lat:
-#           lng:
   - name: Walters Art Museum
     alias:
       - Walters
@@ -346,13 +339,6 @@ locations:
         lat: 39.2085740
         lng: -76.0671120
       location_type: ROOFTOP
-#       viewport:
-#         northeast:
-#           lat:
-#           lng:
-#         southwest:
-#           lat:
-#           lng:
   - name: Bennu Gallery
     alias:
       - Bennus
@@ -475,10 +461,3 @@ locations:
         lat: 39.3105820
         lng: -76.6180850
       location_type: ROOFTOP
-#       viewport:
-#         northeast:
-#           lat:
-#           lng:
-#         southwest:
-#           lat:
-#           lng:
