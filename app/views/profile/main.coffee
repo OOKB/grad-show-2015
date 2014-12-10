@@ -15,7 +15,7 @@ module.exports = React.createClass
       className: 'student-main',
         if img then Slideshow @props else NoImages(null)
         div
-          className: 'statement',
-            dangerouslySetInnerHTML:
-              __html: usr.statement
+          className: 'statement'
+          dangerouslySetInnerHTML:
+            __html: usr.statement
         ProgramList @props
