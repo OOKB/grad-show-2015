@@ -98,7 +98,7 @@ module.exports = React.createClass
           onClick: if props.link == 'filter-programs' then @handleProgramsClick# else @handleSectionClick
           title: props.title,
             props.title
-        if @state.programsActive and props.link == 'filter-programs' then ProgramList()
+        if @state.programsActive and props.link == 'filter-programs' then ProgramList(onClick: @handleProgramsClick)
 
   render: ->
     navInfo = @props.data.nav

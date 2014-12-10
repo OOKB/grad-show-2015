@@ -12,6 +12,7 @@ module.exports = React.createClass
   programEl: (progInfo) ->
     li
       key: progInfo.value
+      onClick: @props.onClick
       className: 'program',
         Link
           query:
