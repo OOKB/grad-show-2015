@@ -43,11 +43,11 @@ module.exports = React.createClass
             'x'
         div
           className: 'container',
-            Info
+            Info # LEFT COLUMN
               usr: user
               img: activeFile
               img_i: img_i
-            Main
+            Main # RIGHT COLUMN
               usr: user
               img: activeFile
               img_i: img_i

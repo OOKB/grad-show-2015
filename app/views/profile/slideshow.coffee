@@ -6,6 +6,10 @@ ImageCaption = require './imageCaption'
 
 module.exports = React.createClass
   # getInitialState: ->
+  handleActiveClick: ->
+    next_i = @props.img_i+1
+    if next_i == usr.files.length then next_i = 0
+    @transitionTo 'usrProfile', {uid: @props.uid, img: @props.next_i}
 
   render: ->
     usr = @props.usr
@@ -14,9 +18,10 @@ module.exports = React.createClass
     img_i = @props.img_i
     div
       id: 'slideshow',
-        div
+        div # LARGE ACTIVE IMAGE
           className: 'active-image',
             img
+              onClick: @handleActiveClick
               src: activeFile.largeSrc
             if @props.img then ImageCaption @props else false
             ImageCaption @props
