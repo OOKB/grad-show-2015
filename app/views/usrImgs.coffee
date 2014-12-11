@@ -7,10 +7,10 @@ module.exports = React.createClass
 
   render: ->
     gravImgs = []
-    app.users.forEach (user) ->
-      hash = crypto.createHash('md5').update(user.email).digest('hex')
-      gravImgs.push img
-        key: hash
-        src: 'http://www.gravatar.com/avatar/'+hash+'?d=retro'
+    @props.students.forEach (user) ->
+      if user.pic
+        gravImgs.push img
+          key: user.uid
+          src: user.pic
     div null,
       gravImgs

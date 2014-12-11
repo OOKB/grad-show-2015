@@ -32,5 +32,6 @@ module.exports = React.createClass
         Galleries data
         innerads
         Students
+          program: program
           students: studentData
         Footer data

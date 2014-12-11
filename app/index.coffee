@@ -39,6 +39,7 @@ module.exports =
               Route
                 name: 'usrImgs'
                 handler: UsrImgs
+                students: data.students
               Route
                 name: 'usrProfile'
                 path: '/students/:uid/?:img?'

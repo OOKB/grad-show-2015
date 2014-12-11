@@ -2,7 +2,8 @@ React = require 'react'
 {article, h2, div, ul, li} = require 'reactionary'
 
 Student = require './student'
-
+Blurb = require './blurb'
+Filters = require '../filters/filters'
 module.exports = React.createClass
   # getInitialState: ->
 
@@ -17,9 +18,12 @@ module.exports = React.createClass
         div
           className: 'container',
             h2 'Students'
-            div
-              className: 'student-filters',
-                'Filters...'
+            Filters()
+            Blurb
+              program: @props.program
+            # div
+            #   className: 'student-filters',
+            #     'Filters...'
             ul
               id: 'projects'
               className: 'list',

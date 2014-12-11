@@ -2,28 +2,28 @@ React = require 'react'
 {ul, li} = require 'reactionary'
 {Link} = require 'react-router'
 
-programsData = require '../../data/programs.json'
-programsArray = programsData.programs
+data = require '../../data/locations.json'
+filterItems = data.locations
 
 module.exports = React.createClass
   # getInitialState: ->
   #mixins: [Navigation]
 
-  programEl: (progInfo) ->
+  filterItemEl: (itemInfo) ->
     li
-      key: progInfo.value
+      key: itemInfo.value
       onClick: =>
         @props.onClick()
         document.querySelector('#students').scrollIntoView(true)
-      className: 'program',
+      className: 'gallery',
         Link
           query:
-            program: progInfo.value
+            gallery: itemInfo.value
           to: '/students',
-            progInfo.program
+            itemInfo.name
 
   render: ->
     ul
-      className: 'dropdown-menu'
-      id: 'program-filter',
-        programsArray.map @programEl
+      className: 'location-menu'
+      id: 'location-filter',
+        filterItems.map @filterItemEl

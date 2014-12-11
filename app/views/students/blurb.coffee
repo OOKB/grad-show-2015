@@ -1,8 +1,15 @@
 React = require 'react'
-{div} = require 'reactionary'
+{div, h3, p} = require 'reactionary'
+_ = require 'lodash'
+
+programsData = require '../../data/programs.json'
 
 module.exports = React.createClass
   # getInitialState: ->
 
   render: ->
-    div 'program blurb'
+    program = _.find programsData.programs, {value: @props.program}
+    div
+      className: 'program-info',
+        h3 program.program
+        p program.blurb
