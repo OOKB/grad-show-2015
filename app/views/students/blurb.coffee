@@ -8,6 +8,8 @@ module.exports = React.createClass
   # getInitialState: ->
 
   render: ->
+    unless @props.program
+      return false
     program = _.find programsData.programs, {value: @props.program}
     div
       className: 'program-info',

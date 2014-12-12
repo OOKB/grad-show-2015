@@ -18,7 +18,7 @@ module.exports = React.createClass
       className: 'gallery',
         Link
           query:
-            gallery: itemInfo.value
+            location: itemInfo.value
           to: '/students',
             itemInfo.name
 

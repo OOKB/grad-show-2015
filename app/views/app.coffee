@@ -19,9 +19,12 @@ module.exports = React.createClass
     else
       innerads = false
     # Filter Students
-    program = (@props.query and @props.query.program) or 'teaching-ma'
+    # Default to something
+    q = @props.query or {}
+    unless q.program or q.location or q.showDate
+      q.program = 'teaching-ma'
     if data.students and data.students.where
-      studentData = data.students.where program: program
+      studentData = data.students.where q
     else
       studentData = data.students
     div
@@ -32,6 +35,6 @@ module.exports = React.createClass
         Galleries data
         innerads
         Students
-          program: program
+          query: q
           students: studentData
         Footer data

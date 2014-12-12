@@ -20,7 +20,7 @@ module.exports = React.createClass
             h2 'Students'
             Filters()
             Blurb
-              program: @props.program
+              program: @props.query.program
             # div
             #   className: 'student-filters',
             #     'Filters...'

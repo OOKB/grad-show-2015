@@ -1,9 +1,17 @@
 React = require 'react'
 {ul, li} = require 'reactionary'
 {Link} = require 'react-router'
+_ = require 'lodash'
 
 programsData = require '../../data/programs.json'
 programsArray = programsData.programs
+shows = _.pluck programsArray, 'shows'
+shows = _.flatten(shows)
+showDates = _.map shows, (show) ->
+  unless show and show.start and show.end
+    return 'TBD'
+  show.start + '-' + show.end + ', 2015'
+showDates = _.uniq showDates
 
 module.exports = React.createClass
   # getInitialState: ->
@@ -11,19 +19,20 @@ module.exports = React.createClass
 
   programEl: (progInfo) ->
     li
-      key: progInfo.value
+      key: progInfo
       onClick: =>
         @props.onClick()
         document.querySelector('#students').scrollIntoView(true)
-      className: 'program',
+      className: 'dates',
         Link
           query:
-            program: progInfo.value
+            showDate: progInfo
           to: '/students',
-            progInfo.program
+            progInfo
 
   render: ->
+
     ul
       className: 'dropdown-menu'
       id: 'program-filter',
-        programsArray.map @programEl
+        showDates.map @programEl

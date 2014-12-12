@@ -34,4 +34,4 @@ module.exports = React.createClass
                 onClick: => @handleCategoryClick(set.id)
                 className: 'filter',
                   id: set.name
-              if @state.activeFilterSet == set.id then set.el()
+              if @state.activeFilterSet == set.id then set.el(onClick: @handleCategoryClick)
