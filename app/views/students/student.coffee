@@ -10,6 +10,8 @@ module.exports = React.createClass
     @transitionTo 'usrProfile', {uid: @props.model.uid}
 
   render: ->
+    unless @props.model.pic
+      return false
     li
       id: @props.model.uid
       onClick: @handleClick
