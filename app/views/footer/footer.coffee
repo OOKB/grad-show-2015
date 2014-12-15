@@ -13,7 +13,7 @@ module.exports = React.createClass
           div
             className: 'group',
               div
-                className: 'column span2',
+                className: 'column span1',
                   a
                     href: 'http://www.mica.edu/'
                     target: '_blank',
@@ -30,18 +30,18 @@ module.exports = React.createClass
                       li @props.city, ', ', @props.state, ' ', @props.zip
                       li @props.phone
               div
-                className: 'column span2',
+                className: 'column span1',
                   Credits @props
               div
-                className: 'column span1',
+                className: 'column span1 offset1',
                   ul
                     className: 'archive',
                       h3 'Archive'
-                      li
+                      li null,
                         a
                           href: 'http://graduate.mica.edu/gradshow/2014/',
                             '2014'
-                      li
+                      li null,
                         a
                           href: 'http://graduate.mica.edu/thesis/',
                             '2013'
