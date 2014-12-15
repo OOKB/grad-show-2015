@@ -60,7 +60,7 @@ module.exports = React.createClass
                 <div class="scheduleGroup">
                   <h3>May 1</h3>
                   <ul>
-                    <li>Social Design, MA</li>
+                    <li>Social Design, MA, Social Design Exchange</li>
                   </ul>
                 </div>
 
