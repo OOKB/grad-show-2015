@@ -33,7 +33,17 @@ module.exports = React.createClass
                 className: 'column span1',
                   Credits @props
               div
-                className: 'column span1 offset1',
+                className: 'column span1',
+                  ul
+                    className: 'footer-nav',
+                      h3 'Menu'
+                      li null,
+                        a
+                          href: 'http://micagradstudies.tumblr.com/',
+                            'Updates'
+                      li 'more links TK'
+              div
+                className: 'column span1',
                   ul
                     className: 'archive',
                       h3 'Archive'
