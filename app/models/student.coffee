@@ -94,8 +94,8 @@ module.exports = Model.extend
     'https://www.gravatar.com/avatar/'+hash+'?d=retro&s=300'
 
   parse: (usr) ->
-    if usr.uid and not usr.pic
-      usr.pic = @gravatarUrl(@emailFromUid(usr.uid))
+    # if usr.uid and not usr.pic
+    #   usr.pic = @gravatarUrl(@emailFromUid(usr.uid))
 
     if usr.files and usr.files.length
       usr.files = _.map usr.files, (file) ->

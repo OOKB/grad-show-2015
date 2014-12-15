@@ -79,9 +79,10 @@ module.exports = React.createClass
     return
 
   render: ->
-    style =
-      width: @props.width
-      height: @props.height
+    # style =
+    #   width: window.innerWidth
+    #   height: @props.height
 
     div
-      style: style
+      className: 'google-map-container'
+      # style: style
