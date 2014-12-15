@@ -35,6 +35,9 @@ module.exports = React.createClass
         script
           type: 'text/javascript'
           src: "/#{appFileName}.js"
+        script
+          type: 'text/javascript'
+          src: "/ga.js"
         div # canvas attribute is not supported by React...
           dangerouslySetInnerHTML:
             __html: '<script type="text/paperscript" canvas="canvas" src="mgslogo.js"></script>'
