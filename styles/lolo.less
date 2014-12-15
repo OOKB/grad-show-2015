@@ -12,64 +12,6 @@
   font-size: 18px;
 }
 
-footer {
-  width: 100%;
-  min-height: 300px;
-  background-color: #eee;
-  font-size: 12px;
-  padding-top: 100px;
-}
-
-footer .micaLogo {
-  margin: 0;
-  float: left;
-}
-
-footer .micaLogo img { width: 170px; }
-
-footer p {
-  width: 30%;
-  float: right;
-  padding: 0;
-}
-
-@media only screen and (max-width: @medium) {
-	footer .credits {
-		display: block;
-		margin: 50px auto 0 auto;
-	}
-
-	footer ul.author {
-		float: right;
-	}
-}
-
-footer ul.author {
-	display: inline-block;
-	width: 150px;
-	margin-left: 85px;
-}
-
-footer .credits { color: #999; }
-
-footer .credits {
-	float: right;
-	display: inline-block;
-	width: 240px;
-    padding: 0;
-	color: #999;
-}
-
-footer a, footer a:visited {
-  color: @black;
-  text-decoration: none;
-}
-
-footer a:hover, footer a:active {
-  color: @blackText;
-  text-decoration: none;
-}
-
 /*student page*/
 .student-info{
   position:relative;
@@ -83,12 +25,11 @@ footer a:hover, footer a:active {
 }
 
 .student-details h2{
-margin:0;
-padding:0;
-clear:both;
-position: relative;
-text-align: left;
-
+  margin:0;
+  padding:0;
+  clear:both;
+  position: relative;
+  text-align: left;
 }
 
 .student-details span{
@@ -98,16 +39,19 @@ text-align: left;
   margin-right:.2em;
   margin-bottom:.5em;
 }
+
 .contact-info a, .contact-info a:hover{
   border-bottom: 2px solid @pink;
   text-decoration: none;
   color: @blackText;
 }
+
 .contact-info a:hover, .contact-info a:after{
-color: @pink;
+  color: @pink;
 }
 
-.student-nav li{ margin-bottom: 30px;
+.student-nav li {
+  margin-bottom: 30px;
   list-style:none;
   float:left;
   font-size:36px;
@@ -126,7 +70,7 @@ color: @pink;
   margin-bottom:50px;
 }
 
-.thumbs{
+.thumbs {
   width:100%;
   margin-left: -5px;
   margin-right: -5px;
@@ -139,25 +83,25 @@ color: @pink;
   clear:both;
 }
 
-.thumbs li{
+.thumbs li {
   float: left;
   width: calc(100% / 6);
   padding: 5px;
 }
 
-.student-main .statement{
+.student-main .statement {
   width:70%;
   float:left;
   padding: 10px;
 }
 
-.program-list{
+.program-list {
   float:right;
   width: 30%;
   padding: 10px;
 }
 
-.program-list h3{
+.program-list h3 {
   color:@pink;
 }
 
@@ -186,7 +130,7 @@ text-decoration: none;
   transition: all .3s;
 
 }
-.form-control:hover{
+.form-control:hover {
   outline:0;
   border-color:@pink;
 }
