@@ -80,7 +80,7 @@ module.exports = React.createClass
 
   render: ->
     style =
-      width: @props.width
+      width: @props.width or window.innerWidth
       height: @props.height
 
     div
