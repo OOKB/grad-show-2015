@@ -60,7 +60,7 @@ nav.main-nav ul li {
 }
 
 nav.main-nav a {
-	padding: 10px 0;
+  padding: 10px 0;
   margin: 0 10px;
   display: block;
 }
@@ -106,14 +106,26 @@ li.student-search #search input {
 /** Programs dropdown menu stuff */
 nav.main-nav li.filter-programs ul#program-filter {
   background: @white;
+  padding: 5px;
 }
 
 nav.main-nav li.filter-programs ul#program-filter li.program {
   float: none;
 }
 
-nav.main-nav li.filter-programs ul#program-filter li.program a {
-  padding: 5px 0;
+nav.main-nav li.filter-programs ul#program-filter li.program a:link,
+nav.main-nav li.filter-programs ul#program-filter li.program a:visited {
+  padding: 3px 0;
+  font-weight: normal;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 0;
+}
+
+nav.main-nav li.filter-programs ul#program-filter li.program a:hover,
+nav.main-nav li.filter-programs ul#program-filter li.program a:active {
+	border: 0;
+	color: @pink;
 }
 
 /* medium + */
