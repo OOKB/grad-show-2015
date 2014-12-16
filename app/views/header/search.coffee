@@ -1,19 +1,20 @@
 React = require 'react'
 {div, input} = require 'reactionary'
-{Navigation, State} = require 'react-router'
+{Navigation, ActiveState} = require 'react-router'
 
 module.exports = React.createClass
-  # getInitialState: ->
-  mixins: [Navigation, State]
+
+  mixins: [Navigation, ActiveState]
 
   handleChange: (e) ->
     searchTxt = @refs.searchTxt.getDOMNode().value
-    q = @getQuery()
-    q.search = searchTxt
-    console.log q
+    q = @getActiveQuery()
+    q.search = searchTxt.toLowerCase()
+      # console.log q
     @replaceWith '/students', {}, q
 
   render: ->
+    q = @getActiveQuery()
     div
       role: 'form'
       id: 'search'
@@ -21,7 +22,7 @@ module.exports = React.createClass
         input
           type: 'text'
           ref: 'searchTxt'
-          value: @props.searchTxt
+          value: q.search
           onChange: @handleChange
           onKeyDown: @keyDown
           className: 'form-control'

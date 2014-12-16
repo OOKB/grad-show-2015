@@ -45,10 +45,10 @@ module.exports = Model.extend
           _.find(props.location.options, value: @location).name
         else
           null
-    searchStr:
+    search:
       deps: ['fullName']
       fn: ->
-        @fullName
+        @fullName.toLowerCase()
     peers:
       deps: ['program']
       fn: ->

@@ -14,9 +14,17 @@ module.exports = Collection.extend
       match = true
       _.each attrs, (val, key) ->
         value = if model.get then model.get(key) else model[key]
-        if value != val
+        unless _.isString value
           match = false
           return false
+        if value != val
+          if key == 'search'
+            searchArr = _.compact val.split(' ')
+            match = _.every searchArr, (searchTxt) ->
+              value.indexOf(searchTxt) > -1
+          else
+            match = false
+            return false
       return match
   # url: ->
   #   @parent.url()
