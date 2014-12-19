@@ -7,7 +7,7 @@ module.exports = React.createClass
   mixins: [Navigation]
   # getInitialState: ->
   handleClick: ->
-    @transitionTo 'usrProfile', {uid: @props.uid, img: @props.i}
+    @replaceWith 'usrProfile', {uid: @props.uid, img: @props.i}
 
   render: ->
     thumbClassName = @props.classNames or {}

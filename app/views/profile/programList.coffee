@@ -1,14 +1,19 @@
 React = require 'react'
 {aside, h3, ul, li, a} = require 'reactionary'
-{Link} = require 'react-router'
+{Link, Navigation} = require 'react-router'
 
 module.exports = React.createClass
+  mixins: [Navigation]
   # getInitialState: ->
   peerEl: (model) ->
     li
       key: model.uid
       className: 'peer',
         Link
+          onClick: (e) =>
+            e.preventDefault()
+            @replaceWith 'usrProfile', {uid: model.uid}
+            return false
           params:
             uid: model.uid
           to: 'usrProfile',
