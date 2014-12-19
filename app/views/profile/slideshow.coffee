@@ -1,15 +1,18 @@
 React = require 'react'
 {div, h2, ul, li, a, img} = require 'reactionary'
+{Navigation} = require 'react-router'
 
-SlideThumb = require './slideThumb'
-ImageCaption = require './imageCaption'
+SlideThumb    = require './slideThumb'
+ImageCaption  = require './imageCaption'
 
 module.exports = React.createClass
+  mixins: [Navigation]
   # getInitialState: ->
   handleActiveClick: ->
     next_i = @props.img_i+1
+    usr = @props.usr
     if next_i == usr.files.length then next_i = 0
-    @transitionTo 'usrProfile', {uid: @props.uid, img: @props.next_i}
+    @transitionTo 'usrProfile', {uid: usr.uid, img: next_i}
 
   render: ->
     usr = @props.usr
