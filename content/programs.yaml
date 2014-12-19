@@ -16,16 +16,15 @@ dates:
 programs:
 -
   program: Art Education
-  type: Online/Low-Residency MA
+  type: MA
   shortform: MAAE
-  alias: ['Art Education', 'Art Education (Online/Low-Residency MA)']
+  alias: ['Art Education', 'Art Education (MA)', 'Art Education (Online/Low-Residency MA)']
   value: 'art-education-ma'
   blurb: 'MICA’s Master of Arts in Art Education (MAAE) prepares experienced K-12 artist-educators to pursue advancement in their field through the development of their practice as both artists and art educators. Designed for the working professional, the curriculum allows students to continue teaching while they complete their graduate degree.'
   shows:
     -
       start: July 26
       end: 31
-      notes: Ongoung, throughout the city
 -
   program: Community Arts
   type: MFA
@@ -52,7 +51,9 @@ programs:
   blurb: 'The first MFA of its kind in the country, MICA’s MFA in Curatorial Practice prepares students to expand the role of curators in connecting art, artists, and communities—engaging audiences more effectively by developing relevant, timely, and accessible exhibitions in both traditional and non-traditional venues.'
   shows:
     -
-      start: TBD
+      start: January
+      end: July
+      notes: Ongoing, throughout the city
 -
   program: Graphic Design
   type: MFA
@@ -125,7 +126,7 @@ programs:
   blurb: 'Complex social problems require creative problem solvers. Now entering its fourth year, the Master of Arts in Social Design (MASD) is an intensive one-year, interdisciplinary, practice-based graduate program that prepares aspiring social designers to understand and address the challenges facing society.'
   shows:
     -
-      start: TBD
+      start: May 1
 -
   program: Studio Art
   type:  Low-Residency MFA
@@ -145,7 +146,7 @@ programs:
   blurb: 'MICA’s MAT program is nationally recognized for its success preparing art education professionals who successfully integrate personal artistry with the skill and understanding to direct the art making of others.Experience hands-on experience in teaching along with coursework in practice, current theory, and research—all within a supportive community of students and faculty who are internationally recognized leaders in the field.'
   shows:
     -
-      sart: January 23
+      start: January 23
       end: February 8
       title: Show I
     -
