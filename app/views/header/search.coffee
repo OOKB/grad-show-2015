@@ -14,7 +14,7 @@ module.exports = React.createClass
     @replaceWith '/students', {}, q
 
   render: ->
-    q = @getActiveQuery()
+    q = @getActiveQuery() or {}
     div
       role: 'form'
       id: 'search'

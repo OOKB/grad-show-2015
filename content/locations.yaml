@@ -4,7 +4,7 @@ settings:
   latitude: 39.30902
   longitude: -76.62016
   zoom: 15
-  width: 1400
+  #width: 1400
   height: 800
 locations:
   - name: Decker
