@@ -12,7 +12,7 @@ module.exports = React.createClass
     next_i = @props.img_i+1
     usr = @props.usr
     if next_i == usr.files.length then next_i = 0
-    @transitionTo 'usrProfile', {uid: usr.uid, img: next_i}
+    @replaceWith 'usrProfile', {uid: usr.uid, img: next_i}
 
   render: ->
     usr = @props.usr
