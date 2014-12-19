@@ -48,11 +48,11 @@ module.exports = React.createClass
                 <div class="scheduleGroup">
                   <h3>April 17&ndash;May 3</h3>
                   <ul>
-                    <li>Rinehart School of Sculpture</li>
-                    <li>Mount Royal School of Art</li>
-                    <li>Leroy E. Hoffberger School of Painting</li>
-                    <li>Photographic and Electronic Media, MFA</li>
                     <li>Community Arts, MFA</li>
+                    <li>LeRoy E. Hoffberger School of Painting, MFA</li>
+                    <li>Mount Royal School of Art, MFA</li>
+                    <li>Photographic and Electronic Media, MFA</li>
+                    <li>Rinehart School of Sculpture, MFA</li>
                   </ul>
                 </div>
 
