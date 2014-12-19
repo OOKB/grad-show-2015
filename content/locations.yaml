@@ -34,11 +34,11 @@ locations:
         southwest:
           lat: 39.3068127197085
           lng: -76.6227788802915
-  - name: Fox 3
+  - name: 'Fox 3'
     alias:
-      - Fox 3
+      - 'Fox 3'
     value: fox-3
-    building: Fox Building
+    building: 'Fox Building'
     street: 1303 W. Mt. Royal Ave.
     zip: 21217
     geoData:
@@ -160,15 +160,16 @@ locations:
         southwest:
           lat: 39.3068127197085
           lng: -76.6227788802915
-  - name: Riggs
+  - name: 'Sheila & Richard Riggs Gallery'
     alias:
+      - Sheila & Richard Riggs Gallery
       - Riggs
       - Riggs Gallery
       - Riggs Gallery (Hallway)
       - Riggs/Leidy Gallery
     value: riggs
-    building: Fred Lazarus IV Center
-    street: 131 W. North Ave.
+    building: 'Fred Lazarus IV Center'
+    street: '131 W. North Ave.'
     zip: 21201
     geoData:
       location:
