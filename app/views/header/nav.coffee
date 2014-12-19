@@ -134,3 +134,7 @@ module.exports = React.createClass
         ul
           className: 'nav',
             links
+            li
+              a
+                href: 'http://micagradstudies.tumblr.com/',
+                  'Updates'
