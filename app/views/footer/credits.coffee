@@ -2,7 +2,6 @@ React = require 'react'
 cx = require '../cx'
 {p, a, span} = require 'reactionary'
 
-
 module.exports = React.createClass
 
   linkEl: (props) ->

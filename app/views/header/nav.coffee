@@ -114,7 +114,6 @@ module.exports = React.createClass
       className: 'student-search',
         Search null
 
-
     navClasses =
       'main-nav': true
       fixed: @state.snap
