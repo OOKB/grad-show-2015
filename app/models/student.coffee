@@ -3,12 +3,18 @@ crypto = require 'crypto'
 _ = require 'lodash'
 
 data = require '../data/studentSchema'
-programs = require('../data/programs').programs
+
+Programs = require './programs'
 Images = require './images'
 Embeds = require './embeds'
 
 props = data.props
-props.showNum = required: true, default: 1, type: 'number'
+props.showNum =
+  required: true
+  default: 1
+  type: 'number'
+props.program =
+  type: 'object'
 #props.peers = 'array'
 
 module.exports = Model.extend
@@ -31,11 +37,15 @@ module.exports = Model.extend
       deps: ['firstName', 'lastName']
       fn: ->
         @firstName+' '+@lastName
+    programId:
+      deps: ['program']
+      fn: ->
+        @program and @program.id
     programName:
       deps: ['program']
       fn: ->
         if @program
-          _.find(props.program.options, value: @program).name
+          @program.name
         else
           null
     locationName:
@@ -50,9 +60,9 @@ module.exports = Model.extend
       fn: ->
         @fullName.toLowerCase()
     peers:
-      deps: ['program']
+      deps: ['programId']
       fn: ->
-        @collection.where {program: @program}
+        @collection.where {programId: @programId}
     myIndex:
       deps: ['peers']
       fn: ->
@@ -71,17 +81,20 @@ module.exports = Model.extend
           @peers[@peers.length-1]
         else
           @peers[@myIndex-1]
+    show:
+      deps: ['program', 'showNum']
+      fn: ->
+        unless @program then return null
+        @program.shows.models[@showNum-1]
+    showId:
+      deps: ['show']
+      fn: ->
+        @show.id
     showDate:
       deps: ['program', 'showNum']
       fn: ->
-        progInfo = _.find programs, {value: @program}
-        unless progInfo and progInfo.shows
-          console.log progInfo
-          return 'missing'
-        show = progInfo.shows[@showNum-1]
-        unless show and show.start and show.end
-          return 'TBD'
-        show.start + '-' + show.end + ', 2015'
+        unless @show then return null
+        @show.displayDate
 
   emailFromUid: (uid) ->
     if uid == 'kai'
@@ -96,10 +109,14 @@ module.exports = Model.extend
   parse: (usr) ->
     # if usr.uid and not usr.pic
     #   usr.pic = @gravatarUrl(@emailFromUid(usr.uid))
-
     if usr.files and usr.files.length
       usr.files = _.map usr.files, (file) ->
         file.metadata.id = file.fileName
         file
+    if usr.program and prog = Programs.get(usr.program)
+      usr.program = prog
+    else
+      usr.program = {}
+      console.log usr.program + ' not found!'
     #console.log 'Parsed user.'
     return usr
