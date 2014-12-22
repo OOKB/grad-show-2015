@@ -1,7 +1,7 @@
 React = require 'react'
 {footer, div, img, ul, li, a, h3} = require 'reactionary'
 
-Credits = require './credits'
+Credits   = require './credits'
 
 module.exports = React.createClass
   # getInitialState: ->
@@ -39,9 +39,24 @@ module.exports = React.createClass
                       h3 'Menu'
                       li null,
                         a
+                          href: '#intro',
+                            'Welcome'
+                      li null,
+                        a
+                          href: '#schedule',
+                            'Schedule'
+                      li null,
+                        a
+                          href: '#galleries',
+                            'Galleries'
+                      li null,
+                        a
+                          href: '#students',
+                            'Students'
+                      li null,
+                        a
                           href: 'http://micagradstudies.tumblr.com/',
                             'Updates'
-                      li 'more links TK'
               div
                 className: 'column span1',
                   ul
