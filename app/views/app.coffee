@@ -21,8 +21,8 @@ module.exports = React.createClass
     # Filter Students
     # Default to something
     q = @props.query or {}
-    unless q.program or q.location or q.showDate
-      q.program = 'teaching-ma'
+    unless q.programId or q.location or q.showId
+      q.programId = 'teaching-ma'
     if data.students and data.students.where
       studentData = data.students.where q
     else

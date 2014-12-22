@@ -2,8 +2,7 @@ React = require 'react'
 {ul, li} = require 'reactionary'
 {Link} = require 'react-router'
 
-programsData = require '../../data/programs.json'
-programsArray = programsData.programs
+programs = require '../../models/programs'
 
 module.exports = React.createClass
   # getInitialState: ->
@@ -11,19 +10,19 @@ module.exports = React.createClass
 
   programEl: (progInfo) ->
     li
-      key: progInfo.value
+      key: progInfo.id
       onClick: =>
         @props.onClick()
         document.querySelector('#students').scrollIntoView(true)
       className: 'program',
         Link
           query:
-            program: progInfo.value
+            programId: progInfo.id
           to: '/students',
-            progInfo.program
+            progInfo.name
 
   render: ->
     ul
       className: 'dropdown-menu'
       id: 'program-filter',
-        programsArray.map @programEl
+        programs.map @programEl

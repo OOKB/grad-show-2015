@@ -3,36 +3,30 @@ React = require 'react'
 {Link} = require 'react-router'
 _ = require 'lodash'
 
-programsData = require '../../data/programs.json'
-programsArray = programsData.programs
-shows = _.pluck programsArray, 'shows'
-shows = _.flatten(shows)
-showDates = _.map shows, (show) ->
-  unless show and show.start and show.end
-    return 'TBD'
-  show.start + '-' + show.end + ', 2015'
-showDates = _.uniq showDates
+programsData = require '../../models/programs'
+
+showDates = programsData.allShows
 
 module.exports = React.createClass
   # getInitialState: ->
   #mixins: [Navigation]
 
-  programEl: (progInfo) ->
+  filterEl: (show) ->
     li
-      key: progInfo
+      key: show.id
       onClick: =>
         @props.onClick()
         document.querySelector('#students').scrollIntoView(true)
       className: 'dates',
         Link
           query:
-            showDate: progInfo
+            showId: show.id
           to: '/students',
-            progInfo
+            show.shortDate
 
   render: ->
 
     ul
       className: 'dropdown-menu'
       id: 'program-filter',
-        showDates.map @programEl
+        showDates.map @filterEl
