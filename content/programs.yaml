@@ -43,6 +43,7 @@ programs:
   shows:
     -
       start: 2015-05-02
+      end: 2015-05-02
 -
   program: Curatorial Practice
   type: MFA
@@ -51,8 +52,8 @@ programs:
   blurb: 'The first MFA of its kind in the country, MICA’s MFA in Curatorial Practice prepares students to expand the role of curators in connecting art, artists, and communities—engaging audiences more effectively by developing relevant, timely, and accessible exhibitions in both traditional and non-traditional venues.'
   shows:
     -
-      start: January
-      end: July
+      start: 2015-01-23
+      end: 2015-07-11
       notes: Ongoing, throughout the city
 -
   program: Graphic Design
@@ -126,7 +127,8 @@ programs:
   blurb: 'Complex social problems require creative problem solvers. Now entering its fourth year, the Master of Arts in Social Design (MASD) is an intensive one-year, interdisciplinary, practice-based graduate program that prepares aspiring social designers to understand and address the challenges facing society.'
   shows:
     -
-      start: May 1
+      start: 2015-05-01
+      end: 2015-05-01
 -
   program: Studio Art
   type:  Low-Residency MFA
@@ -136,8 +138,8 @@ programs:
   blurb: 'This low-residency, 60-credit interdisciplinary MFA program is designed for experienced artists who want to pursue graduate study without disrupting their ongoing careers. The emphasis of the program is in integrating practice with theory, where students are encouraged to be independent thinkers and researchers who may focus within one specific medium or work across various media.'
   shows:
     -
-      start: June 20
-      end: July 27
+      start: 2015-06-20
+      end: 2015-07-27
 -
   program: Teaching
   type: MAT
@@ -146,14 +148,14 @@ programs:
   blurb: 'MICA’s MAT program is nationally recognized for its success preparing art education professionals who successfully integrate personal artistry with the skill and understanding to direct the art making of others.Experience hands-on experience in teaching along with coursework in practice, current theory, and research—all within a supportive community of students and faculty who are internationally recognized leaders in the field.'
   shows:
     -
-      start: January 23
-      end: February 8
+      start: 2015-01-23
+      end: 2015-02-08
       title: Show I
     -
-      start: February 12
-      end: March 1
+      start: 2015-02-12
+      end: 2015-03-01
       title: Show II
     -
-      start: March 6
-      end: March 22
+      start: 2015-03-06
+      end: 2015-03-22
       title: Show III
