@@ -4,13 +4,13 @@
 dates:
 -
   &m27a12
-  start: March 27
-  end: April 12
+  start: 2015-03-27
+  end: 2015-04-12
   notes: After Party Info
 -
   &a17m3
-  start: April 17
-  end: May 3
+  start: 2015-04-17
+  end: 2015-05-03
   notes: After Party Info
 
 programs:
@@ -23,8 +23,8 @@ programs:
   blurb: 'MICA’s Master of Arts in Art Education (MAAE) prepares experienced K-12 artist-educators to pursue advancement in their field through the development of their practice as both artists and art educators. Designed for the working professional, the curriculum allows students to continue teaching while they complete their graduate degree.'
   shows:
     -
-      start: July 26
-      end: 31
+      start: 2015-07-26
+      end: 2015-07-31
 -
   program: Community Arts
   type: MFA
@@ -42,7 +42,7 @@ programs:
   blurb: 'Become a significant voice in critical discourse on art and culture. The critical analysis, evaluation, and discussion of art and culture is often how most people become aware of important innovation and development in the field. The MA in Critical Studies degree provides a pathway to professional practice or further study at the doctoral level through an in-depth grounding in critical theory and analysis.'
   shows:
     -
-      start: May 2
+      start: 2015-05-02
 -
   program: Curatorial Practice
   type: MFA
