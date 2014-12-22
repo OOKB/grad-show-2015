@@ -50,6 +50,7 @@
     "ampersand-rest-collection": "^2.0.3",
     "domready": "^1.0.7",
     "react-router": "^0.9.5",
-    "react-map": "0.0.2"
+    "react-map": "0.0.2",
+    "moment": "^2.8.4"
   }
 }
