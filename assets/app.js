@@ -53,7 +53,7 @@ module.exports = App;
 
 
 },{"./data":"/srv/www/sites/mica-2015.ezle.io/app/data/index.json","./routes":"/srv/www/sites/mica-2015.ezle.io/app/routes.cjsx","queries":"/srv/www/sites/mica-2015.ezle.io/node_modules/queries/lib/queries.js","react":"/srv/www/sites/mica-2015.ezle.io/node_modules/react/react.js","react-router":"/srv/www/sites/mica-2015.ezle.io/node_modules/react-router/modules/index.js"}],"/srv/www/sites/mica-2015.ezle.io/app/data/index.json":[function(require,module,exports){
-module.exports=module.exports=module.exports=module.exports=module.exports=module.exports=module.exports=module.exports=module.exports={
+module.exports=module.exports={
   "title": "MICA Grad Show 2015",
   "sha": "app",
   "headerImgQty": 7,
@@ -138,6 +138,49 @@ module.exports=module.exports=module.exports=module.exports=module.exports=modul
     {
       "email": "cfinnegan@mica.edu",
       "embeds": [],
+      "files": [
+        {
+          "fileName": "cfinnegan/Jo_thesisfinal_web.png",
+          "metadata": {
+            "medium": "Graphite, conte crayon on wooden plaque",
+            "profilePic": false,
+            "sortOrder": 100,
+            "year": "2014"
+          }
+        },
+        {
+          "fileName": "cfinnegan/Karen_thesisfinalweb.png",
+          "metadata": {
+            "profilePic": false,
+            "sortOrder": 100
+          }
+        },
+        {
+          "fileName": "cfinnegan/Louie_web.png",
+          "metadata": {
+            "medium": "Graphite, conte crayon on wooden plaque",
+            "profilePic": false,
+            "sortOrder": 100,
+            "year": "2014"
+          }
+        },
+        {
+          "fileName": "cfinnegan/Mom_thesisfinal.png",
+          "metadata": {
+            "profilePic": false,
+            "sortOrder": 100
+          }
+        },
+        {
+          "fileName": "cfinnegan/Portrait_thesisweb.png",
+          "metadata": {
+            "medium": "Graphite, conte crayon on wooden plaque",
+            "profilePic": false,
+            "sortOrder": 100,
+            "year": "2014"
+          }
+        }
+      ],
       "firstName": "Caitlin",
       "lastName": "Finnegan",
       "location": "fox-3",
@@ -145,6 +188,7 @@ module.exports=module.exports=module.exports=module.exports=module.exports=modul
       "pic": "https://cape.imgix.net/http://www.gravatar.com/avatar/7bc206ad8eed36a57fee50eb4e223123.png%3Fs%3D300?w=300&h=225&fit=crop&crop=faces&mono=F67FC5&s=a79527d6c3a71922b977524b060d0253",
       "program": "teaching-ma",
       "showNum": 2,
+      "statement": "<p><em>The Givers</em></p>\n<p>Light can be received in different ways. Sometimes it is the sun shining through a window, other times it is a feeling we get when hope or joy reveals itself in an unexpected moment. It is both a physical entity and a feeling. Whether it is tangible or intangible, it is always powerful and has the ability to lift one up even when things are completely dark. The faces I have drawn are those around me who have shed light on me in direct and indirect ways. They have shown themselves to be giving time and time again, reinforcing my own belief in the power of positive human connection and compassion. Their actions have not been publicized beyond the realm of my family, nor do they ever ask for praise. Just like the subtle mark of the graphite pencil, they have made their mark quietly yet indelibly on who I am and how I view the world around me by illustrating what true kindness is. </p>\n",
       "uid": "cfinnegan",
       "website": "http://caitlinfinnegan.com"
     },
@@ -745,39 +789,93 @@ module.exports=module.exports=module.exports=module.exports=module.exports=modul
           }
         },
         {
-          "fileName": "mruston/img016.jpg",
+          "fileName": "mruston/araby2.jpg",
           "metadata": {
-            "height": 2901,
+            "height": 977,
             "profilePic": false,
             "sortOrder": 100,
-            "width": 2998
+            "width": 1008
           }
         },
         {
-          "fileName": "mruston/img026.jpg",
+          "fileName": "mruston/ardita.jpg",
           "metadata": {
-            "height": 1994,
+            "height": 3510,
             "profilePic": false,
             "sortOrder": 100,
-            "width": 2524
+            "width": 3018
           }
         },
         {
-          "fileName": "mruston/img030.jpg",
+          "fileName": "mruston/dsedaris_ladies_color2.jpg",
           "metadata": {
-            "height": 2631,
+            "height": 2820,
             "profilePic": false,
             "sortOrder": 100,
-            "width": 2619
+            "width": 2834
           }
         },
         {
-          "fileName": "mruston/img031.jpg",
+          "fileName": "mruston/flat.jpg",
           "metadata": {
-            "height": 2215,
+            "height": 792,
             "profilePic": false,
             "sortOrder": 100,
-            "width": 2543
+            "width": 792
+          }
+        },
+        {
+          "fileName": "mruston/hairgreen2.jpg",
+          "metadata": {
+            "height": 2659,
+            "profilePic": false,
+            "sortOrder": 100,
+            "width": 2035
+          }
+        },
+        {
+          "fileName": "mruston/hardcandy.jpg",
+          "metadata": {
+            "height": 3000,
+            "profilePic": false,
+            "sortOrder": 100,
+            "width": 1860
+          }
+        },
+        {
+          "fileName": "mruston/hobiewoodshop_final.jpg",
+          "metadata": {
+            "height": 3510,
+            "profilePic": false,
+            "sortOrder": 100,
+            "width": 2550
+          }
+        },
+        {
+          "fileName": "mruston/marathon2.jpg",
+          "metadata": {
+            "height": 1090,
+            "profilePic": false,
+            "sortOrder": 100,
+            "width": 792
+          }
+        },
+        {
+          "fileName": "mruston/moonlady2.jpg",
+          "metadata": {
+            "height": 792,
+            "profilePic": false,
+            "sortOrder": 100,
+            "width": 792
+          }
+        },
+        {
+          "fileName": "mruston/muscles.jpg",
+          "metadata": {
+            "height": 2072,
+            "profilePic": false,
+            "sortOrder": 100,
+            "width": 2200
           }
         },
         {
@@ -787,6 +885,33 @@ module.exports=module.exports=module.exports=module.exports=module.exports=modul
             "profilePic": false,
             "sortOrder": 100,
             "width": 1530
+          }
+        },
+        {
+          "fileName": "mruston/sickness.jpg",
+          "metadata": {
+            "height": 483,
+            "profilePic": false,
+            "sortOrder": 100,
+            "width": 520
+          }
+        },
+        {
+          "fileName": "mruston/swimming2.jpg",
+          "metadata": {
+            "height": 792,
+            "profilePic": false,
+            "sortOrder": 100,
+            "width": 555
+          }
+        },
+        {
+          "fileName": "mruston/tenmiles.jpg",
+          "metadata": {
+            "height": 2946,
+            "profilePic": false,
+            "sortOrder": 100,
+            "width": 1938
           }
         }
       ],
@@ -2096,6 +2221,60 @@ module.exports=module.exports=module.exports=module.exports=module.exports=modul
     {
       "email": "ayancone@mica.edu",
       "embeds": [],
+      "files": [
+        {
+          "fileName": "ayancone/FINAL blue passerine in breeding plumage.jpg",
+          "metadata": {
+            "height": 2906,
+            "medium": "Gouache on Paper",
+            "profilePic": false,
+            "size": "size-16x12x0",
+            "sortOrder": 100,
+            "title": "Ruby-Throated Passerine Birds in Mating Plumage",
+            "width": 2195,
+            "year": "2014"
+          }
+        },
+        {
+          "fileName": "ayancone/FINAL hexapedal terrapin.jpg",
+          "metadata": {
+            "height": 3264,
+            "medium": "Gouache on Paper",
+            "profilePic": false,
+            "size": "size-16x12x0",
+            "sortOrder": 100,
+            "title": "Hexapedal Diamondback Terrapin",
+            "width": 2448,
+            "year": "2014"
+          }
+        },
+        {
+          "fileName": "ayancone/FINAL rabbits.jpg",
+          "metadata": {
+            "height": 3212,
+            "medium": "Gouache on Paper",
+            "profilePic": false,
+            "size": "size-16x12x0",
+            "sortOrder": 100,
+            "title": "Eastern Ocellated Cottontails",
+            "width": 2435,
+            "year": "2015"
+          }
+        },
+        {
+          "fileName": "ayancone/lightning snail final.jpg",
+          "metadata": {
+            "height": 3040,
+            "medium": "Gouache on Paper",
+            "profilePic": false,
+            "size": "size-16x12x0",
+            "sortOrder": 100,
+            "title": "Lightning Snails",
+            "width": 2261,
+            "year": "2014"
+          }
+        }
+      ],
       "firstName": "Allison",
       "lastName": "Yancone",
       "location": "fox-3",
@@ -2847,9 +3026,74 @@ module.exports=module.exports=module.exports=module.exports=module.exports=modul
     {
       "email": "bsalem@mica.edu",
       "embeds": [],
+      "files": [
+        {
+          "fileName": "bsalem/Bolton Hill.jpg",
+          "metadata": {
+            "height": 2400,
+            "profilePic": false,
+            "sortOrder": 100,
+            "width": 2400
+          }
+        },
+        {
+          "fileName": "bsalem/Charles Village.jpg",
+          "metadata": {
+            "height": 2400,
+            "profilePic": false,
+            "sortOrder": 100,
+            "width": 2400
+          }
+        },
+        {
+          "fileName": "bsalem/Hampden 2.jpg",
+          "metadata": {
+            "height": 2400,
+            "profilePic": false,
+            "sortOrder": 100,
+            "width": 2400
+          }
+        },
+        {
+          "fileName": "bsalem/Pigtown.jpg",
+          "metadata": {
+            "height": 2400,
+            "profilePic": false,
+            "sortOrder": 100,
+            "width": 2400
+          }
+        },
+        {
+          "fileName": "bsalem/Remington.jpg",
+          "metadata": {
+            "height": 2400,
+            "profilePic": false,
+            "sortOrder": 100,
+            "width": 2400
+          }
+        },
+        {
+          "fileName": "bsalem/Station North.jpg",
+          "metadata": {
+            "height": 2400,
+            "profilePic": false,
+            "sortOrder": 100,
+            "width": 2400
+          }
+        },
+        {
+          "fileName": "bsalem/Upper Fells.jpg",
+          "metadata": {
+            "height": 2400,
+            "profilePic": false,
+            "sortOrder": 100,
+            "width": 2400
+          }
+        }
+      ],
       "firstName": "Britt",
       "lastName": "Salem",
-      "location": "",
+      "location": "fox-3",
       "pic": "https://mica2015.imgix.net/bsalem/DSC_0473.JPG?w=300&h=225&fit=crop&crop=faces&mono=F67FC5",
       "picFileName": "bsalem/DSC_0473.JPG",
       "program": "teaching-ma",
@@ -2890,14 +3134,109 @@ module.exports=module.exports=module.exports=module.exports=module.exports=modul
     {
       "email": "jjirsa@mica.edu",
       "embeds": [],
+      "files": [
+        {
+          "fileName": "jjirsa/cornelladam.jpg",
+          "metadata": {
+            "height": 1280,
+            "medium": "oil on panel",
+            "profilePic": false,
+            "size": "size-48x36x",
+            "sortOrder": 0,
+            "title": "Speeding up my breathing",
+            "width": 955,
+            "year": "2014"
+          }
+        },
+        {
+          "fileName": "jjirsa/cornellapp4.jpg",
+          "metadata": {
+            "height": 1280,
+            "medium": "oil on panel",
+            "profilePic": false,
+            "size": "size-36x36x",
+            "sortOrder": 1,
+            "title": "Dissipate",
+            "width": 1269,
+            "year": "2014"
+          }
+        },
+        {
+          "fileName": "jjirsa/cornellstreet.jpg",
+          "metadata": {
+            "height": 1280,
+            "medium": "oil on panel",
+            "profilePic": false,
+            "size": "size-36x24x",
+            "sortOrder": 2,
+            "title": "The Hidden",
+            "width": 846,
+            "year": "2014"
+          }
+        },
+        {
+          "fileName": "jjirsa/cornellwalk2.jpg",
+          "metadata": {
+            "height": 1275,
+            "medium": "oil on panel",
+            "profilePic": false,
+            "size": "size-48x48x",
+            "sortOrder": 3,
+            "title": "In search of transience ",
+            "width": 1280,
+            "year": "2014"
+          }
+        },
+        {
+          "fileName": "jjirsa/cornelllee.jpg",
+          "metadata": {
+            "height": 1280,
+            "medium": "oil on panel",
+            "profilePic": false,
+            "size": "size-36x36x",
+            "sortOrder": 4,
+            "title": "The Foreseen",
+            "width": 1274,
+            "year": "2014"
+          }
+        },
+        {
+          "fileName": "jjirsa/cornellinstall.jpg",
+          "metadata": {
+            "height": 1280,
+            "medium": "Oil on Panel with fluorescent lights, found chair, and repurposed particle board ",
+            "profilePic": false,
+            "size": "size-108x108x108",
+            "sortOrder": 5,
+            "title": "Sedentary Immersion",
+            "width": 1006,
+            "year": "2014"
+          }
+        },
+        {
+          "fileName": "jjirsa/cornell5.jpg",
+          "metadata": {
+            "height": 1275,
+            "medium": "oil on panel",
+            "profilePic": false,
+            "size": "size-48x48x",
+            "sortOrder": 6,
+            "title": "The Remote",
+            "width": 1280,
+            "year": "2014"
+          }
+        }
+      ],
       "firstName": "Jeremy",
+      "instagram": "jeremyjirsa",
       "lastName": "Jirsa",
-      "location": "",
+      "location": "fox-3",
       "personalEmail": "jjirsa@mica.edu",
       "pic": "https://mica2015.imgix.net/jjirsa/IMG_20140927_202655.jpg?w=300&h=225&fit=crop&crop=faces&mono=F67FC5",
       "picFileName": "jjirsa/IMG_20140927_202655.jpg",
       "program": "teaching-ma",
       "showNum": 1,
+      "statement": "<p>In my work I create an atmosphere of isolation through the use of minimal interiors in order to provoke a sense of psychological space. By using limited subject matter I erect interiors that project the open yet claustrophobic spaces of the constructed subconscious. The work in turn stimulates ideas of loss, psychological turmoil, the exploration of seclusion and emotive qualities of paint. </p>\n",
       "uid": "jjirsa",
       "website": "http://www.jeremyjirsa.com"
     },
@@ -3352,6 +3691,62 @@ module.exports=module.exports=module.exports=module.exports=module.exports=modul
     {
       "email": "jrush@mica.edu",
       "embeds": [],
+      "files": [
+        {
+          "fileName": "jrush/IMG_5986.jpg",
+          "metadata": {
+            "height": 2285,
+            "profilePic": false,
+            "sortOrder": 100,
+            "width": 2904
+          }
+        },
+        {
+          "fileName": "jrush/IMG_5987.JPG",
+          "metadata": {
+            "height": 2406,
+            "profilePic": false,
+            "sortOrder": 100,
+            "width": 3148
+          }
+        },
+        {
+          "fileName": "jrush/IMG_5989.JPG",
+          "metadata": {
+            "height": 2256,
+            "profilePic": false,
+            "sortOrder": 100,
+            "width": 2904
+          }
+        },
+        {
+          "fileName": "jrush/IMG_5990.jpg",
+          "metadata": {
+            "height": 2165,
+            "profilePic": false,
+            "sortOrder": 100,
+            "width": 2973
+          }
+        },
+        {
+          "fileName": "jrush/IMG_5993.jpg",
+          "metadata": {
+            "height": 2311,
+            "profilePic": false,
+            "sortOrder": 100,
+            "width": 3162
+          }
+        },
+        {
+          "fileName": "jrush/IMG_5997.jpg",
+          "metadata": {
+            "height": 2313,
+            "profilePic": false,
+            "sortOrder": 100,
+            "width": 2296
+          }
+        }
+      ],
       "firstName": "Jessica",
       "instagram": "jessirush12",
       "lastName": "Rush",
@@ -3360,6 +3755,7 @@ module.exports=module.exports=module.exports=module.exports=module.exports=modul
       "picFileName": "jrush/10462816_3592269965098_2761304786510514087_n.jpg",
       "program": "teaching-ma",
       "showNum": 1,
+      "statement": "<p>My work explores my relationship to place and captures the way I perceive a place that I have always been drawn to and have a strong connection with. In this series, I focus on the Chesapeake Bay, specifically Tilghman Island, a small island where many of the locals are watermen who are extremely connected to the water and rely on fisheries and the bay for their livelihood. </p>\n<p>“Place is sometimes a setting, but is most often married to memory, imagination and our embodied experiences”. </p>\n<p> I am creating work directly within this environment and am letting my surroundings impact my making.  I work quickly, in order to create immediacy and fluidity. Places are in constant change and fluctuation. By working fast, and in oils, I can make the paint and image feel like it is constantly changing and in flux as well. I am captivated by the changing light and color of this place. For me, painting this way is less about making a final product but more about experimenting with the material and figuring out what paint can do. In my classroom, I would love for students to play and experiment with materials and explore ways they can use the medium to express themselves authentically. </p>\n",
       "uid": "jrush",
       "website": "http://www.jessicakrush.com"
     },
@@ -4518,13 +4914,13 @@ module.exports=module.exports=module.exports=module.exports=module.exports=modul
 }
 
 },{}],"/srv/www/sites/mica-2015.ezle.io/app/data/intro.json":[function(require,module,exports){
-module.exports=module.exports=module.exports=module.exports=module.exports=module.exports=module.exports=module.exports=module.exports={"body":"<p>We invite you to join the next generation of creative thinkers—artists, designers, educators, curators and critics—as they demonstrate the power and possibilities of contemporary art and design.</p>\n<p>MICA Grad Show 2015 includes exhibitions and critiques, gallery talks and presentations, public programs, a symposium, and student-curated installations throughout Baltimore city.</p>\n<p>Join us for a season of innovative and inspiring events and exhibitions featuring the culminating work of more than 150 of MICA’s graduate students from the College’s internationally renowned programs.</p>\n"}
+module.exports={"body":"<p>We invite you to join the next generation of creative thinkers—artists, designers, educators, curators and critics—as they demonstrate the power and possibilities of contemporary art and design.</p>\n<p>MICA Grad Show 2015 includes exhibitions and critiques, gallery talks and presentations, public programs, a symposium, and student-curated installations throughout Baltimore city.</p>\n<p>Join us for a season of innovative and inspiring events and exhibitions featuring the culminating work of more than 150 of MICA’s graduate students from the College’s internationally renowned programs.</p>\n"}
 },{}],"/srv/www/sites/mica-2015.ezle.io/app/data/locations.json":[function(require,module,exports){
-module.exports=module.exports=module.exports=module.exports=module.exports=module.exports=module.exports=module.exports=module.exports={"source":"https://docs.google.com/a/mica.edu/document/d/1TDfpXIl5e_iN_FSOuJ14vWz6eHbi-iMGFF2cXUNho1c/","settings":{"latitude":39.30902,"longitude":-76.62016,"zoom":15,"height":800},"locations":[{"name":"Decker","alias":["Decker","Decker Gallery"],"value":"decker","building":"Fox Building","street":"1303 W. Mt. Royal Ave.","zip":21217,"geoData":{"bounds":{"northeast":{"lat":39.3085443,"lng":-76.6210519},"southwest":{"lat":39.3077791,"lng":-76.6218079}},"location":{"lat":39.3078104,"lng":-76.62106179999999},"location_type":"RANGE_INTERPOLATED","viewport":{"northeast":{"lat":39.3095106802915,"lng":-76.6200809197085},"southwest":{"lat":39.3068127197085,"lng":-76.6227788802915}}}},{"name":"Fox 3","alias":["Fox 3"],"value":"fox-3","building":"Fox Building","street":"1303 W. Mt. Royal Ave.","zip":21217,"geoData":{"bounds":{"northeast":{"lat":39.3085443,"lng":-76.6210519},"southwest":{"lat":39.3077791,"lng":-76.6218079}},"location":{"lat":39.3078104,"lng":-76.62106179999999},"location_type":"RANGE_INTERPOLATED","viewport":{"northeast":{"lat":39.3095106802915,"lng":-76.6200809197085},"southwest":{"lat":39.3068127197085,"lng":-76.6227788802915}}}},{"name":"Leidy","alias":["Leidy","Leidy Gallery"],"value":"leidy","building":"Fred Lazarus IV Center","street":"131 W. North Ave.","zip":21201,"geoData":{"location":{"lat":39.310547,"lng":-76.61894099999999},"location_type":"ROOFTOP","viewport":{"northeast":{"lat":39.3118959802915,"lng":-76.61759201970848},"southwest":{"lat":39.3091980197085,"lng":-76.6202899802915}}}},{"name":"Meyerhoff","alias":["Meyerhoff","Meyerhoff Gallery"],"value":"meyerhoff","building":"Fox Building","street":"1303 W. Mt. Royal Ave.","zip":21217,"geoData":{"bounds":{"northeast":{"lat":39.3085443,"lng":-76.6210519},"southwest":{"lat":39.3077791,"lng":-76.6218079}},"location":{"lat":39.3078104,"lng":-76.62106179999999},"location_type":"RANGE_INTERPOLATED","viewport":{"northeast":{"lat":39.3095106802915,"lng":-76.6200809197085},"southwest":{"lat":39.3068127197085,"lng":-76.6227788802915}}}},{"name":"North Avenue Market","alias":["D Center","North Avenue Market"],"value":"north-avenue-market","street":"18 W. North Ave.","zip":21218,"geoData":{"bounds":{"northeast":{"lat":39.3111782,"lng":-76.61656099999999},"southwest":{"lat":39.3111414,"lng":-76.6174053}},"location":{"lat":39.3111633,"lng":-76.6172297},"location_type":"RANGE_INTERPOLATED","viewport":{"northeast":{"lat":39.31250878029149,"lng":-76.61563416970849},"southwest":{"lat":39.3098108197085,"lng":-76.61833213029149}}}},{"name":"Pinkard","alias":["Pinkard","Pinkard Gallery"],"value":"pinkard","building":"Bunting Center","street":"1305 W. Mt. Royal Ave.","zip":21217,"geoData":{"bounds":{"northeast":{"lat":39.3085443,"lng":-76.6210519},"southwest":{"lat":39.3077791,"lng":-76.6218079}},"location":{"lat":39.3078245,"lng":-76.621077},"location_type":"RANGE_INTERPOLATED","viewport":{"northeast":{"lat":39.3095106802915,"lng":-76.6200809197085},"southwest":{"lat":39.3068127197085,"lng":-76.6227788802915}}}},{"name":"Sheila & Richard Riggs Gallery","alias":["Sheila & Richard Riggs Gallery","Riggs","Riggs Gallery","Riggs Gallery (Hallway)","Riggs/Leidy Gallery"],"value":"riggs","building":"Fred Lazarus IV Center","street":"131 W. North Ave.","zip":21201,"geoData":{"location":{"lat":39.310547,"lng":-76.61894099999999},"location_type":"ROOFTOP","viewport":{"northeast":{"lat":39.3118959802915,"lng":-76.61759201970848},"southwest":{"lat":39.3091980197085,"lng":-76.6202899802915}}}},{"name":"Walters Art Museum","alias":["Walters","Walters Art Gallery","The Walters"],"value":"walters-art-museum","street":"600 N Charles St","zip":21201,"geoData":{"location":{"lat":39.2965928,"lng":-76.61609949999999},"location_type":"ROOFTOP","viewport":{"northeast":{"lat":39.2979417802915,"lng":-76.61475051970848},"southwest":{"lat":39.2952438197085,"lng":-76.6174484802915}}}},{"name":"Top of the World Observation Level","alias":["World Trade Center Baltimore","World Trade Baltimore"],"value":"world-trade-center-baltimore","building":"World Trade Center Baltimore","street":"401 East Pratt Street","zip":21202,"geoData":{"location":{"lat":39.2860269,"lng":-76.6096483},"location_type":"ROOFTOP","viewport":{"northeast":{"lat":39.2873758802915,"lng":-76.60829931970851},"southwest":{"lat":39.2846779197085,"lng":-76.61099728029151}}}},{"name":"The Rawlings Conservatory & Botanic Gardens","alias":["Rawlings Conservatory","Conservatory","Rawlings"],"value":"rawlings-conservatory","street":"3100 Swann Drive","zip":21217,"geoData":{"location":{"lat":39.3184614,"lng":-76.64472909999999},"location_type":"ROOFTOP","viewport":{"northeast":{"lat":39.31981038029149,"lng":-76.6433801197085},"southwest":{"lat":39.3171124197085,"lng":-76.6460780802915}}}},{"name":"Project PLASE","alias":["PLASE","Project Plase"],"value":"project-plase","street":"3601 Old Frederick Avenue","zip":21229,"geoData":{"bounds":{"northeast":{"lat":39.2832849,"lng":-76.6768465},"southwest":{"lat":39.2832715,"lng":-76.6768527}},"location":{"lat":39.2832715,"lng":-76.6768527},"location_type":"RANGE_INTERPOLATED","viewport":{"northeast":{"lat":39.2846271802915,"lng":-76.67550061970849},"southwest":{"lat":39.2819292197085,"lng":-76.67819858029151}}}},{"name":"Gallery Q","alias":["Gallery Q","Eisenhower Library"],"value":"gallery-q","building":"Eisenhower Library, Johns Hopkins University Homewood Campus","street":"3200 North Charles Street","zip":21218,"geoData":{"bounds":{"northeast":{"lat":39.3270748,"lng":-76.6177642},"southwest":{"lat":39.3268606,"lng":-76.6177773}},"location":{"lat":39.3268706,"lng":-76.6177833},"location_type":"RANGE_INTERPOLATED","viewport":{"northeast":{"lat":39.3283166802915,"lng":-76.6164217697085},"southwest":{"lat":39.3256187197085,"lng":-76.6191197302915}}}},{"name":"YNot Lot","alias":["YNot"],"value":"ynot-lot","street":"4 West North Avenue","zip":21201,"geoData":{"location":{"lat":39.31144,"lng":-76.616843},"location_type":"ROOFTOP","viewport":{"northeast":{"lat":39.31278898029149,"lng":-76.61549401970849},"southwest":{"lat":39.3100910197085,"lng":-76.61819198029151}}}},{"name":"Sandbox","alias":["Sandbox"],"value":"sandbox","street":"107 South Cross Street","zip":21620,"geoData":{"location":{"lat":39.208574,"lng":-76.067112},"location_type":"ROOFTOP"}},{"name":"Bennu Gallery","alias":["Bennus"],"value":"bennu-gallery","street":"2334 Guilford Ave","zip":21218,"geoData":{"location":{"lat":39.316287,"lng":-76.61314899999999},"location_type":"ROOFTOP","viewport":{"northeast":{"lat":39.3176359802915,"lng":-76.61180001970848},"southwest":{"lat":39.3149380197085,"lng":-76.61449798029149}}}},{"name":"Jubilee Arts Center","alias":["Jubilee Arts"],"value":"jubilee-arts-center","street":"1947 Pennsylvania Ave","zip":21217,"geoData":{"location":{"lat":39.30595,"lng":-76.63722},"location_type":"ROOFTOP","viewport":{"northeast":{"lat":39.30729898029149,"lng":-76.6358710197085},"southwest":{"lat":39.30460101970849,"lng":-76.63856898029151}}}},{"name":"New Door Creative Gallery","alias":["New Door Creative","New Door Gallery"],"value":"new-door-creative-gallery","street":"1601 Saint Paul Street","zip":21201,"geoData":{"location":{"lat":39.30800199999999,"lng":-76.614407},"location_type":"ROOFTOP","viewport":{"northeast":{"lat":39.3093509802915,"lng":-76.61305801970849},"southwest":{"lat":39.3066530197085,"lng":-76.61575598029151}}}},{"name":"War Memorial Commission, City of Baltimore","alias":["War Memorial Baltimore","War Memorial"],"value":"war-memorial-commission","street":"101 North Gay Street","zip":21202,"geoData":{"location":{"lat":39.290973,"lng":-76.608407},"location_type":"ROOFTOP","viewport":{"northeast":{"lat":39.2923219802915,"lng":-76.6070580197085},"southwest":{"lat":39.2896240197085,"lng":-76.60975598029151}}}},{"name":"The Baltimore Museum of Industry","alias":["Museum of Industry"],"value":"baltimore-museum-of-industry","street":"1415 Key Highway","zip":21230,"geoData":{"location":{"lat":39.2739568,"lng":-76.6016324},"location_type":"ROOFTOP","viewport":{"northeast":{"lat":39.2753057802915,"lng":-76.60028341970849},"southwest":{"lat":39.2726078197085,"lng":-76.60298138029151}}}},{"name":"Baltimore Clayworks","alias":["Clayworks"],"value":"baltimore-clayworks","street":"5707 Smith Avenue","zip":21209,"geoData":{"location":{"lat":39.3676219,"lng":-76.6531947},"location_type":"ROOFTOP","viewport":{"northeast":{"lat":39.36897088029149,"lng":-76.65184571970849},"southwest":{"lat":39.36627291970849,"lng":-76.6545436802915}}}},{"name":"Kagro","alias":["Kagro","Kagro Building"],"value":"kagro","street":"101 W. North Ave.","zip":21201,"geoData":{"location":{"lat":39.310582,"lng":-76.618085},"location_type":"ROOFTOP"}}]}
+module.exports={"settings":{"latitude":39.30902,"longitude":-76.62016,"zoom":15,"height":800},"locations":[{"name":"Decker","alias":["Decker","Decker Gallery"],"value":"decker","building":"Fox Building","street":"1303 W. Mt. Royal Ave.","zip":21217,"geoData":{"bounds":{"northeast":{"lat":39.3085443,"lng":-76.6210519},"southwest":{"lat":39.3077791,"lng":-76.6218079}},"location":{"lat":39.3078104,"lng":-76.62106179999999},"location_type":"RANGE_INTERPOLATED","viewport":{"northeast":{"lat":39.3095106802915,"lng":-76.6200809197085},"southwest":{"lat":39.3068127197085,"lng":-76.6227788802915}}}},{"name":"Fox 3","alias":["Fox 3"],"value":"fox-3","building":"Fox Building","street":"1303 W. Mt. Royal Ave.","zip":21217,"geoData":{"bounds":{"northeast":{"lat":39.3085443,"lng":-76.6210519},"southwest":{"lat":39.3077791,"lng":-76.6218079}},"location":{"lat":39.3078104,"lng":-76.62106179999999},"location_type":"RANGE_INTERPOLATED","viewport":{"northeast":{"lat":39.3095106802915,"lng":-76.6200809197085},"southwest":{"lat":39.3068127197085,"lng":-76.6227788802915}}}},{"name":"Leidy","alias":["Leidy","Leidy Gallery"],"value":"leidy","building":"Fred Lazarus IV Center","street":"131 W. North Ave.","zip":21201,"geoData":{"location":{"lat":39.310547,"lng":-76.61894099999999},"location_type":"ROOFTOP","viewport":{"northeast":{"lat":39.3118959802915,"lng":-76.61759201970848},"southwest":{"lat":39.3091980197085,"lng":-76.6202899802915}}}},{"name":"Meyerhoff","alias":["Meyerhoff","Meyerhoff Gallery"],"value":"meyerhoff","building":"Fox Building","street":"1303 W. Mt. Royal Ave.","zip":21217,"geoData":{"bounds":{"northeast":{"lat":39.3085443,"lng":-76.6210519},"southwest":{"lat":39.3077791,"lng":-76.6218079}},"location":{"lat":39.3078104,"lng":-76.62106179999999},"location_type":"RANGE_INTERPOLATED","viewport":{"northeast":{"lat":39.3095106802915,"lng":-76.6200809197085},"southwest":{"lat":39.3068127197085,"lng":-76.6227788802915}}}},{"name":"North Avenue Market","alias":["D Center","North Avenue Market"],"value":"north-avenue-market","street":"18 W. North Ave.","zip":21218,"geoData":{"bounds":{"northeast":{"lat":39.3111782,"lng":-76.61656099999999},"southwest":{"lat":39.3111414,"lng":-76.6174053}},"location":{"lat":39.3111633,"lng":-76.6172297},"location_type":"RANGE_INTERPOLATED","viewport":{"northeast":{"lat":39.31250878029149,"lng":-76.61563416970849},"southwest":{"lat":39.3098108197085,"lng":-76.61833213029149}}}},{"name":"Pinkard","alias":["Pinkard","Pinkard Gallery"],"value":"pinkard","building":"Bunting Center","street":"1305 W. Mt. Royal Ave.","zip":21217,"geoData":{"bounds":{"northeast":{"lat":39.3085443,"lng":-76.6210519},"southwest":{"lat":39.3077791,"lng":-76.6218079}},"location":{"lat":39.3078245,"lng":-76.621077},"location_type":"RANGE_INTERPOLATED","viewport":{"northeast":{"lat":39.3095106802915,"lng":-76.6200809197085},"southwest":{"lat":39.3068127197085,"lng":-76.6227788802915}}}},{"name":"Sheila & Richard Riggs Gallery","alias":["Sheila & Richard Riggs Gallery","Riggs","Riggs Gallery","Riggs Gallery (Hallway)","Riggs/Leidy Gallery"],"value":"riggs","building":"Fred Lazarus IV Center","street":"131 W. North Ave.","zip":21201,"geoData":{"location":{"lat":39.310547,"lng":-76.61894099999999},"location_type":"ROOFTOP","viewport":{"northeast":{"lat":39.3118959802915,"lng":-76.61759201970848},"southwest":{"lat":39.3091980197085,"lng":-76.6202899802915}}}},{"name":"Walters Art Museum","alias":["Walters","Walters Art Gallery","The Walters"],"value":"walters-art-museum","street":"600 N Charles St","zip":21201,"geoData":{"location":{"lat":39.2965928,"lng":-76.61609949999999},"location_type":"ROOFTOP","viewport":{"northeast":{"lat":39.2979417802915,"lng":-76.61475051970848},"southwest":{"lat":39.2952438197085,"lng":-76.6174484802915}}}},{"name":"Top of the World Observation Level","alias":["World Trade Center Baltimore","World Trade Baltimore"],"value":"world-trade-center-baltimore","building":"World Trade Center Baltimore","street":"401 East Pratt Street","zip":21202,"geoData":{"location":{"lat":39.2860269,"lng":-76.6096483},"location_type":"ROOFTOP","viewport":{"northeast":{"lat":39.2873758802915,"lng":-76.60829931970851},"southwest":{"lat":39.2846779197085,"lng":-76.61099728029151}}}},{"name":"The Rawlings Conservatory & Botanic Gardens","alias":["Rawlings Conservatory","Conservatory","Rawlings"],"value":"rawlings-conservatory","street":"3100 Swann Drive","zip":21217,"geoData":{"location":{"lat":39.3184614,"lng":-76.64472909999999},"location_type":"ROOFTOP","viewport":{"northeast":{"lat":39.31981038029149,"lng":-76.6433801197085},"southwest":{"lat":39.3171124197085,"lng":-76.6460780802915}}}},{"name":"Project PLASE","alias":["PLASE","Project Plase"],"value":"project-plase","street":"3601 Old Frederick Avenue","zip":21229,"geoData":{"bounds":{"northeast":{"lat":39.2832849,"lng":-76.6768465},"southwest":{"lat":39.2832715,"lng":-76.6768527}},"location":{"lat":39.2832715,"lng":-76.6768527},"location_type":"RANGE_INTERPOLATED","viewport":{"northeast":{"lat":39.2846271802915,"lng":-76.67550061970849},"southwest":{"lat":39.2819292197085,"lng":-76.67819858029151}}}},{"name":"Gallery Q","alias":["Gallery Q","Eisenhower Library"],"value":"gallery-q","building":"Eisenhower Library, Johns Hopkins University Homewood Campus","street":"3200 North Charles Street","zip":21218,"geoData":{"bounds":{"northeast":{"lat":39.3270748,"lng":-76.6177642},"southwest":{"lat":39.3268606,"lng":-76.6177773}},"location":{"lat":39.3268706,"lng":-76.6177833},"location_type":"RANGE_INTERPOLATED","viewport":{"northeast":{"lat":39.3283166802915,"lng":-76.6164217697085},"southwest":{"lat":39.3256187197085,"lng":-76.6191197302915}}}},{"name":"YNot Lot","alias":["YNot"],"value":"ynot-lot","street":"4 West North Avenue","zip":21201,"geoData":{"location":{"lat":39.31144,"lng":-76.616843},"location_type":"ROOFTOP","viewport":{"northeast":{"lat":39.31278898029149,"lng":-76.61549401970849},"southwest":{"lat":39.3100910197085,"lng":-76.61819198029151}}}},{"name":"Sandbox","alias":["Sandbox"],"value":"sandbox","street":"107 South Cross Street","zip":21620,"geoData":{"location":{"lat":39.208574,"lng":-76.067112},"location_type":"ROOFTOP"}},{"name":"Bennu Gallery","alias":["Bennus"],"value":"bennu-gallery","street":"2334 Guilford Ave","zip":21218,"geoData":{"location":{"lat":39.316287,"lng":-76.61314899999999},"location_type":"ROOFTOP","viewport":{"northeast":{"lat":39.3176359802915,"lng":-76.61180001970848},"southwest":{"lat":39.3149380197085,"lng":-76.61449798029149}}}},{"name":"Jubilee Arts Center","alias":["Jubilee Arts"],"value":"jubilee-arts-center","street":"1947 Pennsylvania Ave","zip":21217,"geoData":{"location":{"lat":39.30595,"lng":-76.63722},"location_type":"ROOFTOP","viewport":{"northeast":{"lat":39.30729898029149,"lng":-76.6358710197085},"southwest":{"lat":39.30460101970849,"lng":-76.63856898029151}}}},{"name":"New Door Creative Gallery","alias":["New Door Creative","New Door Gallery"],"value":"new-door-creative-gallery","street":"1601 Saint Paul Street","zip":21201,"geoData":{"location":{"lat":39.30800199999999,"lng":-76.614407},"location_type":"ROOFTOP","viewport":{"northeast":{"lat":39.3093509802915,"lng":-76.61305801970849},"southwest":{"lat":39.3066530197085,"lng":-76.61575598029151}}}},{"name":"War Memorial Commission, City of Baltimore","alias":["War Memorial Baltimore","War Memorial"],"value":"war-memorial-commission","street":"101 North Gay Street","zip":21202,"geoData":{"location":{"lat":39.290973,"lng":-76.608407},"location_type":"ROOFTOP","viewport":{"northeast":{"lat":39.2923219802915,"lng":-76.6070580197085},"southwest":{"lat":39.2896240197085,"lng":-76.60975598029151}}}},{"name":"The Baltimore Museum of Industry","alias":["Museum of Industry"],"value":"baltimore-museum-of-industry","street":"1415 Key Highway","zip":21230,"geoData":{"location":{"lat":39.2739568,"lng":-76.6016324},"location_type":"ROOFTOP","viewport":{"northeast":{"lat":39.2753057802915,"lng":-76.60028341970849},"southwest":{"lat":39.2726078197085,"lng":-76.60298138029151}}}},{"name":"Baltimore Clayworks","alias":["Clayworks"],"value":"baltimore-clayworks","street":"5707 Smith Avenue","zip":21209,"geoData":{"location":{"lat":39.3676219,"lng":-76.6531947},"location_type":"ROOFTOP","viewport":{"northeast":{"lat":39.36897088029149,"lng":-76.65184571970849},"southwest":{"lat":39.36627291970849,"lng":-76.6545436802915}}}},{"name":"Kagro","alias":["Kagro","Kagro Building"],"value":"kagro","street":"101 W. North Ave.","zip":21201,"geoData":{"location":{"lat":39.310582,"lng":-76.618085},"location_type":"ROOFTOP"}}]}
 },{}],"/srv/www/sites/mica-2015.ezle.io/app/data/programs.json":[function(require,module,exports){
-module.exports=module.exports=module.exports=module.exports=module.exports=module.exports=module.exports=module.exports=module.exports={"dates":[{"start":"2015-03-27T00:00:00.000Z","end":"2015-04-12T00:00:00.000Z","notes":"After Party Info"},{"start":"2015-04-17T00:00:00.000Z","end":"2015-05-03T00:00:00.000Z","notes":"After Party Info"}],"programs":[{"name":"Art Education","type":"MA","shortform":"MAAE","alias":["Art Education","Art Education (MA)","Art Education (Online/Low-Residency MA)"],"id":"art-education-ma","blurb":"MICA’s Master of Arts in Art Education (MAAE) prepares experienced K-12 artist-educators to pursue advancement in their field through the development of their practice as both artists and art educators. Designed for the working professional, the curriculum allows students to continue teaching while they complete their graduate degree.","shows":[{"start":"2015-07-26T00:00:00.000Z","end":"2015-07-31T00:00:00.000Z"}]},{"name":"Community Arts","type":"MFA","shortform":"MFACA","alias":["Community Arts","Community Arts (MFA)"],"id":"community-arts-mfa","blurb":"The MFA in Community Arts (MFACA) prepares artists to use their artmaking as a means of civic, youth, and community development, or to teach at the post-secondary level. Discover firsthand how artists and their work help communities articulate their own  history, culture, and needs—and how that community in turn inspires the artists’ own creative expression.","shows":[{"start":"2015-04-17T00:00:00.000Z","end":"2015-05-03T00:00:00.000Z","notes":"After Party Info"}]},{"name":"Critical Studies","type":"MA","alias":["Critical Studies","Critical Studies (MA)"],"id":"critical-studies-mfa","blurb":"Become a significant voice in critical discourse on art and culture. The critical analysis, evaluation, and discussion of art and culture is often how most people become aware of important innovation and development in the field. The MA in Critical Studies degree provides a pathway to professional practice or further study at the doctoral level through an in-depth grounding in critical theory and analysis.","shows":[{"start":"2015-05-02T00:00:00.000Z","end":"2015-05-02T00:00:00.000Z"}]},{"name":"Curatorial Practice","type":"MFA","alias":["Curatorial Practice ","Curatorial Practice","Curatorial Practice (MFA)"],"id":"curatorial-practice-mfa","blurb":"The first MFA of its kind in the country, MICA’s MFA in Curatorial Practice prepares students to expand the role of curators in connecting art, artists, and communities—engaging audiences more effectively by developing relevant, timely, and accessible exhibitions in both traditional and non-traditional venues.","shows":[{"start":"2015-01-23T00:00:00.000Z","end":"2015-07-11T00:00:00.000Z","notes":"Ongoing, throughout the city"}]},{"name":"Graphic Design","type":"MFA","shortform":"GDMFA","alias":["Graphic Design","Graphic Design (MFA)"],"id":"graphic-design-mfa","blurb":"MFA graphic students at MICA are encouraged to view themselves as cultural producers, \"practical visionaries,\" and \"utopian entrepreneurs\" who actively initiate projects. Whether the work takes the form of publications, Web sites, products, or exhibitions, students focus on advancing a personal vision and public message.","shows":[{"start":"2015-03-27T00:00:00.000Z","end":"2015-04-12T00:00:00.000Z","notes":"After Party Info"}]},{"name":"LeRoy E. Hoffberger School of Painting","type":"MFA","shortform":"Hoffberger","alias":["Hoffberger","Leroy E. Hoffberger School of Painting (MFA)"],"id":"leroy-e-hoffberfer-school-of-painting-mfa","blurb":"One of the nation’s most selective graduate programs, LeRoy E. Hoffberger School of Painting is one of the only graduate programs in the country to focus solely on painting, allowing a select group of highly talented painters to find their individual voices and develop the discourse to position their work in the contemporary arts world.","shows":[{"start":"2015-04-17T00:00:00.000Z","end":"2015-05-03T00:00:00.000Z","notes":"After Party Info"}]},{"name":"Illustration Practice","type":"MFA","alias":["Illustration Practice","Illustration Practice (MFA)"],"id":"illustration-practice-mfa","blurb":"The MFA in Illustration Practice prepares artists to elevate their artistic and business abilities, blend media within new cultural contexts, and integrate research and critical analysis into their work. Students find new directions for the practice in the 21st century, actively initiate projects, and revisit their creative process while awakening their abilities to chart their own course as entrepreneurs.","shows":[{"start":"2015-03-27T00:00:00.000Z","end":"2015-04-12T00:00:00.000Z","notes":"After Party Info"}]},{"name":"Mount Royal School of Art","type":"MFA","shortform":"Mount Royal","alias":["Mount Royal","Mount Royal School of Art (MFA)"],"id":"mount-royal-school-of-art-mfa","blurb":"Mount Royal School of Art is a multi-disciplinary program that allows students to work in ways most appropriate to their individual research—focusing their exploration within a specific medium or crossing into a wide array of disciplines and media as they engage in intensive studio practice.","shows":[{"start":"2015-04-17T00:00:00.000Z","end":"2015-05-03T00:00:00.000Z","notes":"After Party Info"}]},{"name":"Photographic and Electronic Media","type":"MFA","shortform":"PEM","alias":["Photo & Electronic Media","Photographic & Electronic Media (MFA)"],"id":"photographic-and-electronic-media-mfa","blurb":"This MFA program gives students a platform to explore the reverberating social and artistic uses of optical and electronic media, and grounds artistic practice in a rigorous investigation of historical and critical contexts. In developing their own work, students follow two tracks: practical research directed on production and implementation of a body of artwork, and conceptual research which builds a solid critical and historical foundation for artistic practice.","shows":[{"start":"2015-04-17T00:00:00.000Z","end":"2015-05-03T00:00:00.000Z","notes":"After Party Info"}]},{"name":"Post-Baccalaureate Certificate in Fine Art","type":"Post-Baccalaureate Certificate","shortform":"Post-Bac Fine Art","alias":["Post Bac FA","Post-Baccalaureate Fine Art"],"id":"post-baccalaureate-fine-art","blurb":"The Post-Baccalaureate Certificate in Fine Arts program offers an intensive, fine arts studio experience that allows students to achieve a new level of mastery in artmaking and the preparation for professional practice or to apply to competitive MFA programs, including those at MICA.","shows":[{"start":"2015-03-27T00:00:00.000Z","end":"2015-04-12T00:00:00.000Z","notes":"After Party Info"}]},{"name":"Post-Baccalaureate Certificate in Graphic Design","type":"Post-Baccalaureate Certificate","shortform":"Post-Bac GD","alias":["Post Bac GD","Post-Baccalaureate Graphic Design"],"id":"post-baccalaureate-graphic-design","blurb":"MICA’s Post-Baccalaureate Certificate in Graphic Design program offers students from diverse backgrounds an intensive immersion in graphic design. Created for design professionals and recent design graduates, as well as professionals with non-design backgrounds, this programs prepares participants to advance their careers and apply to competitive MFA programs, including those at MICA.","shows":[{"start":"2015-03-27T00:00:00.000Z","end":"2015-04-12T00:00:00.000Z","notes":"After Party Info"}]},{"name":"Rinehart School of Sculpture","type":"MFA","shortform":"Rinehart","alias":["Rinehart","Rinehart School of Sculpture (MFA)"],"id":"rinehart-school-of-sculpture-mfa","blurb":"Rinehart School of Sculpture trains artists for the 21st century, including the art of the moment, and allows students to work in a range of media and a rich variety of materials, from performance and video to metals and stone. The oldest program of its kind in the country, Rinehart prepares students to proceed independently and with authority as they approach professional status. Graduates emerge prepared to add to the discourse surrounding contemporary art as exhibiting artists, faculty, and critics.","shows":[{"start":"2015-04-17T00:00:00.000Z","end":"2015-05-03T00:00:00.000Z","notes":"After Party Info"}]},{"name":"Social Design","type":"MA","shortform":"MASD","alias":["Social Design","Social Design (MA)"],"id":"social-design-ma","blurb":"Complex social problems require creative problem solvers. Now entering its fourth year, the Master of Arts in Social Design (MASD) is an intensive one-year, interdisciplinary, practice-based graduate program that prepares aspiring social designers to understand and address the challenges facing society.","shows":[{"start":"2015-05-01T00:00:00.000Z","end":"2015-05-01T00:00:00.000Z"}]},{"name":"Studio Art","type":"Low-Residency MFA","shortform":"MFAST","alias":["Studio Art","Studio Art (Low-Residency MFA)"],"id":"studio-art-mfa","blurb":"This low-residency, 60-credit interdisciplinary MFA program is designed for experienced artists who want to pursue graduate study without disrupting their ongoing careers. The emphasis of the program is in integrating practice with theory, where students are encouraged to be independent thinkers and researchers who may focus within one specific medium or work across various media.","shows":[{"start":"2015-06-20T00:00:00.000Z","end":"2015-07-27T00:00:00.000Z"}]},{"name":"Teaching","type":"MAT","alias":["MA Teaching","Teaching","Teaching (MAT)"],"id":"teaching-ma","blurb":"MICA’s MAT program is nationally recognized for its success preparing art education professionals who successfully integrate personal artistry with the skill and understanding to direct the art making of others.Experience hands-on experience in teaching along with coursework in practice, current theory, and research—all within a supportive community of students and faculty who are internationally recognized leaders in the field.","shows":[{"start":"2015-01-23T00:00:00.000Z","end":"2015-02-08T00:00:00.000Z","title":"Show I"},{"start":"2015-02-12T00:00:00.000Z","end":"2015-03-01T00:00:00.000Z","title":"Show II"},{"start":"2015-03-06T00:00:00.000Z","end":"2015-03-22T00:00:00.000Z","title":"Show III"}]}]}
+module.exports={"dates":[{"start":"2015-03-27T00:00:00.000Z","end":"2015-04-12T00:00:00.000Z","notes":"After Party Info"},{"start":"2015-04-17T00:00:00.000Z","end":"2015-05-03T00:00:00.000Z","notes":"After Party Info"}],"programs":[{"name":"Art Education","type":"MA","shortform":"MAAE","alias":["Art Education","Art Education (MA)","Art Education (Online/Low-Residency MA)"],"id":"art-education-ma","blurb":"MICA’s Master of Arts in Art Education (MAAE) prepares experienced K-12 artist-educators to pursue advancement in their field through the development of their practice as both artists and art educators. Designed for the working professional, the curriculum allows students to continue teaching while they complete their graduate degree.","shows":[{"start":"2015-07-26T00:00:00.000Z","end":"2015-07-31T00:00:00.000Z"}]},{"name":"Community Arts","type":"MFA","shortform":"MFACA","alias":["Community Arts","Community Arts (MFA)"],"id":"community-arts-mfa","blurb":"The MFA in Community Arts (MFACA) prepares artists to use their artmaking as a means of civic, youth, and community development, or to teach at the post-secondary level. Discover firsthand how artists and their work help communities articulate their own  history, culture, and needs—and how that community in turn inspires the artists’ own creative expression.","shows":[{"start":"2015-04-17T00:00:00.000Z","end":"2015-05-03T00:00:00.000Z","notes":"After Party Info"}]},{"name":"Critical Studies","type":"MA","alias":["Critical Studies","Critical Studies (MA)"],"id":"critical-studies-mfa","blurb":"Become a significant voice in critical discourse on art and culture. The critical analysis, evaluation, and discussion of art and culture is often how most people become aware of important innovation and development in the field. The MA in Critical Studies degree provides a pathway to professional practice or further study at the doctoral level through an in-depth grounding in critical theory and analysis.","shows":[{"start":"2015-05-02T00:00:00.000Z","end":"2015-05-02T00:00:00.000Z"}]},{"name":"Curatorial Practice","type":"MFA","alias":["Curatorial Practice ","Curatorial Practice","Curatorial Practice (MFA)"],"id":"curatorial-practice-mfa","blurb":"The first MFA of its kind in the country, MICA’s MFA in Curatorial Practice prepares students to expand the role of curators in connecting art, artists, and communities—engaging audiences more effectively by developing relevant, timely, and accessible exhibitions in both traditional and non-traditional venues.","shows":[{"start":"2015-01-23T00:00:00.000Z","end":"2015-07-11T00:00:00.000Z","notes":"Ongoing, throughout the city"}]},{"name":"Graphic Design","type":"MFA","shortform":"GDMFA","alias":["Graphic Design","Graphic Design (MFA)"],"id":"graphic-design-mfa","blurb":"MFA graphic students at MICA are encouraged to view themselves as cultural producers, \"practical visionaries,\" and \"utopian entrepreneurs\" who actively initiate projects. Whether the work takes the form of publications, Web sites, products, or exhibitions, students focus on advancing a personal vision and public message.","shows":[{"start":"2015-03-27T00:00:00.000Z","end":"2015-04-12T00:00:00.000Z","notes":"After Party Info"}]},{"name":"LeRoy E. Hoffberger School of Painting","type":"MFA","shortform":"Hoffberger","alias":["Hoffberger","Leroy E. Hoffberger School of Painting (MFA)"],"id":"leroy-e-hoffberfer-school-of-painting-mfa","blurb":"One of the nation’s most selective graduate programs, LeRoy E. Hoffberger School of Painting is one of the only graduate programs in the country to focus solely on painting, allowing a select group of highly talented painters to find their individual voices and develop the discourse to position their work in the contemporary arts world.","shows":[{"start":"2015-04-17T00:00:00.000Z","end":"2015-05-03T00:00:00.000Z","notes":"After Party Info"}]},{"name":"Illustration Practice","type":"MFA","alias":["Illustration Practice","Illustration Practice (MFA)"],"id":"illustration-practice-mfa","blurb":"The MFA in Illustration Practice prepares artists to elevate their artistic and business abilities, blend media within new cultural contexts, and integrate research and critical analysis into their work. Students find new directions for the practice in the 21st century, actively initiate projects, and revisit their creative process while awakening their abilities to chart their own course as entrepreneurs.","shows":[{"start":"2015-03-27T00:00:00.000Z","end":"2015-04-12T00:00:00.000Z","notes":"After Party Info"}]},{"name":"Mount Royal School of Art","type":"MFA","shortform":"Mount Royal","alias":["Mount Royal","Mount Royal School of Art (MFA)"],"id":"mount-royal-school-of-art-mfa","blurb":"Mount Royal School of Art is a multi-disciplinary program that allows students to work in ways most appropriate to their individual research—focusing their exploration within a specific medium or crossing into a wide array of disciplines and media as they engage in intensive studio practice.","shows":[{"start":"2015-04-17T00:00:00.000Z","end":"2015-05-03T00:00:00.000Z","notes":"After Party Info"}]},{"name":"Photographic and Electronic Media","type":"MFA","shortform":"PEM","alias":["Photo & Electronic Media","Photographic & Electronic Media (MFA)"],"id":"photographic-and-electronic-media-mfa","blurb":"This MFA program gives students a platform to explore the reverberating social and artistic uses of optical and electronic media, and grounds artistic practice in a rigorous investigation of historical and critical contexts. In developing their own work, students follow two tracks: practical research directed on production and implementation of a body of artwork, and conceptual research which builds a solid critical and historical foundation for artistic practice.","shows":[{"start":"2015-04-17T00:00:00.000Z","end":"2015-05-03T00:00:00.000Z","notes":"After Party Info"}]},{"name":"Post-Baccalaureate Certificate in Fine Art","type":"Post-Baccalaureate Certificate","shortform":"Post-Bac Fine Art","alias":["Post Bac FA","Post-Baccalaureate Fine Art"],"id":"post-baccalaureate-fine-art","blurb":"The Post-Baccalaureate Certificate in Fine Arts program offers an intensive, fine arts studio experience that allows students to achieve a new level of mastery in artmaking and the preparation for professional practice or to apply to competitive MFA programs, including those at MICA.","shows":[{"start":"2015-03-27T00:00:00.000Z","end":"2015-04-12T00:00:00.000Z","notes":"After Party Info"}]},{"name":"Post-Baccalaureate Certificate in Graphic Design","type":"Post-Baccalaureate Certificate","shortform":"Post-Bac GD","alias":["Post Bac GD","Post-Baccalaureate Graphic Design"],"id":"post-baccalaureate-graphic-design","blurb":"MICA’s Post-Baccalaureate Certificate in Graphic Design program offers students from diverse backgrounds an intensive immersion in graphic design. Created for design professionals and recent design graduates, as well as professionals with non-design backgrounds, this programs prepares participants to advance their careers and apply to competitive MFA programs, including those at MICA.","shows":[{"start":"2015-03-27T00:00:00.000Z","end":"2015-04-12T00:00:00.000Z","notes":"After Party Info"}]},{"name":"Rinehart School of Sculpture","type":"MFA","shortform":"Rinehart","alias":["Rinehart","Rinehart School of Sculpture (MFA)"],"id":"rinehart-school-of-sculpture-mfa","blurb":"Rinehart School of Sculpture trains artists for the 21st century, including the art of the moment, and allows students to work in a range of media and a rich variety of materials, from performance and video to metals and stone. The oldest program of its kind in the country, Rinehart prepares students to proceed independently and with authority as they approach professional status. Graduates emerge prepared to add to the discourse surrounding contemporary art as exhibiting artists, faculty, and critics.","shows":[{"start":"2015-04-17T00:00:00.000Z","end":"2015-05-03T00:00:00.000Z","notes":"After Party Info"}]},{"name":"Social Design","type":"MA","shortform":"MASD","alias":["Social Design","Social Design (MA)"],"id":"social-design-ma","blurb":"Complex social problems require creative problem solvers. Now entering its fourth year, the Master of Arts in Social Design (MASD) is an intensive one-year, interdisciplinary, practice-based graduate program that prepares aspiring social designers to understand and address the challenges facing society.","shows":[{"start":"2015-05-01T00:00:00.000Z","end":"2015-05-01T00:00:00.000Z"}]},{"name":"Studio Art","type":"Low-Residency MFA","shortform":"MFAST","alias":["Studio Art","Studio Art (Low-Residency MFA)"],"id":"studio-art-mfa","blurb":"This low-residency, 60-credit interdisciplinary MFA program is designed for experienced artists who want to pursue graduate study without disrupting their ongoing careers. The emphasis of the program is in integrating practice with theory, where students are encouraged to be independent thinkers and researchers who may focus within one specific medium or work across various media.","shows":[{"start":"2015-06-20T00:00:00.000Z","end":"2015-07-27T00:00:00.000Z"}]},{"name":"Teaching","type":"MAT","alias":["MA Teaching","Teaching","Teaching (MAT)"],"id":"teaching-ma","blurb":"MICA’s MAT program is nationally recognized for its success preparing art education professionals who successfully integrate personal artistry with the skill and understanding to direct the art making of others.Experience hands-on experience in teaching along with coursework in practice, current theory, and research—all within a supportive community of students and faculty who are internationally recognized leaders in the field.","shows":[{"start":"2015-01-23T00:00:00.000Z","end":"2015-02-08T00:00:00.000Z","title":"Show I"},{"start":"2015-02-13T00:00:00.000Z","end":"2015-03-01T00:00:00.000Z","title":"Show II"},{"start":"2015-03-06T00:00:00.000Z","end":"2015-03-22T00:00:00.000Z","title":"Show III"}]}]}
 },{}],"/srv/www/sites/mica-2015.ezle.io/app/data/studentSchema.json":[function(require,module,exports){
-module.exports=module.exports=module.exports=module.exports=module.exports=module.exports=module.exports=module.exports=module.exports={"props":{"uid":{"type":"string","required":true},"personalEmail":{"element":"text","label":"Personal Email","type":"email"},"website":{"element":"text","label":"Personal Website","type":"text","placeholder":"http://"},"twitter":{"element":"text","type":"text","label":"Twitter username"},"facebook":{"element":"text","type":"text","label":"Facebook username"},"instagram":{"element":"text","type":"text","label":"Instagram username"},"pic":{"element":"text","type":"string","label":"Profile Picture","help":"Add a url to an image to be used as your profile picture."},"firstName":{"label":"First Name","element":"text","type":"string","required":true},"lastName":{"element":"text","label":"Last Name","type":"string","required":true},"program":{"label":"Program","type":"string","required":true,"element":"select","options":[{"name":"Art Education (Online/Low-Residency MA)","alias":["Art Education"],"value":"art-education-ma"},{"name":"Community Arts (MFA)","alias":["Community Arts"],"value":"community-arts-mfa"},{"name":"Critical Studies (MA)","alias":["Critical Studies"],"value":"critical-studies-mfa"},{"name":"Curatorial Practice (MFA)","alias":["Curatorial Practice ","Curatorial Practice"],"value":"curatorial-practice-mfa"},{"name":"Graphic Design (MFA)","alias":["Graphic Design"],"value":"graphic-design-mfa"},{"name":"Leroy E. Hoffberger School of Painting (MFA)","alias":["Hoffberger"],"value":"leroy-e-hoffberfer-school-of-painting-mfa"},{"name":"Illustration Practice (MFA)","alias":["Illustration Practice"],"value":"illustration-practice-mfa"},{"name":"Mount Royal School of Art (MFA)","alias":["Mount Royal"],"value":"mount-royal-school-of-art-mfa"},{"name":"Photographic & Electronic Media (MFA)","alias":["Photo & Electronic Media"],"value":"photographic-and-electronic-media-mfa"},{"name":"Post-Baccalaureate Fine Art","alias":["Post Bac FA"],"value":"post-baccalaureate-fine-art"},{"name":"Post-Baccalaureate Graphic Design","alias":["Post Bac GD"],"value":"post-baccalaureate-graphic-design"},{"name":"Rinehart School of Sculpture (MFA)","alias":["Rinehart"],"value":"rinehart-school-of-sculpture-mfa"},{"name":"Social Design (MA)","alias":["Social Design"],"value":"social-design-ma"},{"name":"Studio Art (Low-Residency MFA)","alias":["Studio Art"],"value":"studio-art-mfa"},{"name":"Teaching (MAT)","alias":["MA Teaching","Teaching"],"value":"teaching-ma"}]},"location":{"element":"select","label":"Exhibition Location","required":true,"type":"text","options":[{"name":"Decker","alias":["Decker","Decker Gallery"],"value":"decker"},{"name":"Fox 3","alias":["Fox 3"],"value":"fox-3"},{"name":"Leidy","alias":["Leidy","Leidy Gallery"],"value":"leidy"},{"name":"Meyerhoff","alias":["Meyerhoff","Meyerhoff Gallery"],"value":"meyerhoff"},{"name":"North Avenue Market","alias":["D Center","North Avenue Market"],"value":"north-avenue-market"},{"name":"Off Campus","alias":["Off Campus"],"value":"off-campus"},{"name":"Pinkard","alias":["Pinkard","Pinkard Gallery"],"value":"pinkard"},{"name":"Riggs","alias":["Riggs","Riggs Gallery","Riggs Gallery (Hallway)","Riggs/Leidy Gallery"],"value":"riggs"},{"name":"Walters Art Museum","alias":["Walters","Walters Art Gallery","The Walters"],"value":"walters-art-museum"}]},"statement":{"element":"textarea","label":"Statement","type":"text","help":"The statement you want to accompany your work. *Italic* **Bold**."}}}
+module.exports=module.exports={"props":{"uid":{"type":"string","required":true},"personalEmail":{"element":"text","label":"Personal Email","type":"email"},"website":{"element":"text","label":"Personal Website","type":"text","placeholder":"http://"},"twitter":{"element":"text","type":"text","label":"Twitter username"},"facebook":{"element":"text","type":"text","label":"Facebook username"},"instagram":{"element":"text","type":"text","label":"Instagram username"},"pic":{"element":"text","type":"string","label":"Profile Picture","help":"Add a url to an image to be used as your profile picture."},"firstName":{"label":"First Name","element":"text","type":"string","required":true},"lastName":{"element":"text","label":"Last Name","type":"string","required":true},"program":{"label":"Program","type":"string","required":true,"element":"select","options":[{"name":"Art Education (Online/Low-Residency MA)","alias":["Art Education"],"value":"art-education-ma"},{"name":"Community Arts (MFA)","alias":["Community Arts"],"value":"community-arts-mfa"},{"name":"Critical Studies (MA)","alias":["Critical Studies"],"value":"critical-studies-mfa"},{"name":"Curatorial Practice (MFA)","alias":["Curatorial Practice ","Curatorial Practice"],"value":"curatorial-practice-mfa"},{"name":"Graphic Design (MFA)","alias":["Graphic Design"],"value":"graphic-design-mfa"},{"name":"Leroy E. Hoffberger School of Painting (MFA)","alias":["Hoffberger"],"value":"leroy-e-hoffberfer-school-of-painting-mfa"},{"name":"Illustration Practice (MFA)","alias":["Illustration Practice"],"value":"illustration-practice-mfa"},{"name":"Mount Royal School of Art (MFA)","alias":["Mount Royal"],"value":"mount-royal-school-of-art-mfa"},{"name":"Photographic & Electronic Media (MFA)","alias":["Photo & Electronic Media"],"value":"photographic-and-electronic-media-mfa"},{"name":"Post-Baccalaureate Fine Art","alias":["Post Bac FA"],"value":"post-baccalaureate-fine-art"},{"name":"Post-Baccalaureate Graphic Design","alias":["Post Bac GD"],"value":"post-baccalaureate-graphic-design"},{"name":"Rinehart School of Sculpture (MFA)","alias":["Rinehart"],"value":"rinehart-school-of-sculpture-mfa"},{"name":"Social Design (MA)","alias":["Social Design"],"value":"social-design-ma"},{"name":"Studio Art (Low-Residency MFA)","alias":["Studio Art"],"value":"studio-art-mfa"},{"name":"Teaching (MAT)","alias":["MA Teaching","Teaching"],"value":"teaching-ma"}]},"location":{"element":"select","label":"Exhibition Location","required":true,"type":"text","options":[{"name":"Decker","alias":["Decker","Decker Gallery"],"value":"decker"},{"name":"Fox 3","alias":["Fox 3"],"value":"fox-3"},{"name":"Leidy","alias":["Leidy","Leidy Gallery"],"value":"leidy"},{"name":"Meyerhoff","alias":["Meyerhoff","Meyerhoff Gallery"],"value":"meyerhoff"},{"name":"North Avenue Market","alias":["D Center","North Avenue Market"],"value":"north-avenue-market"},{"name":"Off Campus","alias":["Off Campus"],"value":"off-campus"},{"name":"Pinkard","alias":["Pinkard","Pinkard Gallery"],"value":"pinkard"},{"name":"Riggs","alias":["Riggs","Riggs Gallery","Riggs Gallery (Hallway)","Riggs/Leidy Gallery"],"value":"riggs"},{"name":"Walters Art Museum","alias":["Walters","Walters Art Gallery","The Walters"],"value":"walters-art-museum"}]},"statement":{"element":"textarea","label":"Statement","type":"text","help":"The statement you want to accompany your work. *Italic* **Bold**."}}}
 },{}],"/srv/www/sites/mica-2015.ezle.io/app/models/embed.coffee":[function(require,module,exports){
 var Model, r;
 
@@ -5303,7 +5699,7 @@ module.exports = React.createClass({
             return _this.handleCategoryClick(id);
           }),
           "className": "filter"
-        }, name), (activeFilterSet === id ? React.createElement(El, {
+        }, React.createElement("span", null, name)), (activeFilterSet === id ? React.createElement(El, {
           "onClick": _this.handleCategoryClick
         }) : void 0));
       };
@@ -5464,7 +5860,7 @@ module.exports = React.createClass({
       "target": "_blank",
       "className": "micalogo"
     }, React.createElement("img", {
-      "src": "images/mica_lockup_transp.png",
+      "src": "/assets/images/mica_lockup_transp.png",
       "alt": "MICA Logo"
     }))), React.createElement("div", {
       "className": "column span1 footer-contact"
@@ -6536,7 +6932,6 @@ module.exports = React.createClass({
     if (next_i === usr.files.length) {
       next_i = '0';
     }
-    console.log(next_i);
     return this.replaceWith('usrProfile', {
       uid: usr.uid,
       img: next_i
@@ -6548,7 +6943,6 @@ module.exports = React.createClass({
     files = usr.files, uid = usr.uid;
     activeFile = img;
     last_i = files.length - 1;
-    console.log('render ', img_i);
     return React.createElement("div", {
       "id": "slideshow"
     }, React.createElement("div", {
@@ -6592,43 +6986,53 @@ _ref = require('react-router'), Link = _ref.Link, Navigation = _ref.Navigation;
 module.exports = React.createClass({
   mixins: [Navigation],
   render: function() {
-    var nextClick, nextPeer, prevClick, prevPeer, _ref1;
-    _ref1 = this.props.usr, prevPeer = _ref1.prevPeer, nextPeer = _ref1.nextPeer;
-    prevClick = (function(_this) {
-      return function(e) {
-        e.preventDefault();
-        return _this.replaceWith('usrProfile', {
+    var Next, Prev, nextClick, nextPeer, prevClick, prevPeer, uid, _ref1;
+    _ref1 = this.props.usr, prevPeer = _ref1.prevPeer, nextPeer = _ref1.nextPeer, uid = _ref1.uid;
+    if (prevPeer && prevPeer.uid) {
+      prevClick = (function(_this) {
+        return function(e) {
+          e.preventDefault();
+          return _this.replaceWith('usrProfile', {
+            uid: prevPeer.uid
+          });
+        };
+      })(this);
+      Prev = React.createElement("li", {
+        "className": "previous"
+      }, React.createElement(Link, {
+        "onClick": prevClick,
+        "params": {
           uid: prevPeer.uid
-        });
-      };
-    })(this);
-    nextClick = (function(_this) {
-      return function(e) {
-        e.preventDefault();
-        return _this.replaceWith('usrProfile', {
+        },
+        "to": "usrProfile"
+      }, "\u2190"));
+    } else {
+      console.log('no prev peer', uid);
+    }
+    if (nextPeer && nextPeer.uid) {
+      nextClick = (function(_this) {
+        return function(e) {
+          e.preventDefault();
+          return _this.replaceWith('usrProfile', {
+            uid: nextPeer.uid
+          });
+        };
+      })(this);
+      Next = React.createElement("li", {
+        "className": "next"
+      }, React.createElement(Link, {
+        "onClick": nextClick,
+        "params": {
           uid: nextPeer.uid
-        });
-      };
-    })(this);
+        },
+        "to": "usrProfile"
+      }, "\u2192"));
+    } else {
+      console.log('no next peer', uid);
+    }
     return React.createElement("ul", {
       "className": "student-nav"
-    }, React.createElement("li", {
-      "className": "previous"
-    }, React.createElement(Link, {
-      "onClick": prevClick,
-      "params": {
-        uid: prevPeer.uid
-      },
-      "to": "usrProfile"
-    }, "\u2190")), React.createElement("li", {
-      "className": "next"
-    }, React.createElement(Link, {
-      "onClick": nextClick,
-      "params": {
-        uid: nextPeer.uid
-      },
-      "to": "usrProfile"
-    }, "\u2192")));
+    }, Prev, Next);
   }
 });
 
@@ -6652,7 +7056,7 @@ module.exports = React.createClass({
       "className": "scheduleGroup first"
     }, React.createElement("h3", null, "January\u2013June"), React.createElement("ul", null, React.createElement("li", null, "Curatorial Practice, MFA"))), React.createElement("div", {
       "className": "scheduleGroup"
-    }, React.createElement("h3", null, "January 23\u2013February 8", React.createElement("br", null), "February 12\u2013March 1", React.createElement("br", null), "March 6\u2013March 22"), React.createElement("ul", null, React.createElement("li", null, "Teaching, MA: Show I", React.createElement("br", null), "Teaching, MA: Show II", React.createElement("br", null), "Teaching, MA: Show III"))), ((function() {
+    }, React.createElement("h3", null, "January 23\u2013February 8", React.createElement("br", null), "February 13\u2013March 1", React.createElement("br", null), "March 6\u2013March 22"), React.createElement("ul", null, React.createElement("li", null, "Teaching, MA: Show I", React.createElement("br", null), "Teaching, MA: Show II", React.createElement("br", null), "Teaching, MA: Show III"))), ((function() {
 
       /* group 2 */
     })()), React.createElement("div", {
@@ -6664,9 +7068,9 @@ module.exports = React.createClass({
       "className": "scheduleGroup"
     }, React.createElement("h3", null, "April 17\u2013May 3"), React.createElement("ul", null, React.createElement("li", null, "Community Arts, MFA"), React.createElement("li", null, "LeRoy E. Hoffberger School of Painting, MFA"), React.createElement("li", null, "Mount Royal School of Art, MFA"), React.createElement("li", null, "Photographic and Electronic Media, MFA"), React.createElement("li", null, "Rinehart School of Sculpture, MFA"))), React.createElement("div", {
       "className": "scheduleGroup"
-    }, React.createElement("h3", null, "May 1"), React.createElement("ul", null, React.createElement("li", null, "Social Design, MA, Social Design Exchange"))), React.createElement("div", {
+    }, React.createElement("h3", null, "May 1"), React.createElement("ul", null, React.createElement("li", null, "Social Design, MA ", React.createElement("br", null), "MASD Thesis Public Pitch ", React.createElement("br", null), "BBOX at the Gateway, Maryland Institute College of Art"))), React.createElement("div", {
       "className": "scheduleGroup"
-    }, React.createElement("h3", null, "May 2"), React.createElement("ul", null, React.createElement("li", null, "Critical Studies, MA, Symposium @ Walters"))), React.createElement("div", {
+    }, React.createElement("h3", null, "May 2"), React.createElement("ul", null, React.createElement("li", null, "Critical Studies, MA ", React.createElement("br", null), React.createElement("em", null, "Narratives of Modernity, Contemporaneity, and Desire"), " ", React.createElement("br", null), "Symposium at the Walters Art Museum"))), React.createElement("div", {
       "className": "scheduleGroup"
     }, React.createElement("h3", null, "June 27\u2013July 11"), React.createElement("ul", null, React.createElement("li", null, "Studio Art, MFA"))), React.createElement("div", {
       "className": "scheduleGroup last"

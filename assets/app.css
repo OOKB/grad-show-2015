@@ -699,7 +699,7 @@ header {
   float: left;
   width: calc(50%);
   height: 100px;
-  /* some way to dynamically set them all the same based on the tallest one ? */
+  /* is there some way to dynamically set them all the same based on the tallest one ? */
   overflow: hidden;
   cursor: pointer;
 }
@@ -707,7 +707,7 @@ header {
   #projects.list > li {
     width: calc(33.33333333%);
     height: 200px;
-    /* some way to dynamically set them all the same based on the tallest one ? */
+    /* is there some way to dynamically set them all the same based on the tallest one ? */
   }
 }
 @media (min-width: 768px) {
