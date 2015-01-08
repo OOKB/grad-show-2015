@@ -240,7 +240,7 @@ textarea {
   display: block;
   width: 150px;
   height: 150px;
-  background: url(images/logo.svg) center center no-repeat;
+  background: url("images/logo.svg") center center no-repeat;
   background-size: cover;
   position: absolute;
   top: 50%;
@@ -651,7 +651,7 @@ a:visited {
   border-color: #f67fc5;
 }
 header {
-  background-image: url("/images/micagradshowletters.jpg");
+  background-image: url("images/micagradshowletters.jpg");
   /** just incase something breaks and a special class doesn't get added */
   background-position: center center;
   background-repeat: no-repeat;
@@ -668,25 +668,25 @@ header {
   }
 }
 .header-art-1 {
-  background-image: url("/images/micagradshowletters.jpg");
+  background-image: url("images/micagradshowletters.jpg");
 }
 .header-art-2 {
-  background-image: url("/images/collage_MG_6981.jpg");
+  background-image: url("images/collage_MG_6981.jpg");
 }
 .header-art-3 {
-  background-image: url("/images/howng_p_5.jpg");
+  background-image: url("images/howng_p_5.jpg");
 }
 .header-art-4 {
-  background-image: url("/images/s1-sharon-kusiak.jpg");
+  background-image: url("images/s1-sharon-kusiak.jpg");
 }
 .header-art-5 {
-  background-image: url("/images/ckatrib04.jpg");
+  background-image: url("images/ckatrib04.jpg");
 }
 .header-art-6 {
-  background-image: url("/images/ldoughtie.jpg");
+  background-image: url("images/ldoughtie.jpg");
 }
 .header-art-7 {
-  background-image: url("/images/magali-hebert-huot.jpg");
+  background-image: url("images/magali-hebert-huot.jpg");
 }
 #projects {
   margin: 0;
@@ -960,7 +960,7 @@ nav.main-nav li.filter-programs ul#program-filter li.program a:active {
     width: 125px;
   }
   nav .nav-logo {
-    background-image: url("/images/logo-PinkDots-01.svg");
+    background-image: url("images/logo-PinkDots-01.svg");
     width: 45px;
     height: 50px;
     background-size: contain;
@@ -969,7 +969,7 @@ nav.main-nav li.filter-programs ul#program-filter li.program a:active {
     margin: 10px 0 0 30px;
   }
   nav.intro .nav-logo {
-    background-image: url("/images/logo-WhiteDots-01.svg");
+    background-image: url("images/logo-WhiteDots-01.svg");
   }
   /** Programs dropdown menu stuff */
   nav.main-nav li.filter-programs {
