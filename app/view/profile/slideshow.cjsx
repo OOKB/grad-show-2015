@@ -14,7 +14,6 @@ module.exports = React.createClass
     next_i = img_i+1
     if next_i == usr.files.length
       next_i = '0'
-    console.log next_i
     @replaceWith 'usrProfile', {uid: usr.uid, img: next_i}
 
   render: ->
@@ -22,7 +21,6 @@ module.exports = React.createClass
     {files, uid} = usr
     activeFile = img
     last_i = files.length-1
-    console.log 'render ', img_i
 
     <div id="slideshow">
       <div className="active-image">

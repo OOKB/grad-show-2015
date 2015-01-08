@@ -8,9 +8,9 @@ nodejsx = require 'coffee-react/register'
 React = require 'react'
 {Router} = require 'react-router'
 
-data = require '../app/data'
+production = process.env.NODE_ENV is "production"
 
-# Custom.
+data = require '../app/data'
 App = require '../app/app'
 
 # Run Code.
@@ -22,12 +22,17 @@ render = (Handler, props) ->
   fs.writeFileSync(filePath, "<!doctype html>\n" + markup)
 
 processPg = (path) ->
+  console.log path
   vars = {path: path}
   App vars, render
+  return
 
 pages = ['/']
 usrPgs = _.map data.students, (student) ->
   "/students/#{student.uid}"
-# pages = pages.concat usrPgs
+
+if production
+  pages = pages.concat usrPgs
+
 _.each pages, (pg) ->
   processPg pg
