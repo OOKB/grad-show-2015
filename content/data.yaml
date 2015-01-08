@@ -29,8 +29,13 @@ nav:
   -
     title: Programs
     link: filter-programs
+    href: false
+  -
+    title: Updates
+    link: link-updates
+    href: http://micagradstudies.tumblr.com
 
-built_designed:
+builtDesigned:
   -
     name: OOKB
     link: http://www.ookb.co

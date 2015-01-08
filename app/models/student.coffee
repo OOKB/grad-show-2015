@@ -1,5 +1,4 @@
 Model = require("ampersand-model")
-crypto = require 'crypto'
 _ = require 'lodash'
 
 data = require '../data/studentSchema'
@@ -52,7 +51,11 @@ module.exports = Model.extend
       deps: ['location']
       fn: ->
         if @location
-          _.find(props.location.options, value: @location).name
+          loc = _.find(props.location.options, value: @location)
+          if loc
+            loc.name
+          else
+            @location
         else
           null
     search:
@@ -101,10 +104,6 @@ module.exports = Model.extend
       'kai@ezle.io'
     else
       uid+'@mica.edu'
-
-  gravatarUrl: (email) ->
-    hash = crypto.createHash('md5').update(email).digest('hex')
-    'https://www.gravatar.com/avatar/'+hash+'?d=retro&s=300'
 
   parse: (usr) ->
     # if usr.uid and not usr.pic
