@@ -8,7 +8,7 @@ Profile = require './view/profile/profile'
 
 module.exports = (data) ->
 
-  <Route name="app" path="/" handler={Index}>
+  <Route name="app" path="/" ignoreScrollBehavior handler={Index}>
     <Route name="usrProfile" path="/students/:uid/?:img?" handler={Profile} />
     <DefaultRoute handler={Students} />
   </Route>

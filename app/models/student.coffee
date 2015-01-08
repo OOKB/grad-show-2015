@@ -116,6 +116,5 @@ module.exports = Model.extend
       usr.program = prog
     else
       usr.program = {}
-      console.log usr.program + ' not found!'
     #console.log 'Parsed user.'
     return usr

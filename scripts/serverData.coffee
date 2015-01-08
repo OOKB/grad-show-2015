@@ -9,7 +9,8 @@ makeReq = (url, handleData) ->
     console.log 'requesting', url
     r url, (err, resp, body) ->
       unless err
-        body = JSON.parse body
+        unless _.isObject body
+          body = JSON.parse body
         if _.isFunction handleData
           console.log 'process data', url
           body = handleData body
@@ -27,10 +28,20 @@ module.exports = (callback) ->
   url = 'https://mica.ezle.io/users.json'
   getData.students = makeReq url
 
+  r_ops =
+    uri: "https://api.github.com/repos/#{data.github}/branches/master"
+    json: true
+    headers:
+      'user-agent': 'request.js'
+
+  getData.github = makeReq r_ops
+
   save = (err, serverData) ->
     throw err if err
 
     data = _.extend data, serverData
+    data.sha = data.github.commit.sha
+    data = _.without data, 'github'
 
     fs.outputJsonSync 'app/data/index.json', data
     if _.isFunction callback

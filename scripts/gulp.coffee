@@ -1,7 +1,7 @@
 path = require 'path'
 #fs = require 'fs-extra'
 exec = require('child_process').exec
-
+fs = require 'fs-extra'
 gulp = require 'gulp'
 r = require 'request'
 
@@ -18,7 +18,7 @@ transform = require 'vinyl-transform'
 
 less = require 'gulp-less'
 gutil = require 'gulp-util'
-#clean = require 'gulp-clean'
+clean = require 'gulp-clean'
 #zopfli = require 'gulp-zopfli'
 rename = require 'gulp-rename'
 uglify = require 'gulp-uglify'
@@ -53,6 +53,8 @@ gulp.task "browser-sync", ['compile-watch', 'styles', 'static'], ->
 
 # This generate js app file.
 gulp.task 'compile', ->
+  {sha} = fs.readJsonSync './app/data/index.json'
+  fs.mkdirsSync './public/assets'
   browserified = transform (filename) ->
     b = browserify {debug: true, extensions: ['.cjsx', '.coffee']}
     b.add filename
@@ -60,12 +62,12 @@ gulp.task 'compile', ->
     b.bundle()
   gulp.src 'app/app.cjsx'
     .pipe browserified
+    # Rename the file.
+    .pipe rename("#{sha}.js")
     # Extract the map.
-    .pipe transform(-> exorcist('./public/assets/app.js.map'))
+    .pipe transform(-> exorcist("./public/assets/#{sha}.js.map"))
     # Shrink the codebase.
     .pipe uglify()
-    # Rename the file.
-    .pipe rename('app.js')
     .pipe gulp.dest('./public/assets')
 
 # WATCHIFY
@@ -75,10 +77,11 @@ opts.debug = true
 w = watchify browserify('./app/app.cjsx', opts)
 
 bundle = () ->
+  {sha} = fs.readJsonSync './app/data/index.json'
   runSequence 'templates'
   w.bundle()
     .on 'error', gutil.log.bind gutil, 'Browserify Error'
-    .pipe source('app.js')
+    .pipe source("#{sha}.js")
       .pipe buffer()
       .pipe(sourcemaps.init({loadMaps: true}))
       .pipe(sourcemaps.write('./'))
@@ -109,15 +112,26 @@ gulp.task 'templates', (cb) ->
   exec 'coffee ./scripts/renderMarkup.coffee', (err, stdout, stderr) ->
     if stdout
       console.log stdout
-    # if stderr
-    #   console.log stderr
+    cb err
+
+gulp.task 'templates_all', ['templates'], (cb) ->
+  # Calling an external script for this.
+  exec 'coffee ./scripts/renderStudents.coffee', (err, stdout, stderr) ->
+    if stderr
+      console.log stderr
     cb err
 
 # Process LESS to CSS.
-gulp.task 'styles', ->
+gulp.task 'less', ->
   gulp.src(["styles/app.less", 'styles/print.less', 'styles/iefix.less'])
     .pipe less()
     .pipe gulp.dest("./public/assets")
+
+gulp.task 'styles', ['less'], ->
+  {sha} = fs.readJsonSync './app/data/index.json'
+  gulp.src('./public/assets/app.css')
+    .pipe(rename(sha+'.css'))
+    .pipe(gulp.dest('./public/assets'))
 
 # Copy static files.
 gulp.task 'static', ->
@@ -125,8 +139,16 @@ gulp.task 'static', ->
     .pipe gulp.dest('./public/')
 
 # - - - - prod - - - -
+gulp.task 'prod', ['prod_clean'], (cb) ->
+  runSequence ['static', 'serverData'], ['templates_all', 'compile', 'styles'], cb
 
-gulp.task 'deploy', ['static', 'serverData', 'templates', 'styles'], ->
+# Remove contents from public directory.
+gulp.task 'prod_clean', ->
+  gulp.src('./public', read: false)
+    .pipe(clean())
+
+
+gulp.task 'deploy', ['prod'], ->
   gulp.src './public/**/*'
     .pipe deploy cacheDir: './tmp'
 
@@ -146,10 +168,6 @@ gulp.task 'set_sha', (cb) ->
     cb()
   return
 
-# Remove contents from prod directory.
-gulp.task 'prod_clean', ->
-  gulp.src('./prod', read: false)
-    .pipe(clean())
 
 gulp.task 'prod_static', ->
   gulp.src('./static/**')
@@ -159,12 +177,6 @@ gulp.task 'cssProd', ->
   runSequence 'set_sha', ['copy_css', 'templatesProd']
   return
 
-gulp.task 'copy_css', ['styles'], ->
-  gulp.src('./dev/app.css')
-    .pipe(rename(global.sha+'.css'))
-    .pipe(gulp.dest('./prod'))
-  gulp.src('./dev/print.css')
-    .pipe(gulp.dest('./prod'))
 
 gulp.task 'compress', ->
   gulp.src("./prod/*.{js,css,html,json}")

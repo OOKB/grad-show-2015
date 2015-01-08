@@ -9,8 +9,8 @@ module.exports = React.createClass
   # getInitialState: ->
   #/students
   handleClose: ->
-    #@transitionTo '/students'
-    window.history.back()
+    @transitionTo 'app'
+    # window.history.back()
 
   componentDidMount: ->
     document.body.style.overflow = 'hidden'
