@@ -58,8 +58,8 @@ module.exports = React.createClass
           <div className="scheduleGroup">
             <h3>May 2</h3>
             <ul>
-              <li>Critical Studies, MA <br>
-                  <em>Narratives of Modernity, Contemporaneity, and Desire </em><br>
+              <li>Critical Studies, MA <br />
+                  <em>Narratives of Modernity, Contemporaneity, and Desire</em> <br />
                   Symposium at the Walters Art Museum
               </li>
             </ul>
