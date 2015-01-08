@@ -14,7 +14,7 @@ module.exports = React.createClass
         <div className="group">
           <div className="column span1 footer-logo">
             <a href="http://www.mica.edu/" target="_blank" className="micalogo">
-              <img src="assets/images/mica_lockup_transp.png" alt="MICA Logo" />
+              <img src="/assets/images/mica_lockup_transp.png" alt="MICA Logo" />
             </a>
           </div>
           <div className="column span1 footer-contact">
