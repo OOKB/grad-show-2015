@@ -26,6 +26,6 @@ module.exports = React.createClass
         <script src="/paper-full-v0.9.21.min.js" type="text/javascript" />
         <script src={jsFilePath} type="text/javascript" />
         <script src="/ga.js" type="text/javascript" />
-        <span dangerouslySetInnerHTML={__html: '<script type="text/paperscript" canvas="canvas" src="mgslogo.js"></script>'} />
+        <span dangerouslySetInnerHTML={__html: '<script type="text/paperscript" canvas="canvas" src="/mgslogo.js"></script>'} />
       </body>
     </html>

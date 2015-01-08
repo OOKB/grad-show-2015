@@ -8,11 +8,11 @@ module.exports = React.createClass
   # getInitialState: ->
 
   render: ->
-    {usr, img} = @props
+    {usr, img, img_i} = @props
     {statement} = usr
 
     if img
-      Imgs = <Slideshow usr={usr} img={img} />
+      Imgs = <Slideshow usr={usr} img={img} img_i={img_i} />
     else
       Imgs = <NoImages />
 

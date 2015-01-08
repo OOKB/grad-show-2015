@@ -8,16 +8,21 @@ module.exports = React.createClass
   mixins: [Navigation]
   # getInitialState: ->
   handleActiveClick: ->
-    next_i = @props.img_i+1
-    usr = @props.usr
-    if next_i == usr.files.length then next_i = 0
+    {img_i, usr} = @props
+    img_i = img_i or 0
+    console.log img_i
+    next_i = img_i+1
+    if next_i == usr.files.length
+      next_i = '0'
+    console.log next_i
     @replaceWith 'usrProfile', {uid: usr.uid, img: next_i}
 
   render: ->
-    {files, uid} = @props.usr
-    activeFile = @props.img
+    {usr, img, img_i} = @props
+    {files, uid} = usr
+    activeFile = img
     last_i = files.length-1
-    img_i = @props.img_i
+    console.log 'render ', img_i
 
     <div id="slideshow">
       <div className="active-image">
