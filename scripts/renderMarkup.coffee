@@ -2,15 +2,14 @@
 fs = require 'fs-extra'
 path = require 'path'
 _ = require 'queries'
+argv = require('minimist')(process.argv.slice(2))
+production = process.env.NODE_ENV is "production"
 
-# Contrib.
 nodejsx = require 'coffee-react/register'
+
 React = require 'react'
 {Router} = require 'react-router'
 
-production = process.env.NODE_ENV is "production"
-
-data = require '../app/data'
 App = require '../app/app'
 
 # Run Code.
@@ -27,12 +26,8 @@ processPg = (path) ->
   App vars, render
   return
 
-pages = ['/']
-usrPgs = _.map data.students, (student) ->
-  "/students/#{student.uid}"
+pg = argv.pg or '/'
 
-if production
-  pages = pages.concat usrPgs
+processPg pg
 
-_.each pages, (pg) ->
-  processPg pg
+return
