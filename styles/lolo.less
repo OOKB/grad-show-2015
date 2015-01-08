@@ -1,0 +1,141 @@
+#intro {
+  background-color: @pink;
+}
+
+#intro p{
+  margin: 5%;
+  color:#fff;
+}
+
+#intro .container {
+  margin: 0 auto;
+  font-size: 18px;
+}
+
+/*student page*/
+.student-info{
+  position:relative;
+  width:30%;
+  float:left;
+}
+
+.student-main{
+  width:70%;
+  float:left;
+}
+
+.student-details h2{
+  margin:0;
+  padding:0;
+  clear:both;
+  position: relative;
+  text-align: left;
+}
+
+.student-details span{
+  top: 0;
+  left:0;
+  float:left;
+  margin-right:.2em;
+  margin-bottom:.5em;
+}
+
+.contact-info a, .contact-info a:hover{
+  border-bottom: 2px solid @pink;
+  text-decoration: none;
+  color: @blackText;
+}
+
+.contact-info a:hover, .contact-info a:after{
+  color: @pink;
+}
+
+.student-nav li {
+  margin-bottom: 30px;
+  list-style:none;
+  float:left;
+  font-size:36px;
+}
+
+.student-nav li:hover{
+  color:@pink;
+}
+
+.random{
+  margin: 0 50px;
+}
+
+#slideshow{
+  width:100%;
+  margin-bottom:50px;
+}
+
+.thumbs {
+  width:100%;
+  margin-left: -5px;
+  margin-right: -5px;
+  margin-top: 5px;
+}
+
+.thumbs::after {
+  content:'';
+  display:table;
+  clear:both;
+}
+
+.thumbs li {
+  float: left;
+  width: calc(100% / 6);
+  padding: 5px;
+}
+
+.student-main .statement {
+  width:70%;
+  float:left;
+  padding: 10px;
+}
+
+.program-list {
+  float:right;
+  width: 30%;
+  padding: 10px;
+}
+
+.program-list h3 {
+  color:@pink;
+}
+
+.program-list li a, .program-list li a:active {
+text-decoration: none;
+  color: @blackText;
+}
+
+.program-list li a:hover, .program-list li a.after {
+  color:inherit;
+  border-bottom: 2px solid @pink;
+}
+
+/*search bar*/
+.form-control {
+  display: block;
+  width: 50%;
+  height: 36px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.4;
+  color: @pink;
+  background-color: #fff;
+  border: 1px solid #666;
+  border-radius: 4px;
+  transition: all .3s;
+
+}
+.form-control:hover {
+  outline:0;
+  border-color:@pink;
+}
+
+.form-control:focus {
+  outline: 0;
+  border-color: @pink;
+}

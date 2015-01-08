@@ -1,0 +1,343 @@
+/**** STUDENTOVERLAY.LESS ****/
+/**** STUDENTOVERLAY.LESS ****/
+/**** STUDENTOVERLAY.LESS ****/
+/**** STUDENTOVERLAY.LESS ****/
+
+/****************************/
+/** STUDENT OVERLAY STYLES **/
+/****************************/
+
+#student-overlay {
+//   background: rgba(235,235,235,.95);
+  background: white;
+  position: fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  z-index: 1000;
+  overflow: scroll;
+  border: 10px solid @pink;
+}
+
+article#student-overlay {
+  padding: 15px;
+}
+
+article#student-overlay .container {
+  width:100%;
+}
+
+#student-overlay .close {
+  /** hides the text inside **/
+  text-indent: 500%; // this shouldn't have to be this big, but there is some mobile chrome bug that is demanding it.
+  white-space: nowrap;
+  overflow: hidden;
+  /**/
+  background: transparent url("X.svg") 0 0 no-repeat;
+  background-size: 50px 25px !important;
+  border: none;
+  display: block;
+  height: 25px !important;
+  width: 25px !important;
+  /**/
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  z-index: 1111;
+}
+
+#student-overlay .close:hover {
+  background-position: -25px 0px;
+}
+
+/* Main left/right page layout CSS */
+.student-info,
+.student-main,
+.student-main .statement,
+.program-list {
+  position: relative;
+  width:100%;
+  padding: 0;
+}
+
+.student-main .statement {
+  margin-bottom: 30px;
+}
+
+@media (min-width: @medium) {
+  article#student-overlay {
+    padding: 50px;
+  }
+
+  #student-overlay .close {
+    top:30px;
+    right:30px;
+  }
+  /* Main left/right page layout CSS */
+  .student-info {
+    width:30%;
+    float:left;
+    padding-right: 20px;
+  }
+
+  .student-main {
+    width:70%;
+    float:left;
+  }
+
+  .student-main .statement {
+    width:70%;
+    float:left;
+    padding-right: 15px;
+  }
+
+  /*** Program List ***/
+  .program-list {
+    float:right;
+    width: 30%;
+    padding-left: 15px;
+  }
+
+}
+
+/* Left sidebar - student info-y stuff */
+.student-details h2 {
+  margin:0;
+  padding:0;
+  clear:both;
+  position: relative;
+  text-align: left;
+  line-height: 1.1;
+  margin-bottom: .2em;
+  font-style: italic;
+}
+
+.student-details span {
+  top: 0;
+  left:0;
+  float:left;
+  margin-right:.2em;
+  margin-bottom:.5em;
+}
+
+.contact-info a{
+  border-bottom: 2px solid @lightGray;
+  text-decoration: none;
+  color: @blackText;
+  line-height: 1.8em;
+}
+
+.contact-info a:hover, .contact-info a:active {
+  border-bottom: 2px solid @pink;
+  color: @blackText;
+}
+
+.student-nav li {
+  margin-bottom: 30px;
+  list-style:none;
+  float:left;
+  font-size:36px;
+}
+
+.student-nav li:hover {
+  color:@pink;
+}
+
+#student-overlay ul.show-details,
+#student-overlay ul.show-details li.program {
+  margin-bottom: 1em;
+}
+
+/*** Image Gallery / Slideshow ***/
+#student-overlay #slideshow {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+#student-overlay #slideshow .active-image {
+  width: 100%;
+  height: 200px;
+  position: static;
+}
+
+/* http://css-tricks.com/centering-in-the-unknown/ - this is what I used for vertical centering... works like a charm! */
+/* here is some other info too: http://gtwebdev.com/workshop/vcenter/vcenter-inline-css.php */
+#slideshow .active-image::before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  /* margin: -0.1em; */ /* Adjusts for spacing */
+}
+
+#slideshow .active-image > img,
+#slideshow .active-image > a > img {
+  display: inline-block;
+  vertical-align: middle;
+  max-height: 100%;
+  max-width: 98%;
+  height: auto;
+  margin: 0;
+  border-radius: 2px;
+}
+
+#slideshow .active-image ul.image-caption {
+  position: absolute;
+  left: 0;
+  bottom:-90px;
+  text-align: left;
+  width: 100%;
+  font-size: 90%;
+  color: @mediumGray;
+}
+
+ul.image-caption h3 {
+  font-weight: normal;
+  font-style: italic;
+  font-size: 1em;
+}
+
+.thumbs {
+  width: ~"calc(100% + 10px)";
+  margin-left: -5px;
+  margin-right: -5px;
+  margin-top: 5px;
+}
+
+li.thumb {
+  float: left;
+  width: ~"calc(100% / 4)";
+  padding: 5px;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: @small) {
+  #student-overlay #slideshow .active-image {
+    height: 300px;
+  }
+
+  li.thumb {
+    width: ~"calc(100% / 6)";
+  }
+
+}
+
+/* Medium – Laptop(ish)/Small Desktop */
+@media only screen and (min-width: @medium) {
+  #student-overlay #slideshow {
+    margin-bottom: 50px;
+  }
+
+  #student-overlay #slideshow .active-image {
+    height: 50vh;
+    position: relative;
+  }
+
+  #slideshow .active-image ul.image-caption {
+    left: ~"calc(-33% - 20px)";
+    bottom:0;
+    text-align: right;
+    width: 33%;
+  }
+
+  li.thumb {
+    width: ~"calc(100% / 10)";
+  }
+
+}
+
+/* Large – Desktop */
+@media only screen and (min-width: @large) {
+  #student-overlay #slideshow .active-image {
+    height: 70vh;
+    position: relative;
+  }
+
+  #slideshow .active-image ul.image-caption {
+    left: ~"calc(-25% - 20px)";
+    width: 25%;
+  }
+
+  li.thumb {
+    width: ~"calc(100% / 13)";
+  }
+
+}
+
+li.thumb img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 2px;
+  cursor: pointer;
+  opacity: .5;
+  transition: all .5s;
+}
+
+li.thumb:hover img { opacity: 1; }
+
+/*** program list ***/
+.program-list h3 {
+  color:@pink;
+}
+
+.program-list li a,
+.program-list li a:active {
+text-decoration: none;
+  color: @blackText;
+  line-height: 1.8em;
+  border-bottom: 2px solid @lightGray;
+}
+
+.program-list li a:hover,
+.program-list li a.after {
+  color:inherit;
+  border-bottom: 2px solid @pink;
+}
+
+ul.student-nav li.previous {
+  margin-right: 20px;
+}
+
+ul.student-nav li.next {
+  margin-left: 20px;
+}
+
+ul.student-nav li.previous a:link,ul.student-nav li.next a:link,
+ul.student-nav li.previous a:visited,ul.student-nav li.next a:visited, {
+  color: @pink;
+  text-decoration: none;
+}
+
+ul.student-nav li.previous a:hover,ul.student-nav li.next a:hover,
+ul.student-nav li.previous a:active,ul.student-nav li.next a:active, {
+  color: @black;
+  text-decoration: none;
+}
+
+.no-images {
+  color: @lightGray;
+  margin-bottom: 1em;
+}
+
+.statement p {
+  margin-bottom: .5em;
+}
+
+.statement h1,
+.statement h2,
+.statement h3,
+.statement h4,
+.statement h5,
+.statement h6 {
+  text-align: left;
+  margin: .5em 0 .1em;
+  color: @darkGray;
+}
+
+/**** / END STUDENTOVERLAY.LESS ****/
+/**** / END STUDENTOVERLAY.LESS ****/
+/**** / END STUDENTOVERLAY.LESS ****/
+/**** / END STUDENTOVERLAY.LESS ****/
