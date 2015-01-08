@@ -1,0 +1,1515 @@
+/* ------------------------------------------------------*/
+/* ---------->>> everything gets imported! <<<-----------*/
+/* ------------------------------------------------------*/
+/* ============================ RESET ============================ */
+/* ===== Eric Meyer Reset ===== */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1.33;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* ===== CUSTOM RESET ===== */
+object {
+  outline: none;
+  display: block;
+  overflow: hidden;
+}
+/* force redraw on IE8, fix outline/scroll bug on Firefox 3.6, remove unnecessary margin (copied from swffit)  */
+textarea {
+  overflow: auto;
+}
+/* fix IE */
+iframe {
+  border: 0;
+}
+/* fix line-height [https://gist.github.com/413930] */
+sup,
+sub {
+  line-height: 0;
+  font-size: .75em;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+/* ----------------------------------------------------*/
+/* ---------->>> Variables for the site! <<<-----------*/
+/* ----------------------------------------------------*/
+/** screen sizes (minimum) **/
+/* ---------------------------------------------------------------------------*/
+/* ---------->>> basic styles for the student submission forms! <<<-----------*/
+/* ---------------------------------------------------------------------------*/
+body {
+  padding: 10px 0 50px 0;
+}
+.login .help-block {
+  display: block;
+  margin-top: 1.1111em;
+}
+img.logo {
+  display: block;
+  margin: 0 auto;
+  width: 250px;
+}
+.editable-input,
+.editable-buttons {
+  float: left;
+  margin: 0 2.5px;
+}
+.editable-buttons button {
+  margin: 0 2.5px;
+  width: auto;
+  height: 30px;
+}
+.editable-click {
+  color: green;
+}
+.editable-click:hover {
+  color: darkgreen;
+  text-decoration: underline;
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
+}
+.editable-empty {
+  color: #f49ac1;
+  font-style: italic;
+  text-decoration: underline;
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
+}
+.editable-empty:hover {
+  color: rgba(244, 154, 193, 0.66);
+}
+.profilepics.col-md-4 img {
+  width: 20%;
+  margin: 0 2.5%;
+}
+.navbar-default a.active {
+  color: black !important;
+  border-bottom: 4px solid;
+  box-sizing: border-box;
+}
+select,
+textarea {
+  width: 333px;
+}
+#statement textarea {
+  height: 150px;
+  width: 333px;
+}
+.btn-primary {
+  color: #fff;
+  background-color: forestgreen;
+  border-color: green;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: green;
+  border-color: darkgreen;
+}
+#logo {
+  display: block;
+  width: 150px;
+  height: 150px;
+  background: url("images/logo.svg") center center no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -75px;
+  margin-top: -75px;
+  z-index: 1000;
+}
+#logobg {
+  display: block;
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -300px;
+  /* half canvas width */
+  margin-top: -300px;
+  /* half canvas height */
+}
+#canvas {
+  opacity: .9;
+  background-color: transparent !important;
+  margin: 0;
+  padding: 0;
+}
+@media (min-width: 768px) {
+  #logo {
+    width: 200px;
+    height: 200px;
+    margin-left: -100px;
+    margin-top: -100px;
+  }
+}
+@media (min-width: 1200px) {
+  #logo {
+    width: 300px;
+    height: 300px;
+    margin-left: -150px;
+    margin-top: -150px;
+  }
+}
+/**** ALEX.LESS ****/
+/**** ALEX.LESS ****/
+/**** ALEX.LESS ****/
+/**** ALEX.LESS ****/
+header .down-arrow {
+  display: block;
+  width: 30px;
+  height: 17px;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  margin-left: -15px;
+  /* half down-arrow width */
+  padding: 0;
+  text-indent: -10000px;
+  background-image: url(down-arrow.svg);
+  background-repeat: none;
+  opacity: .5;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-animation: moveDownArrow 1s;
+  /* Chrome, Safari, Opera */
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation: moveDownArrow 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-play-state: running;
+}
+header .down-arrow:hover {
+  opacity: 1;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+@-webkit-keyframes moveDownArrow {
+  0% {
+    bottom: 50px;
+  }
+  20% {
+    bottom: 50px;
+  }
+  80% {
+    bottom: 40px;
+  }
+  100% {
+    bottom: 40px;
+  }
+}
+@-moz-keyframes moveDownArrow {
+  0% {
+    bottom: 50px;
+  }
+  20% {
+    bottom: 50px;
+  }
+  80% {
+    bottom: 40px;
+  }
+  100% {
+    bottom: 40px;
+  }
+}
+@keyframes moveDownArrow {
+  0% {
+    bottom: 50px;
+  }
+  20% {
+    bottom: 50px;
+  }
+  80% {
+    bottom: 40px;
+  }
+  100% {
+    bottom: 40px;
+  }
+}
+/*
+	SCHEDULE
+*/
+.scheduleGroup {
+  margin: 0;
+  padding: 0;
+  clear: both;
+  line-height: 26px;
+}
+.scheduleGroup h3 span.meta {
+  display: block;
+  font-size: .75em;
+  font-weight: normal;
+  color: #999;
+}
+.scheduleGroup ul {
+  list-style-type: none;
+  position: relative;
+}
+.scheduleGroup.first ul,
+.scheduleGroup.first h3 {
+  padding-top: 0;
+}
+.scheduleGroup.last ul,
+.scheduleGroup.last h3 {
+  padding-bottom: 0;
+}
+.scheduleGroup ul li {
+  position: relative;
+  list-style-type: none;
+}
+.scheduleGroup ul li::before {
+  display: absolute;
+  left: 0;
+  vertical-align: top;
+  content: "";
+  background-image: url(bullet.svg);
+  width: 21px;
+  height: 21px;
+  margin: 2px 15px 0 -31px;
+}
+/* Small – Tablet(ish) */
+.scheduleGroup {
+  width: 75%;
+  margin: 0 auto;
+}
+.scheduleGroup h3 {
+  position: relative;
+  padding: 20px 0 0 20px;
+  margin-left: -21px;
+  border-left: 1px solid #f67fc5;
+}
+.scheduleGroup h3::before {
+  position: absolute;
+  left: 0px;
+  display: block;
+  vertical-align: top;
+  content: "";
+  background-image: url(bullet.svg);
+  width: 21px;
+  height: 21px;
+  margin: 2px 15px 0 -11px;
+}
+.scheduleGroup ul li {
+  padding: 0 0 0 20px;
+  margin-left: -21px;
+  border-left: 1px solid #f67fc5;
+}
+.scheduleGroup ul li::before {
+  display: inline-block;
+  vertical-align: top;
+  content: "";
+  background-image: url(bullet.svg);
+  background-size: 11px 11px;
+  width: 11px;
+  height: 11px;
+  margin: 8px 15px 0 -26px;
+}
+/* hack to hide border on top and bottom of dotted line */
+.scheduleGroup.first h3::before {
+  border-top: 3px solid #fff;
+  top: -3px;
+}
+.scheduleGroup.last ul li::before {
+  border-bottom: 10px solid #fff;
+}
+/* Medium – Laptop(ish)/Small Desktop */
+@media only screen and (min-width: 768px) {
+  .scheduleGroup {
+    width: 100%;
+    margin: 0;
+  }
+  .scheduleGroup h3 {
+    margin: 0 20px 0 0;
+    padding: 20px 0;
+    float: left;
+    width: 325px;
+    text-align: right;
+    border: none;
+  }
+  .scheduleGroup h3::before {
+    display: none;
+    content: "";
+    background-image: none;
+    width: 0;
+    height: 0;
+    margin: 0;
+  }
+  .scheduleGroup ul {
+    margin: 0;
+    padding: 20px 0 20px 20px;
+    float: left;
+    width: 300px;
+    border-left: 1px solid #f67fc5;
+  }
+  .scheduleGroup ul li::before {
+    position: absolute;
+    left: 0;
+    vertical-align: top;
+    content: "";
+    background-image: url(bullet.svg);
+    background-size: 21px 21px;
+    width: 21px;
+    height: 21px;
+    margin: 2px 15px 0 -11px;
+  }
+  /* hack to hide border on top and bottom of dotted line */
+  .scheduleGroup.first ul li::before {
+    border-top: 3px solid #fff;
+    top: -3px;
+  }
+  .scheduleGroup.last ul li::before {
+    border-bottom: 3px solid #fff;
+  }
+}
+/* Large – Desktop */
+@media only screen and (min-width: 1200px) {
+  .scheduleGroup h3 {
+    margin: 0 20px 0 0;
+    padding: 20px 0;
+    float: left;
+    width: 450px;
+    text-align: right;
+  }
+  .scheduleGroup ul {
+    margin: 0;
+    padding: 20px 0 20px 20px;
+    float: left;
+    width: 400px;
+    border-left: 1px solid #f67fc5;
+  }
+}
+/* links */
+a:link,
+a:visited {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.scheduleGroup .meta a:link,
+.scheduleGroup .meta a:visited {
+  color: #999;
+}
+.scheduleGroup .meta a:hover,
+.scheduleGroup .meta a:active {
+  color: #444;
+}
+#intro {
+  background-color: #f67fc5;
+}
+#intro p {
+  margin: 5%;
+  color: #fff;
+}
+#intro .container {
+  margin: 0 auto;
+  font-size: 18px;
+}
+/*student page*/
+.student-info {
+  position: relative;
+  width: 30%;
+  float: left;
+}
+.student-main {
+  width: 70%;
+  float: left;
+}
+.student-details h2 {
+  margin: 0;
+  padding: 0;
+  clear: both;
+  position: relative;
+  text-align: left;
+}
+.student-details span {
+  top: 0;
+  left: 0;
+  float: left;
+  margin-right: .2em;
+  margin-bottom: .5em;
+}
+.contact-info a,
+.contact-info a:hover {
+  border-bottom: 2px solid #f67fc5;
+  text-decoration: none;
+  color: #444444;
+}
+.contact-info a:hover,
+.contact-info a:after {
+  color: #f67fc5;
+}
+.student-nav li {
+  margin-bottom: 30px;
+  list-style: none;
+  float: left;
+  font-size: 36px;
+}
+.student-nav li:hover {
+  color: #f67fc5;
+}
+.random {
+  margin: 0 50px;
+}
+#slideshow {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.thumbs {
+  width: 100%;
+  margin-left: -5px;
+  margin-right: -5px;
+  margin-top: 5px;
+}
+.thumbs::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.thumbs li {
+  float: left;
+  width: calc(16.66666667%);
+  padding: 5px;
+}
+.student-main .statement {
+  width: 70%;
+  float: left;
+  padding: 10px;
+}
+.program-list {
+  float: right;
+  width: 30%;
+  padding: 10px;
+}
+.program-list h3 {
+  color: #f67fc5;
+}
+.program-list li a,
+.program-list li a:active {
+  text-decoration: none;
+  color: #444444;
+}
+.program-list li a:hover,
+.program-list li a.after {
+  color: inherit;
+  border-bottom: 2px solid #f67fc5;
+}
+/*search bar*/
+.form-control {
+  display: block;
+  width: 50%;
+  height: 36px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #f67fc5;
+  background-color: #fff;
+  border: 1px solid #666;
+  border-radius: 4px;
+  transition: all .3s;
+}
+.form-control:hover {
+  outline: 0;
+  border-color: #f67fc5;
+}
+.form-control:focus {
+  outline: 0;
+  border-color: #f67fc5;
+}
+header {
+  background-image: url("images/micagradshowletters.jpg");
+  /** just incase something breaks and a special class doesn't get added */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+@media (max-width: 768px) {
+  header {
+    width: 100%;
+    height: 480px;
+  }
+}
+.header-art-1 {
+  background-image: url("images/micagradshowletters.jpg");
+}
+.header-art-2 {
+  background-image: url("images/collage_MG_6981.jpg");
+}
+.header-art-3 {
+  background-image: url("images/howng_p_5.jpg");
+}
+.header-art-4 {
+  background-image: url("images/s1-sharon-kusiak.jpg");
+}
+.header-art-5 {
+  background-image: url("images/ckatrib04.jpg");
+}
+.header-art-6 {
+  background-image: url("images/ldoughtie.jpg");
+}
+.header-art-7 {
+  background-image: url("images/magali-hebert-huot.jpg");
+}
+#projects {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#projects.list > li {
+  margin: 0;
+  padding: 20px 10px 0 10px;
+  float: left;
+  width: calc(50%);
+  height: 100px;
+  /* is there some way to dynamically set them all the same based on the tallest one ? */
+  overflow: hidden;
+  cursor: pointer;
+}
+@media (min-width: 480px) {
+  #projects.list > li {
+    width: calc(33.33333333%);
+    height: 200px;
+    /* is there some way to dynamically set them all the same based on the tallest one ? */
+  }
+}
+@media (min-width: 768px) {
+  #projects.list > li {
+    height: 300px;
+    /* some way to dynamically set them all the same based on the tallest one ? */
+  }
+}
+@media (min-width: 1200px) {
+  #projects.list > li {
+    width: calc(25%);
+    height: 400px;
+    /* some way to dynamically set them all the same based on the tallest one ? */
+  }
+}
+#projects.list > li img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+#projects.list ul.info li {
+  margin: 3px 0;
+}
+#intro p {
+  margin: 4%;
+  font-size: 1.4em;
+  line-height: 140%;
+}
+/**** NAV.LESS ****/
+/**** NAV.LESS ****/
+/**** NAV.LESS ****/
+/**** NAV.LESS ****/
+nav.main-nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  /**/
+  height: 0;
+  opacity: 0;
+  padding: 0;
+  width: 100%;
+  font-weight: bold;
+  transition: all .5s;
+}
+nav.main-nav.fixed {
+  height: 0;
+  opacity: 1;
+  background-color: white;
+  color: #222222;
+}
+nav.main-nav.show-menu.fixed {
+  height: 321px;
+}
+nav button.toggle {
+  display: block;
+  /**/
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+  height: 50px;
+  width: 50px;
+  background-color: #fff;
+  border: 3px solid #dddddd;
+}
+nav button.toggle:hover {
+  border-color: #f67fc5;
+}
+nav.main-nav ul {
+  border-top: 1px solid #dddddd;
+  margin: 0;
+  padding: 0;
+}
+nav.main-nav ul li {
+  border-bottom: 1px solid #dddddd;
+  float: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav.main-nav a {
+  padding: 10px 0;
+  margin: 0 10px;
+  display: block;
+}
+nav.main-nav a,
+nav.main-nav a:visited {
+  color: #222222;
+  text-decoration: none;
+}
+nav.main-nav a:hover,
+nav.main-nav a:active {
+  color: #222222;
+}
+nav.main-nav a:hover,
+nav.main-nav a:active,
+nav.main-nav a,
+nav.main-nav a:visited,
+nav.main-nav li.active a {
+  border: 0;
+}
+nav.main-nav li.active a {
+  margin-left: 0;
+  border-left: 3px solid #f67fc5;
+  padding-left: 7px;
+}
+nav.main-nav li.student-search {
+  border: none;
+  display: block;
+  opacity: 1;
+}
+li.student-search #search {
+  padding: 10px;
+}
+li.student-search #search input {
+  height: 30px;
+  width: 100%;
+}
+.filter-programs {
+  display: none;
+}
+/** Programs dropdown menu stuff */
+nav.main-nav li.filter-programs ul#program-filter {
+  background: #ffffff;
+  padding: 5px;
+}
+nav.main-nav li.filter-programs ul#program-filter li.program {
+  float: none;
+}
+nav.main-nav li.filter-programs ul#program-filter li.program a:link,
+nav.main-nav li.filter-programs ul#program-filter li.program a:visited {
+  padding: 3px 0;
+  font-weight: normal;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 0;
+}
+nav.main-nav li.filter-programs ul#program-filter li.program a:hover,
+nav.main-nav li.filter-programs ul#program-filter li.program a:active {
+  border: 0;
+  color: #f67fc5;
+}
+/* medium + */
+@media only screen and (min-width: 768px) {
+  nav button.toggle {
+    display: none;
+  }
+  nav.main-nav {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: initial;
+  }
+  nav.main-nav.show-menu.fixed,
+  nav.main-nav.fixed {
+    height: 61px;
+  }
+  nav.main-nav.fixed {
+    opacity: 1;
+    background-color: white;
+  }
+  nav.main-nav.fixed.intro {
+    background-color: #f67fc5;
+    color: white;
+    box-shadow: 0 0 30px 30px #f67fc5;
+  }
+  nav.main-nav.fixed.schedule,
+  nav.main-nav.fixed.students {
+    background-color: white;
+    color: #222222;
+    box-shadow: 0 0 30px 30px white;
+  }
+  nav.main-nav.fixed.galleries {
+    background-color: #f5f5f5;
+    color: #222222;
+    box-shadow: 0 0 30px 30px #f5f5f5;
+  }
+  nav.main-nav ul,
+  nav.main-nav ul li {
+    border: none;
+  }
+  nav.main-nav ul {
+    margin: 0;
+    padding: 0;
+  }
+  nav.main-nav ul li {
+    display: block;
+    list-style: none;
+    float: left;
+    margin-top: 0px;
+  }
+  nav.main-nav a {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px 0;
+    display: block;
+  }
+  nav.main-nav a,
+  nav.main-nav a:visited {
+    color: #222222;
+    text-decoration: none;
+    border-top: 3px solid transparent;
+    border-left: none;
+  }
+  nav.main-nav a:hover,
+  nav.main-nav a:active {
+    color: #222222;
+    border-top: 3px solid #f67fc5;
+    border-left: none;
+  }
+  nav.main-nav li.active a {
+    border-top: 3px solid #f67fc5;
+    border-left: none;
+    padding: 20px 0;
+    margin-left: 20px;
+  }
+  nav.main-nav.intro a,
+  nav.main-nav.intro a:visited {
+    color: #222222;
+    text-decoration: none;
+    border-top: 3px solid transparent;
+    border-left: none;
+  }
+  nav.main-nav.intro a:hover,
+  nav.main-nav.intro a:active {
+    color: #222222;
+    border-top: 3px solid #222222;
+    border-left: none;
+  }
+  nav.main-nav.intro li.active a {
+    border-top: 3px solid #222222;
+    border-left: none;
+    padding: 20px 0;
+    margin-left: 20px;
+  }
+  nav.main-nav li.student-search {
+    float: right;
+    opacity: 0;
+    transition: all .3s;
+  }
+  nav.main-nav.students li.student-search {
+    display: block;
+    opacity: 1;
+  }
+  li.student-search #search {
+    padding: 13px 20px;
+  }
+  li.student-search #search input {
+    width: 125px;
+  }
+  nav .nav-logo {
+    background-image: url("images/logo-PinkDots-01.svg");
+    width: 45px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: none;
+    float: left;
+    margin: 10px 0 0 30px;
+  }
+  nav.intro .nav-logo {
+    background-image: url("images/logo-WhiteDots-01.svg");
+  }
+  /** Programs dropdown menu stuff */
+  nav.main-nav li.filter-programs {
+    width: 120px;
+  }
+  nav.main-nav li.filter-programs ul#program-filter {
+    width: 400px;
+    background: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: -15px;
+  }
+  nav.main-nav li.filter-programs ul#program-filter li.program {
+    float: none;
+  }
+  nav.main-nav li.filter-programs ul#program-filter li.program a {
+    padding: 5px 0;
+  }
+}
+@media only screen and (min-width: 992px) {
+  li.student-search #search input {
+    width: 200px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  li.student-search #search input {
+    width: 250px;
+  }
+}
+/* NEED TO FIX THIS BETTER, BUT FOR NOW THIS'LL DO IT **/
+* {
+  box-sizing: border-box;
+}
+body {
+  background: #eee;
+  padding: 0 !important;
+  margin: 0;
+  font-family: 'Balto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.container {
+  margin: 0 auto;
+  padding: 0 15px 0 15px;
+}
+.clearfix::after,
+.thumbs::after,
+.container::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+/* Small – Tablet(ish) */
+@media only screen and (min-width: 480px) {
+  .container {
+    width: 500px;
+  }
+}
+/* Medium – Laptop(ish)/Small Desktop */
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Large – Desktop */
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 1000px;
+  }
+}
+article {
+  padding: 100px 0;
+  background: white;
+}
+#galleries {
+  background: #f5f5f5;
+  padding-bottom: 0;
+}
+/** FOR THE STUDENT PROFILE IMAGES **/
+li.student img {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscalerayscale");
+  filter: gray;
+  -webkit-filter: grayscale(100%);
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  opacity: .33;
+}
+li.student:hover img {
+  filter: none;
+  -webkit-filter: grayscale(0%);
+  opacity: .66;
+}
+li.name {
+  color: #f67fc5;
+  font-weight: bold;
+  font-size: 125%;
+}
+/** working on some title-y things **/
+h2 {
+  text-align: center;
+  margin: 0 0 50px 0;
+  color: #f67fc5;
+  font-size: 200%;
+}
+/**** Student Section, Filter Controls, etc. ****/
+#students ul.student-filters {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  position: relative;
+}
+#students ul.student-filters > li {
+  display: inline-block;
+  margin: 0 1em;
+  position: relative;
+}
+#students ul.student-filters > li > button {
+  background: transparent;
+  border: none;
+  display: block;
+  margin: 0;
+  font-size: 1em;
+  padding: 0;
+}
+#students ul.student-filters > li > button,
+#students ul.student-filters > li > button span {
+  color: #999999;
+  position: relative;
+}
+#students ul.student-filters > li > button span {
+  display: block;
+  padding-right: 15px;
+}
+#students ul.student-filters > li > button span::after {
+  content: ' ';
+  display: block;
+  border-top: 7px solid #999999;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  position: absolute;
+  top: 6px;
+  right: 0;
+}
+#students .program-info {
+  padding: 20px;
+  max-width: 800px;
+  text-align: center;
+  margin: 2em auto;
+}
+#students .program-info h3 {
+  margin-bottom: 10px;
+}
+#students .program-info p {
+  text-align: left;
+}
+#students ul.student-filters > li > ul {
+  background: #ffffff;
+  position: absolute;
+  top: 2em;
+  text-align: left;
+  width: 200px;
+  padding: 5px;
+  z-index: 99;
+  border-radius: 5px;
+  border: 1px solid #eee;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+#students ul.student-filters > li > ul li a {
+  color: #222222;
+  display: block;
+  padding: 2px 5px;
+  text-decoration: none;
+}
+#students ul.student-filters > li > ul li a:hover {
+  color: #f67fc5;
+}
+/** big map styles, hopefully this helps **/
+.google-map-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+}
+.google-map-container > .gm-style {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.gm-style-cc,
+.gm-style-mtc {
+  display: none;
+}
+/*** Footer.less ***/
+/*** Footer.less ***/
+/*** Footer.less ***/
+/*** Footer.less ***/
+footer {
+  width: 100%;
+  font-size: 12px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+footer img {
+  width: 100%;
+}
+footer .credits {
+  color: #999;
+}
+footer a,
+footer a:visited {
+  color: #222222;
+  text-decoration: none;
+}
+footer a:hover,
+footer a:active {
+  color: #444444;
+  text-decoration: none;
+}
+footer .credit a:link,
+footer .credit a:visited {
+  color: #999999;
+}
+footer .credit a:hover,
+footer .credit a:active {
+  color: #444444;
+}
+.column {
+  margin-bottom: 2em;
+}
+@media only screen and (min-width: 768px) {
+  .group {
+    margin-left: -1.25em;
+    margin-right: -1.25em;
+  }
+  .column {
+    float: left;
+    padding-left: 1.25em;
+    padding-right: 1.25em;
+  }
+  .span1 {
+    width: 20%;
+  }
+  .offset1 {
+    margin-left: 20%;
+  }
+}
+/**** STUDENTOVERLAY.LESS ****/
+/**** STUDENTOVERLAY.LESS ****/
+/**** STUDENTOVERLAY.LESS ****/
+/**** STUDENTOVERLAY.LESS ****/
+/****************************/
+/** STUDENT OVERLAY STYLES **/
+/****************************/
+#student-overlay {
+  background: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  overflow: scroll;
+  border: 10px solid #f67fc5;
+}
+article#student-overlay {
+  padding: 15px;
+}
+article#student-overlay .container {
+  width: 100%;
+}
+#student-overlay .close {
+  /** hides the text inside **/
+  text-indent: 500%;
+  white-space: nowrap;
+  overflow: hidden;
+  /**/
+  background: transparent url("X.svg") 0 0 no-repeat;
+  background-size: 50px 25px !important;
+  border: none;
+  display: block;
+  height: 25px !important;
+  width: 25px !important;
+  /**/
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  z-index: 1111;
+}
+#student-overlay .close:hover {
+  background-position: -25px 0px;
+}
+/* Main left/right page layout CSS */
+.student-info,
+.student-main,
+.student-main .statement,
+.program-list {
+  position: relative;
+  width: 100%;
+  padding: 0;
+}
+.student-main .statement {
+  margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+  article#student-overlay {
+    padding: 50px;
+  }
+  #student-overlay .close {
+    top: 30px;
+    right: 30px;
+  }
+  /* Main left/right page layout CSS */
+  .student-info {
+    width: 30%;
+    float: left;
+    padding-right: 20px;
+  }
+  .student-main {
+    width: 70%;
+    float: left;
+  }
+  .student-main .statement {
+    width: 70%;
+    float: left;
+    padding-right: 15px;
+  }
+  /*** Program List ***/
+  .program-list {
+    float: right;
+    width: 30%;
+    padding-left: 15px;
+  }
+}
+/* Left sidebar - student info-y stuff */
+.student-details h2 {
+  margin: 0;
+  padding: 0;
+  clear: both;
+  position: relative;
+  text-align: left;
+  line-height: 1.1;
+  margin-bottom: .2em;
+  font-style: italic;
+}
+.student-details span {
+  top: 0;
+  left: 0;
+  float: left;
+  margin-right: .2em;
+  margin-bottom: .5em;
+}
+.contact-info a {
+  border-bottom: 2px solid #dddddd;
+  text-decoration: none;
+  color: #444444;
+  line-height: 1.8em;
+}
+.contact-info a:hover,
+.contact-info a:active {
+  border-bottom: 2px solid #f67fc5;
+  color: #444444;
+}
+.student-nav li {
+  margin-bottom: 30px;
+  list-style: none;
+  float: left;
+  font-size: 36px;
+}
+.student-nav li:hover {
+  color: #f67fc5;
+}
+#student-overlay ul.show-details,
+#student-overlay ul.show-details li.program {
+  margin-bottom: 1em;
+}
+/*** Image Gallery / Slideshow ***/
+#student-overlay #slideshow {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  margin-bottom: 100px;
+}
+#student-overlay #slideshow .active-image {
+  width: 100%;
+  height: 200px;
+  position: static;
+}
+/* http://css-tricks.com/centering-in-the-unknown/ - this is what I used for vertical centering... works like a charm! */
+/* here is some other info too: http://gtwebdev.com/workshop/vcenter/vcenter-inline-css.php */
+#slideshow .active-image::before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  /* margin: -0.1em; */
+  /* Adjusts for spacing */
+}
+#slideshow .active-image > img,
+#slideshow .active-image > a > img {
+  display: inline-block;
+  vertical-align: middle;
+  max-height: 100%;
+  max-width: 98%;
+  height: auto;
+  margin: 0;
+  border-radius: 2px;
+}
+#slideshow .active-image ul.image-caption {
+  position: absolute;
+  left: 0;
+  bottom: -90px;
+  text-align: left;
+  width: 100%;
+  font-size: 90%;
+  color: #999999;
+}
+ul.image-caption h3 {
+  font-weight: normal;
+  font-style: italic;
+  font-size: 1em;
+}
+.thumbs {
+  width: calc(100% + 10px);
+  margin-left: -5px;
+  margin-right: -5px;
+  margin-top: 5px;
+}
+li.thumb {
+  float: left;
+  width: calc(100% / 4);
+  padding: 5px;
+  overflow: hidden;
+}
+@media only screen and (min-width: 480px) {
+  #student-overlay #slideshow .active-image {
+    height: 300px;
+  }
+  li.thumb {
+    width: calc(100% / 6);
+  }
+}
+/* Medium – Laptop(ish)/Small Desktop */
+@media only screen and (min-width: 768px) {
+  #student-overlay #slideshow {
+    margin-bottom: 50px;
+  }
+  #student-overlay #slideshow .active-image {
+    height: 50vh;
+    position: relative;
+  }
+  #slideshow .active-image ul.image-caption {
+    left: calc(-33% - 20px);
+    bottom: 0;
+    text-align: right;
+    width: 33%;
+  }
+  li.thumb {
+    width: calc(100% / 10);
+  }
+}
+/* Large – Desktop */
+@media only screen and (min-width: 1200px) {
+  #student-overlay #slideshow .active-image {
+    height: 70vh;
+    position: relative;
+  }
+  #slideshow .active-image ul.image-caption {
+    left: calc(-25% - 20px);
+    width: 25%;
+  }
+  li.thumb {
+    width: calc(100% / 13);
+  }
+}
+li.thumb img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 2px;
+  cursor: pointer;
+  opacity: .5;
+  transition: all .5s;
+}
+li.thumb:hover img {
+  opacity: 1;
+}
+/*** program list ***/
+.program-list h3 {
+  color: #f67fc5;
+}
+.program-list li a,
+.program-list li a:active {
+  text-decoration: none;
+  color: #444444;
+  line-height: 1.8em;
+  border-bottom: 2px solid #dddddd;
+}
+.program-list li a:hover,
+.program-list li a.after {
+  color: inherit;
+  border-bottom: 2px solid #f67fc5;
+}
+ul.student-nav li.previous {
+  margin-right: 20px;
+}
+ul.student-nav li.next {
+  margin-left: 20px;
+}
+ul.student-nav li.previous a:link,
+ul.student-nav li.next a:link,
+ul.student-nav li.previous a:visited,
+ul.student-nav li.next a:visited {
+  color: #f67fc5;
+  text-decoration: none;
+}
+ul.student-nav li.previous a:hover,
+ul.student-nav li.next a:hover,
+ul.student-nav li.previous a:active,
+ul.student-nav li.next a:active {
+  color: #222222;
+  text-decoration: none;
+}
+.no-images {
+  color: #dddddd;
+  margin-bottom: 1em;
+}
+.statement p {
+  margin-bottom: .5em;
+}
+.statement h1,
+.statement h2,
+.statement h3,
+.statement h4,
+.statement h5,
+.statement h6 {
+  text-align: left;
+  margin: .5em 0 .1em;
+  color: #666666;
+}
