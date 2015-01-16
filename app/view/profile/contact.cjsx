@@ -19,7 +19,7 @@ module.exports = React.createClass
 
     ContactFields = []
     if website
-      ContactFields.push @contactLinkEl('website', website, 'View Website')
+      ContactFields.push @contactLinkEl('website', website, website)
     if personalEmail
       ContactFields.push @contactLinkEl('email', 'mailto:'+personalEmail, 'Contact via Email')
 
