@@ -10,7 +10,7 @@ module.exports = React.createClass
         <div>
           {### group 1 ###}
           <div className="scheduleGroup first">
-            <h3>January–June</h3>
+            <h3>Ongoing throughout the Spring</h3>
             <ul>
               <li>Curatorial Practice, MFA</li>
             </ul>
@@ -29,10 +29,10 @@ module.exports = React.createClass
           <div className="scheduleGroup">
             <h3>March 27–April 12</h3>
             <ul>
-              <li>Illustration Practice, MFA</li>
               <li>Graphic Design, MFA</li>
-              <li>Post Baccalaureate Certificate in Graphic Design</li>
+              <li>Illustration Practice, MFA</li>
               <li>Post Baccalaureate Certificate in Fine Art</li>
+              <li>Post Baccalaureate Certificate in Graphic Design</li>
             </ul>
           </div>
           {### group 3 ###}
