@@ -182,21 +182,16 @@ locations:
         southwest:
           lat: 39.3091980197085
           lng: -76.6202899802915
-# turns out no one is showing here after all
-#   - name: Main Court
-#     alias:
-#       - Main
-#       - Main Court
-#       - Main Courtyard
-#     value: main-court
-#     building: Main Building
-#     street: 1300 W. Mount Royal Ave.
-#     zip: 21217
-#     geoData:
-#       location:
-#         lat: 39.3075550
-#         lng: -76.6216340
-#       location_type: ROOFTOP
+  - name: 'BBox'
+    value: bbox
+    building: 'Gateway'
+    street: '1601 W. Mount Royal Ave.'
+    zip: 21217
+    geoData:
+      location:
+        lat: 39.3105520
+        lng: -76.6237960
+      location_type: ROOFTOP
   - name: Walters Art Museum
     alias:
       - Walters
