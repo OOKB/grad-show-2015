@@ -2,6 +2,7 @@ Model = require("ampersand-model")
 _ = require 'lodash'
 
 data = require '../data/studentSchema'
+locationData = require('../data/').galleries.locations
 
 Programs = require './programs'
 Images = require './images'
@@ -51,7 +52,7 @@ module.exports = Model.extend
       deps: ['location']
       fn: ->
         if @location
-          loc = _.find(props.location.options, value: @location)
+          loc = _.find(locationData, value: @location)
           if loc
             loc.name
           else
@@ -87,12 +88,11 @@ module.exports = Model.extend
     show:
       deps: ['program', 'showNum']
       fn: ->
-        unless @program then return null
-        @program.shows.models[@showNum-1]
+        @program?.shows?.models[@showNum-1]
     showId:
       deps: ['show']
       fn: ->
-        @show.id
+        @show?.id
     showDate:
       deps: ['program', 'showNum']
       fn: ->

@@ -2,8 +2,6 @@ React = require 'react'
 
 ReactMap = require './map'
 
-
-
 module.exports = React.createClass
   # getInitialState: ->
 

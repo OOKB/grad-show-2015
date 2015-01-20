@@ -13,10 +13,10 @@ Show = Model.extend
   parse: (model) ->
     model.id = ''
     if model.start
-      model.start = moment model.start
+      model.start = moment.utc model.start
       model.id += model.start.format 'YYMMDD'
     if model.end
-      model.end = moment model.end
+      model.end = moment.utc model.end
       model.id += model.end.format 'YYMMDD'
     model
   derived:
