@@ -5,9 +5,10 @@ module.exports = React.createClass
 
   contactLinkEl: (id, href, txt) ->
     if id is 'email'
+      mailto = href
       onClick = (e) ->
         e.preventDefault()
-        window.location.href = href
+        window.location.href = mailto
       href = '#'
 
     <li key={id} className={id}>
