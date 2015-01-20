@@ -27,7 +27,7 @@ module.exports = (callback) ->
 
   url = 'https://mica.ezle.io/sheetData.json'
   getData.sheetData = makeReq url
-
+  getData.schema = makeReq 'https://mica.ezle.io/studentSchema.json'
   r_ops =
     uri: "https://api.github.com/repos/#{data.github}/branches/master"
     json: true
@@ -42,6 +42,7 @@ module.exports = (callback) ->
     data.sha = serverData.github.commit.sha
     data.students = serverData.sheetData.students
     data.galleries = serverData.sheetData.galleries
+    data.schema = serverData.schema
 
     fs.outputJsonSync 'app/data/index.json', data
     if _.isFunction callback

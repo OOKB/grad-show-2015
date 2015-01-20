@@ -1,14 +1,14 @@
 Model = require("ampersand-model")
 _ = require 'lodash'
 
-data = require '../data/studentSchema'
-locationData = require('../data/').galleries.locations
+{schema, galleries} = require('../data/')
+locationData = galleries.locations
 
 Programs = require './programs'
 Images = require './images'
 Embeds = require './embeds'
 
-props = data.props
+props = schema.props
 props.showNum =
   required: true
   default: 1
@@ -20,7 +20,7 @@ props.program =
 module.exports = Model.extend
   idAttribute: 'uid'
   props: props
-  fields: data.props
+  fields: schema.props
   collections:
     files: Images
     embeds: Embeds
