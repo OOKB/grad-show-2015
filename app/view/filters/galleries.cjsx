@@ -1,8 +1,13 @@
 React = require 'react'
+_ = require 'lodash'
+
 {Link} = require 'react-router'
 
-data = require '../../data/locations.json'
-filterItems = data.locations
+{locations} = require('../../data/').galleries
+
+locationFilters = _.where locations, {offCampus: false}
+locationFilters = _.sortBy locationFilters, 'name'
+locationFilters.unshift {value: 'offcampus', name: '- Off Campus -'}
 
 module.exports = React.createClass
   # getInitialState: ->
@@ -10,15 +15,16 @@ module.exports = React.createClass
 
   render: ->
     {onClick} = @props
+
     clickFunc = ->
       onClick()
       document.querySelector('#students').scrollIntoView(true)
 
     <ul className="dropdown-menu" id="location-filter">
-      {filterItems.map (item) ->
+      {locationFilters.map (item) ->
         {value, name} = item
         <li key={value} onClick={clickFunc} className="gallery">
-          <Link query={location: value} to="app">{name}</Link>
+          <Link query={locationId: value} to="app">{name}</Link>
         </li>
       }
     </ul>

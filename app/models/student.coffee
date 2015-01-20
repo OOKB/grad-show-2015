@@ -59,6 +59,17 @@ module.exports = Model.extend
             @location
         else
           null
+    locationId:
+      deps: ['location']
+      fn: ->
+        if @location
+          loc = _.find(locationData, value: @location)
+          if loc and loc.offCampus
+            'offcampus'
+          else
+            @location
+        else
+          null
     search:
       deps: ['fullName']
       fn: ->

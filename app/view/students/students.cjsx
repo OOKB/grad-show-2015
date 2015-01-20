@@ -22,10 +22,10 @@ module.exports = React.createClass
       q = @getQuery()
     else
       q = {}
-    
+
     # Filter Students
     # Default to something
-    unless q.programId or q.location or q.showId or q.search
+    unless q.programId or q.locationId or q.showId or q.search
       q.programId = 'teaching-ma'
     if students and students.where
       studentData = students.where q
