@@ -8,12 +8,13 @@ Schedule  = require './schedule/schedule'
 Galleries = require './galleries/galleries'
 Footer    = require './footer/footer'
 
+{students} = require '../data'
 StudentCollection = require '../models/students'
+StudentData = new StudentCollection students, parse: true
 
 module.exports = React.createClass
   render: ->
     {data, query} = @props
-    StudentData = new StudentCollection data.students, parse: true
 
     <div id="react-app">
       <Header data={data} />

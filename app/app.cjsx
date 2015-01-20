@@ -7,6 +7,8 @@ Routes = require './routes'
 
 data = require './data'
 data.imgNum = 1
+delete data.students
+delete data.schema
 
 inBrowser = typeof window isnt "undefined"
 
