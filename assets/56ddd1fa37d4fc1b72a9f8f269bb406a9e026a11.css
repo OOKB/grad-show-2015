@@ -528,128 +528,6 @@ a:visited {
 .scheduleGroup .meta a:active {
   color: #444;
 }
-#intro {
-  background-color: #f67fc5;
-}
-#intro p {
-  margin: 5%;
-  color: #fff;
-}
-#intro .container {
-  margin: 0 auto;
-  font-size: 18px;
-}
-/*student page*/
-.student-info {
-  position: relative;
-  width: 30%;
-  float: left;
-}
-.student-main {
-  width: 70%;
-  float: left;
-}
-.student-details h2 {
-  margin: 0;
-  padding: 0;
-  clear: both;
-  position: relative;
-  text-align: left;
-}
-.student-details span {
-  top: 0;
-  left: 0;
-  float: left;
-  margin-right: .2em;
-  margin-bottom: .5em;
-}
-.contact-info a,
-.contact-info a:hover {
-  border-bottom: 2px solid #f67fc5;
-  text-decoration: none;
-  color: #444444;
-}
-.contact-info a:hover,
-.contact-info a:after {
-  color: #f67fc5;
-}
-.student-nav li {
-  margin-bottom: 30px;
-  list-style: none;
-  float: left;
-  font-size: 36px;
-}
-.student-nav li:hover {
-  color: #f67fc5;
-}
-.random {
-  margin: 0 50px;
-}
-#slideshow {
-  width: 100%;
-  margin-bottom: 50px;
-}
-.thumbs {
-  width: 100%;
-  margin-left: -5px;
-  margin-right: -5px;
-  margin-top: 5px;
-}
-.thumbs::after {
-  content: '';
-  display: table;
-  clear: both;
-}
-.thumbs li {
-  float: left;
-  width: calc(16.66666667%);
-  padding: 5px;
-}
-.student-main .statement {
-  width: 70%;
-  float: left;
-  padding: 10px;
-}
-.program-list {
-  float: right;
-  width: 30%;
-  padding: 10px;
-}
-.program-list h3 {
-  color: #f67fc5;
-}
-.program-list li a,
-.program-list li a:active {
-  text-decoration: none;
-  color: #444444;
-}
-.program-list li a:hover,
-.program-list li a.after {
-  color: inherit;
-  border-bottom: 2px solid #f67fc5;
-}
-/*search bar*/
-.form-control {
-  display: block;
-  width: 50%;
-  height: 36px;
-  padding: 6px 12px;
-  font-size: 14px;
-  line-height: 1.4;
-  color: #f67fc5;
-  background-color: #fff;
-  border: 1px solid #666;
-  border-radius: 4px;
-  transition: all .3s;
-}
-.form-control:hover {
-  outline: 0;
-  border-color: #f67fc5;
-}
-.form-control:focus {
-  outline: 0;
-  border-color: #f67fc5;
-}
 header {
   background-image: url("images/micagradshowletters.jpg");
   /** just incase something breaks and a special class doesn't get added */
@@ -1047,6 +925,39 @@ article {
   background: #f5f5f5;
   padding-bottom: 0;
 }
+#intro {
+  background-color: #f67fc5;
+}
+#intro p {
+  margin: 5%;
+  color: #fff;
+}
+#intro .container {
+  margin: 0 auto;
+  font-size: 18px;
+}
+/*search bar*/
+.form-control {
+  display: block;
+  width: 50%;
+  height: 36px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #f67fc5;
+  background-color: #fff;
+  border: 1px solid #666;
+  border-radius: 4px;
+  transition: all .3s;
+}
+.form-control:hover {
+  outline: 0;
+  border-color: #f67fc5;
+}
+.form-control:focus {
+  outline: 0;
+  border-color: #f67fc5;
+}
 /** FOR THE STUDENT PROFILE IMAGES **/
 li.student img {
   filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscalerayscale");
@@ -1278,6 +1189,55 @@ article#student-overlay .container {
 .student-main .statement {
   margin-bottom: 30px;
 }
+.program-list {
+  display: none;
+}
+.student-details h2 {
+  margin: 0;
+  padding: 0;
+  clear: both;
+  position: relative;
+  text-align: left;
+}
+.student-details span {
+  top: 0;
+  left: 0;
+  float: left;
+  margin-right: .2em;
+  margin-bottom: .5em;
+}
+.contact-info a,
+.contact-info a:hover {
+  border-bottom: 2px solid #f67fc5;
+  text-decoration: none;
+  color: #444444;
+}
+.contact-info a:hover,
+.contact-info a:after {
+  color: #f67fc5;
+}
+.student-nav li {
+  margin-bottom: 30px;
+  list-style: none;
+  float: left;
+  font-size: 36px;
+}
+.student-nav li:hover {
+  color: #f67fc5;
+}
+.program-list h3 {
+  color: #f67fc5;
+}
+.program-list li a,
+.program-list li a:active {
+  text-decoration: none;
+  color: #444444;
+}
+.program-list li a:hover,
+.program-list li a.after {
+  color: inherit;
+  border-bottom: 2px solid #f67fc5;
+}
 @media (min-width: 768px) {
   article#student-overlay {
     padding: 50px;
@@ -1303,9 +1263,8 @@ article#student-overlay .container {
   }
   /*** Program List ***/
   .program-list {
-    float: right;
-    width: 30%;
-    padding-left: 15px;
+    display: block;
+    margin-top: 4em;
   }
 }
 /* Left sidebar - student info-y stuff */
