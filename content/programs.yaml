@@ -62,6 +62,13 @@ programs:
   blurb: 'MFA graphic students at MICA are encouraged to view themselves as cultural producers, "practical visionaries," and "utopian entrepreneurs" who actively initiate projects. Whether the work takes the form of publications, Web sites, products, or exhibitions, students focus on advancing a personal vision and public message.'
   shows: [*m27a12]
 -
+  name: Illustration Practice
+  type: MFA
+  alias: ['Illustration Practice', 'Illustration Practice (MFA)']
+  id: 'illustration-practice-mfa'
+  blurb: 'The MFA in Illustration Practice prepares artists to elevate their artistic and business abilities, blend media within new cultural contexts, and integrate research and critical analysis into their work. Students find new directions for the practice in the 21st century, actively initiate projects, and revisit their creative process while awakening their abilities to chart their own course as entrepreneurs.'
+  shows: [*m27a12]
+-
   name: LeRoy E. Hoffberger School of Painting
   type: MFA
   shortform: Hoffberger
@@ -69,13 +76,6 @@ programs:
   id: 'leroy-e-hoffberfer-school-of-painting-mfa'
   blurb: 'One of the nation’s most selective graduate programs, LeRoy E. Hoffberger School of Painting is one of the only graduate programs in the country to focus solely on painting, allowing a select group of highly talented painters to find their individual voices and develop the discourse to position their work in the contemporary arts world.'
   shows: [*a17m3]
--
-  name: Illustration Practice
-  type: MFA
-  alias: ['Illustration Practice', 'Illustration Practice (MFA)']
-  id: 'illustration-practice-mfa'
-  blurb: 'The MFA in Illustration Practice prepares artists to elevate their artistic and business abilities, blend media within new cultural contexts, and integrate research and critical analysis into their work. Students find new directions for the practice in the 21st century, actively initiate projects, and revisit their creative process while awakening their abilities to chart their own course as entrepreneurs.'
-  shows: [*m27a12]
 -
   name: Mount Royal School of Art
   type: MFA
