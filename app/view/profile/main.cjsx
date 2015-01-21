@@ -1,6 +1,5 @@
 React = require 'react'
 
-ProgramList = require './programList'
 Slideshow = require './slideshow'
 NoImages = require './noImages'
 
@@ -19,5 +18,4 @@ module.exports = React.createClass
     <div className="student-main">
       {Imgs}
       <div className="statement" dangerouslySetInnerHTML={__html: statement} />
-      <ProgramList usr={usr} />
     </div>
