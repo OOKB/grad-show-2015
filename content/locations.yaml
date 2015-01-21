@@ -445,7 +445,7 @@ locations:
         southwest:
           lat: 39.36627291970849
           lng: -76.6545436802915
-  - name: '101 W. North Ave.'
+  - name: '101 W. North Avenue'
     alias:
       - Kagro
       - Kagro Building
