@@ -136,8 +136,8 @@ programs:
   blurb: 'This low-residency, 60-credit interdisciplinary MFA program is designed for experienced artists who want to pursue graduate study without disrupting their ongoing careers. The emphasis of the program is in integrating practice with theory, where students are encouraged to be independent thinkers and researchers who may focus within one specific medium or work across various media.'
   shows:
     -
-      start: 2015-06-20
-      end: 2015-07-27
+      start: 2015-06-27
+      end: 2015-07-11
 -
   name: Teaching
   type: MAT

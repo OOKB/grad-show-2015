@@ -6,7 +6,7 @@ settings:
   #width: 1400
   height: 800
 locations:
-  - name: Decker
+  - name: 'Decker Gallery'
     alias:
       - Decker
       - Decker Gallery
@@ -33,7 +33,7 @@ locations:
         southwest:
           lat: 39.3068127197085
           lng: -76.6227788802915
-  - name: 'Fox 3'
+  - name: 'Fox 3 Gallery'
     alias:
       - 'Fox 3'
     value: fox-3
@@ -59,7 +59,7 @@ locations:
         southwest:
           lat: 39.3068127197085
           lng: -76.6227788802915
-  - name: Leidy
+  - name: 'Leidy Gallery'
     alias:
       - Leidy
       - Leidy Gallery
@@ -79,7 +79,7 @@ locations:
         southwest:
           lat: 39.3091980197085
           lng: -76.6202899802915
-  - name: Meyerhoff
+  - name: 'Meyerhoff Gallery'
     alias:
       - Meyerhoff
       - Meyerhoff Gallery
@@ -106,7 +106,7 @@ locations:
         southwest:
           lat: 39.3068127197085
           lng: -76.6227788802915
-  - name: North Avenue Market
+  - name: 'North Avenue Market'
     alias:
       - D Center
       - North Avenue Market
@@ -132,7 +132,7 @@ locations:
         southwest:
           lat: 39.3098108197085
           lng: -76.61833213029149
-  - name: Pinkard
+  - name: 'Pinkard Gallery'
     alias:
       - Pinkard
       - Pinkard Gallery
@@ -182,7 +182,7 @@ locations:
         southwest:
           lat: 39.3091980197085
           lng: -76.6202899802915
-  - name: 'BBox'
+  - name: 'BBox at the Gateway'
     value: bbox
     building: 'Gateway'
     street: '1601 W. Mount Royal Ave.'
@@ -445,7 +445,7 @@ locations:
         southwest:
           lat: 39.36627291970849
           lng: -76.6545436802915
-  - name: Kagro
+  - name: '101 W. North Ave.'
     alias:
       - Kagro
       - Kagro Building
