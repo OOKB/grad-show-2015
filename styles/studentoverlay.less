@@ -30,7 +30,7 @@ article#student-overlay .container {
 
 #student-overlay .close {
   /** hides the text inside **/
-  text-indent: 500%; // this shouldn't have to be this big, but there is some mobile chrome bug that is demanding it.
+  text-indent: 500%; // this shouldn't need to be this big, but there is some mobile chrome bug that is demanding it.
   white-space: nowrap;
   overflow: hidden;
   /**/
@@ -69,6 +69,56 @@ article#student-overlay .container {
   display: none;
 }
 
+.student-details h2 {
+  margin:0;
+  padding:0;
+  clear:both;
+  position: relative;
+  text-align: left;
+}
+
+.student-details span {
+  top: 0;
+  left:0;
+  float:left;
+  margin-right:.2em;
+  margin-bottom:.5em;
+}
+
+.contact-info a, .contact-info a:hover {
+  border-bottom: 2px solid @pink;
+  text-decoration: none;
+  color: @blackText;
+}
+
+.contact-info a:hover, .contact-info a:after {
+  color: @pink;
+}
+
+.student-nav li {
+  margin-bottom: 30px;
+  list-style:none;
+  float:left;
+  font-size:36px;
+}
+
+.student-nav li:hover{
+  color:@pink;
+}
+
+.program-list h3 {
+  color:@pink;
+}
+
+.program-list li a, .program-list li a:active {
+  text-decoration: none;
+  color: @blackText;
+}
+
+.program-list li a:hover, .program-list li a.after {
+  color:inherit;
+  border-bottom: 2px solid @pink;
+}
 
 @media (min-width: @medium) {
   article#student-overlay {
@@ -100,7 +150,7 @@ article#student-overlay .container {
   /*** Program List ***/
   .program-list {
     display: block;
-    margin-top: 2em;
+    margin-top: 4em;
   }
 
 }
