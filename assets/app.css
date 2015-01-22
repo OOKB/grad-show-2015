@@ -368,6 +368,7 @@ header .down-arrow:hover {
   padding: 0;
   clear: both;
   line-height: 26px;
+  position: relative;
 }
 .scheduleGroup h3 span.meta {
   display: block;
@@ -411,6 +412,16 @@ header .down-arrow:hover {
   padding: 20px 0 0 20px;
   margin-left: -21px;
   border-left: 1px solid #f67fc5;
+}
+.scheduleGroup p.opening {
+  padding: 0 0 0 20px;
+  margin-left: -21px;
+  border-left: 1px solid #f67fc5;
+}
+.scheduleGroup p.opening,
+.scheduleGroup em.opening {
+  color: #999999;
+  font-style: italic;
 }
 .scheduleGroup h3::before {
   position: absolute;
@@ -467,6 +478,14 @@ header .down-arrow:hover {
     width: 0;
     height: 0;
     margin: 0;
+  }
+  .scheduleGroup p.opening {
+    position: absolute;
+    top: 45px;
+    width: 50%;
+    text-align: right;
+    padding-right: 20px;
+    border: none;
   }
   .scheduleGroup ul {
     margin: 0;
