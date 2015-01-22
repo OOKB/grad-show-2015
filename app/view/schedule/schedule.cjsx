@@ -39,7 +39,7 @@ module.exports = React.createClass
           {### group 3 ###}
           <div className="scheduleGroup">
             <h3>April 17–May 3</h3>
-            <p className="opening">Opening Reception: March 27, 5-7PM</p>
+            <p className="opening">Opening Reception: April 17, 5-7PM</p>
             <ul>
               <li>Community Arts, MFA</li>
               <li>LeRoy E. Hoffberger School of Painting, MFA</li>
@@ -69,14 +69,14 @@ module.exports = React.createClass
           </div>
           <div className="scheduleGroup">
             <h3>June 27–July 11</h3>
-            <p className="opening">Opening Reception: March 27, 5-7PM</p>
+            <p className="opening">Opening Reception: TBD</p>
             <ul>
               <li>Studio Art, MFA</li>
             </ul>
           </div>
           <div className="scheduleGroup last">
             <h3>July 26–31</h3>
-            <p className="opening">Opening Reception: March 27, 5-7PM</p>
+            <p className="opening">Opening Reception: July 26, 5-7PM</p>
             <ul>
               <li>Art Education, MA</li>
             </ul>
