@@ -50,7 +50,7 @@ module.exports = React.createClass
             <h3>May 1</h3>
             <ul>
               <li>Social Design, MA <br />
-                  <em>Perspectives from the thesis work of the Master of Arts in Social Design (MASD) Class of 2015</em> <br />
+                  <em>Social Design Exchange: Perspectives from the Class of 2015</em> <br />
                   BBOX at the Gateway, <br />
                   Maryland Institute College of Art
               </li>
