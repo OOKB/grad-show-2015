@@ -76,7 +76,7 @@ module.exports = React.createClass
           </div>
           <div className="scheduleGroup last">
             <h3>July 26–31</h3>
-            <p className="opening">Opening Reception: Friday, July 31st, 6-7:30pm</p>
+            <p className="opening">Opening Reception: Friday, July 31, 6-7:30pm</p>
             <ul>
               <li>Art Education, MA</li>
             </ul>
