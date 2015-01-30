@@ -2,7 +2,7 @@ Model = require("ampersand-model")
 _ = require 'lodash'
 
 {schema, galleries} = require('../data/')
-locationData = galleries.locations
+locationData = require('../data/locations').locations
 
 Programs = require './programs'
 Images = require './images'

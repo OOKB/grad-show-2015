@@ -3,7 +3,7 @@ _ = require 'lodash'
 
 {Link} = require 'react-router'
 
-{locations} = require('../../data/').galleries
+{locations} = require('../../data/locations')
 
 locationFilters = _.where locations, {offCampus: false}
 locationFilters = _.sortBy locationFilters, 'name'

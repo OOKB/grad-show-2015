@@ -2,7 +2,8 @@ React = require 'react'
 
 mapStyles = require './mapStyles'
 
-locationData = require('../../data/').galleries
+locationData = require('../../data/locations')
+
 locationData.settings.points = locationData.locations.map (loc) ->
   latitude: loc.geoData.location.lat
   longitude: loc.geoData.location.lng
