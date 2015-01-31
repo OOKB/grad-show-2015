@@ -8,30 +8,59 @@ module.exports = React.createClass
   mixins: [Navigation]
   # getInitialState: ->
   handleActiveClick: ->
-    {img_i, usr} = @props
-    img_i = img_i or 0
-    console.log img_i
-    next_i = img_i+1
-    if next_i == usr.files.length
-      next_i = '0'
-    @replaceWith 'usrProfile', {uid: usr.uid, img: next_i}
+    {pos, usr} = @props
+    pos = pos or 0
+    # console.log pos
+    nextPos = pos+1
+    if nextPos == usr.files.length
+      nextPos = 0
+    @replaceWith 'usrProfile', {uid: usr.uid}, {type: 'img', pos: nextPos}
+
 
   render: ->
-    {usr, img, img_i} = @props
-    {files, uid} = usr
-    activeFile = img
-    last_i = files.length-1
+    {usr, file, pos, type} = @props
+    {files, uid, embeds} = usr
+
+    thumbEl = []
+    if files and files.length
+      lastPos = files.length-1
+      files.forEach (file, i) ->
+        {fileName, thumbSrc, metadata} = file
+        thumbEl.push <SlideThumb key={fileName} src={thumbSrc} title={metadata.title} pos={i} uid={uid} type='img'
+          classNames={
+            first: i is 0
+            last: i is lastPos
+            active: i is pos and type is 'img'} />
+    # This and the above should be combined into one process. I'm tired.
+    if embeds and embeds.length
+      lastPos = embeds.length-1
+      embeds.forEach (embed, i) ->
+        {thumbnail_url, title} = embed.oembed
+        thumbEl.push <SlideThumb key={i} src={thumbnail_url} title={title} pos={i} uid={uid} type='embed'
+          classNames={
+            first: i is 0
+            last: i is lastPos
+            active: i is pos and type is 'embed'} />
+
+    # embeds.forEach (embed, i) ->
+    if type is 'img'
+      activeFileEl = <div className="active-image">
+        <img src={file.largeSrc} onClick={@handleActiveClick} alt="art" />
+        <ImageCaption img={file} />
+      </div>
+    else if type is 'embed'
+      {html, title, description} = file.oembed
+      activeFileEl = <div className="active-embed">
+        <div className="slideshow-iframe" dangerouslySetInnerHTML={__html: html} />
+        <ul className="image-caption">
+          <li className="title"><h3>{title}</h3></li>
+          <li className="description">{description}</li>
+        </ul>
+      </div>
 
     <div id="slideshow">
-      <div className="active-image">
-        <img src={activeFile.largeSrc} onClick={@handleActiveClick} alt="art" />
-        <ImageCaption img={activeFile} />
-      </div>
+      {activeFileEl}
       <ul className="thumbs">
-        {files.map (img, i) ->
-          {fileName, thumbSrc, metadata} = img
-          <SlideThumb key={fileName} src={thumbSrc} title={metadata.title} i={i} uid={uid}
-            classNames={first:i is 0, last: i is last_i, active: i is img_i} />
-        }
+        {thumbEl}
       </ul>
     </div>

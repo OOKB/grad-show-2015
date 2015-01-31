@@ -6,7 +6,8 @@ Main = require './main'
 
 module.exports = React.createClass
   mixins: [Navigation, State]
-  # getInitialState: ->
+  getInitialState: ->
+    mounted: false
   #/students
   handleClose: ->
     @transitionTo 'app'
@@ -14,6 +15,8 @@ module.exports = React.createClass
 
   componentDidMount: ->
     document.body.style.overflow = 'hidden'
+    unless @state.mounted
+      @setState mounted: true
 
   componentWillUnmount: ->
     elem = document.body
@@ -24,16 +27,28 @@ module.exports = React.createClass
 
   render: ->
     {students} = @props
-    {uid, img} = @getParams()
+    {uid} = @getParams()
     user = students.get(uid)
-    unless user
-      return false
-    img_i = parseInt(img) or 0
-    {files} = user
-    if files and files.models[img_i]
-      activeFile = files.models[img_i]
+    if @state.mounted
+      q = @getQuery()
+    else
+      q = {}
+    {type, pos} = q
+    {files, embeds} = user
+    filePos = parseInt(pos) or 0
+    unless type
+      if files and files.length
+        type = 'img'
+      else if embeds and embeds.length
+        type = 'embed'
+
+    if type is 'img' and files and files.models[filePos]
+      activeFile = files.models[filePos]
+    else if type is 'embed' and embeds and embeds.models[filePos]
+      activeFile = embeds.models[filePos]
     else
       activeFile = null
+
     className = "student-#{uid}"
 
     <article id="student-overlay" className={className}>
@@ -41,7 +56,7 @@ module.exports = React.createClass
         x
       </button>
       <div className="container">
-        <Info usr={user} img={activeFile} img_i={img_i} />
-        <Main usr={user} img={activeFile} img_i={img_i} />
+        <Info usr={user} file={activeFile} pos={filePos} type={type} />
+        <Main usr={user} file={activeFile} pos={filePos} type={type} />
       </div>
     </article>
