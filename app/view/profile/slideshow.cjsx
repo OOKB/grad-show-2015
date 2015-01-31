@@ -52,7 +52,7 @@ module.exports = React.createClass
       {html, title, description} = file.oembed
       activeFileEl = <div className="active-embed">
         <div className="slideshow-iframe" dangerouslySetInnerHTML={__html: html} />
-        <ul className="image-caption">
+        <ul className="caption">
           <li className="title"><h3>{title}</h3></li>
           <li className="description">{description}</li>
         </ul>
