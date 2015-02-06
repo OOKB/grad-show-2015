@@ -8,8 +8,8 @@ ProgramList = require '../filters/programs'
 
 module.exports = React.createClass
   getInitialState: ->
-    snap: false
-    activeSection: null
+    snap: true
+    activeSection: 'intro'
     menuOpen: @props.data.windowInnerWidth > 767
     innerWidth: @props.data.windowInnerWidth
     programsActive: false
@@ -28,17 +28,6 @@ module.exports = React.createClass
     # Change the active section.
     if activeSection != @state.activeSection
       newState.activeSection = activeSection
-      changeState = true
-
-    # When to show the menu.
-    # Window height -200 px.
-    if y > (h-120) and not @state.snap
-      newState.snap = true
-      changeState = true
-
-    # When to hide menu after it's been shown.
-    if y < (h-120) and @state.snap
-      newState.snap = false
       changeState = true
 
     if changeState
@@ -123,7 +112,7 @@ module.exports = React.createClass
     </li>
 
   render: ->
-    {snap, menuOpen, activeSection, windowInnerWidth, menuOpen} = @state
+    {snap, menuOpen, activeSection, innerWidth, menuOpen} = @state
     {nav} = @props.data
     last_i = nav.length - 1
     # Build array of links.
@@ -142,7 +131,7 @@ module.exports = React.createClass
       navClasses[activeSection] = true
 
     # Show button when width is < 768
-    ToggleEl = if windowInnerWidth > 767
+    ToggleEl = if innerWidth < 767
       <Toggle handleToggle={@handleToggle} menuOpen={menuOpen} />
 
     <nav className={cx(navClasses)}>
