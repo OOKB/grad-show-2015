@@ -9,6 +9,8 @@ module.exports = React.createClass
 
   render: ->
     <article id="intro">
-      <Logo />
-      <div className="container" dangerouslySetInnerHTML={__html: body} />
+      <div className="container">
+        <Logo />
+        <div className="intro-text" dangerouslySetInnerHTML={__html: body} />
+      </div>
     </article>

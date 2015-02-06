@@ -1,4 +1,4 @@
-view.viewSize = [600, 600];
+view.viewSize = [300, 300];
 
 // Array of object connections
 var connections = [
@@ -43,7 +43,7 @@ var count = 15;
 // Create a symbol, which we will use to place instances of later:
 var path = new Path.Circle({
   center: new Point(0, 0),
-  radius: 10,
+  radius: 8,
   fillColor: 'white',
   strokeColor: 'white',
   strokeWidth: 0

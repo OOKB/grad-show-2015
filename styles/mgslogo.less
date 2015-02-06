@@ -1,3 +1,9 @@
+.logo-wrapper {
+  position: relative;
+  min-height: 300px;
+  margin-bottom: 50px;
+}
+
 #logo {
   display: block;
   width: 150px;
@@ -14,13 +20,13 @@
 
 #logobg {
   display: block;
-  width: 600px;
-  height: 600px;
+  width: 300px;
+  height: 300px;
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-left: -300px; /* half canvas width */
-  margin-top: -300px; /* half canvas height */
+  margin-left: -150px; /* half canvas width */
+  margin-top: -150px; /* half canvas height */
 }
 
 #canvas {
@@ -31,19 +37,12 @@
 }
 
 @media (min-width: @medium) {
-  #logo {
-    width: 200px;
-    height: 200px;
-    margin-left: -100px;
-    margin-top: -100px;
+  #intro .logo-wrapper {
+    width: 25%;
+    float: left;
   }
-}
-
-@media (min-width: @large) {
-  #logo {
-    width: 300px;
-    height: 300px;
-    margin-left: -150px;
-    margin-top: -150px;
+  #intro .intro-text {
+    width: 75%;
+    float: right;
   }
 }
