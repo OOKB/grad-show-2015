@@ -32,7 +32,7 @@ module.exports = React.createClass
 
     if changeState
       @setState newState
-    console.log activeSection, y
+
     return
 
   handleResize: ->
