@@ -10,14 +10,14 @@ module.exports = React.createClass
   getInitialState: ->
     snap: true
     activeSection: 'intro'
-    menuOpen: @props.data.windowInnerWidth > 767
-    innerWidth: @props.data.windowInnerWidth
+    menuOpen: true
+    innerWidth: 900
     programsActive: false
 
   handleScroll: ->
     y = window.pageYOffset
     h = window.innerHeight
-    activeSection = null
+    activeSection = @state.activeSection
     # What section are we in?
     @sectionCoords.forEach (section) ->
       if y > section.offset
@@ -32,6 +32,7 @@ module.exports = React.createClass
 
     if changeState
       @setState newState
+    console.log activeSection, y
     return
 
   handleResize: ->

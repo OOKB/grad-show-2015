@@ -17,7 +17,7 @@ nav:
   -
     title: Welcome
     link: intro
-    offset: -200
+    offset: -10
   -
     title: Schedule
     link: schedule
