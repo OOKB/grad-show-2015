@@ -1,6 +1,7 @@
 React = require 'react'
 
 # Get the data for the gallery info.
+locationData = require('../../data/').galleries
 
 module.exports = React.createClass
   # getInitialState: ->
