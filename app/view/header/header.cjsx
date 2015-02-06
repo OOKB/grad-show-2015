@@ -1,7 +1,6 @@
 React = require 'react'
 _ = require 'lodash'
 
-Logo = require './logo'
 Nav = require './nav'
 
 module.exports = React.createClass
@@ -18,8 +17,6 @@ module.exports = React.createClass
     className = "header-art-#{imgNum}"
 
     <header className={className}>
-      <Logo />
       <h1 style={display: 'none'}>{title}</h1>
-      <a href="#intro" className="down-arrow">\/</a>
       <Nav data={@props.data} />
     </header>

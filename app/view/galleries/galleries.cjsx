@@ -1,6 +1,7 @@
 React = require 'react'
 
 ReactMap = require './map'
+Gallerylisting = require './listing'
 
 module.exports = React.createClass
   # getInitialState: ->
@@ -8,5 +9,8 @@ module.exports = React.createClass
   render: ->
     <article id="galleries">
       <h2>Participating Galleries</h2>
-      <ReactMap />
+      <section className="map-wrapper">
+        <ReactMap />
+        <Gallerylisting />
+      </section>
     </article>
