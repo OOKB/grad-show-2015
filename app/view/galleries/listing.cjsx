@@ -10,17 +10,11 @@ module.exports = React.createClass
 
   render: ->
     <aside id="gallerylisting">
+      <h3>Gallery Listing</h3>
       <ul>
-        <li className="gallery">
-          <div>
-            <h3>Gallery Name</h3>
-            <ul>
-              {
-                locations.map (location) ->
-                  <ListingItem key={location.value} location={location} />
-              }
-            </ul>
-          </div>
-        </li>
+        {
+          locations.map (location) ->
+            <ListingItem key={location.value} location={location} />
+        }
       </ul>
     </aside>

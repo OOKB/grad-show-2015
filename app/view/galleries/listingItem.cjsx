@@ -7,7 +7,7 @@ module.exports = React.createClass
     address = "#{street}, #{zip}"
 
     <li>
-      <div>{name}</div>
-      <div>{building}</div>
-      <div>{address}</div>
+      <h4 className="gallery">{name}</h4>
+      <div className="building">{building}</div>
+      <div className="address"><address>{address}</address></div>
     </li>
