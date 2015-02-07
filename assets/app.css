@@ -1107,6 +1107,12 @@ h2 {
   background: rgba(245, 245, 245, 0.9);
   height: 100%;
   padding: 1.5em;
+  /**/
+  overflow: auto;
+  /* scrolls it as a self-contained column this way */
+}
+aside#gallerylisting ul li {
+  margin: .5em 0;
 }
 /*** Footer.less ***/
 /*** Footer.less ***/
