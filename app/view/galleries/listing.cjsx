@@ -1,7 +1,9 @@
 React = require 'react'
 
 # Get the data for the gallery info.
-locationData = require('../../data/').galleries
+locations = require('../../data/').galleries.locations
+
+ListingItem = require './listingItem'
 
 module.exports = React.createClass
   # getInitialState: ->
@@ -13,7 +15,10 @@ module.exports = React.createClass
           <div>
             <h3>Gallery Name</h3>
             <ul>
-              <li>Address and such?</li>
+              {
+                locations.map (location) ->
+                  <ListingItem key={location.value} location={location} />
+              }
             </ul>
           </div>
         </li>
