@@ -17,5 +17,5 @@ module.exports = React.createClass
     <div className="program-info">
       <h3>{name}</h3>
       <p>{blurb}</p>
-      <p><a href="http://www.mica.edu/Admission_and_Financial_Aid/Graduate_Admission_and_Financial_Aid.html">Request more information about MICA’s graduate programs</a></p>
+      <p><a href="http://www.mica.edu/Admission_and_Financial_Aid/Graduate_Admission_and_Financial_Aid.html">To request more information about {name} or any of MICA’s other graduate programs visit MICA Graduate Admissions</a></p>
     </div>
