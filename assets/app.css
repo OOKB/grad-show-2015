@@ -1052,7 +1052,15 @@ h2 {
   margin-bottom: 10px;
 }
 #students .program-info p {
-  text-align: left;
+  margin-bottom: 1em;
+}
+#students .program-info p a {
+  color: #f67fc5;
+  text-decoration: none;
+}
+#students .program-info p a:hover {
+  color: #999999;
+  text-decoration: underline;
 }
 #students ul.student-filters > li > ul {
   background: #ffffff;
