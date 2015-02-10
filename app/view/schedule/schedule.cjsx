@@ -55,7 +55,7 @@ module.exports = React.createClass
                   <em>Social Design Exchange: Perspectives from the Class of 2015</em> <br />
                   BBOX at the Gateway, <br />
                   Maryland Institute College of Art <br/>
-                  <time datetime="2015-05-01T18:00-20:30">6pm–8:30pm</time>.
+                  <time dateTime="2015-05-01T18:00-20:30">6pm–8:30pm</time>.
               </li>
             </ul>
           </div>
@@ -65,7 +65,7 @@ module.exports = React.createClass
               <li>Critical Studies, MA <br />
                   <em>Narratives of Modernity, Contemporaneity, and Desire</em> <br />
                   Symposium at the Walters Art Museum <br/>
-                  <time datetime="2015-05-02T10:00-17:00">10am–5pm</time>.
+                  <time dateTime="2015-05-02T10:00-17:00">10am–5pm</time>.
               </li>
             </ul>
           </div>
