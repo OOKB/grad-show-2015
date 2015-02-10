@@ -37,7 +37,7 @@ module.exports = React.createClass
                   <li key={link}><a href={url}>{title}</a></li>
               }
               <li>&mdash;</li>
-              <li><a href="http://www.mica.edu/Admission_and_Financial_Aid/Graduate_Admission_and_Financial_Aid.html">MICA Graduate Admissions</a></li>
+              <li><a href="http://www.mica.edu/Admission_and_Financial_Aid/Graduate_Admission_and_Financial_Aid.html">MICA Graduate Admission</a></li>
             </ul>
           </div>
           <div className="column span1 archive">
