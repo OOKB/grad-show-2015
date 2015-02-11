@@ -3,15 +3,16 @@ cx = require '../cx'
 _ = require 'lodash'
 
 Search = require './search'
-Toggle = require './toggle'
 ProgramList = require '../filters/programs'
 
+Toggle = require './toggle'
 LARGE_SCREEN_SIZE = 767
 
 module.exports = React.createClass
   getInitialState: ->
+    {nav} = @props.data
     snap: true
-    activeSection: 'intro'
+    activeSection: nav[0].link
     menuOpen: true
     innerWidth: 900
     programsActive: false
@@ -91,7 +92,7 @@ module.exports = React.createClass
 
   linkEl: (props) ->
     {activeSection, programsActive} = @state
-    {link, first, last, href, title} = props
+    {link, first, last, href, title, onClick} = props
     key = link or title
     href = href or '#'+link
     classNames =
@@ -101,6 +102,11 @@ module.exports = React.createClass
       active: activeSection and activeSection == link
     if link
       classNames[link] = true
+    onClickFunc = (e) =>
+      if onClick
+        onClick(e)
+      if window.innerWidth < LARGE_SCREEN_SIZE
+        @setState menuOpen: false
 
     if props.link is 'filter-programs'
       # Configure onClick event for programs filter click.
@@ -110,7 +116,7 @@ module.exports = React.createClass
         Dropdown = <ProgramList onClick={@handleProgramsClick} />
 
     <li key={key} className={cx(classNames)}>
-      <a href={href} onClick={onClick} title={title}>{title}</a>
+      <a href={href} onClick={onClickFunc} title={title}>{title}</a>
       {Dropdown}
     </li>
 

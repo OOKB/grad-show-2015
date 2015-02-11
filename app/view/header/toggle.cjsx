@@ -7,9 +7,10 @@ module.exports = React.createClass
   render: ->
     {handleToggle, menuOpen} = @props
     if menuOpen
-      innerText = "Hide Menu"
+      className = "toggle close"
     else
-      innerText = "Reveal Menu"
-    <button onClick={handleToggle} className="toggle" type="button">
+      className = "toggle open"
+    innerText = "Menu"
+    <button onClick={handleToggle} className={className} type="button">
       {innerText}
     </button>
