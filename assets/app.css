@@ -252,7 +252,7 @@ textarea {
   left: 50%;
   margin-left: -75px;
   margin-top: -75px;
-  z-index: 1000;
+  z-index: 99;
 }
 #logobg {
   display: block;
@@ -1055,11 +1055,11 @@ h2 {
   margin-bottom: 1em;
 }
 #students .program-info p a {
-  color: #999999;
+  color: #f67fc5;
   text-decoration: none;
 }
 #students .program-info p a:hover {
-  color: #f67fc5;
+  color: #999999;
 }
 #students ul.student-filters > li > ul {
   background: #ffffff;
