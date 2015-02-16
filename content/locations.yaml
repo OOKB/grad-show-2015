@@ -390,25 +390,6 @@ locations:
         southwest:
           lat: 39.3066530197085
           lng: -76.61575598029151
-  - name: "War Memorial Commission, City of Baltimore"
-    alias:
-      - War Memorial Baltimore
-      - War Memorial
-    value: war-memorial-commission
-    street: 101 North Gay Street
-    zip: 21202
-    geoData:
-      location:
-        lat: 39.290973
-        lng: -76.608407
-      location_type: ROOFTOP
-      viewport:
-        northeast:
-          lat: 39.2923219802915
-          lng: -76.6070580197085
-        southwest:
-          lat: 39.2896240197085
-          lng: -76.60975598029151
   - name: The Baltimore Museum of Industry
     alias:
       - Museum of Industry
