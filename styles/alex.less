@@ -5,66 +5,66 @@
 
 /*
 header .down-arrow {
-	display: block;
-	width: 30px;
-	height: 17px;
-	position: absolute;
-	bottom: 50px;
-	left: 50%;
-	margin-left: -15px;
-	padding: 0;
-	text-indent: -10000px;
-	background-image: url(down-arrow.svg);
-	background-repeat: none;
-	opacity: .5;
-	-webkit-transition: all .2s ease-in-out;
-	-moz-transition: all .2s ease-in-out;
-	transition: all .2s ease-in-out;
-	-webkit-animation: moveDownArrow 1s; /
+  display: block;
+  width: 30px;
+  height: 17px;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  margin-left: -15px;
+  padding: 0;
+  text-indent: -10000px;
+  background-image: url(down-arrow.svg);
+  background-repeat: none;
+  opacity: .5;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  -webkit-animation: moveDownArrow 1s; /
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-direction: alternate;
-			animation: moveDownArrow 1s;
-	animation-iteration-count: infinite;
-	animation-direction: alternate;
-	animation-play-state: running;
+      animation: moveDownArrow 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-play-state: running;
 }
 
 header .down-arrow:hover {
-	opacity: 1;
-	-webkit-animation-play-state: paused;
-	animation-play-state: paused;
+  opacity: 1;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
 }
 
 @-webkit-keyframes moveDownArrow {
-    0%	 {bottom: 50px;}
-	20%  {bottom: 50px;}
-    80%	 {bottom: 40px;}
-	100% {bottom: 40px;}
+    0%   {bottom: 50px;}
+  20%  {bottom: 50px;}
+    80%   {bottom: 40px;}
+  100% {bottom: 40px;}
 }
 @-moz-keyframes moveDownArrow {
-    0%	 {bottom: 50px;}
-	20%  {bottom: 50px;}
-    80%	 {bottom: 40px;}
-	100% {bottom: 40px;}
+    0%   {bottom: 50px;}
+  20%  {bottom: 50px;}
+    80%   {bottom: 40px;}
+  100% {bottom: 40px;}
 }
 @keyframes moveDownArrow {
-    0%	 {bottom: 50px;}
-	20%  {bottom: 50px;}
-    80%	 {bottom: 40px;}
-	100% {bottom: 40px;}
+    0%   {bottom: 50px;}
+  20%  {bottom: 50px;}
+    80%   {bottom: 40px;}
+  100% {bottom: 40px;}
 }
 */
 
 /*
-	SCHEDULE
+  SCHEDULE
 */
 
 .scheduleGroup {
-	margin: 0;
-	padding: 0;
-	clear: both;
-	line-height: 26px;
-	position: relative;
+  margin: 0;
+  padding: 0;
+  clear: both;
+  line-height: 26px;
+  position: relative;
 }
 
 .scheduleGroup h3 {
@@ -72,51 +72,51 @@ header .down-arrow:hover {
 }
 
 .scheduleGroup h3 span.meta {
-	display: block;
-	font-size: .75em;
-	font-weight: normal;
-	color: #999;
+  display: block;
+  font-size: .75em;
+  font-weight: normal;
+  color: #999;
 }
 
 .scheduleGroup ul {
-	list-style-type: none;
-	position: relative;
+  list-style-type: none;
+  position: relative;
 }
 .scheduleGroup.first ul, .scheduleGroup.first h3 { padding-top: 0; }
 .scheduleGroup.last ul, .scheduleGroup.last h3 { padding-bottom: 0; }
 
 .scheduleGroup ul li {
-	position: relative;
-	list-style-type: none;
+  position: relative;
+  list-style-type: none;
 }
 
 .scheduleGroup ul li::before {
-	display: absolute;
-	left: 0;
-	vertical-align: top;
-	content: "";
-	background-image: url(bullet.svg);
-	width: 21px;
-	height: 21px;
-	margin: 2px 15px 0 -31px;
+  display: absolute;
+  left: 0;
+  vertical-align: top;
+  content: "";
+  background-image: url(bullet.svg);
+  width: 21px;
+  height: 21px;
+  margin: 2px 15px 0 -31px;
 }
 
 /* Small – Tablet(ish) */
 .scheduleGroup {
-	width: 75%;
-	margin: 0 auto;
+  width: 75%;
+  margin: 0 auto;
 }
 .scheduleGroup h3 {
-	position: relative;
-	padding: 20px 0 0 20px;
-	margin-left: -21px;
-	border-left: 1px solid @pink;
+  position: relative;
+  padding: 20px 0 0 20px;
+  margin-left: -21px;
+  border-left: 1px solid @pink;
 }
 
 .scheduleGroup p.opening {
   padding: 0 0 0 20px;
   margin-left: -21px;
-	border-left: 1px solid @pink;
+  border-left: 1px solid @pink;
 }
 
 .scheduleGroup p.opening,
@@ -126,30 +126,30 @@ header .down-arrow:hover {
 }
 
 .scheduleGroup h3::before {
-	position: absolute;
-	left: 0px;
-	display: block;
-	vertical-align: top;
-	content: "";
-	background-image: url(bullet.svg);
-	width: 21px;
-	height: 21px;
-	margin: 2px 15px 0 -11px;
+  position: absolute;
+  left: 0px;
+  display: block;
+  vertical-align: top;
+  content: "";
+  background-image: url(bullet.svg);
+  width: 21px;
+  height: 21px;
+  margin: 2px 15px 0 -11px;
 }
 .scheduleGroup ul li {
-	padding: 0 0 0 20px;
-	margin-left: -21px;
-	border-left: 1px solid @pink;
+  padding: 0 0 0 20px;
+  margin-left: -21px;
+  border-left: 1px solid @pink;
 }
 .scheduleGroup ul li::before {
-	display: inline-block;
-	vertical-align: top;
-	content: "";
-	background-image: url(bullet.svg);
-	background-size: 11px 11px;
-	width: 11px;
-	height: 11px;
-	margin: 8px 15px 0 -26px;
+  display: inline-block;
+  vertical-align: top;
+  content: "";
+  background-image: url(bullet.svg);
+  background-size: 11px 11px;
+  width: 11px;
+  height: 11px;
+  margin: 8px 15px 0 -26px;
 }
 /* hack to hide border on top and bottom of dotted line */
 .scheduleGroup.first h3::before { border-top: 3px solid #fff; top: -3px; }
@@ -157,19 +157,19 @@ header .down-arrow:hover {
 
 /* Medium – Laptop(ish)/Small Desktop */
 @media only screen and (min-width: @medium) {
-	.scheduleGroup { width: 100%; margin: 0; }
-	.scheduleGroup h3 {
-		margin: 0 20px 0 0;
-		padding: 20px 0;
-		float: left;
-		width: 325px;
-		text-align: right;
-		border: none;
-	}
-	.scheduleGroup h3::before {
-		display: none; content: ""; background-image: none; width: 0; height: 0; margin: 0;
-	}
-	.scheduleGroup p.opening {
+  .scheduleGroup { width: 100%; margin: 0; }
+  .scheduleGroup h3 {
+    margin: 0 20px 0 0;
+    padding: 20px 0;
+    float: left;
+    width: 325px;
+    text-align: right;
+    border: none;
+  }
+  .scheduleGroup h3::before {
+    display: none; content: ""; background-image: none; width: 0; height: 0; margin: 0;
+  }
+  .scheduleGroup p.opening {
     position: absolute;
     top: 45px;
     width: 50%;
@@ -177,66 +177,63 @@ header .down-arrow:hover {
     padding-right: 20px;
     border: none;
   }
-	.scheduleGroup ul {
-		margin: 0;
-		padding: 20px 0 20px 20px;
-		float: left;
-		width: 300px;
-		border-left: 1px solid @pink;
-	}
-	.scheduleGroup ul li::before {
-		position: absolute;
-		left: 0;
-		vertical-align: top;
-		content: "";
-		background-image: url(bullet.svg);
-		background-size: 21px 21px;
-		width: 21px;
-		height: 21px;
-		margin: 2px 15px 0 -11px;
-	}
-	/* hack to hide border on top and bottom of dotted line */
-	.scheduleGroup.first ul li::before { border-top: 3px solid #fff; top: -3px; }
-	.scheduleGroup.last ul li::before { border-bottom: 3px solid #fff; }
+  .scheduleGroup ul {
+    margin: 0;
+    padding: 20px 0 20px 20px;
+    float: left;
+    width: 300px;
+    border-left: 1px solid @pink;
+  }
+  .scheduleGroup ul li::before {
+    position: absolute;
+    left: 0;
+    vertical-align: top;
+    content: "";
+    background-image: url(bullet.svg);
+    background-size: 21px 21px;
+    width: 21px;
+    height: 21px;
+    margin: 2px 15px 0 -11px;
+  }
+  /* hack to hide border on top and bottom of dotted line */
+  .scheduleGroup.first ul li::before { border-top: 3px solid #fff; top: -3px; }
+  .scheduleGroup.last ul li::before { border-bottom: 3px solid #fff; }
 }
 
 /* Large – Desktop */
 @media only screen and (min-width : @large) {
-	.scheduleGroup h3 {
-		margin: 0 20px 0 0;
-		padding: 20px 0;
-		float: left;
-		width: 450px;
-		text-align: right;
-	}
-	.scheduleGroup ul {
-		margin: 0;
-		padding: 20px 0 20px 20px;
-		float: left;
-		width: 400px;
-		border-left: 1px solid @pink;
-	}
+  .scheduleGroup h3 {
+    margin: 0 20px 0 0;
+    padding: 20px 0;
+    float: left;
+    width: 450px;
+    text-align: right;
+  }
+  .scheduleGroup ul {
+    margin: 0;
+    padding: 20px 0 20px 20px;
+    float: left;
+    width: 400px;
+    border-left: 1px solid @pink;
+  }
 }
-
-
-
 
 /* links */
 a:link, a:visited {
-	-webkit-transition: all .2s ease-in-out;
-	   -moz-transition: all .2s ease-in-out;
-	    -ms-transition: all .2s ease-in-out;
-		 	transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+     -moz-transition: all .2s ease-in-out;
+      -ms-transition: all .2s ease-in-out;
+       transition: all .2s ease-in-out;
 }
 a:hover, a:active {
 
 }
 
 .scheduleGroup .meta a:link, .scheduleGroup .meta a:visited {
-	color: #999;
+  color: #999;
 }
 .scheduleGroup .meta a:hover, .scheduleGroup .meta a:active {
-	color: #444;
+  color: #444;
 }
 
 /**** / END ALEX.LESS ****/
