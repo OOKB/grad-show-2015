@@ -6,6 +6,29 @@ settings:
   #width: 1400
   height: 800
 locations:
+  #oncampus
+  - name: '101 W. North Avenue'
+    alias:
+      - Kagro
+      - Kagro Building
+    value: kagro
+    street: 101 W. North Ave.
+    zip: 21201
+    geoData:
+      location:
+        lat: 39.3105820
+        lng: -76.6180850
+      location_type: ROOFTOP
+  - name: 'BBox at the Gateway'
+    value: bbox
+    building: 'Gateway'
+    street: '1601 W. Mount Royal Ave.'
+    zip: 21217
+    geoData:
+      location:
+        lat: 39.3105520
+        lng: -76.6237960
+      location_type: ROOFTOP
   - name: 'Decker Gallery'
     alias:
       - Decker
@@ -111,7 +134,7 @@ locations:
       - D Center
       - North Avenue Market
     value: north-avenue-market
-    street: 18 W. North Ave.
+    street: 16 W. North Ave.
     zip: 21218
     geoData:
       bounds:
@@ -182,102 +205,62 @@ locations:
         southwest:
           lat: 39.3091980197085
           lng: -76.6202899802915
-  - name: 'BBox at the Gateway'
-    value: bbox
-    building: 'Gateway'
-    street: '1601 W. Mount Royal Ave.'
-    zip: 21217
-    geoData:
-      location:
-        lat: 39.3105520
-        lng: -76.6237960
-      location_type: ROOFTOP
-  - name: Walters Art Museum
+
+  #offcampus
+  - name: Baltimore Clayworks
     alias:
-      - Walters
-      - Walters Art Gallery
-      - The Walters
-    value: walters-art-museum
-    street: 600 N Charles St
-    zip: 21201
+      - Clayworks
+    value: baltimore-clayworks
+    street: 5707 Smith Avenue
+    zip: 21209
     geoData:
       location:
-        lat: 39.2965928
-        lng: -76.61609949999999
+        lat: 39.3676219
+        lng: -76.6531947
       location_type: ROOFTOP
       viewport:
         northeast:
-          lat: 39.2979417802915
-          lng: -76.61475051970848
+          lat: 39.36897088029149
+          lng: -76.65184571970849
         southwest:
-          lat: 39.2952438197085
-          lng: -76.6174484802915
-  - name: Top of the World Observation Level
+          lat: 39.36627291970849
+          lng: -76.6545436802915
+  - name: The Baltimore Museum of Industry
     alias:
-      - World Trade Center Baltimore
-      - World Trade Baltimore
-    value: world-trade-center-baltimore
-    building: World Trade Center Baltimore
-    street: 401 East Pratt Street
-    zip: 21202
+      - Museum of Industry
+    value: baltimore-museum-of-industry
+    street: 1415 Key Highway
+    zip: 21230
     geoData:
       location:
-        lat: 39.2860269
-        lng: -76.6096483
+        lat: 39.2739568
+        lng: -76.6016324
       location_type: ROOFTOP
       viewport:
         northeast:
-          lat: 39.2873758802915
-          lng: -76.60829931970851
+          lat: 39.2753057802915
+          lng: -76.60028341970849
         southwest:
-          lat: 39.2846779197085
-          lng: -76.61099728029151
-  - name: "The Rawlings Conservatory & Botanic Gardens"
+          lat: 39.2726078197085
+          lng: -76.60298138029151
+  - name: Bennu Gallery
     alias:
-      - Rawlings Conservatory
-      - Conservatory
-      - Rawlings
-    value: rawlings-conservatory
-    street: 3100 Swann Drive
-    zip: 21217
+      - Bennus
+    value: bennu-gallery
+    street: 2334 Guilford Ave
+    zip: 21218
     geoData:
       location:
-        lat: 39.3184614
-        lng: -76.64472909999999
+        lat: 39.316287
+        lng: -76.61314899999999
       location_type: ROOFTOP
       viewport:
         northeast:
-          lat: 39.31981038029149
-          lng: -76.6433801197085
+          lat: 39.3176359802915
+          lng: -76.61180001970848
         southwest:
-          lat: 39.3171124197085
-          lng: -76.6460780802915
-  - name: Project PLASE
-    alias:
-      - PLASE
-      - Project Plase
-    value: project-plase
-    street: 3601 Old Frederick Avenue
-    zip: 21229
-    geoData:
-      bounds:
-        northeast:
-          lat: 39.2832849
-          lng: -76.6768465
-        southwest:
-          lat: 39.2832715
-          lng: -76.6768527
-      location:
-        lat: 39.2832715
-        lng: -76.6768527
-      location_type: RANGE_INTERPOLATED
-      viewport:
-        northeast:
-          lat: 39.2846271802915
-          lng: -76.67550061970849
-        southwest:
-          lat: 39.2819292197085
-          lng: -76.67819858029151
+          lat: 39.3149380197085
+          lng: -76.61449798029149
   - name: Gallery Q
     alias:
       - Gallery Q
@@ -305,54 +288,6 @@ locations:
         southwest:
           lat: 39.3256187197085
           lng: -76.6191197302915
-  - name: YNot Lot
-    alias:
-      - YNot
-    value: ynot-lot
-    street: 4 West North Avenue
-    zip: 21201
-    geoData:
-      location:
-        lat: 39.31144
-        lng: -76.616843
-      location_type: ROOFTOP
-      viewport:
-        northeast:
-          lat: 39.31278898029149
-          lng: -76.61549401970849
-        southwest:
-          lat: 39.3100910197085
-          lng: -76.61819198029151
-# This sandbox posting should be in Chestertown Maryland, not Baltimore,
-  - name: Sandbox
-    alias:
-      - Sandbox
-    value: sandbox
-    street: 107 South Cross Street
-    zip: 21620
-    geoData:
-      location:
-        lat: 39.2085740
-        lng: -76.0671120
-      location_type: ROOFTOP
-  - name: Bennu Gallery
-    alias:
-      - Bennus
-    value: bennu-gallery
-    street: 2334 Guilford Ave
-    zip: 21218
-    geoData:
-      location:
-        lat: 39.316287
-        lng: -76.61314899999999
-      location_type: ROOFTOP
-      viewport:
-        northeast:
-          lat: 39.3176359802915
-          lng: -76.61180001970848
-        southwest:
-          lat: 39.3149380197085
-          lng: -76.61449798029149
   - name: Jubilee Arts Center
     alias:
       - Jubilee Arts
@@ -390,51 +325,118 @@ locations:
         southwest:
           lat: 39.3066530197085
           lng: -76.61575598029151
-  - name: The Baltimore Museum of Industry
+  - name: Project PLASE
     alias:
-      - Museum of Industry
-    value: baltimore-museum-of-industry
-    street: 1415 Key Highway
-    zip: 21230
+      - PLASE
+      - Project Plase
+    value: project-plase
+    street: 3601 Old Frederick Avenue
+    zip: 21229
+    geoData:
+      bounds:
+        northeast:
+          lat: 39.2832849
+          lng: -76.6768465
+        southwest:
+          lat: 39.2832715
+          lng: -76.6768527
+      location:
+        lat: 39.2832715
+        lng: -76.6768527
+      location_type: RANGE_INTERPOLATED
+      viewport:
+        northeast:
+          lat: 39.2846271802915
+          lng: -76.67550061970849
+        southwest:
+          lat: 39.2819292197085
+          lng: -76.67819858029151
+  - name: "The Rawlings Conservatory & Botanic Gardens"
+    alias:
+      - Rawlings Conservatory
+      - Conservatory
+      - Rawlings
+    value: rawlings-conservatory
+    street: 3100 Swann Drive
+    zip: 21217
     geoData:
       location:
-        lat: 39.2739568
-        lng: -76.6016324
+        lat: 39.3184614
+        lng: -76.64472909999999
       location_type: ROOFTOP
       viewport:
         northeast:
-          lat: 39.2753057802915
-          lng: -76.60028341970849
+          lat: 39.31981038029149
+          lng: -76.6433801197085
         southwest:
-          lat: 39.2726078197085
-          lng: -76.60298138029151
-  - name: Baltimore Clayworks
+          lat: 39.3171124197085
+          lng: -76.6460780802915
+  - name: Sandbox
     alias:
-      - Clayworks
-    value: baltimore-clayworks
-    street: 5707 Smith Avenue
-    zip: 21209
+      - Sandbox
+    value: sandbox
+    street: 107 South Cross Street
+    zip: 21620
     geoData:
       location:
-        lat: 39.3676219
-        lng: -76.6531947
+        lat: 39.2085740
+        lng: -76.0671120
+      location_type: ROOFTOP
+  - name: Top of the World Observation Level
+    alias:
+      - World Trade Center Baltimore
+      - World Trade Baltimore
+    value: world-trade-center-baltimore
+    building: World Trade Center Baltimore
+    street: 401 East Pratt Street
+    zip: 21202
+    geoData:
+      location:
+        lat: 39.2860269
+        lng: -76.6096483
       location_type: ROOFTOP
       viewport:
         northeast:
-          lat: 39.36897088029149
-          lng: -76.65184571970849
+          lat: 39.2873758802915
+          lng: -76.60829931970851
         southwest:
-          lat: 39.36627291970849
-          lng: -76.6545436802915
-  - name: '101 W. North Avenue'
+          lat: 39.2846779197085
+          lng: -76.61099728029151
+  - name: Walters Art Museum
     alias:
-      - Kagro
-      - Kagro Building
-    value: kagro
-    street: 101 W. North Ave.
+      - Walters
+      - Walters Art Gallery
+      - The Walters
+    value: walters-art-museum
+    street: 600 N Charles St
     zip: 21201
     geoData:
       location:
-        lat: 39.3105820
-        lng: -76.6180850
+        lat: 39.2965928
+        lng: -76.61609949999999
       location_type: ROOFTOP
+      viewport:
+        northeast:
+          lat: 39.2979417802915
+          lng: -76.61475051970848
+        southwest:
+          lat: 39.2952438197085
+          lng: -76.6174484802915
+  - name: YNot Lot
+    alias:
+      - YNot
+    value: ynot-lot
+    street: 4 West North Avenue
+    zip: 21201
+    geoData:
+      location:
+        lat: 39.31144
+        lng: -76.616843
+      location_type: ROOFTOP
+      viewport:
+        northeast:
+          lat: 39.31278898029149
+          lng: -76.61549401970849
+        southwest:
+          lat: 39.3100910197085
+          lng: -76.61819198029151
