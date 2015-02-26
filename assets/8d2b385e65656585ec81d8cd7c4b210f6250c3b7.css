@@ -161,6 +161,34 @@ sub {
 /* ---------->>> Variables for the site! <<<-----------*/
 /* ----------------------------------------------------*/
 /** screen sizes (minimum) **/
+@font-face {
+  font-family: 'Balto';
+  src: url('http://fonts.ookb.co/ff/balto/baltoweb-book.eot');
+  src: local('Balto Book'), local('Balto-Book'), url('http://fonts.ookb.co/ff/balto/baltoweb-book.eot?#iefix') format('embedded-opentype'), url('http://fonts.ookb.co/ff/balto/baltoweb-book.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Balto';
+  src: url('http://fonts.ookb.co/ff/balto/baltoweb-bookitalic.eot');
+  src: local('Balto Book Italic'), local('Balto-BookItalic'), url('http://fonts.ookb.co/ff/balto/baltoweb-bookitalic.eot?#iefix') format('embedded-opentype'), url('http://fonts.ookb.co/ff/balto/baltoweb-bookitalic.woff') format('woff');
+  font-style: italic;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Balto';
+  src: url('http://fonts.ookb.co/ff/balto/baltoweb-bold.eot');
+  src: local('Balto Bold'), local('Balto-Bold'), url('http://fonts.ookb.co/ff/balto/baltoweb-bold.eot?#iefix') format('embedded-opentype'), url('http://fonts.ookb.co/ff/balto/baltoweb-bold.woff') format('woff');
+  font-style: normal;
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Balto';
+  src: url('http://fonts.ookb.co/ff/balto/baltoweb-bolditalic.eot');
+  src: local('Balto Bold Italic'), local('Balto-BoldItalic'), url('http://fonts.ookb.co/ff/balto/baltoweb-bolditalic.eot?#iefix') format('embedded-opentype'), url('http://fonts.ookb.co/ff/balto/baltoweb-bolditalic.woff') format('woff');
+  font-style: italic;
+  font-weight: bold;
+}
 /* ---------------------------------------------------------------------------*/
 /* ---------->>> basic styles for the student submission forms! <<<-----------*/
 /* ---------------------------------------------------------------------------*/
@@ -288,57 +316,57 @@ textarea {
 /**** ALEX.LESS ****/
 /*
 header .down-arrow {
-	display: block;
-	width: 30px;
-	height: 17px;
-	position: absolute;
-	bottom: 50px;
-	left: 50%;
-	margin-left: -15px;
-	padding: 0;
-	text-indent: -10000px;
-	background-image: url(down-arrow.svg);
-	background-repeat: none;
-	opacity: .5;
-	-webkit-transition: all .2s ease-in-out;
-	-moz-transition: all .2s ease-in-out;
-	transition: all .2s ease-in-out;
-	-webkit-animation: moveDownArrow 1s; /
+  display: block;
+  width: 30px;
+  height: 17px;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  margin-left: -15px;
+  padding: 0;
+  text-indent: -10000px;
+  background-image: url(down-arrow.svg);
+  background-repeat: none;
+  opacity: .5;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  -webkit-animation: moveDownArrow 1s; /
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-direction: alternate;
-			animation: moveDownArrow 1s;
-	animation-iteration-count: infinite;
-	animation-direction: alternate;
-	animation-play-state: running;
+      animation: moveDownArrow 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-play-state: running;
 }
 
 header .down-arrow:hover {
-	opacity: 1;
-	-webkit-animation-play-state: paused;
-	animation-play-state: paused;
+  opacity: 1;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
 }
 
 @-webkit-keyframes moveDownArrow {
-    0%	 {bottom: 50px;}
-	20%  {bottom: 50px;}
-    80%	 {bottom: 40px;}
-	100% {bottom: 40px;}
+    0%   {bottom: 50px;}
+  20%  {bottom: 50px;}
+    80%   {bottom: 40px;}
+  100% {bottom: 40px;}
 }
 @-moz-keyframes moveDownArrow {
-    0%	 {bottom: 50px;}
-	20%  {bottom: 50px;}
-    80%	 {bottom: 40px;}
-	100% {bottom: 40px;}
+    0%   {bottom: 50px;}
+  20%  {bottom: 50px;}
+    80%   {bottom: 40px;}
+  100% {bottom: 40px;}
 }
 @keyframes moveDownArrow {
-    0%	 {bottom: 50px;}
-	20%  {bottom: 50px;}
-    80%	 {bottom: 40px;}
-	100% {bottom: 40px;}
+    0%   {bottom: 50px;}
+  20%  {bottom: 50px;}
+    80%   {bottom: 40px;}
+  100% {bottom: 40px;}
 }
 */
 /*
-	SCHEDULE
+  SCHEDULE
 */
 .scheduleGroup {
   margin: 0;
@@ -524,55 +552,10 @@ a:visited {
 .scheduleGroup .meta a:active {
   color: #444;
 }
-/*
-header {
-  background-image: url("images/micagradshowletters.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  height: 100vh;
-  width: 100vw;
-  position: relative;
-}
-
-@media (max-width: @medium) {
-
-  header {
-    width: 100%;
-    height: 480px;
-  }
-
-}
-
-.header-art-1{
-  background-image: url("images/micagradshowletters.jpg");
-}
-
-.header-art-2{
-  background-image: url("images/collage_MG_6981.jpg");
-}
-
-.header-art-3{
-  background-image: url("images/howng_p_5.jpg");
-}
-
-.header-art-4{
-  background-image: url("images/s1-sharon-kusiak.jpg");
-}
-
-.header-art-5{
-  background-image: url("images/ckatrib04.jpg");
-}
-
-.header-art-6{
-  background-image: url("images/ldoughtie.jpg");
-}
-
-.header-art-7{
-  background-image: url("images/magali-hebert-huot.jpg");
-}
-*/
+/* amanda.less */
+/* amanda.less */
+/* amanda.less */
+/* amanda.less */
 #projects {
   margin: 0;
   padding: 0;
@@ -838,12 +821,10 @@ nav.main-nav li.filter-programs ul#program-filter li.program a:active {
   }
   nav.main-nav li.student-search {
     float: right;
-    opacity: 0;
     transition: all .3s;
-  }
-  nav.main-nav.students li.student-search {
     display: block;
     opacity: 1;
+    margin-top: 5px;
   }
   li.student-search #search {
     padding: 13px 20px;
@@ -892,6 +873,10 @@ nav.main-nav li.filter-programs ul#program-filter li.program a:active {
     width: 250px;
   }
 }
+/* gradshow.less */
+/* gradshow.less */
+/* gradshow.less */
+/* gradshow.less */
 /* NEED TO FIX THIS BETTER, BUT FOR NOW THIS'LL DO IT **/
 * {
   box-sizing: border-box;
@@ -901,6 +886,14 @@ body {
   padding: 0 !important;
   margin: 0;
   font-family: 'Balto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  /**/
+  -moz-font-feature-settings: "kern";
+  -webkit-font-feature-settings: "kern";
+  -ms-font-feature-settings: "kern";
+  -o-font-feature-settings: "kern";
+  font-feature-settings: "kern";
+  font-kerning: normal;
+  text-rendering: optimizeLegibility;
 }
 .container {
   margin: 0 auto;
