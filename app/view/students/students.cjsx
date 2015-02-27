@@ -26,7 +26,8 @@ module.exports = React.createClass
     # Filter Students
     # Default to something
     unless q.programId or q.locationId or q.showId or q.search
-      q.programId = 'teaching-ma'
+      q.search = ''
+    #   q.programId = 'teaching-ma'
     if students and students.where
       studentData = students.where q
     else
