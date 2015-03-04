@@ -33,6 +33,7 @@ module.exports = React.createClass
   updateMarkers: (points) ->
     markers = @state.markers
     map = @state.map
+    pin = "/pin.svg"
 
     # map may not be loaded when parent component re-renders
     return false  if map is null
@@ -51,6 +52,7 @@ module.exports = React.createClass
         position: location
         map: map
         title: point.label
+        icon: pin
       )
       markers.push marker
       return
