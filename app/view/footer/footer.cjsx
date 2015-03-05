@@ -1,6 +1,7 @@
 React = require 'react'
 
-Credits   = require './credits'
+Credits       = require './credits'
+MailchimpForm = require './mailchimp'
 
 module.exports = React.createClass
   # getInitialState: ->
@@ -37,6 +38,9 @@ module.exports = React.createClass
                   <li key={link}><a href={url}>{title}</a></li>
               }
             </ul>
+            <div className="signup">
+              <p><a href="http://eepurl.com/bciqMT">Signup for MICA Grad Show Updates</a></p>
+            </div>
           </div>
           <div className="column span1 archive">
             <h3>Archive</h3>
