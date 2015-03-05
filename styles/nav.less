@@ -190,10 +190,11 @@ nav.main-nav li.filter-programs ul#program-filter li.program a:active {
   }
 
   nav.main-nav a {
-    margin-left: 20px;
-  	margin-right: 20px;
+    margin-left: 10px;
+  	margin-right: 10px;
   	padding: 20px 0;
     display: block;
+    font-size: 90%;
   }
 
   nav.main-nav a, nav.main-nav a:visited{
@@ -213,7 +214,7 @@ nav.main-nav li.filter-programs ul#program-filter li.program a:active {
     border-top: 3px solid @pink;
     border-left: none;
     padding: 20px 0;
-    margin-left: 20px;
+    margin-left: 10px;
   }
 
   nav.main-nav.intro a, nav.main-nav.intro a:visited{
@@ -268,7 +269,7 @@ nav.main-nav li.filter-programs ul#program-filter li.program a:active {
 
   /** Programs dropdown menu stuff */
   nav.main-nav li.filter-programs {
-    width: 120px;
+    width: 90px;
   }
 
   nav.main-nav li.filter-programs ul#program-filter {
@@ -297,6 +298,21 @@ nav.main-nav li.filter-programs ul#program-filter li.program a:active {
 }
 
 @media only screen and (min-width: @large) {
+  nav.main-nav a {
+    margin-left: 20px;
+  	margin-right: 20px;
+    font-size: 100%;
+  }
+
+  nav.main-nav li.active a {
+    margin-left: 20px;
+  }
+
+  /** Programs dropdown menu stuff */
+  nav.main-nav li.filter-programs {
+    width: 120px;
+  }
+
   li.student-search #search input {
     width: 250px;
   }
