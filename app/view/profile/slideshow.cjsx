@@ -31,7 +31,7 @@ module.exports = React.createClass
             first: i is 0
             last: i is lastPos
             active: i is pos and type is 'img'} />
-    # This and the above should be combined into one process. I'm tired.
+    # This and the above should be combined into one process.
     if embeds and embeds.length
       lastPos = embeds.length-1
       embeds.forEach (embed, i) ->
