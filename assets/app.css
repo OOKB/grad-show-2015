@@ -1151,6 +1151,21 @@ footer .credit a:active {
 .column {
   margin-bottom: 2em;
 }
+footer .signup {
+  margin-top: 1em;
+  border-top: 1px solid #f67fc5;
+  padding-top: 1em;
+}
+footer .signup p {
+  font-style: italic;
+  margin-bottom: .5em;
+}
+footer .signup a {
+  border-bottom: 1px solid #f67fc5;
+}
+footer .signup a:hover {
+  color: #f67fc5;
+}
 @media only screen and (min-width: 768px) {
   .group {
     margin-left: -1.25em;
