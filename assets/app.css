@@ -1282,7 +1282,7 @@ article#student-overlay .container {
   margin: 0;
   border-radius: 2px;
 }
-#slideshow .active-image ul.image-caption {
+ul.image-caption {
   text-align: left;
   width: 100%;
   font-size: 90%;
