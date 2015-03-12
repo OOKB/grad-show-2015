@@ -44,8 +44,10 @@ module.exports = React.createClass
 
     # embeds.forEach (embed, i) ->
     if type is 'img'
-      activeFileEl = <div className="active-image">
-        <img src={file.largeSrc} onClick={@handleActiveClick} alt="art" />
+      activeFileEl = <div className="grouped">
+        <div className="active-image">
+          <img src={file.largeSrc} onClick={@handleActiveClick} alt="art" />
+        </div>
         <ImageCaption img={file} />
       </div>
     else if type is 'embed'
