@@ -11,7 +11,7 @@ App = (data, render) ->
   if not data.path then data.path = '/'
   {students, schema, programs, locations} = data
   data.imgNum = 1
-  StudentCollection = require('../models/students')(schema, locations, programs)
+  StudentCollection = require('./models/students')(schema, locations, programs)
   data.students = new StudentCollection students, parse: true
   data.data.locationSettings.points = []
   _.each locations, (loc) ->
@@ -21,8 +21,6 @@ App = (data, render) ->
         longitude: loc.geoData.location.lng
         label: loc.name
       }
-
-settings = locationData.settings
 
   Render = (Handler) ->
     # This is the default props sent to the Index view.

@@ -18,6 +18,7 @@ module.exports = React.createClass
       @setState activeFilterSet: filterSetId
 
   render: ->
+    {locations} = @props
     {activeFilterSet} = @state
     programSets = [
       {id: 'programs', El: Programs, name: 'Program'}

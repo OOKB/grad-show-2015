@@ -5,7 +5,7 @@ Main = require './main'
 
 module.exports = React.createClass
   render: ->
-    {sha, data, students, locations} = @props
+    {sha, data, students, locations, intro} = @props
     {title, author} = data
 
     appFileName = sha or 'app'
@@ -24,7 +24,7 @@ module.exports = React.createClass
       </head>
       <body>
         <div id="react">
-          <Main data={data} students={students} locations={locations}/>
+          <Main data={data} students={students} locations={locations} intro={intro} />
         </div>
         <script src="/paper-full-v0.9.21.min.js" type="text/javascript" />
         <script src={jsFilePath} type="text/javascript" />

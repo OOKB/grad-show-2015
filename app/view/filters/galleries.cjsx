@@ -3,18 +3,18 @@ _ = require 'lodash'
 
 {Link} = require 'react-router'
 
-{locations} = require('../../data/').galleries
-
-locationFilters = _.where locations, {offCampus: false}
-locationFilters = _.sortBy locationFilters, 'name'
-locationFilters.unshift {value: 'offcampus', name: '- Off Campus -'}
-
 module.exports = React.createClass
   # getInitialState: ->
   #mixins: [Navigation]
 
   render: ->
-    {onClick} = @props
+    {onClick, locations} = @props
+
+
+locationFilters = _.where locations, {offCampus: false}
+locationFilters = _.sortBy locationFilters, 'name'
+locationFilters.unshift {value: 'offcampus', name: '- Off Campus -'}
+
 
     clickFunc = ->
       onClick()

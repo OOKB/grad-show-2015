@@ -2,12 +2,11 @@ React = require 'react'
 
 Logo = require './logo'
 
-{body} = require '../../data/intro.json'
-
 module.exports = React.createClass
   # getInitialState: ->
 
   render: ->
+    {body} = @props
     <article id="intro">
       <div className="container">
         <Logo />

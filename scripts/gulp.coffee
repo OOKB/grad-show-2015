@@ -92,16 +92,10 @@ gulp.task 'compile-watch', (cb) ->
 # /WATCHIFY
 
 # Process LESS to CSS.
-gulp.task 'less', ->
+gulp.task 'styles', ->
   gulp.src(["styles/app.less", 'styles/print.less', 'styles/iefix.less'])
     .pipe less()
     .pipe gulp.dest("./public/assets")
-
-gulp.task 'styles', ['less'], ->
-  {sha} = fs.readJsonSync './app/data/index.json'
-  gulp.src('./public/assets/app.css')
-    .pipe(rename(sha+'.css'))
-    .pipe(gulp.dest('./public/assets'))
 
 # Copy static files.
 gulp.task 'static', ->

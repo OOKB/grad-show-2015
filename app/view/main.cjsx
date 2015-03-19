@@ -10,11 +10,11 @@ Footer    = require './footer/footer'
 
 module.exports = React.createClass
   render: ->
-    {data, students, locations} = @props
+    {data, students, locations, intro} = @props
 
     <div id="react-app">
       <Header data={data} />
-      <Intro />
+      <Intro body={intro} />
       <Schedule />
       <Galleries locations={locations} settings={data.locationSettings} />
       <RouteHandler data={data} students={StudentData} locations={locations} />
