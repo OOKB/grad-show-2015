@@ -17,6 +17,6 @@ module.exports = React.createClass
       <Intro body={intro} />
       <Schedule />
       <Galleries locations={locations} settings={data.locationSettings} />
-      <RouteHandler data={data} students={StudentData} locations={locations} />
+      <RouteHandler data={data} students={students} locations={locations} />
       <Footer data={data} />
     </div>

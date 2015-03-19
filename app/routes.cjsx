@@ -1,14 +1,13 @@
 React = require 'react'
-Router = require 'react-router'
-{Route, DefaultRoute} = Router
+{Route, DefaultRoute} = require 'react-router'
 
 Index = require './view/index'
 Students = require './view/students/students'
 Profile = require './view/profile/profile'
 
-module.exports = (data) ->
+module.exports =
 
   <Route name="app" path="/" ignoreScrollBehavior handler={Index}>
     <Route name="usrProfile" path="/students/:uid/?:slidePos?" handler={Profile} />
-    <DefaultRoute handler={Students} />
+    <DefaultRoute name="students" handler={Students} />
   </Route>

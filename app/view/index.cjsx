@@ -8,7 +8,7 @@ module.exports = React.createClass
     {sha, data, students, locations, intro} = @props
     {title, author} = data
 
-    appFileName = sha or 'app'
+    appFileName = 'app'# or sha
     cssFilePath = "/assets/#{appFileName}.css"
     jsFilePath = "/assets/#{appFileName}.js"
 

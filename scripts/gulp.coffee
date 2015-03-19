@@ -76,6 +76,10 @@ opts.extensions = ['.coffee', '.cjsx']
 opts.debug = true
 w = watchify browserify('./app/app.cjsx', opts)
 gulp.task 'bundle', ->
+  # Remove the sorted set (from Redis) that contains all valid compiled routes.
+  red.del 'rjsRoute.h.mica', (err, res) ->
+    console.log 'expireHtml', err, res
+
   w.bundle()
     .on 'error', gutil.log.bind gutil, 'Browserify Error'
     .pipe source('app.js')
@@ -86,10 +90,6 @@ gulp.task 'bundle', ->
     .pipe browserSync.reload({stream:true})
 
 w.on 'update', () ->
-  # Remove the sorted set (from Redis) that contains all valid compiled routes.
-  red.del 'rjsRoute.h.mica', (err, res) ->
-    console.log 'expireHtml', err, res
-
   runSequence 'bundle'
 
 gulp.task 'compile-watch', (cb) ->
