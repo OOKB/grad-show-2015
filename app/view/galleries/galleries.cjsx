@@ -7,10 +7,11 @@ module.exports = React.createClass
   # getInitialState: ->
 
   render: ->
+    {locations, settings} = @props
     <article id="galleries">
       <h2>Participating Galleries</h2>
       <section className="map-wrapper">
-        <ReactMap />
-        <Gallerylisting />
+        <ReactMap settings={settings} />
+        <Gallerylisting locations={locations} />
       </section>
     </article>

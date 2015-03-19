@@ -1,12 +1,12 @@
-Collection = require('ampersand-rest-collection')
+Collection = require('ampersand-collection')
 Model = require('./image')
 
 module.exports = Collection.extend
   model: Model
   mainIndex: 'fileName'
 
-  comparator: (model) ->
-    model.metadata.sortOrder
+  # comparator: (model) ->
+  #   model.metadata.sortOrder
 
   # initialize: ->
   #   @on 'all', (a,b,c) ->

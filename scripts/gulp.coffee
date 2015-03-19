@@ -37,17 +37,14 @@ content = require './content'
 gulp.task "default", ['browser-sync'], ->
   gulp.watch "styles/*.less", ["styles", browserSync.reload]
   gulp.watch 'static/**', ['static', browserSync.reload]
-  gulp.watch './content/**/*.md', ['content', browserSync.reload]
-  gulp.watch './content/**/*.yaml', ['data', browserSync.reload]
   return
 
 # For development.
 gulp.task "browser-sync", ['compile-watch', 'styles', 'static'], ->
   browserSync
-    server:
-      baseDir: 'public'
+    proxy: 'l.micagradshow.com'#"localhost:8088"
     logConnections: true
-    injectChanges: false
+    injectChanges: true
     #logLevel: 'debug'
   return
 
@@ -75,51 +72,24 @@ opts = watchify.args
 opts.extensions = ['.coffee', '.cjsx']
 opts.debug = true
 w = watchify browserify('./app/app.cjsx', opts)
-
-bundle = () ->
-  {sha} = fs.readJsonSync './app/data/index.json'
-  runSequence 'templates'
+gulp.task 'bundle', ->
   w.bundle()
     .on 'error', gutil.log.bind gutil, 'Browserify Error'
-    .pipe source("#{sha}.js")
+    .pipe source('app.js')
       .pipe buffer()
       .pipe(sourcemaps.init({loadMaps: true}))
       .pipe(sourcemaps.write('./'))
     .pipe gulp.dest('./public/assets')
     .pipe browserSync.reload({stream:true})
-w.on 'update', bundle
-gulp.task 'compile-watch', ['serverData'], bundle
 
+w.on 'update', () ->
+  # Remove the sorted set (from Redis) that contains all valid compiled routes.
+  runSequence 'bundle'
 
-# Convert yaml files from the content dir to json files.
-gulp.task 'data', ->
-  gulp.src './content/**/*.yaml'
-    .pipe yaml()
-    .pipe gulp.dest('./app/data/')
-
-# Convert markdown files from content dir to json files.
-gulp.task 'content', ->
-  gulp.src './content/**/*.md'
-    .pipe markdown()
-    .pipe gulp.dest('./app/data/')
-
-gulp.task 'serverData', ['data', 'content'], (cb) ->
-  serverData cb
-
-# Compile the static html files.
-gulp.task 'templates', (cb) ->
-  # Calling an external script for this.
-  exec 'coffee ./scripts/renderMarkup.coffee', (err, stdout, stderr) ->
-    if stdout
-      console.log stdout
-    cb err
-
-gulp.task 'templates_all', ['templates'], (cb) ->
-  # Calling an external script for this.
-  exec 'coffee ./scripts/renderStudents.coffee', (err, stdout, stderr) ->
-    if stderr
-      console.log stderr
-    cb err
+gulp.task 'compile-watch', (cb) ->
+  runSequence 'bundle', cb
+  return
+# /WATCHIFY
 
 # Process LESS to CSS.
 gulp.task 'less', ->

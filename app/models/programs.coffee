@@ -1,8 +1,6 @@
-Model = require 'ampersand-model'
+Model = require 'ampersand-state'
 Collection = require 'ampersand-collection'
 moment = require 'moment'
-
-programData = require('../data/programs').programs
 
 # Show Model
 Show = Model.extend
@@ -62,11 +60,12 @@ Programs = Collection.extend
   mainIndex: 'id'
   allShows: new AllShows()
 
-programCollection = new Programs programData, parse: true
+module.exports = (programData) ->
+  programCollection = new Programs programData, parse: true
 
-programCollection.each (program) ->
-  program.shows.each (show) ->
-    unless programCollection.allShows.get(show.id)
-      programCollection.allShows.add(show)
+  programCollection.each (program) ->
+    program.shows.each (show) ->
+      unless programCollection.allShows.get(show.id)
+        programCollection.allShows.add(show)
 
-module.exports = programCollection
+  programCollection

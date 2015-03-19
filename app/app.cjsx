@@ -1,19 +1,28 @@
 React = require 'react'
-_ = require 'queries'
+_ = require 'lodash'
 Router = require 'react-router'
 {Route, DefaultRoute} = Router
 
 Routes = require './routes'
 
-data = require './data'
-data.imgNum = 1
-delete data.students
-delete data.schema
-
 inBrowser = typeof window isnt "undefined"
 
-App = (vars, render) ->
-  path = vars.path or '/'
+App = (data, render) ->
+  if not data.path then data.path = '/'
+  {students, schema, programs, locations} = data
+  data.imgNum = 1
+  StudentCollection = require('../models/students')(schema, locations, programs)
+  data.students = new StudentCollection students, parse: true
+  data.data.locationSettings.points = []
+  _.each locations, (loc) ->
+    if loc.geoData
+      data.data.locationSettings.points.push {
+        latitude: loc.geoData.location.lat
+        longitude: loc.geoData.location.lng
+        label: loc.name
+      }
+
+settings = locationData.settings
 
   Render = (Handler) ->
     # This is the default props sent to the Index view.
@@ -21,9 +30,9 @@ App = (vars, render) ->
 
   if inBrowser
     data.windowInnerWidth = window.innerWidth
-    Router.run Routes(data), Router.HistoryLocation, Render
+    Router.run Routes, Router.HistoryLocation, Render
   else
-    Router.run Routes(data), path, Render
+    Router.run Routes, data.path, Render
 
 if inBrowser
   window.onload = -> # Attach event handlers.
@@ -32,6 +41,17 @@ if inBrowser
       db: data # Our database.
     render = (Handler, props) ->
       React.render React.createElement(Handler, props), document
-    App {}, render
+    console.log 'Client js loaded. Fetch data.'
+    http.get('/index.json').accept('json').end (err, res) =>
+      if err
+        return console.error err
+      if res and res.body
+        # Attach app to global window var as app.
+        window.app = data = res.body
+        # Trigger render.
+        App data, render
+        console.log 'Init react with data.'
+      else
+        console.error err or res
 
 module.exports = App

@@ -1,5 +1,4 @@
-Model = require("ampersand-model")
-r = require 'superagent'
+Model = require("ampersand-state")
 module.exports = Model.extend
 
   props:

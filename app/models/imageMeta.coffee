@@ -33,6 +33,3 @@ module.exports = Model.extend
           else
             str = size[0]
         str
-
-  url: ->
-    app.api+'file/'+@id

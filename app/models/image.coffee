@@ -1,4 +1,4 @@
-Model = require("ampersand-model")
+Model = require("ampersand-state")
 
 CDN = '//mica2015.imgix.net/'
 
@@ -18,13 +18,6 @@ humanFileSize = (bytes, si) ->
 
 module.exports = Model.extend
   idAttribute: 'fileName'
-  url: ->
-    app.api+'file/'+@fileName
-  initialize: ->
-    @on 'add', @processImgFile
-    @on 'change:src', ->
-      console.log 'has src'
-    return
   props:
     fileName: 'string'
     bytes: 'number'
@@ -32,12 +25,6 @@ module.exports = Model.extend
     uploaded: 'boolean'
     md5: 'string'
     lastModified: 'string'
-  session:
-    file: 'object'
-    progress:
-      type: 'number'
-      default: 0
-    fileData: 'string'
   children:
     metadata: ImageMeta
   derived:
@@ -86,18 +73,6 @@ module.exports = Model.extend
       img.uploaded = true
       img.progress = 100
     return img
-
-  processImgFile: ->
-    if @type and @file and @type.indexOf("image") is 0
-      if 3000000 > @bytes
-        reader = new FileReader()
-        reader.onload = (e) =>
-          @fileData = e.target.result
-          @uploadFile()
-          return
-        reader.readAsDataURL @file
-      else
-        @uploadFile()
 
   handleFinish: (e) ->
     if xhr.readyState is 4

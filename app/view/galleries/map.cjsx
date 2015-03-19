@@ -2,14 +2,6 @@ React = require 'react'
 
 mapStyles = require './mapStyles'
 
-locationData = require('../../data/').galleries
-locationData.settings.points = locationData.locations.map (loc) ->
-  latitude: loc.geoData.location.lat
-  longitude: loc.geoData.location.lng
-  label: loc.name
-
-settings = locationData.settings
-
 module.exports = React.createClass
   displayName: "Gmap"
 
@@ -61,7 +53,7 @@ module.exports = React.createClass
     return
 
   componentDidMount: ->
-
+    {settings} = @props
     window.mapLoaded = =>
       {zoom, latitude, longitude, points} = settings
       mapOptions =

@@ -1,4 +1,4 @@
-Collection = require('ampersand-rest-collection')
+Collection = require('ampersand-collection')
 Model = require('./embed')
 
 module.exports = Collection.extend
