@@ -1,4 +1,4 @@
-Model = require("ampersand-model")
+Model = require("ampersand-state")
 
 module.exports = Model.extend
   idAttribute: 'id'
