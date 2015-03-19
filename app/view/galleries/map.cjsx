@@ -28,7 +28,7 @@ module.exports = React.createClass
     pin = "/pin.svg"
 
     # map may not be loaded when parent component re-renders
-    return false  if map is null
+    return false if map is null
 
     # remove everything
     markers.forEach (marker) ->
@@ -47,6 +47,9 @@ module.exports = React.createClass
         icon: pin
       )
       markers.push marker
+      info = new google.maps.InfoWindow content: point.info
+      google.maps.event.addListener marker, 'click', ->
+        info.open(map, marker)
       return
     )
     @setState markers: markers

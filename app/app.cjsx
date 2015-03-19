@@ -17,11 +17,23 @@ App = (data, render) ->
   data.students = new StudentCollection students, parse: true
   data.data.locationSettings.points = []
   _.each locations, (loc) ->
-    if loc.geoData
+    {geoData, name, building, street, zip} = loc
+    if geoData
+      directionsLink = 'https://maps.google.com?daddr='+street.replace(/ /g, '+')
+      directionsLink += '+Baltimore+Maryland+'+zip
+      popupHTML = "<div>
+        <h3>#{loc.name}</h3>
+        <ul>
+          #{if loc.building then '<li>Building: '+building+'</li>' else ''}
+          <li>Address: #{street} #{zip}</li>
+          <li><a href=\"#{directionsLink}\">Directions</a></li>
+        </ul>
+      </div>"
       data.data.locationSettings.points.push {
         latitude: loc.geoData.location.lat
         longitude: loc.geoData.location.lng
         label: loc.name
+        info: popupHTML
       }
   console.log 'process data'
   Render = (Handler) ->
