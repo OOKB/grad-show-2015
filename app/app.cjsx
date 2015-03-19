@@ -19,7 +19,7 @@ App = (data, render) ->
   _.each locations, (loc) ->
     {geoData, name, building, street, zip} = loc
     if geoData
-      directionsLink = 'https://maps.google.com?daddr='+street.replace(/ /g, '+')
+      directionsLink = 'https://maps.google.com?daddr='+street.split(' ').join('+')
       directionsLink += '+Baltimore+Maryland+'+zip
       popupHTML = "<div>
         <h3>#{loc.name}</h3>
