@@ -61,7 +61,7 @@ gulp.task 'compile', ->
   gulp.src 'app/app.cjsx'
     .pipe browserified
     # Extract the map.
-    .pipe transform(-> exorcist("./public/assets/#{sha}.js.map"))
+    .pipe transform(-> exorcist("./public/assets/app.js.map"))
     # Shrink the codebase.
     .pipe uglify()
     .pipe rename('app.js')
