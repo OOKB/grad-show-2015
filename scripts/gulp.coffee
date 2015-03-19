@@ -53,7 +53,6 @@ gulp.task "browser-sync", ['compile-watch', 'styles', 'static'], ->
 
 # This generate js app file.
 gulp.task 'compile', ->
-  {sha} = fs.readJsonSync './app/data/index.json'
   fs.mkdirsSync './public/assets'
   browserified = transform (filename) ->
     b = browserify {debug: true, extensions: ['.cjsx', '.coffee']}
@@ -62,12 +61,11 @@ gulp.task 'compile', ->
     b.bundle()
   gulp.src 'app/app.cjsx'
     .pipe browserified
-    # Rename the file.
-    .pipe rename("#{sha}.js")
     # Extract the map.
     .pipe transform(-> exorcist("./public/assets/#{sha}.js.map"))
     # Shrink the codebase.
     .pipe uglify()
+    .pipe rename('app.js')
     .pipe gulp.dest('./public/assets')
 
 # WATCHIFY
@@ -110,7 +108,7 @@ gulp.task 'static', ->
 
 # - - - - prod - - - -
 gulp.task 'prod', ['prod_clean'], (cb) ->
-  runSequence ['static', 'serverData'], ['templates_all', 'compile', 'styles'], cb
+  runSequence ['static'], ['compile', 'styles'], cb
 
 # Remove contents from public directory.
 gulp.task 'prod_clean', ->
