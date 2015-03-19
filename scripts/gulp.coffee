@@ -33,6 +33,9 @@ sourcemaps = require 'gulp-sourcemaps'
 serverData = require './serverData'
 content = require './content'
 
+redis = require("redis")
+red = redis.createClient()
+
 # Default gulp tasks watches files for changes
 gulp.task "default", ['browser-sync'], ->
   gulp.watch "styles/*.less", ["styles", browserSync.reload]
@@ -84,6 +87,9 @@ gulp.task 'bundle', ->
 
 w.on 'update', () ->
   # Remove the sorted set (from Redis) that contains all valid compiled routes.
+  red.del 'rjsRoute.h.mica', (err, res) ->
+    console.log 'expireHtml', err, res
+
   runSequence 'bundle'
 
 gulp.task 'compile-watch', (cb) ->
