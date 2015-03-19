@@ -1,16 +1,14 @@
 React = require 'react'
 {Link} = require 'react-router'
 
-programsData = require '../../models/programs'
-
-filterItems = programsData.allShows
-
 module.exports = React.createClass
   # getInitialState: ->
   #mixins: [Navigation]
 
   render: ->
-    {onClick} = @props
+    {onClick, programs} = @props
+    filterItems = programs.allShows
+
     clickFunc = ->
       onClick()
       document.querySelector('#students').scrollIntoView(true)

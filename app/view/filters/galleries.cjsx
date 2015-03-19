@@ -10,8 +10,7 @@ module.exports = React.createClass
   render: ->
     {onClick, locations} = @props
 
-
-    locationFilters = _.where locations, {offCampus: false}
+    locationFilters = _.where locations, {offcampus: false}
     locationFilters = _.sortBy locationFilters, 'name'
     locationFilters.unshift {value: 'offcampus', name: '- Off Campus -'}
 
