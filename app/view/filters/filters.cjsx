@@ -18,7 +18,7 @@ module.exports = React.createClass
       @setState activeFilterSet: filterSetId
 
   render: ->
-    {locations} = @props
+    {locations, programs} = @props
     {activeFilterSet} = @state
     programSets = [
       {id: 'programs', El: Programs, name: 'Program'}
@@ -32,7 +32,7 @@ module.exports = React.createClass
           <button onClick={=> @handleCategoryClick id} className="filter">
             <span>{name}</span>
           </button>
-          {<El onClick={@handleCategoryClick} locations={locations} /> if activeFilterSet is id}
+          {<El onClick={@handleCategoryClick} locations={locations} programs={programs} /> if activeFilterSet is id}
         </li>
       }
     </ul>

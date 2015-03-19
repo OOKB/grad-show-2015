@@ -17,7 +17,7 @@ module.exports = React.createClass
 
   mixins: [State]
   render: ->
-    {students, locations} = @props
+    {students, locations, programs} = @props
     if @state.mounted
       q = @getQuery()
     else
@@ -38,7 +38,7 @@ module.exports = React.createClass
     <article id="students">
       <div className="container">
         <h2>Students</h2>
-        <Filters locations={locations} />
+        <Filters locations={locations} programs={programs} />
         {if program then <Blurb program={program} />}
         <ul id="projects" className="list">
           {studentData.map (model) ->

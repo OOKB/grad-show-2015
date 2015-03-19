@@ -1,12 +1,10 @@
 React = require 'react'
 {Link} = require 'react-router'
 
-programs = require '../../models/programs'
-
 module.exports = React.createClass
 
   render: ->
-    {onClick} = @props
+    {onClick, programs} = @props
     clickFunc = ->
       onClick()
       document.querySelector('#students').scrollIntoView(true)

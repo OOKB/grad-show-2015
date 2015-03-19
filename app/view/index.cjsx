@@ -5,7 +5,7 @@ Main = require './main'
 
 module.exports = React.createClass
   render: ->
-    {sha, data, students, locations, intro} = @props
+    {sha, data, students, locations, intro, programs} = @props
     {title, author} = data
 
     appFileName = 'app'# or sha
@@ -21,13 +21,13 @@ module.exports = React.createClass
         <meta name="author" content={author} />
         <link rel="stylesheet" type="text/css" href={cssFilePath} />
         <link rel="stylesheet" type="text/css" href="/assets/print.css" media="print" />
+        <script src={jsFilePath} type="text/javascript" async />
       </head>
       <body>
         <div id="react">
-          <Main data={data} students={students} locations={locations} intro={intro} />
+          <Main data={data} students={students} locations={locations} intro={intro} programs={programs} />
         </div>
         <script src="/paper-full-v0.9.21.min.js" type="text/javascript" />
-        <script src={jsFilePath} type="text/javascript" />
         <script src="/ga.js" type="text/javascript" />
         <span dangerouslySetInnerHTML={__html: '<script type="text/paperscript" canvas="canvas" src="/mgslogo.js"></script>'} />
       </body>

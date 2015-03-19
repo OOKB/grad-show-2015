@@ -4,9 +4,7 @@ _ = require 'lodash'
 Images = require './images'
 Embeds = require './embeds'
 
-module.exports = (schema, locationData, programs) ->
-  Programs = require('./programs')(programs)
-
+module.exports = (schema, locationData, Programs) ->
   props = schema
   props.showNum =
     required: true

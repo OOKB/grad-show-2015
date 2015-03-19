@@ -2,6 +2,7 @@ React = require 'react'
 _ = require 'lodash'
 Router = require 'react-router'
 {Route, DefaultRoute} = Router
+http = require 'superagent'
 
 Routes = require './routes'
 
@@ -10,8 +11,9 @@ inBrowser = typeof window isnt "undefined"
 App = (data, render) ->
   if not data.path then data.path = '/'
   {students, schema, programs, locations} = data
+  data.programs = require('./models/programs')(programs)
   data.imgNum = 1
-  StudentCollection = require('./models/students')(schema, locations, programs)
+  StudentCollection = require('./models/students')(schema, locations, data.programs)
   data.students = new StudentCollection students, parse: true
   data.data.locationSettings.points = []
   _.each locations, (loc) ->
@@ -21,7 +23,7 @@ App = (data, render) ->
         longitude: loc.geoData.location.lng
         label: loc.name
       }
-
+  console.log 'process data'
   Render = (Handler) ->
     # This is the default props sent to the Index view.
     render Handler, data
@@ -34,9 +36,6 @@ App = (data, render) ->
 
 if inBrowser
   window.onload = -> # Attach event handlers.
-    # Attach app to global window var as app.
-    window.app =
-      db: data # Our database.
     render = (Handler, props) ->
       React.render React.createElement(Handler, props), document
     console.log 'Client js loaded. Fetch data.'
