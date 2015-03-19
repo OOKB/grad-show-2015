@@ -1,8 +1,6 @@
 React = require 'react'
 _ = require 'lodash'
 
-Programs = require '../../models/programs'
-
 filerSets =
   showDate: 'Show Date: '
   location: 'Location: '
@@ -12,7 +10,7 @@ module.exports = React.createClass
   # getInitialState: ->
 
   render: ->
-    {name, blurb} = Programs.get @props.program
+    {name, blurb} = @props
 
     <div className="program-info">
       <h3>{name}</h3>

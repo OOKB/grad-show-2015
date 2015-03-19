@@ -66,6 +66,9 @@ gulp.task 'compile', ->
     .pipe uglify()
     .pipe rename('app.js')
     .pipe gulp.dest('./public/assets')
+  red.del 'rjsRoute.h.mica', (err, res) ->
+    console.log 'expireHtml', err, res
+    red.end()
 
 # WATCHIFY
 opts = watchify.args

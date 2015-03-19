@@ -33,13 +33,17 @@ module.exports = React.createClass
     else
       studentData = students
 
-    program = q.programId
+    if q.programId and program = programs.get q.programId
+      {name, blurb} = program
+      blurbEl = <Blurb name={name} blurb={blurb} />
+    else
+      blurbEl = false
 
     <article id="students">
       <div className="container">
         <h2>Students</h2>
         <Filters locations={locations} programs={programs} />
-        {if program then <Blurb program={program} />}
+        {blurbEl}
         <ul id="projects" className="list">
           {studentData.map (model) ->
             if model.pic

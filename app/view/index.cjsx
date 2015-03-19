@@ -20,7 +20,6 @@ module.exports = React.createClass
         <meta name="generator" content="CAPE.io, see www.cape.io" />
         <meta name="author" content={author} />
         <link rel="stylesheet" type="text/css" href={cssFilePath} />
-        <link rel="stylesheet" type="text/css" href="/assets/print.css" media="print" />
         <script src={jsFilePath} type="text/javascript" async />
       </head>
       <body>
