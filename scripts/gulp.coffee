@@ -44,7 +44,7 @@ gulp.task "default", ['browser-sync'], ->
 # For development.
 gulp.task "browser-sync", ['compile-watch', 'styles', 'static'], ->
   browserSync
-    proxy: 'l.micagradshow.com'#"localhost:8088"
+    proxy: "localhost:8088"
     logConnections: true
     injectChanges: true
     #logLevel: 'debug'
@@ -72,12 +72,13 @@ opts = watchify.args
 opts.extensions = ['.coffee', '.cjsx']
 opts.debug = true
 w = watchify browserify('./app/app.cjsx', opts)
+
 gulp.task 'bundle', ->
   red = redis.createClient()
   # Remove the sorted set (from Redis) that contains all valid compiled routes.
   red.del 'rjsRoute.h.mica', (err, res) ->
     console.log 'expireHtml', err, res
-  red.end()
+    red.end()
   w.bundle()
     .on 'error', gutil.log.bind gutil, 'Browserify Error'
     .pipe source('app.js')
