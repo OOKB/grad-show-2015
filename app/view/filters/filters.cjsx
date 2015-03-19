@@ -32,7 +32,7 @@ module.exports = React.createClass
           <button onClick={=> @handleCategoryClick id} className="filter">
             <span>{name}</span>
           </button>
-          {<El onClick={@handleCategoryClick} /> if activeFilterSet is id}
+          {<El onClick={@handleCategoryClick} locations={locations} /> if activeFilterSet is id}
         </li>
       }
     </ul>

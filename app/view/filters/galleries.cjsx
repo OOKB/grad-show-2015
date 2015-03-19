@@ -11,10 +11,9 @@ module.exports = React.createClass
     {onClick, locations} = @props
 
 
-locationFilters = _.where locations, {offCampus: false}
-locationFilters = _.sortBy locationFilters, 'name'
-locationFilters.unshift {value: 'offcampus', name: '- Off Campus -'}
-
+    locationFilters = _.where locations, {offCampus: false}
+    locationFilters = _.sortBy locationFilters, 'name'
+    locationFilters.unshift {value: 'offcampus', name: '- Off Campus -'}
 
     clickFunc = ->
       onClick()

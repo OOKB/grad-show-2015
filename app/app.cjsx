@@ -24,7 +24,7 @@ App = (data, render) ->
 
   Render = (Handler) ->
     # This is the default props sent to the Index view.
-    render Handler, {data: data, vars: vars, kai:'ppo'}
+    render Handler, data
 
   if inBrowser
     data.windowInnerWidth = window.innerWidth

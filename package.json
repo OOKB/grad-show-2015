@@ -42,7 +42,8 @@
     "ampersand-model": "^4.0.3",
     "moment": "^2.8.4",
     "ampersand-rest-collection": "^2.0.4",
-    "superagent": "^0.21.0"
+    "superagent": "^0.21.0",
+    "ampersand-state": "^4.4.5"
   },
   "devDependencies": {
     "browserify": "^8.0.2",
