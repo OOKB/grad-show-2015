@@ -145,7 +145,7 @@ module.exports = React.createClass
         link.last = i == last_i
         @linkEl link
       # Throw in the search input element.
-      Links.push <li key="search" className="student-search"><Search /></li>
+      Links.push <li key="search" className="student-search"><Search activeSection={activeSection} /></li>
       NavList = <ul className="nav">{Links}</ul>
     else
       NavList = false

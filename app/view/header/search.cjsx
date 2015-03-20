@@ -7,6 +7,10 @@ module.exports = React.createClass
   mixins: [Navigation, State]
 
   handleChange: (e) ->
+    {activeSection} = @props
+    unless activeSection is 'students'
+      document.querySelector('#students').scrollIntoView(true)
+
     searchTxt = @refs.searchTxt.getDOMNode().value
     q = @getQuery()
     q.search = searchTxt.toLowerCase()
