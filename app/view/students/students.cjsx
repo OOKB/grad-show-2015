@@ -1,13 +1,14 @@
 React = require 'react'
 _ = require 'lodash'
 
-{State} = require 'react-router'
-
 Student = require './student'
 Blurb = require './blurb'
 Filters = require '../filters/filters'
 
 module.exports = React.createClass
+  contextTypes: {
+    router: React.PropTypes.func.isRequired
+  }
   getInitialState: ->
     mounted: false
 
@@ -15,11 +16,10 @@ module.exports = React.createClass
     unless @state.mounted
       @setState mounted: true
 
-  mixins: [State]
   render: ->
     {students, locations, programs} = @props
     if @state.mounted
-      q = @getQuery()
+      q = @context.router.getCurrentQuery()
     else
       q = {}
 

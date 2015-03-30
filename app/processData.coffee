@@ -4,7 +4,8 @@ module.exports = (data) ->
   {students, schema, programs, locations} = data
   data.currentYear = new Date().getFullYear()
   data.imgNum = 1
-
+  unless programs
+    console.error 'missing programs'
   data.programs = require('./models/programs')(programs)
 
   StudentCollection = require('./models/students')(schema, locations, data.programs)

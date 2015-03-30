@@ -16,8 +16,8 @@
   "license": "ISC",
   "dependencies": {
     "lodash": "3.x",
-    "react": "0.12.x",
-    "react-router": "0.12.x",
+    "react": "0.13.x",
+    "react-router": "0.13.x",
     "superagent": "0.x",
     "moment": "2.x",
     "ampersand-state": "4.x",

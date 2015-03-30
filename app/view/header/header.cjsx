@@ -13,10 +13,11 @@ module.exports = React.createClass
 
   render: ->
     {imgNum} = @state
-    {title} = @props.data
+    {data, programs} = @props
+    {title} = data
     className = "header-art-#{imgNum}"
 
     <header className={className}>
       <h1 style={display: 'none'}>{title}</h1>
-      <Nav data={@props.data} />
+      <Nav data={data} programs={programs} />
     </header>

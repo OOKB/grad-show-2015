@@ -92,6 +92,7 @@ module.exports = React.createClass
 
   linkEl: (props) ->
     {activeSection, programsActive} = @state
+    {programs} = @props
     {link, first, last, href, title, onClick} = props
     key = link or title
     href = href or '#'+link
@@ -113,7 +114,7 @@ module.exports = React.createClass
       onClick =  @handleProgramsClick
       if programsActive
         # Establish if menu item has dropdown.
-        Dropdown = <ProgramList onClick={@handleProgramsClick} />
+        Dropdown = <ProgramList onClick={@handleProgramsClick} programs={programs} />
 
     <li key={key} className={cx(classNames)}>
       <a href={href} onClick={onClickFunc} title={title}>{title}</a>

@@ -37,6 +37,10 @@ if inBrowser
   window.onload = -> # Attach event handlers.
     # This is created specific to the client.
     render = (Handler, props) ->
+      # markup = '<textarea rows="10" cols="70">'
+      # markup += React.renderToStaticMarkup(React.createElement(Handler, props))
+      # markup += '</textarea>'
+      # document.body.innerHTML = markup
       React.render React.createElement(Handler, props), document
     # Load up the data to pass to the App function.
     http.get('/index.json').accept('json').end (err, res) =>

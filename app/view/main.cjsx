@@ -13,7 +13,7 @@ module.exports = React.createClass
     {data, students, locations, intro, programs} = @props
 
     <div id="react-app">
-      <Header data={data} />
+      <Header data={data} programs={programs} />
       <Intro body={intro} />
       <Schedule />
       <Galleries locations={locations} settings={data.locationSettings} />

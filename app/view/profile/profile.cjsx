@@ -1,11 +1,14 @@
 React = require 'react'
-{Navigation, State} = require 'react-router'
+{Navigation} = require 'react-router'
 
 Info = require './info'
 Main = require './main'
 
 module.exports = React.createClass
-  mixins: [Navigation, State]
+  mixins: [Navigation]
+  contextTypes: {
+    router: React.PropTypes.func.isRequired
+  }
   getInitialState: ->
     mounted: false
   #/students
@@ -30,7 +33,7 @@ module.exports = React.createClass
     {uid} = @getParams()
     user = students.get(uid)
     if @state.mounted
-      q = @getQuery()
+      q = @context.router.getCurrentQuery()
     else
       q = {}
     {type, pos} = q

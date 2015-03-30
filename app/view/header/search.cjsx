@@ -1,24 +1,25 @@
 React = require 'react'
 
-{Navigation, State} = require 'react-router'
+{Navigation} = require 'react-router'
 
 module.exports = React.createClass
-
-  mixins: [Navigation, State]
-
+  mixins: [Navigation]
+  contextTypes: {
+    router: React.PropTypes.func.isRequired
+  }
   handleChange: (e) ->
     {activeSection} = @props
     unless activeSection is 'students'
       document.querySelector('#students').scrollIntoView(true)
 
     searchTxt = @refs.searchTxt.getDOMNode().value
-    q = @getQuery()
+    q = @context.router.getCurrentQuery()
     q.search = searchTxt.toLowerCase()
 
     @replaceWith '/', {}, q
 
   render: ->
-    q = @getQuery() or {}
+    q = @context.router.getCurrentQuery() or {}
     <div role="form" id="search" className="form-group">
       <input type="text" ref="searchTxt" value={q.search} onChange={@handleChange}
         onKeyDown={@keyDown} className="form-control" name="item-search"
