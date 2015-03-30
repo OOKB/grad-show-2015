@@ -30,7 +30,7 @@ module.exports = React.createClass
 
   render: ->
     {students} = @props
-    {uid} = @getParams()
+    {uid} = @context.router.getCurrentParams()
     user = students.get(uid)
     if @state.mounted
       q = @context.router.getCurrentQuery()
