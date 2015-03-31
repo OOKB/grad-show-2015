@@ -14,8 +14,10 @@ module.exports = React.createClass
       Imgs = <Slideshow usr={usr} file={file} pos={pos} type={type} />
     else
       Imgs = <NoImages />
+    if statement
+      StatementEl = <div className="statement" dangerouslySetInnerHTML={__html: statement} />
 
     <div className="student-main">
       {Imgs}
-      <div className="statement" dangerouslySetInnerHTML={__html: statement} />
+      {StatementEl}
     </div>
