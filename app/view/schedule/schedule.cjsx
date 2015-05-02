@@ -49,7 +49,7 @@ module.exports = React.createClass
             </ul>
           </div>
           <div className="scheduleGroup">
-            <h3>May 1</h3>
+            <h3><del>May 1</del> TBD</h3>
             <ul>
               <li>Social Design, MA <br />
                   <em>Social Design Exchange: Perspectives from the Class of 2015</em> <br />
@@ -60,7 +60,7 @@ module.exports = React.createClass
             </ul>
           </div>
           <div className="scheduleGroup">
-            <h3>May 2</h3>
+            <h3><del>May 2</del> May 16</h3>
             <ul>
               <li>Critical Studies, MA <br />
                   <em>Narratives of Modernity, Contemporaneity, and Desire</em> <br />
