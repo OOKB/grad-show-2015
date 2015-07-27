@@ -15,7 +15,11 @@ module.exports = React.createClass
     thumbClassName.thumb = true
 
     inlineStyle = height: '76px'
-    imgSrc = src.replace('#', '%23')
+    if src
+      imgSrc = src.replace('#', '%23')
+    else
+      console.log 'missing img', title
+      imgSrc = src
     <li className={cx(thumbClassName)} style={inlineStyle}>
       <img onMouseOver={onMouseOver} onClick={@handleClick} src={imgSrc}
         alt={title} />
